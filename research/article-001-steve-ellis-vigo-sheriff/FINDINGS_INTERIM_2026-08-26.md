@@ -291,6 +291,124 @@ none. Either way the reader is told.
 matching and entity resolution are mandatory; a keyword-frequency pipeline would have reported
 "13 EMS discussions" in a record that contains none.
 
+---
+
+## FINDING 11 — THE LEAD: both sheriff candidates are defendants in the same open federal jail case
+
+***Huerta v. Fell*** (S.D. Ind.) — the federal jail-conditions case — names **Steve Ellis** as a
+defendant. He was substituted in on **2/3/2025** (docket #605) upon joining the County Council,
+and appears in the status report filed **8/3/2026** (docket #665), alongside Fell, the
+Commissioners, and every council member.
+
+### ⚠ HOW THIS MUST BE STATED — read before writing a word
+
+These are **official-capacity substitutions under Fed. R. Civ. P. 25(d)**. When the injunction
+runs against county *offices*, whoever holds the office becomes a party automatically. **Ellis
+is not personally accused of misconduct. Neither is Fell.** Writing "the sheriff candidate is
+a defendant in a federal lawsuit" without that context would be a smear, and an actionable one.
+
+**The accurate — and genuinely stronger — framing:**
+> Vigo County's entire governing body, including **both candidates for sheriff**, operates
+> under a standing federal injunction over jail conditions and reports to a federal judge to
+> this day. Ellis's opponent is his **co-defendant**. Neither man can campaign on the jail as
+> someone else's problem.
+
+### Case status — do NOT report this case as closed
+CourtListener's `date_terminated = 2020-03-24` reflects closure of the **individual damages
+claims only**. The **class injunctive judgment remains in force** and the court retained
+jurisdiction; docket entries run continuously to **#666 (8/3/2026)**. A full docket-sheet
+search found **no PLRA termination motion and no contempt motion** anywhere in #1–#666
+(documented negative).
+
+**What the injunction requires:** quarterly appearances before the court · **three hours/week
+out-of-cell recreation** · sufficient staffing with hiring reports · regular compliance and
+construction reports · plaintiffs may seek further relief **including prisoner-release orders**.
+Class certified 5/19/2017; conditions ruled unconstitutional **9/25 or 10/10/2018** (⚠ sources
+conflict — pull from PACER); final judgment **2/28/2019** (Eighth and Fourteenth Amendment);
+defendants paid **$101,130.85** in fees.
+⚠ The county attorney publicly calls it a **"consent decree"**; technically it is an **agreed
+final judgment and permanent injunction**, and distinct from the 2002 private settlement.
+Quote her usage; don't adopt the term as our own.
+
+### The jail, resolved
+Hard construction **$56,276,080**; total project budget **$67,046,529**; bids came in *under*
+estimate (no overrun story). 22.21 acres, former Fore Seasons Golf Complex, land $510,800;
+DLZ architect, Garmong CMa, Pauly Jail detention equipment. Substantial completion 5/23/2022;
+inmates moved overnight **11/7–8/2022**; old jail demolition began 1/22/2025.
+Bond (SBOA 18540A): Vigo County Building Corporation "Jail" lease, **$4,107,500/yr,
+11/20/2019–1/1/2039** = 86% of county governmental-activities lease obligations; 2019 revenue
+bonds ending principal $15,720,000 (original par **UNVERIFIED** — MSRB EMMA).
+
+**There was never a jail referendum** — verified three ways (DLGF controlled-project referenda
+list shows only Vigo's failed 2022 *school* referendum; LIT ordinances under IC 6-3.6 are not
+subject to the IC 6-1.1-20 referendum machinery; full-text searches return only school
+coverage). Opposition instead produced a caucus seat (Lisa Spence, 45–35, Dec 2018), a
+1,000-signature petition, and two zoning fights (Prairieton Rd rejected 8–1, Dec 2018; Honey
+Creek approved 6–3, Aug 2019).
+**The electoral aftermath does not support a "voters punished them" narrative**: two YES voters
+lost, one NO voter lost, three YES voters won, and the YES-voting council president was the top
+countywide vote-getter in 2020. *(Report this even though it's the less dramatic story.)*
+
+### Still over capacity — and the capacity number is not printable yet
+"At legal capacity since it opened." 401 in custody before opening (4/2022); 57 housed out of
+county in 2024 (~$100,967); **$690,000 paid in 2024**; DOC per-diem rose $28.50 → $42; 24 out
+of county mid-2026 ($600,000 last year).
+⚠ **Capacity figures are irreconcilable across public sources** — 504+216 as-built, 495 (Fell
+2025), 450 "rated," 432 meeting state standards, and 654/342 within a single 2025 article.
+**Do not print a single number.** Resolve via **IDOC annual inspection reports** — public 10
+days after finalization, with the **Auditor, Commissioners, and Circuit Court as mandatory
+recipients** (an easier ask than IDOC itself).
+
+Also: a **death in custody** at the new jail — Donald Pifer, 60, found unresponsive in a
+holding cell 2/12–13/2026; autopsy noted a plastic bag in stomach contents, toxicology pending.
+Active 2026 litigation includes ***Owens v. Vigo County Sheriff*** (2:25-cv-00188) where
+conditions and mental-healthcare claims **proceed** against jail staff while **Sheriff Fell was
+dismissed for lack of personal involvement** — relevant to fairness toward Fell.
+
+⚠ **Disambiguation trap:** May–June 2026 coverage of the ACLU threatening suit over a lapsed
+17-year-old settlement concerns **MONROE County, not Vigo.**
+
+### The LIT correction — and a live statutory question
+The 0.25% jail LIT (Ordinance 2018-03, adopted **8/14/2018, 5–2**, after a five-hour meeting;
+Weger's motion drew **no second** until President Loudermilk handed the gavel to Pro Tem Kearns
+to second it himself) took effect **October 1, 2018 — not January 1, 2019**. DLGF's 10/26/2018
+addendum held that an ordinance adopted before September 1 takes effect October 1 of the
+current year: *"Indiana law controls with respect to the effective dates of local income tax
+ordinances and does not provide for exceptions."* **The council was overruled by the state and
+taxpayers paid three months early** — surfacing only when a resident noticed higher
+withholding (Tribune-Star, 11/9/2018).
+⚠ **Open statutory question:** IC 6-3.6-7-25 requires a federal district court **order** as
+predicate. The pre-2003 matter — ***David Costa, et al. v. William R. Harris, et al.*, No.
+TH0-081-C Y/H** (filed 2000) — resolved by a **2/14/2002 settlement** capping the jail at 268
+inmates and requiring weekly recreation, characterized as a **private settlement, not a consent
+decree**. ACLU sued for breach in Vigo Superior Court (84D01-1308-PL-7173, Aug 2013; inspection
+found 293 inmates, conditions "extremely dirty, with insects and black mold").
+**Pull the *Costa* docket before publishing either way** — this bears on the legal predicate for
+the county's jail income tax and is the kind of claim that must be airtight or unmade.
+
+### Cross-corroboration — two independent methods, same event
+Our OCR of the county's own June 2026 minutes (Bill Watson requesting restoration of a $200,000
+appropriation "reduced during the budgeting process… a mistake"; Gentry on **Rule 10.3** and the
+12-month re-vote bar) is independently matched by the news record: the residential center
+housing **~100 people who cannot be accommodated at the jail** faced closure "effective
+immediately," and officials pursued a **court order** because council rules barred re-voting.
+Council attorney Samantha DeWester: *"The jail is already under a consent decree… we don't want
+more people in the jail."* Fell warned of "$500,000 to a million dollars on the back end."
+**Primary record and secondary record agree with no contradiction — that is the standard.**
+
+### ⚠⚠ ENGINE-CRITICAL: the fetch summarizer FABRICATED NUMBERS
+Repeated fetches of the **same** Tribune-Star article produced **three different budget figures
+and three different bed counts**. Every surviving figure had to be re-derived from locally
+downloaded PDFs via `pdftotext`, from raw HTML, or corroborated across two retrievals.
+**Design consequence (already reflected in the Veritas design): numbers may NEVER pass through
+an LLM summarizer.** Figures must be extracted from the sealed artifact by deterministic
+parsing, with the page/line anchor retained. This is the strongest empirical argument yet for
+custody-before-analysis.
+
+Related: **the county canvass PDF governs, not news reports.** Canvass: **Ellis 4,537 (57.39%)**;
+Fell 3,978 (48.98%). News gave 57.25% and Fell 3,505/49.01%. Treat news percentages as
+unreliable; cite the canvass.
+
 ## OPEN QUESTIONS (what would resolve them)
 
 1. **Ellis's recorded vote on every sheriff/jail appropriation** → source PDF page images.
