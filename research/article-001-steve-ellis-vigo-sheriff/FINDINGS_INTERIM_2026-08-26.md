@@ -555,6 +555,79 @@ disputed first-person claims):
 - He ran **public polling**: *"when we ran our poll… the majority of people were in favor of
   building a jail. They just weren't in favor of how it was financed."*
 
+---
+
+## FINDING 16 — The full Facebook video corpus (11 videos, ~42 min, ~290K cumulative views)
+
+The page's video and Reels **tabs** are login-walled, but individual public video
+**permalinks** are not — and a public video page's rendered DOM exposes **sibling video IDs**
+from the same page. Walking those IDs yielded the corpus below. All captured with sha256 +
+source URL, transcribed locally to timestamped text.
+
+| Len | Views | React | Title |
+|---|---|---|---|
+| 7.0m | 41K | 848 | 👇THIS *(scripted skit — see Finding 17)* |
+| 6.6m | 11K | 194 | I met with some school board members. |
+| 4.9m | 28K | 314 | Drama at the County Council meeting??? 🤯 *(verified CONGRUENT, Finding 12)* |
+| 4.0m | 23K | 376 | EDIT: I meant to also suggest moving 6th grade back to elementary… |
+| 3.8m | 37K | 615 | 🔴Teachers are upset & Scare Tactics??? |
+| 3.7m | 42K | 743 | Data centers? Person X??? Steve Ellis exposes a few things you need to know. |
+| 3.3m | 21K | 254 | ❓A few of the questions you guys messaged in |
+| 2.8m | 20K | 357 | A local commissioner suggested I do this, so I took his advice! 🤷‍♂️ |
+| 2.1m | 23K | 337 | I recently spoke to a group of educators. |
+| 2.0m | 32K | 471 | Fast response to school recommendations. |
+| 1.7m | 12K | 365 | Do we have our childrens' best interest at heart? ❤️ |
+
+**Six of eleven are about schools** — the same subject as the disputed $150M figure (Finding 4)
+and the October 2025 ordinance. This is the densest congruence field available: what he says to
+his own audience vs. what he said in chambers vs. what state financial filings show.
+
+**A candidate consistency thread worth testing carefully (may run in his favor):** in the
+data-center video he argues *"Something of this size has to be voted on by us, the taxpayers,
+and it does not lie with a few elite select group people…"* — which rhymes with his 2018
+complaint that on the jail *"the process was flawed from day one. The public was not included
+like they should."* If that holds across eight years and both parties' projects, it is a
+**CONGRUENT** finding on process-populism and should be reported as such.
+⚠ Do not assert it yet: the 2018 material is quarantined (Finding 14), and the data-center
+video needs the Finding 17 treatment first.
+
+## FINDING 17 — ATTRIBUTION TRAP #4: the subject speaking **in character**
+
+The most-reacted video (👇THIS, 41K views, 848 reactions) is a **scripted two-voice skit**.
+Ellis performs both a credulous project booster and a skeptic, alternating lines with no
+labels, no different voice, and no on-screen markers that survive transcription:
+
+> "I spoke to Dr. Hemsell personally and he assured me that kids on both sides of the river
+> would have all the same opportunities and amenities."
+> "I've spoke to several people in our community that are very influential and they've assured
+> me that our county is in great financial health and we can help out the schools."
+
+**Both lines are Ellis's voice. Neither is Ellis's position** — he is voicing a character in
+order to ridicule it. He states the purpose himself at the close: *"I threw this video together
+just to show a very small sampling of all the inconsistencies…"*
+
+**Why this defeats every safeguard built so far.** Speaker diarization does **not** help — there
+is only one speaker, and it is genuinely him. Role-by-date does not help. A transcript search
+for what Ellis has said about the county's financial health would surface *"our county is in
+great financial health"* as his claim, when he is mocking precisely that claim. The inversion is
+total: **the extracted position is the exact opposite of the real one.**
+
+**Engine requirement (new, mandatory): rhetorical-mode detection.** Before any statement enters
+the claims ledger or a congruence matrix, the pipeline must classify the mode — *assertion ·
+question · quotation of another · hypothetical · satire/roleplay · sarcasm*. Statements not
+classified as assertions are **excluded from verdicts** and retained only as context. Where
+mode is uncertain, the item is held for human review, never auto-published. This is a distinct
+stage from diarization and cannot be collapsed into it.
+
+**Consequence:** the 👇THIS video is **quarantined** for claim extraction. It remains usable as
+evidence of his *rhetorical style and stated purpose*, which is itself relevant context.
+
+### A note we should carry into publication
+Ellis's own stated purpose for that video is documenting **"inconsistencies"** in other public
+figures' positions. Our project applies the same test to him. That symmetry deserves to be
+acknowledged plainly in any published piece — not as irony at his expense, but because it is
+the fairest possible framing: *he is being measured by the standard he publicly advocates.*
+
 ## ENGINE NOTES (for the PCOS fact-check spec)
 
 - **The county publishes its minutes as scanned images.** Text extraction returned 0 usable
