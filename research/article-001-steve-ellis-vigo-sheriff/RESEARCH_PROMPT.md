@@ -1,159 +1,194 @@
 # DEEP RESEARCH PROMPT — Article 001
-## Subject: "Holding Vigo County Accountable" (Facebook page) and Steve Ellis, candidate for Vigo County Sheriff
+## Message-Congruence Analysis: Steve Ellis — Vigo County Council President & Republican nominee for Vigo County Sheriff
 
 > Paste this entire prompt into the research agent. It is self-contained.
-> Product: a verified research dossier that becomes the source layer for a community-news
-> article AND the first live test of the PCOS fact-checking methodology.
-> Standard: every sentence we ultimately publish must trace to a primary source or be
-> clearly labeled as an unverified claim with its origin named.
+> **The question is not "is he good or bad." The question is: does he say the same thing
+> in every room?** Concerned citizens want to know whether a candidate's public messaging
+> is CONGRUENT across every channel — and whether what he says in public matches how he
+> votes and speaks in the county's own records.
+> Product: a verified congruence dossier + claims ledger that becomes (a) a community-news
+> article and (b) the prototype dataset for the PCOS fact-check engine.
 
 ---
 
-## MISSION
+## WHY THIS IS THE FIRST PROJECT
 
-Produce a complete, evidence-archived dossier on:
+A sitting county fiscal officer running for the county's top law-enforcement job is the
+ideal first test of the engine: he has **two public records at once** — what he SAYS on
+Facebook/YouTube/radio/news, and what he DOES in recorded council votes and minutes.
+Congruence between those two is measurable. That measurement is the product.
 
-1. **The Facebook page** "Holding Vigo County Accountable" (profile.php?id=100072057188004),
-   a government-accountability page focused on Vigo County / Terre Haute, Indiana.
-2. **Steve Ellis**, the person reported to operate the page, owner of the Top Guns
-   firearms store, and a declared or reported candidate for **Vigo County Sheriff**.
-3. **The specific factual claims the page makes about Vigo County government** — each one
-   extracted, categorized, and checked against primary records.
-
-This is NOT an opinion piece and NOT opposition research. It is symmetrical verification:
-claims the page makes get checked; claims made about the page's operator get checked with
-the same rigor. Where the record supports him, say so plainly. Where it contradicts him,
-say so plainly. Where the record is silent, say that too.
-
-## STARTING FACTS (with provenance — re-verify everything marked ⚠)
+## VERIFIED STARTING FACTS (established 2026-08-26 — do not re-litigate; extend)
 
 | Fact | Status | Source |
 |---|---|---|
-| FB page "Holding Vigo County Accountable \| Terre Haute IN", id=100072057188004 | VERIFIED (title only; content login-walled) | direct fetch 2026-08-26 |
-| Page contact: (812) 299-3354 / steve@topguns.us | ⚠ CLAIMED | provided by tipster; appears on page per tip |
-| Top Guns — firearms dealer, 5050 S 7th St, Terre Haute IN 47802; FFL transfers, indoor range, gunsmithing, training; store phone **812-299-4867**, media@topguns.us | VERIFIED | topguns.us fetched 2026-08-26 |
-| ⚠ Phone discrepancy: page lists 299-3354, store lists 299-4867 | OPEN | resolve — personal vs business line? |
-| YouTube video titled "Steve Ellis talks about running for Vigo County Sheriff" (DkgCs5X8Nck) | VERIFIED (title) | youtube.com 2026-08-26 — watch/transcribe in full |
-| "Steve Ellis is running for Sheriff" | ⚠ CLAIMED | private tip (single source) — must be confirmed via official candidate filings |
-| Ellis operates the FB page | ⚠ CLAIMED | tip + email address pattern — confirm via page transparency info, his own statements, or direct outreach |
+| **Steve Ellis is 2026 PRESIDENT of the Vigo County Council** (elected At-Large) | VERIFIED | Vigo County council roster |
+| Republican **nominee** for Vigo County Sheriff; won primary **57.25%** (May 2026); faces Democrat **Derek Fell** in the Nov 2026 general | VERIFIED | Tribune-Star, MyWabashValley |
+| Ballotpedia candidate page exists (2026 cycle) | VERIFIED | ballotpedia.org |
+| Owns **Top Guns**, opened **2017** — retail/wholesale firearms, 3 indoor ranges, training; 5050 S 7th St, Terre Haute IN 47802 | VERIFIED | topguns.us + Tribune-Star |
+| Claims **~17 years** as special/reserve deputy + **B.S. criminology, Indiana State University** | ⚠ CLAIMED (his own statements) — VERIFY independently | news coverage |
+| Operates/associated with FB page **"Holding Vigo County Accountable"** (id=100072057188004) | ⚠ CLAIMED (tip + steve@topguns.us contact) — VERIFY | tip |
+| Page contact (812) 299-3354 vs store 812-299-4867 | OPEN discrepancy | direct fetch |
+| **25 Vigo County Council meeting minutes PDFs (June 2025 – June 2026) already downloaded, sha256-indexed, and OCR'd** in `evidence/vigo-council-minutes/` + `evidence/vigo-council-text/` | DONE | see `_evidence_index.json` |
+
+## THE CORE METHOD — THE CONGRUENCE MATRIX
+
+Build a matrix: **rows = issue positions**, **columns = channels**. Fill every cell with
+what he said there, when, and verbatim. Then score congruence per issue.
+
+**Channels to sweep (each is a column):**
+1. **Facebook** — "Holding Vigo County Accountable" + any personal/campaign page/profile
+2. **YouTube** — incl. `DkgCs5X8Nck` "Steve Ellis talks about running for Vigo County Sheriff"
+3. **Radio** — WIBQ The Talk Station (1230/1440/97.9) interviews and any archives
+4. **TV/news** — WTHI-TV 10, WTWO/WAWV, MyWabashValley, Tribune-Star (tribstar.com), Yahoo syndications
+5. **Print/candidate materials** — Ballotpedia profile & any candidate survey answers, campaign site, mailers, endorsements
+6. **Speeches/forums** — candidate forums, debates, party events, Chamber events
+7. **PRIMARY GOVERNMENT RECORD — Vigo County Council minutes** (already captured): every
+   appearance, motion, second, vote, and quoted statement
+8. **Community venues** — churches, school board/schools, Chamber of Commerce, civic clubs
+   (Rotary/Kiwanis/Lions), veterans' organizations, fraternal orders, neighborhood groups
+
+**Issue rows (extend as the record dictates):**
+county budget & tax levies · jail (conditions, overcrowding, funding, the jail lawsuit/
+consent issues if any) · sheriff's office budget, staffing & pay · public safety/crime ·
+county spending and transparency · public-records/open-meetings compliance · drugs/opioids ·
+school safety/SROs · economic development & incentives · relations with Terre Haute city
+government · his own business/firearms interests · personnel and hiring · anything he
+himself makes a signature issue
+
+**For every cell record:** verbatim quote (short) · date · channel · URL · archived URL ·
+capture timestamp · context (who was the audience?).
+
+## CONGRUENCE VERDICT SCALE (use exactly these)
+
+- **CONGRUENT** — same substantive position across channels; wording differs, meaning doesn't.
+- **EMPHASIS SHIFT** — same position, materially different emphasis by audience (normal
+  political behavior; report it neutrally, do not treat as a flip).
+- **INCOMPLETE** — position stated in one channel, silent in others (note the gap; silence
+  is not a contradiction).
+- **INCONGRUENT** — materially different positions in different rooms; show both verbatim.
+- **CONTRADICTED BY RECORD** — public statement conflicts with his own recorded council
+  vote or an official document. **This is the highest-value finding — require the vote
+  citation (document + page + date) before asserting it.**
+- **EVOLVED** — position changed over time and he has acknowledged/explained the change
+  (an evolution honestly labeled is NOT a flip — say so).
+
+⚠ **The fairness rule that protects the whole project:** a politician emphasizing different
+priorities to different audiences is ordinary and not dishonest. Only *substantive
+contradiction* counts. And a changed mind, openly explained, is a virtue — the engine
+must be able to tell the difference between flip-flopping and learning.
 
 ## RESEARCH TRACKS
 
-### Track 1 — The page itself (evidence first, analysis second)
-- Access the page (public view; log-in wall noted). Catalog **every post** you can reach:
-  date, text, images/video, who/what it targets (Sheriff's office? County Council?
-  Commissioners? Courts? specific officials by name?), engagement counts.
-- **Archive as you go**: archive.today / Wayback Machine snapshot of every post URL you
-  cite, plus screenshots. Record capture timestamp and URL for each. (These become PCOS
-  custody items — the article's evidence chain depends on captures made BEFORE
-  publication, since pages get edited or deleted after coverage.)
-- Check the page's **Page Transparency** box: creation date, name-change history,
-  admin country, whether it is classified as a Page or a personal profile.
-- Identify recurring **themes** (spending, jail, hiring, elections administration,
-  public-records compliance…) and the page's tone (documented critique vs. insinuation).
+### Track 1 — Council record (PRIMARY; already captured, now mine it)
+Work from `evidence/vigo-council-text/*.txt` (OCR'd, page-marked):
+- Extract **every** mention of Ellis: motions made/seconded, votes cast (aye/nay/abstain),
+  statements quoted, committee assignments, his election as President (1/6/26
+  organizational meeting).
+- Build a **vote ledger**: date · agenda item · dollar amount · his vote · what he said.
+- Flag every vote that touches: sheriff's office, jail, public safety, salaries/hiring,
+  county budget/levy, and anything intersecting firearms or his business.
+- Note OCR uncertainty: mark any quote where OCR confidence is questionable and
+  **verify against the source PDF page image before publication**. Never publish an OCR
+  artifact as a quote.
+- Cross-check against the county's **meeting audio/video** if published, and against
+  Tribune-Star's contemporaneous meeting coverage.
 
-### Track 2 — Steve Ellis: identity, business, background
-- **Disambiguate the person first.** "Steve Ellis" is a common name; establish which
-  Steve Ellis this is (Terre Haute/Vigo County resident, Top Guns principal) before
-  attaching ANY other record to him. Every record below must match on at least two
-  identifiers (name + address/business/DOB-range as available).
-- Indiana Secretary of State **INBiz** business search: Top Guns entity (exact legal name,
-  formation date, registered agent, principals, status, any related entities).
-- **ATF FFL eZ Check / FFL listings**: confirm the federal firearms license, licensee
-  name, license type, original license date.
-- Professional history: any **law-enforcement, military, or corrections background**
-  (relevant to a sheriff candidacy and often central to campaign claims) — verify via
-  ILEA certification records if claimed, service records if claimed, employer confirmations.
-- Public footprint: prior news coverage (Terre Haute **Tribune-Star**, WTHI-TV 10,
-  WTWO/WAWV, MyWabashValley), prior runs for office, board/commission seats, civic roles.
-- Court records: **mycase.in.gov** (Indiana) and PACER (federal) for civil/criminal
-  matters involving him or the business — report only what the docket actually shows,
-  with cause numbers; note disposition; do NOT characterize beyond the record.
+### Track 2 — Broad Vigo County community sweep
+Search each of these for him speaking, or others speaking about him:
+- **Schools** — Vigo County School Corporation board minutes/agendas, school-safety
+  discussions, SRO funding (council funds these — congruence goldmine)
+- **Churches** — candidate appearances, forums hosted by congregations
+- **Chamber of Commerce** — Terre Haute Chamber events, candidate forums, business surveys
+- **Other county bodies** — Commissioners, Sheriff's Merit Board, jail/justice committees,
+  Redevelopment Commission, drainage/health boards where council intersects
+- **City of Terre Haute** — council/mayor interactions
+- **Civic/veteran/fraternal organizations**, gun clubs, Second Amendment groups
+- **Local media archives + letters to the editor**, both by him and about him
+- **Court records** (mycase.in.gov, PACER) — only what dockets show, with cause numbers
 
-### Track 3 — The candidacy (official paper or it isn't confirmed)
-- Determine the **exact election**: Vigo County Sheriff appears on Indiana's midterm
-  county cycle — establish which cycle Ellis is filed for (2026 general? a 2027 caucus?
-  2028?), his **party**, and the incumbent's status (term limits: Indiana sheriffs are
-  limited to two consecutive terms — check whether the seat is open).
-- **Vigo County Election Board / Indiana Election Division candidate filings** (CAN-2 or
-  equivalent declaration): the ONLY thing that upgrades "running for sheriff" from
-  CLAIMED to VERIFIED. Get the filing date and office sought.
-- **Campaign finance**: Indiana campaign finance portal — committee registration (CFA-1),
-  finance reports (CFA-4): treasurer, receipts, top donors, expenditures, loans from
-  self/business. Note whether the FB page is disclosed/paid for by the committee
-  (a page run as "accountability journalism" by an undeclared candidate vs. a declared
-  campaign organ is itself a finding — either way, report it neutrally).
-- The **YouTube interview**: watch/transcribe fully. Extract every checkable claim he
-  makes about himself (background, qualifications) and about the county (budgets, crime
-  stats, jail, staffing). Note channel, date, interviewer relationship.
-- Map the **conflict-of-interest questions a voter would ask** — a firearms dealer
-  seeking the county's top law-enforcement office (e.g., how Indiana handgun-permit
-  processing, sheriff's-sale firearms, or department purchasing could intersect with his
-  business). Frame these strictly as QUESTIONS grounded in statute/process, with his
-  response recorded — not as accusations.
+### Track 3 — Candidacy & finance
+- Official filing (declaration/CAN-2), primary result certification, general-election
+  ballot status; party; incumbent status of the seat (Indiana sheriffs: 2-consecutive-term
+  limit — establish whether it's an open seat and who the incumbent is).
+- **Campaign finance** (Indiana campaign finance portal, CFA-1/CFA-4): committee,
+  treasurer, receipts, donors, expenditures, self/business loans. Note any spending on
+  the Facebook page or media buys; note donors with county business (report neutrally).
+- **The dual-role question, framed as process, not accusation:** he votes on the sheriff's
+  office budget while seeking to lead it. Document (a) whether he has recused on
+  sheriff-related votes, (b) what Indiana conflict-of-interest law (IC 35-44.1-1-4
+  conflict of interest; IC 36-2-3 council duties) actually requires, and (c) his own
+  explanation. Ask; print his answer.
 
-### Track 4 — Claims ledger (the heart of the fact-check)
-- Select the **10–20 most significant checkable claims** from the page + interview.
-- For each claim, verify against PRIMARY records: county budget documents, County
-  Council/Commissioners minutes and audio, Indiana State Board of Accounts audit
-  reports (Gateway), jail-inspection reports, DLGF data, court dockets, sheriff's
-  office statements, APRA public-records responses.
-- Verdict scale (use exactly these):
-  **VERIFIED** (primary record confirms) · **CORROBORATED** (2+ independent quality
-  sources, no primary record) · **UNSUPPORTED** (no evidence found after real search) ·
-  **DISPUTED** (credible evidence both ways — show both) · **FALSE** (primary record
-  contradicts) · **OPINION** (not a factual claim — excluded from verdicts).
-- Every verdict carries its **evidence chain**: source name, document title/date, URL,
-  archived-copy URL, and the exact quote or figure relied on.
+### Track 4 — The Facebook page attribution
+- Establish **whether Ellis operates the page**: Page Transparency (creation date, name
+  history, admin country, page-vs-profile), his own statements, the steve@topguns.us
+  contact, disclaimers, campaign-finance disclosure of page spending.
+- Catalog every reachable post: date, target, claim, engagement. Archive each BEFORE
+  contact is made — pages get scrubbed once coverage is known.
+- **Then compare the page's positions to his council votes.** A page demanding fiscal
+  restraint run by a council president who voted for the spending is the single most
+  newsworthy congruence test available. Verify both sides rigorously before asserting.
 
-### Track 5 — The other side (fairness is part of verification)
-- Identify every person/office the page criticizes by name. For the article we will seek
-  **on-record responses** from each (list them with best contact paths: sheriff's office
-  PIO, county attorney, council president…).
-- Draft the **right-of-reply letter to Ellis himself**: the claims about him we intend to
-  publish, offered for his response before publication — including the page-operator
-  attribution, the candidacy timeline, and any COI questions.
+### Track 5 — Claims ledger (factual accuracy layer)
+Independent of congruence: take the **15–25 most significant factual claims** he makes
+(about the county budget, jail, crime rates, staffing, his own record/qualifications) and
+verify each against primary records: county budget documents, **Indiana Gateway** (DLGF
+budgets, SBOA audit reports), council minutes, sheriff's office data, Indiana State Police/
+FBI UCR-NIBRS crime data, jail inspection reports, APRA records requests where needed.
+Verdicts: **VERIFIED · CORROBORATED · UNSUPPORTED · DISPUTED · FALSE · OPINION**.
+Verify his biography claims too (17 years reserve/special deputy — ILEA or agency
+confirmation; ISU criminology degree — registrar/NSC confirmation).
+
+### Track 6 — Fairness / right of reply
+- List everyone criticized by name (page or statements) with contact paths for comment.
+- Draft the **right-of-reply letter to Ellis**: every finding we intend to publish —
+  page attribution, congruence findings, the dual-role question, biography verification —
+  with a real deadline. **His response is part of the article, not an afterthought.**
+- Same courtesy to **Derek Fell** (opponent) if any finding involves him; and note that
+  scrutiny applied to Ellis in this pilot should be applied to Fell in a companion piece —
+  the engine's credibility depends on symmetry.
 
 ## RULES (non-negotiable)
 
-1. **Primary source > official statement > on-record interview > established media >
-   social media.** A Facebook post is evidence that a CLAIM WAS MADE — never evidence
-   that the claim is true.
-2. **Two-identifier match** before attributing any record to Ellis (common name).
-3. **Date-stamp everything**; when a source is behind a login/paywall, say so and record
-   what was visible.
-4. Ellis (as candidate) and the officials he criticizes are **public figures** — but we
-   write as if we must prove every line: no characterization beyond the record, opinion
-   labeled as opinion, minors and uninvolved family members excluded entirely, no home
-   addresses, no doxxing.
-5. Gun politics: **neutral**. His trade is a fact; treat it exactly as we would a
-   candidate who owns a pharmacy or a towing company.
-6. Preserve everything: this dossier's evidence archive (URLs, archives, screenshots,
-   sha256 of saved files, capture timestamps) is what PCOS will seal. **A finding
-   without a preserved source does not exist.**
+1. **Primary record > official statement > on-record interview > established media >
+   social media.** A post proves a claim was MADE, never that it is TRUE.
+2. **Two-identifier match** before attaching any record to him ("Steve Ellis" is common).
+3. **Archive at capture time** — URL, archive.today/Wayback copy, screenshot, sha256,
+   timestamp. A finding without a preserved source does not exist.
+4. **No OCR quotes without image verification.** Machine text is a search index, not a
+   quotation source.
+5. **Neutral on guns and on party.** His trade is a fact, treated exactly as a pharmacy or
+   towing company would be. No partisan framing in either direction.
+6. **Emphasis ≠ contradiction. Evolution ≠ flip-flop.** Say which one you found.
+7. Public figures, public conduct only: no minors, no uninvolved family, no home
+   addresses, no doxxing, nothing about private life that isn't squarely relevant to
+   fitness for the office.
+8. **Where he checks out, say so as loudly as where he doesn't.** A congruence report that
+   only finds fault is opposition research wearing a lab coat, and readers can smell it.
 
 ## OUTPUT FORMAT
 
-Return a single dossier document with these sections:
-
-1. **Executive summary** (1 page: who, what page, what candidacy, headline findings)
-2. **Subject profile — Steve Ellis** (verified biography; every line sourced)
-3. **Business profile — Top Guns** (entity, FFL, footprint)
-4. **The page** (history, themes, reach, transparency-box findings, post catalog)
-5. **The candidacy** (filing status, cycle, party, incumbent/open-seat, finance)
-6. **CLAIMS LEDGER** — table: # · claim (verbatim) · where/when made · category ·
-   verdict · evidence chain · confidence note
-7. **Conflict-of-interest questions** (process-grounded, neutral, with any responses)
-8. **Right-of-reply list** (who must be offered comment, on what, contact path)
-9. **Open questions** (what we could not resolve and what record would resolve it)
-10. **Evidence archive index** (every source: URL · archive URL · capture time · sha256
-    where a file was saved)
-11. **Suggested article frames** (2–3 honest angles the verified record actually
-    supports — e.g., "a gun dealer's accountability page becomes a sheriff campaign:
-    what checks out and what doesn't")
+1. **Executive summary** — who he is, what was examined (channels + date range + document
+   count), headline congruence findings both ways
+2. **Subject profile** — verified biography, every line sourced; note unverified claims
+3. **The council record** — vote ledger + statements, with document/page citations
+4. **THE CONGRUENCE MATRIX** — issues × channels, each cell with verbatim + date + source
+5. **Congruence findings** — one entry per issue: verdict from the scale, the evidence on
+   both sides, and a plain-English "what this means for a voter"
+6. **CLAIMS LEDGER** — # · claim (verbatim) · where/when · category · verdict · evidence
+   chain · confidence
+7. **The Facebook page** — attribution evidence, post catalog, page-vs-vote comparison
+8. **Dual-role / conflict questions** — statute-grounded, with his response
+9. **Right-of-reply record** — who was asked what, when, and what they said (or declined)
+10. **Open questions** — unresolved items and exactly what record would resolve them
+11. **Evidence archive index** — every source: URL · archive URL · capture time · sha256
+12. **Suggested article frames** — 2–3 honest angles the verified record supports
+13. **ENGINE NOTES** — what worked, what was hard, what should be automated (this becomes
+    the spec for the PCOS fact-check engine: schema, verdict scales, custody format,
+    OCR pipeline, channel-sweep checklist)
 
 ---
-*PCOS Verified Community News · Article 001 research charter · drafted 2026-08-26.*
-*Methodology note: this prompt is the prototype for the PCOS fact-check engine —*
-*claims-ledger schema, verdict scale, and evidence-custody rules here are intended to*
-*generalize to business, finance, and world-events verification.*
+*PCOS Verified Community News · Article 001 research charter (v2 — congruence method) ·*
+*drafted 2026-08-26. Methodology prototype for the PCOS fact-check engine; the schema here*
+*is intended to generalize to business, finance, and world-events verification.*

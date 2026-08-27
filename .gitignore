@@ -1,0 +1,2 @@
+# Large binary evidence stays local; custody index (sha256 + URLs) is committed
+research/**/evidence/**/*.pdf

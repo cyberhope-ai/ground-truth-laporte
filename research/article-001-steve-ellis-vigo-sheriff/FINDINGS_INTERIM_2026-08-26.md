@@ -1,0 +1,148 @@
+# INTERIM FINDINGS — Article 001
+## Steve Ellis · Vigo County Council President · Republican nominee for Sheriff
+**As of 2026-08-26. Source: 25 Vigo County Council meeting minutes (June 2025 – June 2026),
+downloaded, sha256-indexed, and OCR'd to page level. 136 pages, ~369,000 characters,
+300 mentions of "Ellis."**
+
+⚠ **All quotes below are OCR-derived and must be verified against the source PDF page image
+before publication.** Machine text is a search index, not a quotation source.
+
+---
+
+## FINDING 1 — The structural conflict is bigger than reported: he sits in judgment on his opponent's budget
+
+**Derek Fell — the Democrat Ellis faces in the November 2026 general election — is the
+SITTING VIGO COUNTY SHERIFF.** This is not a race for an open seat between two outsiders.
+It is a challenge to an incumbent by the president of the body that controls the incumbent's
+funding.
+
+Documented in the minutes: Sheriff Derek Fell personally appears before the Council to
+request money, repeatedly, while Ellis sits on (and later presides over) the Council:
+
+| Date | Request | Detail (verbatim-ish, OCR) |
+|---|---|---|
+| 11/4/2025 | **Additional Appropriation 2025-54: Sheriff's Office — Jail Medical Costs** | "Sheriff Derek Fell approached the Council and explained this request for $190,000… Derek said the remaining cost before the end of the year had actually risen to **$315,000**" — funds from County General, LIT Correctional Rehab Facilities, and Juvenile Justice Center Non-Reverting |
+| 5/6/2026 *(after Ellis won the May primary)* | **Additional Appropriation 2026-27: Sheriff — Vehicle Purchase** | Fell requested **$25,000** from LIT Public Safety–County Share to buy a 2023 Chevy Tahoe from West Terre Haute PD (reduction in force); vehicle+equipment valued at **$63,000**, agreed sale price **$30,000**, remaining $5,000 from the Sheriff's Commissary Fund |
+| 5/6/2026 | Sheriff's Commissary Ledger | "Steve noted the Council had been presented with the Sheriff's commissary Ledger for review." |
+
+**Why this is the story:** the congruence test is no longer abstract. Ellis's public
+statements about the sheriff's office, jail costs, and county spending can be laid directly
+against his recorded votes on his opponent's budget requests — including requests he ruled
+on *after* becoming the nominee running against that same sheriff.
+
+**MUST DO NEXT:** extract Ellis's actual vote on every sheriff/jail appropriation; determine
+whether he ever recused. **A preliminary scan found NO instance of Ellis abstaining or
+recusing on any matter** (the only clear abstention located in the OCR text is Brad Anderson,
+3/10/26 — unrelated). Verify against source images before asserting; then ask Ellis directly
+and print his answer. Frame as a process question under Indiana conflict-of-interest law
+(IC 35-44.1-1-4) — **not** as an accusation.
+
+---
+
+## FINDING 2 — VERIFIED: elected Council President 5–2 on January 6, 2026
+
+From `County_Council_Organizational_Meeting_Minutes_1.6.26`, page 1:
+
+> Vicki Weger nominated Steve Ellis to be the 2026 Vigo County Council President. Randy
+> Gentry seconded… Randy Gentry — aye; Nancy Allsup — aye; Brenda Wilson — **nay**; Steve
+> Ellis — **aye** (voted for himself); Vicki Weger — aye; Brad Anderson — aye; David
+> Thompson — **nay**. With a vote of 5-2, Steve Ellis was elected 2026 President.
+
+Full 2026 Council roster (roll call, same meeting): Randy Gentry, Nancy Allsup, Brenda
+Wilson, Steve Ellis, Vicki Weger, Brad Anderson, David Thompson. Auditor: Larry Hutchings.
+Council attorney: Michael Wright. President Pro-Tem: Vicki Weger (same 5–2 split).
+*(Note: the minutes contain a clerical error — the document twice says "elected 2025
+President" in a 2026 organizational meeting, and repeats the Ellis vote line under the
+Pro-Tem item. Flag for correction; do not treat as substantive.)*
+
+---
+
+## FINDING 3 — ⚠ A NEAR-MISS THAT PROVES THE METHOD (do not get this wrong)
+
+The 11/4/2025 sunshine minutes contain an explosive passage: Ellis reads aloud a statement
+from Councilman **Randy Gentry**, who says he fears for his safety and will not attend,
+citing "the threats that were made against me after the last meeting **by the Council
+president**," referencing a court hearing set for 11/14 at his own request.
+
+**The Council president in November 2025 was DAVID THOMPSON, not Steve Ellis.** Verified:
+Thompson "called the meeting to order" as President in the 6/10/25, 8/12/25, 9/9/25,
+10/14/25, and 11/12/25 minutes. Ellis became president 1/6/2026.
+
+**So the allegation is not about Ellis — Ellis merely read the statement into the record.**
+A careless pipeline would have attributed a threat allegation to our subject because his
+name sits four words from the word "threats." This is the single best argument for the
+engine's two-identifier / verify-before-asserting rule, and it belongs in the methodology
+write-up. (Thompson later voted *against* Ellis's presidency. The Gentry–Thompson matter is
+a separate story we are not pursuing here, and we should be careful not to launder it into
+this one.)
+
+---
+
+## FINDING 4 — CLAIMS LEDGER, first entry (a live factual dispute, on the record)
+
+**Claim:** At the 10/14/2025 meeting, in debate over school consolidation/modernization
+funding, "Steve Ellis said he had heard the School Corporation had approximately **$150
+million**, and asked why the School Corporation would spend this money on new facilities
+instead of repairing and maintaining the old facilities."
+
+**Immediately disputed in the room** by Vigo County Teacher's Association President Aaron
+Warner: "Steve's numbers were incorrect. He said the rainy day fund had **$13 million**, and
+the cash balance was approximately **$35 million**."
+
+**Verdict: PENDING** — resolvable against primary records (Indiana Gateway / DLGF filings and
+SBOA audits for the Vigo County School Corporation, FY2025). This is the ideal pilot ledger
+entry: a specific number, publicly stated, publicly contradicted, and checkable.
+
+**Also at that meeting — a direct congruence hook:** Warner "asked Steve Ellis to clarify
+statements he made about teachers possibly being threatened or coerced to contact Council,"
+and voiced displeasure with "the optics of **Steve Ellis' statements to local media**."
+→ Find those media statements and compare them to what he said in chambers. That is exactly
+the cross-channel comparison this project exists to perform.
+
+---
+
+## FINDING 5 — Verified biography and status (from public reporting, 2026-08-26)
+
+| Item | Status |
+|---|---|
+| 2026 President, Vigo County Council (At-Large, R) | **VERIFIED** (council minutes) |
+| Republican nominee for Sheriff; won May 2026 primary **57.25%** | VERIFIED (Tribune-Star, MyWabashValley) |
+| General election opponent: **Derek Fell (D), incumbent Sheriff** | **VERIFIED** (minutes + reporting) |
+| Owner, Top Guns — firearms retail/wholesale, 3 indoor ranges, training; opened **2017**; 5050 S 7th St, Terre Haute | VERIFIED (topguns.us + reporting) |
+| ~17 years special/reserve deputy | ⚠ **HIS OWN CLAIM — independent verification required** |
+| B.S. criminology, Indiana State University | ⚠ **HIS OWN CLAIM — registrar/NSC verification required** |
+| Operates "Holding Vigo County Accountable" FB page | ⚠ **UNCONFIRMED** — tip + steve@topguns.us only |
+| Page phone (812) 299-3354 vs store 812-299-4867 | OPEN discrepancy |
+
+---
+
+## OPEN QUESTIONS (what would resolve them)
+
+1. **Ellis's recorded vote on every sheriff/jail appropriation** → source PDF page images.
+2. **Did he ever recuse?** → same; then his own on-record answer.
+3. **Is the $150M school figure right?** → Gateway/DLGF + SBOA audit.
+4. **Does he operate the Facebook page?** → Page Transparency box, campaign-finance
+   disclosure of page spending, his own statement.
+5. **Biography verification** → ILEA/agency confirmation; ISU registrar or National Student
+   Clearinghouse.
+6. **The jail story** → Vigo County jail litigation/construction history; the council votes
+   on it, so it is the richest congruence field remaining.
+7. **Media statements re: teachers** (Oct 2025) → retrieve and compare to chamber remarks.
+
+## ENGINE NOTES (for the PCOS fact-check spec)
+
+- **The county publishes its minutes as scanned images.** Text extraction returned 0 usable
+  characters across all 25 files; OCR at 300 dpi produced 369k characters. *Accountability
+  records that are technically public but computationally opaque are the norm, not the
+  exception — the OCR stage is core engine infrastructure, not a workaround.*
+- **The document center 403s ordinary fetchers** but serves a normal browser user-agent, and
+  item URLs 302-redirect to the real PDF path. Capture logic must follow redirects and
+  record BOTH the item URL and the resolved file URL.
+- **Custody worked**: every PDF has sha256 + source URL + capture timestamp in
+  `evidence/vigo-council-minutes/_evidence_index.json`.
+- **Proximity ≠ attribution** (Finding 3). The engine must resolve *who held which role on
+  the date of the document* before attaching any statement to a person. Role-by-date
+  resolution should be a first-class feature, not an analyst's habit.
+- **Roll-call votes are structured data hiding in prose** ("Name — aye;" repeated). A parser
+  for this pattern turns every Indiana county's minutes into a queryable vote database.
+  This is the most reusable artifact this project could produce.
