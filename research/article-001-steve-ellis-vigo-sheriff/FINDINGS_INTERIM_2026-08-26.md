@@ -206,6 +206,46 @@ place a dramatic incident adjacent to our subject that is *not about him*. Any a
 pipeline that scored "documents mentioning Ellis" would have produced a defamatory result
 twice in one dataset. **Role-and-participant resolution is not optional.**
 
+---
+
+## FINDING 10 — SOURCE-CONFLICT CHECK: no Ellis/Trans-Care/AMS connection in the county record
+
+**Why this was checked:** the tip that started this project came from **Russell Ferrell**
+(AMS / Trans-Care). Standard practice requires testing whether our source has a stake in the
+subject. A source with a grievance is still a source — the council minutes are true regardless
+of who pointed at them — but an *undisclosed* stake would be a credibility problem for the
+published article.
+
+**Result — searched all 25 meetings / 136 pages / 13 months of council minutes:**
+
+| Term | Hits |
+|---|---|
+| "Trans-Care" / "TransCare" | **0** |
+| "Ferrell" | **0** |
+| "ambulance" | **1** (incidental — see below) |
+| "AMS" | 0 as a standalone term |
+
+The single "ambulance" mention (10/14/2025, p.7) is unrelated to any provider: Seelyville Fire
+Deputy Chief John Hendricks explained a levy petition to upgrade **Lost Creek Fire** to an
+advanced-life-support *non-transport* agency, noting parts of Nevins Township are places
+"where ambulances are 25 minutes away." **Ellis voted aye; the petition passed 7–0.** If
+anything, that is a vote in favor of expanded emergency medical capability.
+
+**Status: NO EVIDENCE FOUND of any Ellis ↔ Trans-Care/AMS/Ferrell interaction in the Vigo
+County Council record.** A broader public-records search (county/city EMS contracts, FMCSA
+crash data, Indiana EMS licensing, courts, campaign finance) is running separately; this
+finding covers the council record only.
+
+**Editorial standard set here:** if any connection does surface, it goes in the article as a
+disclosure of how the story came to us — not buried. If nothing surfaces, we still disclose
+that the story originated from a tip and that we checked the tipster's interest and found
+none. Either way the reader is told.
+
+**⚠ ENGINE NOTE — substring matching produces garbage.** A naive `grep -i "EMS"` returned 13
+"hits," **every one a false positive** inside *items*, *systems*, *problems*. Word-boundary
+matching and entity resolution are mandatory; a keyword-frequency pipeline would have reported
+"13 EMS discussions" in a record that contains none.
+
 ## OPEN QUESTIONS (what would resolve them)
 
 1. **Ellis's recorded vote on every sheriff/jail appropriation** → source PDF page images.
