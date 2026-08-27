@@ -116,6 +116,96 @@ the cross-channel comparison this project exists to perform.
 
 ---
 
+---
+
+## FINDING 6 — THE CENTRAL CONGRUENCE TEST, VERIFIED IN THE PRIMARY RECORD
+
+**What he says (multiple channels, 13 months, consistent):**
+> "To represent the taxpayer as best as possible, we have to lower spending." — WTWO, 8/29/2025
+> "Every time I turn around, the county is spending 50,000, 100,000, 500,000 dollars on
+> different studies, plans, and drawings." · "I mean, **we waste money like it's water. I've
+> never seen anything like it!**" — WTWO, 11/10/2025
+> "I would say to anyone that sits in any elected position, if you are wasting taxpayer money,
+> you do not deserve the right to be there." — WTWO, 11/10/2025
+
+**What the record shows he did** — `County_Council_Meeting_Minutes_10.14.25`, **page 4**,
+"Final Reading of the Vigo County 2026 Budget," total **$99,199,744** (General Fund
+$56,775,028; EDIT $9,733,650; Home-Ruled $17,381,656; Highway $6,215,105; et al.):
+
+> "Randy Gentry made a motion to approve the Vigo County 2026 Budget as presented. **Steve
+> Ellis seconded the motion.** Upon a roll call vote… Randy Gentry — aye; Nancy Allsup — aye;
+> Brenda Wilson — aye; **Steve Ellis — aye**; Vicki Weger — aye; Brad Anderson — aye; David
+> Thompson — aye. **With a vote of 7-0, the motion passed.**"
+
+He did not merely vote for it — **he seconded the motion**. He also voted aye on each binding-
+unit budget that followed (airport, solid waste, fire districts), all 7–0.
+
+**⚠ FAIRNESS — do not publish this as hypocrisy without his answer.** Three genuine mitigations
+are already in the same record: (a) the Annual Budget Committee "had cut approximately $1
+million from departmental requests" (Brad Anderson's committee report, same meeting, page 4);
+(b) increases were attributed to health-insurance costs and the Baker Tilly pay-study midpoint,
+i.e. largely non-discretionary; (c) an Indiana county council is **statutorily required** to
+adopt a budget — voting no is not a costless act of restraint. A council member can believe
+spending is too high and still vote for the only budget on the table.
+
+**Correct handling:** verdict **DISPUTED / PENDING RESPONSE**, not FALSE. Put the quote and the
+vote side by side, ask him to reconcile them, and print his answer in full. If he has a good
+answer — and he may — that IS the finding.
+
+**Verification status:** OCR-derived; **must be confirmed against the source PDF page image
+before publication** (`County_Council_Meeting_Minutes_10.14.25.pdf`, p. 4).
+
+---
+
+## FINDING 7 — Facebook page attribution: CONFIRMED by the Tribune-Star
+
+The Tribune-Star (8/14/2026) reports that Ellis **operates** "Holding Vigo County Accountable"
+and posted a video there about the school-aid timeline. This upgrades the page from ⚠ CLAIMED
+to **VERIFIED** on a quality secondary source — good enough to proceed, though his own
+on-record confirmation should still be sought in the right-of-reply letter.
+Two candidate URLs exist (profile `100072057188004` and a legacy page `874450229421951`);
+**a human must confirm which is his and archive the posts before any contact is made.**
+
+## FINDING 8 — Two falsifiable claims worth checking precisely
+
+1. **"No campaign donations."** His July 2025 announcement states he accepts none. This is
+   directly testable against Indiana campaign-finance filings (CFA-1/CFA-4). Either outcome is
+   publishable and fair; note that self-funding by a business owner is itself a fact voters
+   weigh.
+2. **Reserve-deputy tenure drifts in his own telling:** "nearly 17 years" (WTWO 8/2025),
+   "approximately 17 years" (WTWO 4/2026), **"approximately 16 years"** (Tribune-Star Q&A
+   4/23/2026). Almost certainly loose phrasing rather than deception — **treat it that way** —
+   but it is exactly why the biography needs independent confirmation (ILEA / employing agency)
+   rather than repetition.
+
+## FINDING 9 — What he has NOT said (silence is a finding, not an accusation)
+
+Across the entire retrieved media record there is **no** Ellis statement on: drugs/opioids,
+school safety or SROs, the **$14–20 million** proposed work-release/diversion center, or the
+conflict of voting on the sheriff's budget while campaigning for that office. On the last
+point he consistently frames the dual role as a *qualification* ("a better understanding of
+how the county functions"), and no interviewer is documented as having asked him about it.
+**These become the interview questions.**
+
+## CONTEXT CORRECTION — the incumbent, and why this race is unusual
+
+Derek Fell was **caucused in as sheriff in August 2024** after Sheriff **John Plasse died of
+pancreatic cancer**; he has ~24 years in the office and is **not term-limited**. Ellis is
+challenging a sitting sheriff whose budget requests he votes on. Also note the jail is under a
+**federal consent decree** (county admitted constitutional violations; new jail opened Nov
+2022; only 242 compliant beds; 90% capacity cap) — the operational backdrop against which the
+"lower spending" platform will be tested.
+
+## ⚠ ANOTHER ATTRIBUTION TRAP, CAUGHT (reinforces Finding 3)
+
+The **October 14, 2025** physical altercation at the council was between then-President
+**David Thompson** and **Randy Gentry** — deputies separated them, a special prosecutor filed
+no charges, and Gentry later hired a bodyguard and did not seek re-election. **Ellis was not a
+participant**, though his ordinance triggered the underlying dispute. Two separate sources now
+place a dramatic incident adjacent to our subject that is *not about him*. Any automated
+pipeline that scored "documents mentioning Ellis" would have produced a defamatory result
+twice in one dataset. **Role-and-participant resolution is not optional.**
+
 ## OPEN QUESTIONS (what would resolve them)
 
 1. **Ellis's recorded vote on every sheriff/jail appropriation** → source PDF page images.
