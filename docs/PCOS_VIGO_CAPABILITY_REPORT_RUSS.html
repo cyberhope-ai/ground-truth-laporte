@@ -1,0 +1,188 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PrecognitionOS — Vigo County Capability Report</title>
+<style>
+:root{
+ --ink:#141a21;--mut:#5f6d7e;--line:#e3e8ee;--bg:#fff;--panel:#f7f9fc;
+ --deep:#11304d;--gold:#a8792c;--grn:#0a6b45;--red:#a32f26;--amb:#8a6210;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.68 "Iowan Old Style",Georgia,"Times New Roman",serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 32px 90px}
+header{background:linear-gradient(140deg,#0a2036,#17395c);color:#e9f1fa;margin:0 -32px 30px;padding:44px 46px 36px}
+.eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#d9a94a}
+h1{font-size:33px;line-height:1.16;margin:12px 0 8px;font-weight:600}
+header .sub{font-family:Arial,sans-serif;font-size:14.5px;opacity:.92;max-width:66ch}
+.conf{margin-top:18px;display:inline-block;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.12em;
+ text-transform:uppercase;background:rgba(217,169,74,.15);border:1px solid rgba(217,169,74,.55);color:#e8bd63;padding:6px 13px;border-radius:3px}
+h2{font-family:Arial,Helvetica,sans-serif;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);
+ margin:46px 0 14px;padding-bottom:7px;border-bottom:2px solid var(--deep)}
+h3{font-family:Arial,Helvetica,sans-serif;font-size:16px;margin:30px 0 8px;color:var(--deep);line-height:1.35}
+p{margin:12px 0} ul{margin:12px 0 12px 22px} li{margin:7px 0}
+.lead{font-size:18px;line-height:1.6;color:#22303f}
+blockquote{margin:14px 0;padding:12px 20px;border-left:3px solid var(--gold);background:var(--panel);
+ font-size:15.5px;line-height:1.6}
+blockquote cite{display:block;font-family:Arial,sans-serif;font-size:11.5px;font-style:normal;color:var(--mut);margin-top:8px}
+table{border-collapse:collapse;width:100%;font-family:Arial,Helvetica,sans-serif;font-size:13.5px;margin:16px 0}
+th{text-align:left;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--mut);padding:9px 11px;
+ border-bottom:2px solid var(--line);vertical-align:bottom}
+td{padding:11px;border-bottom:1px solid var(--line);vertical-align:top}
+.n{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.box{border:1px solid var(--line);border-left:4px solid var(--deep);border-radius:7px;padding:16px 20px;margin:18px 0;background:var(--panel)}
+.box.gold{border-left-color:var(--gold);background:#fdfaf2}
+.box.red{border-left-color:var(--red);background:#fdf5f4}
+.box.grn{border-left-color:var(--grn);background:#f2faf6}
+.box h4{font-family:Arial,sans-serif;font-size:13.5px;margin:0 0 8px}
+.good{color:var(--grn);font-weight:700}.bad{color:var(--red);font-weight:700}.warn{color:var(--amb);font-weight:700}
+.mut{color:var(--mut);font-size:13px;font-family:Arial,sans-serif;line-height:1.55}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:12px;margin:22px 0}
+.stat{border:1px solid var(--line);border-radius:8px;padding:14px;text-align:center;background:#fff}
+.stat b{display:block;font-family:Arial,sans-serif;font-size:25px;color:var(--deep);font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{font-family:Arial,sans-serif;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);display:block;margin-top:5px;line-height:1.35}
+.tag{display:inline-block;font-family:Arial,sans-serif;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;
+ padding:3px 8px;border-radius:3px;font-weight:700;vertical-align:middle}
+.t-ver{background:#dff2e8;color:#0a6b45}.t-pend{background:#fdf1d8;color:#8a6210}.t-open{background:#e8edf3;color:#41546a}
+.scroll{overflow-x:auto}
+@media (prefers-color-scheme:dark){
+ :root{--ink:#e7ecf3;--mut:#98a5b6;--line:#2b3542;--bg:#0f141a;--panel:#171e27;--deep:#82b6ea;--gold:#dcae56;--grn:#4fca8f;--red:#ea7b6f;--amb:#dbaa3c}
+ .stat{background:#151c25} tr:hover td{background:#141b23}
+ .box.gold{background:#1d1a11}.box.red{background:#1f1512}.box.grn{background:#0f1d16}
+ blockquote{background:#171e27}
+ .t-ver{background:#123324;color:#63d69f}.t-pend{background:#33290f;color:#e0b452}.t-open{background:#1e2733;color:#9db0c6}
+ header{background:linear-gradient(140deg,#081724,#112c47)}
+}
+:root[data-theme="dark"]{--ink:#e7ecf3;--mut:#98a5b6;--line:#2b3542;--bg:#0f141a;--panel:#171e27;--deep:#82b6ea;--gold:#dcae56;--grn:#4fca8f;--red:#ea7b6f;--amb:#dbaa3c}
+:root[data-theme="dark"] .stat{background:#151c25}
+:root[data-theme="light"]{--ink:#141a21;--mut:#5f6d7e;--line:#e3e8ee;--bg:#fff;--panel:#f7f9fc;--deep:#11304d;--gold:#a8792c;--grn:#0a6b45;--red:#a32f26}
+@media print{header{background:#0a2036!important;-webkit-print-color-adjust:exact}.wrap{padding:0 12px}.box,table{break-inside:avoid}}
+</style></head><body>
+<div class="wrap">
+<header>
+ <div class="eyebrow">CyberHopeAI · PrecognitionOS · Confidential</div>
+ <h1>What One Day of PrecognitionOS Found<br>in Vigo County</h1>
+ <div class="sub">A capability demonstration using the public record of a live sheriff's race — prepared for Russell Ferrell. Every finding below is drawn from primary government documents and published reporting, with its verification status stated plainly.</div>
+ <div class="conf">Confidential — for Russell Ferrell · not for distribution · 2026-08-26</div>
+</header>
+
+<p class="lead">You asked what PrecognitionOS could find in a county you have lived and worked in for more than twenty years. In a single working day, with no local sources and no inside knowledge, the system read <b>25 government documents that were technically public and effectively unreadable</b> — and found things that had not been reported.</p>
+
+<div class="stats">
+ <div class="stat"><b>25</b><span>County Council meetings ingested</span></div>
+ <div class="stat"><b>136</b><span>Scanned pages made searchable</span></div>
+ <div class="stat"><b>369k</b><span>Characters of public record recovered</span></div>
+ <div class="stat"><b>13</b><span>Months of continuous record</span></div>
+ <div class="stat"><b>300</b><span>Named mentions analyzed</span></div>
+ <div class="stat"><b>1 day</b><span>Elapsed time</span></div>
+</div>
+
+<div class="box gold">
+<h4>Why nobody had done this before</h4>
+<p style="margin-bottom:0">Vigo County publishes its Council minutes as <b>scanned photographs of paper</b>. Every one of the 25 files returned <b>zero</b> usable text to a computer — you cannot search them, and no search engine has ever indexed a word inside them. They are public in the legal sense and invisible in the practical sense. PrecognitionOS ran all 136 pages through optical character recognition at high resolution, recovered 369,000 characters, and indexed every statement and every roll-call vote. <b>That single step is the difference between a record that exists and a record anyone can actually hold an official to.</b></p>
+</div>
+
+<h2>The subject</h2>
+<p><b>Steve Ellis</b> — owner of Top Guns (Terre Haute, opened 2017), <b>2026 President of the Vigo County Council</b>, and the <b>Republican nominee for Vigo County Sheriff</b> in the November 2026 general election. His opponent is the incumbent, <b>Sheriff Derek Fell</b>.</p>
+<p class="mut">This is a demonstration of method, not an endorsement or an attack. Where the record supports Mr. Ellis, this report says so as clearly as where it raises questions. Nothing here has been put to him for response yet — and under our own rules, nothing may be published anywhere until it has been.</p>
+
+<h2>Finding 1 · The race is not what it looks like from the outside</h2>
+<p>Public coverage frames this as a challenger versus an incumbent. The primary record shows something more entangled: <b>both candidates for sheriff are named defendants in the same open federal case over jail conditions</b> — <i>Huerta v. Fell</i>, in the Southern District of Indiana.</p>
+<p>Mr. Ellis was substituted into that case on <b>February 3, 2025</b>, upon joining the County Council, and is named in the status report filed <b>August 3, 2026</b>. So is Sheriff Fell. So is every other council member and commissioner.</p>
+
+<div class="box red">
+<h4>This must be understood correctly — and most people will get it wrong</h4>
+<p style="margin-bottom:0">These are <b>official-capacity substitutions</b> under Rule 25(d) of the federal rules. When an injunction runs against county <i>offices</i>, whoever holds the office becomes a party automatically. <b>Neither man is personally accused of any misconduct.</b> Saying "the sheriff candidate is a defendant in a federal lawsuit" without that qualifier would be false in substance and legally reckless. We flag it here precisely because a careless system — or a careless opponent — would run exactly that headline.</p>
+</div>
+
+<p>The accurate reading is more interesting than the careless one: <b>Vigo County's entire governing body, including both men asking to run the sheriff's office, operates under a standing federal injunction and reports to a federal judge to this day.</b> Neither candidate can campaign on the jail as someone else's problem. And the case is <span class="warn">not closed</span> — the public database's termination date reflects only the individual damages claims; the class injunction remains in force, with docket entries running continuously through August 2026.</p>
+<p><span class="tag t-ver">Verified</span> docket entries and party list. <span class="tag t-pend">Pending</span> the exact date conditions were ruled unconstitutional — public sources give two different dates (September 25 vs. October 10, 2018), so we would pull the court's own record before printing either.</p>
+
+<h2>Finding 2 · A documented gap between what he says and how he voted</h2>
+<p>Mr. Ellis has been strikingly <b>consistent</b> in public over thirteen months on one theme: county spending is out of control. That consistency is itself a finding — he does not change this message between audiences.</p>
+<blockquote>"To represent the taxpayer as best as possible, we have to lower spending."<cite>WTWO, August 29, 2025</cite></blockquote>
+<blockquote>"Every time I turn around, the county is spending 50,000, 100,000, 500,000 dollars on different studies, plans, and drawings… I mean, we waste money like it's water. I've never seen anything like it!"<cite>WTWO, November 10, 2025</cite></blockquote>
+<p>The Council minutes for <b>October 14, 2025</b> record the final reading of the Vigo County 2026 budget — <b>$99,199,744</b>. The roll call reads:</p>
+<blockquote>"Randy Gentry made a motion to approve the Vigo County 2026 Budget as presented. <b>Steve Ellis seconded the motion.</b> … Randy Gentry — aye; Nancy Allsup — aye; Brenda Wilson — aye; <b>Steve Ellis — aye</b>; Vicki Weger — aye; Brad Anderson — aye; David Thompson — aye. <b>With a vote of 7-0, the motion passed.</b>"<cite>Vigo County Council Meeting Minutes, 10/14/2025, page 4 — recovered by OCR from a scanned PDF</cite></blockquote>
+<p>He did not merely vote for the budget he calls wasteful. <b>He seconded the motion to adopt it.</b></p>
+
+<div class="box grn">
+<h4>And here is why we would not print that as hypocrisy</h4>
+<p>The same set of minutes contains three legitimate defenses, and our system is built to go looking for them <i>before</i> rendering a verdict:</p>
+<ul style="margin-bottom:0">
+<li>The Annual Budget Committee had already <b>cut roughly $1 million</b> from department requests.</li>
+<li>The increases were attributed to <b>health-insurance costs and a county-wide pay-study adjustment</b> — largely non-discretionary.</li>
+<li>An Indiana county council is <b>statutorily required to adopt a budget</b>. Voting no is not a costless act of restraint.</li>
+</ul>
+</div>
+<p>So this is logged as <span class="tag t-pend">Disputed — pending response</span>, not as a contradiction. The correct handling is to place the quote and the vote side by side, ask him to reconcile them, and print his answer in full. <b>If he has a good answer, that is the finding.</b> A system that only produces accusations is not a fact-checker; it is opposition research wearing a lab coat, and readers can tell the difference.</p>
+
+<h2>Finding 3 · A specific number, publicly disputed, never resolved</h2>
+<p>At the same October 14 meeting, during debate over school funding, the minutes record:</p>
+<blockquote>"Steve Ellis said he had heard the School Corporation had approximately <b>$150 million</b>, and asked why the School Corporation would spend this money on new facilities instead of repairing and maintaining the old facilities."<cite>Council Minutes, 10/14/2025, page 13</cite></blockquote>
+<p>He was contradicted in the room, on the record, by the president of the teachers' association, who put the rainy-day fund at <b>$13 million</b> and the cash balance near <b>$35 million</b>. That exchange is a textbook checkable claim: a specific figure, publicly asserted, publicly disputed, and resolvable against state financial filings. <span class="tag t-open">Open</span> — this is exactly the kind of item the engine resolves against primary records rather than leaving as he-said/she-said.</p>
+
+<h2>Finding 4 · A tax that started three months before the Council intended</h2>
+<p>The county's 0.25% jail income tax was adopted <b>August 14, 2018</b>, by a 5–2 vote after a five-hour meeting. The Council understood it to take effect January 1, 2019. The state disagreed: under Indiana law an ordinance adopted before September 1 takes effect <b>October 1 of the same year</b>. The Department of Local Government Finance ruled that "Indiana law controls… and does not provide for exceptions."</p>
+<p><b>Taxpayers began paying three months early, and it surfaced only when a resident noticed a smaller paycheck.</b> <span class="tag t-ver">Verified</span> against the state's own addendum and contemporaneous reporting.</p>
+<div class="box">
+<h4>An open legal question we would not print without the court file</h4>
+<p style="margin-bottom:0">Indiana's statute authorizing that jail income tax requires a federal district court <b>order</b> as its predicate. The pre-2003 Vigo jail matter appears to have been resolved by a <b>private settlement agreement</b> in February 2002 — not a consent decree. If that distinction holds, it raises a real question about the legal basis for the tax. <b>We would pull the actual docket before saying a word publicly</b> — this is the kind of claim that must be airtight or unmade.</p>
+</div>
+
+<h2>Finding 5 · What the record does <i>not</i> support</h2>
+<p>Equally important, and rarer in political research: several plausible-sounding storylines collapsed under checking.</p>
+<table>
+<tr><th>Storyline</th><th>What the record actually shows</th></tr>
+<tr><td>"The jail was a cost overrun"</td><td><b>No.</b> Hard construction $56,276,080 inside a $67,046,529 project budget; <b>bids came in under estimate</b>. No overrun dispute documented.</td></tr>
+<tr><td>"Voters were denied a referendum"</td><td><b>There was never a jail referendum</b> — verified three independent ways. Income-tax ordinances are not subject to the referendum machinery that applies to property-tax-financed projects.</td></tr>
+<tr><td>"Voters punished the council over the jail tax"</td><td><b>Not supported.</b> Two yes-voters lost, one no-voter lost, three yes-voters won — and the yes-voting council president was the <b>top countywide vote-getter</b> in 2020.</td></tr>
+<tr><td>Ellis's positions shift by audience</td><td><b>Largely no.</b> His fiscal message is consistent across TV, print, and questionnaires for 13 months. His <i>tone</i> escalates on broadcast; the substance does not change. That is normal political behavior, and we label it as such.</td></tr>
+</table>
+<p class="mut">A verification system earns its credibility on findings like these — the ones that take a good story away.</p>
+
+<h2>What the machine caught that a person would have missed</h2>
+<p>These are the results we would most want you to look at, because they are the difference between an AI that finds things and an AI that can be trusted with someone's reputation.</p>
+
+<div class="box red">
+<h4>Two near-misses that would each have been defamatory</h4>
+<p><b>1.</b> The November 2025 minutes contain a councilman's written statement that he feared for his safety, citing "the threats that were made against me after the last meeting <b>by the Council president</b>." Mr. Ellis's name appears four words away — he read the statement aloud. <b>But Ellis was not the Council president then.</b> A different man held the office; Ellis became president on January 6, 2026. The system verified who held the role <i>on the date of the document</i> across five separate meetings before attaching anything to anyone.</p>
+<p style="margin-bottom:0"><b>2.</b> A physical altercation at an October 2025 council meeting — deputies separating two officials, a special prosecutor, no charges — also sits adjacent to Ellis in the record. <b>He was not a participant.</b> His ordinance triggered the underlying dispute, and that is all.</p>
+</div>
+<p>Any ordinary AI tool scoring "documents that mention Steve Ellis" would have produced a false and damaging result <b>twice in the same dataset</b>. Resolving <i>who held which office on which date</i>, and <i>who actually participated</i>, is a required stage in our design — not an optional refinement.</p>
+
+<div class="box">
+<h4>A zero that meant "wrong database," not "clean record"</h4>
+<p style="margin-bottom:0">While checking a separate company's public safety record, the federal motor-carrier database returned <b>zero crashes in 24 months</b> — during a period that contained a documented fatal collision. The reason: that carrier operates <b>intrastate only</b>, largely outside the federal reporting regime. The number was accurate and the conclusion would have been completely false. Our engine now treats an empty result from an out-of-scope database as <b>"not covered,"</b> never as <b>"none."</b> An automated system without that rule publishes a clean bill of health for a company that never filed with the agency in the first place.</p>
+</div>
+
+<div class="box gold">
+<h4>The AI that lied about numbers — caught by cross-checking</h4>
+<p style="margin-bottom:0">During research, the automated page-reader produced <b>three different budget figures and three different bed counts from the same newspaper article</b> on repeated reads. It fabricated precise-looking digits. Every number in this report was therefore re-derived by direct parsing of the source document, not by asking an AI to read and summarize. <b>This is why the architecture seals the original document first and extracts figures mechanically.</b> It is also the single best reason to distrust any "AI fact-checker" that cannot show you the page it read.</p>
+</div>
+
+<h2>How this was done</h2>
+<table>
+<tr><th style="width:120px">Stage</th><th>What happened here</th></tr>
+<tr><td><b>Acquire</b></td><td>The county's document portal refuses ordinary automated access; item links redirect to the real files. The system negotiated both and retrieved all 25 minutes.</td></tr>
+<tr><td><b>Custody</b></td><td>Every file fingerprinted (SHA-256), with its source URL and capture time recorded <b>before analysis</b>. If any of these documents changes or disappears, we can prove what it said today.</td></tr>
+<tr><td><b>Render</b></td><td>136 scanned pages OCR'd at 300 dpi with page-level markers, so every quote traces to a document <i>and a page</i>.</td></tr>
+<tr><td><b>Resolve</b></td><td>Roles resolved by date; participants distinguished from bystanders. (See the two near-misses above.)</td></tr>
+<tr><td><b>Cross-check</b></td><td>Findings from the government record and from independent news coverage were compared. On the June 2026 corrections-funding crisis, both matched exactly — no contradiction.</td></tr>
+<tr><td><b>Adversary</b></td><td>Before any verdict, the system searches for the strongest case <i>against</i> its own finding. That is what turned Finding 2 from an accusation into a fair question.</td></tr>
+</table>
+
+<h2>Standards this report holds itself to</h2>
+<ul>
+<li><b>Nothing here has been put to Mr. Ellis.</b> Under our own rules, no finding about a person may be published until they have been offered a real opportunity to respond, with a deadline. That step has not happened, which is one reason this document is confidential.</li>
+<li><b>Verified, pending, and open are labeled</b> — never blurred together.</li>
+<li><b>His trade is treated as a neutral fact.</b> A candidate who owns a firearms business is handled exactly as one who owns a pharmacy or a towing company.</li>
+<li><b>Symmetry.</b> If we publish on a Republican candidate, the same standard gets applied to his Democratic opponent — and in fact the record already shows a point in Sheriff Fell's favor: he was <b>dismissed from a separate 2026 jail lawsuit</b> for lack of personal involvement, and that belongs in any fair account.</li>
+<li><b>Source-interest check.</b> Standard practice requires us to test whether whoever brings us a story has a stake in it. We ran that check on the origin of this one and <b>found no connection</b> — no vote, no testimony, no dispute, no dealings between the subject and the source. We mention it because we would rather tell you we checked than have you learn later that we had.</li>
+</ul>
+
+<h2>What this means</h2>
+<p>Everything above came from records that were already public. No confidential sources, no leaks, no inside knowledge of Vigo County — the system simply <b>read what nobody had the time or tooling to read</b>, remembered all of it at once, and refused to assert anything it could not trace to a page.</p>
+<p>That is the product. Not an opinion machine, and not a faster way to generate accusations, but an engine that can say: <i>here is the claim, here is the document it fails or survives, here is the page, and here is the proof that the document said this on the day we read it.</i></p>
+<p>The same engine points at anything with a public record — a county council, a school board, a company's filings against its earnings calls, a candidate's speeches against their votes. <b>Vigo County was chosen because you know it well enough to judge whether the output is real.</b></p>
+
+<p class="mut" style="margin-top:34px;padding-top:16px;border-top:1px solid var(--line)">
+Prepared by CyberHopeAI · PrecognitionOS · August 26, 2026. Sources: Vigo County Council meeting minutes (June 2025–June 2026, obtained from the county document center and OCR-processed); Terre Haute Tribune-Star; WTWO/WAWV MyWabashValley; WTHI-TV; WIBQ; federal court dockets (S.D. Indiana); Indiana Department of Local Government Finance; Indiana campaign finance and court records. Findings are current as of the date above and several remain subject to verification as marked. <b>This document is confidential, is not a published article, and no finding within it has been put to the subject for response.</b></p>
+</div></body></html>
