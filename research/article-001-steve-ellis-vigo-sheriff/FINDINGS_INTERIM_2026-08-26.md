@@ -232,9 +232,54 @@ advanced-life-support *non-transport* agency, noting parts of Nevins Township ar
 anything, that is a vote in favor of expanded emergency medical capability.
 
 **Status: NO EVIDENCE FOUND of any Ellis ↔ Trans-Care/AMS/Ferrell interaction in the Vigo
-County Council record.** A broader public-records search (county/city EMS contracts, FMCSA
-crash data, Indiana EMS licensing, courts, campaign finance) is running separately; this
-finding covers the council record only.
+County Council record.**
+
+### Wider public-records sweep — same answer, with two disclosure items
+
+**Identity resolved:** AMS = *Ambulance Management Services Ltd*, DBA **TransCare Ambulance**,
+1299 E Voorhees St, Terre Haute; USDOT 2158708. Russell G. Ferrell confirmed as CEO in
+independent 2015 and 2025 sources.
+
+**No documented connection found** — no Ellis statement on ambulances/EMS in any outlet
+(2015–Aug 2026), no council vote or testimony, no lawsuit, no donation between them.
+Structurally: the county contracts Trans-Care for ambulance service **through the
+Commissioners, not the Council**, which is consistent with the zero mentions in our minutes.
+
+**⚠ DISCLOSURE ITEM 1 — our source is a significant Republican donor.** Indiana campaign
+finance shows Russell Ferrell personally at **~$44,097 across 17 contributions** and Ambulance
+Management Services at **~$39,189 across 27** — *every one to Republican candidates or
+committees* (Crouch, Braun, House/Senate GOP committees, Heaton, Ford, Goode). Only one
+county-level item appears ($250, Ryan Cummins, 2008). **Note the direction: Ellis is also a
+Republican, so this is not a partisan grudge** — if anything it cuts against a
+political-motive theory. **But it is material and must be disclosed** if we publish: our
+tipster is a politically active donor in the county whose officials we are examining.
+*Gap:* Indiana county-office committees file with the **county clerk**, not the state — a
+county-level donation to Ellis or Fell would not appear in the state database. Check the Vigo
+County Clerk before asserting a clean negative.
+
+**⚠ DISCLOSURE ITEM 2 — the client conflict is now concrete.** The sweep surfaced a
+**fatal crash: April 15, 2025**, a Trans-Care ambulance responding to a call collided with two
+juveniles on an e-bike (S 13th & Wheeler, Terre Haute); one girl died, one was airlifted.
+Police reported the bicyclists went through a stop sign; ambulance speed 37.5–40 mph; driver
+tested, dash-cam provided; **no citations or charges documented**. Separately, a 4/12/2024
+Parke County crash in which **Trans-Care was the struck party, not at fault**.
+→ **AMS/Trans-Care is a CyberhopeAI client (eDNA).** We hold sealed incident data on their
+fleet obtained as their vendor. **None of that may inform, appear in, or shape any published
+work.** The above is public-source only. **Standing rule: this project does not report on
+Trans-Care/AMS.** If their safety record ever becomes genuinely newsworthy, it must be handed
+to an unconflicted outlet — we are their vendor and cannot be their press.
+
+**⚠ ENGINE NOTE — a zero that means "wrong instrument," not "clean."** FMCSA lists Trans-Care
+with **0 crashes / 0 inspections in 24 months** — while a documented fatality occurred in that
+window. The carrier is **intrastate-only**, largely outside FMCSA's reporting regime. An
+automated pipeline that ingested the federal number would have published a false safety
+finding. **The engine must record each source's JURISDICTIONAL SCOPE, and treat a null from an
+out-of-scope database as "not covered," never as "none."** This belongs in the verdict scale
+as a distinct state: NOT COVERED ≠ UNSUPPORTED.
+
+**Remaining holes (both reachable by hand):** the Facebook page's post history is login-walled
+and unread — it is the decisive source for whether Ellis has ever raised ambulance/EMS safety;
+and county-clerk campaign finance is unexamined.
 
 **Editorial standard set here:** if any connection does surface, it goes in the article as a
 disclosure of how the story came to us — not buried. If nothing surfaces, we still disclose

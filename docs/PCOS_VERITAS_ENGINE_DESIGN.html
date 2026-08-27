@@ -1,0 +1,197 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PCOS Veritas Engine — System Design &amp; Build Plan</title>
+<style>
+:root{
+  --ink:#12181f; --mut:#5d6b7d; --line:#e2e7ee; --bg:#fff;
+  --deep:#0d2137; --gold:#b8873a; --grn:#0a6e42; --red:#a8342a; --amb:#8a6410;
+  --panel:#f6f8fb;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:15.5px/1.65 "Iowan Old Style",Georgia,"Times New Roman",serif}
+.wrap{max-width:940px;margin:0 auto;padding:0 30px 80px}
+header{background:linear-gradient(135deg,#0d2137,#1b3c5e);color:#eaf1fa;margin:0 -30px 34px;padding:40px 44px 34px}
+.brand{font-family:Arial,Helvetica,sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:31px;margin:10px 0 6px;line-height:1.2;font-weight:600}
+header .sub{font-size:14.5px;opacity:.9;font-family:Arial,sans-serif;max-width:70ch}
+.stamp{display:inline-block;margin-top:14px;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.1em;
+ text-transform:uppercase;background:rgba(244,197,66,.16);border:1px solid rgba(244,197,66,.5);
+ color:#f4c542;padding:5px 12px;border-radius:20px}
+h2{font-family:Arial,Helvetica,sans-serif;font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;
+ color:var(--deep);margin:42px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--deep)}
+h3{font-family:Arial,Helvetica,sans-serif;font-size:15px;margin:26px 0 6px;color:var(--deep)}
+p{margin:11px 0} ul{margin:10px 0 10px 20px} li{margin:6px 0}
+.lead{font-size:17px;line-height:1.6}
+table{border-collapse:collapse;width:100%;font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:14px 0}
+th{text-align:left;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--mut);
+ padding:8px 10px;border-bottom:2px solid var(--line);vertical-align:bottom}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:hover td{background:#fafbfd}
+code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:12.5px;background:#eef2f7;padding:1px 5px;border-radius:3px}
+.box{border:1px solid var(--line);border-left:4px solid var(--deep);border-radius:7px;padding:15px 19px;margin:16px 0;background:var(--panel)}
+.box.gold{border-left-color:var(--gold);background:#fdfaf3}
+.box.red{border-left-color:var(--red);background:#fdf5f4}
+.box.grn{border-left-color:var(--grn);background:#f3faf6}
+.box h4{font-family:Arial,sans-serif;font-size:13px;margin:0 0 7px;letter-spacing:.03em}
+.good{color:var(--grn);font-weight:700}.bad{color:var(--red);font-weight:700}.warn{color:var(--amb);font-weight:700}
+.mut{color:var(--mut);font-size:12.5px;font-family:Arial,sans-serif}
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:18px 0}
+.stage{border:1px solid var(--line);border-radius:8px;padding:12px 13px;background:#fff}
+.stage .n{font-family:Arial,sans-serif;font-size:10px;letter-spacing:.1em;color:var(--gold);font-weight:700}
+.stage b{display:block;font-family:Arial,sans-serif;font-size:13.5px;margin:3px 0 5px}
+.stage span{font-family:Arial,sans-serif;font-size:11.5px;color:var(--mut);line-height:1.45}
+.layers{margin:16px 0}
+.layer{border:1px solid var(--line);border-radius:8px;margin:8px 0;padding:13px 17px;background:#fff}
+.layer .tag{font-family:Arial,sans-serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#fff;
+ background:var(--deep);padding:3px 8px;border-radius:3px;display:inline-block;margin-bottom:7px}
+.layer.q .tag{background:var(--gold)}
+.scroll{overflow-x:auto}
+@media (prefers-color-scheme:dark){
+  :root{--ink:#e6ebf2;--mut:#96a3b5;--line:#2a3441;--bg:#0f141b;--panel:#161d26;--deep:#7fb3e8;--gold:#e0b055;--grn:#4ec98d;--red:#e8776b;--amb:#d9a838}
+  body{background:var(--bg)} tr:hover td{background:#131a23}
+  code{background:#1c242e} h2{border-bottom-color:#2a3441}
+  header{background:linear-gradient(135deg,#0a1520,#14293f)}
+  .stage,.layer{background:#141b24}
+  .box.gold{background:#1d1a12}.box.red{background:#1f1513}.box.grn{background:#0f1d17}
+}
+:root[data-theme="dark"]{--ink:#e6ebf2;--mut:#96a3b5;--line:#2a3441;--bg:#0f141b;--panel:#161d26;--deep:#7fb3e8;--gold:#e0b055;--grn:#4ec98d;--red:#e8776b;--amb:#d9a838}
+:root[data-theme="dark"] body{background:#0f141b}
+:root[data-theme="dark"] .stage,:root[data-theme="dark"] .layer{background:#141b24}
+:root[data-theme="light"]{--ink:#12181f;--mut:#5d6b7d;--line:#e2e7ee;--bg:#fff;--panel:#f6f8fb;--deep:#0d2137;--gold:#b8873a;--grn:#0a6e42;--red:#a8342a}
+@media print{header{background:#0d2137!important;-webkit-print-color-adjust:exact}.wrap{padding:0 10px}}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="brand">CyberHopeAI · PrecognitionOS · Internal — for CEO approval</div>
+  <h1>PCOS Veritas Engine</h1>
+  <div class="sub">A verification engine that produces <b>custody-sealed, source-traceable verdicts</b> — for politics, business, finance, and world events. System design, open-source module selection, PCOS/Q integration, and a staged build plan.</div>
+  <div class="stamp">Draft v1 · 2026-08-26 · awaiting approval</div>
+</header>
+
+<p class="lead">We already proved the hard part. In one day, the Vigo County pilot pulled 25 scanned government documents nobody had read, OCR'd 136 pages, and found a county council president who seconded a $99.2M budget he publicly calls wasteful — with a page-level citation. <b>The engine is the industrialization of what that pilot did by hand.</b></p>
+
+<div class="box gold">
+<h4>The thesis — what makes this different from every fact-checker in the research</h4>
+<p>ClaimBuster scores claims. SAFE decomposes and searches. FactReasoner assigns probabilities. <b>All of them answer "is this statement true?" — and all of them forget everything the moment they finish.</b></p>
+<p style="margin-bottom:0">PCOS answers two questions nobody else does: <b>"Is this person saying the same thing in every room?"</b> (congruence across channels and time) and <b>"Can you still prove it a year from now?"</b> (custody-sealed evidence). Truth without provenance is just a confident opinion. Our seal chain is the moat — the modules below are commodities we assemble around it.</p>
+</div>
+
+<h2>1 · What the Vigo County pilot proved (requirements, not theory)</h2>
+<p>Every stage in this design exists because the pilot hit the problem in the real world — not because a paper recommended it.</p>
+<table>
+<tr><th>What happened</th><th>Requirement it creates</th></tr>
+<tr><td>All 25 county minutes were <b>scanned images</b>; text extraction returned 0 usable characters. OCR at 300dpi yielded 369,000 characters.</td><td><b>OCR is core infrastructure, not a fallback.</b> Public records are routinely public-but-unreadable — that gap is precisely why nobody checks them.</td></tr>
+<tr><td>A statement about "threats by the Council president" sat 4 words from our subject's name. <b>He wasn't president then</b> — a different man was.</td><td><b>Role-by-date resolution.</b> The engine must know who held which office on the document's date before attaching anything to anyone.</td></tr>
+<tr><td>A second dramatic incident (a physical altercation) also sat adjacent to the subject and was <b>not about him</b>.</td><td><b>Participant resolution.</b> Naive "documents mentioning X" scoring would have produced a defamatory result twice in one dataset.</td></tr>
+<tr><td>A grep for <code>EMS</code> returned 13 hits — <b>every one</b> a false positive inside <i>items</i>, <i>systems</i>, <i>problems</i>.</td><td><b>Entity resolution with word boundaries.</b> Keyword frequency is not evidence.</td></tr>
+<tr><td>The budget contradiction had <b>three legitimate defenses</b> sitting in the same minutes (committee cut $1M; increases were insurance/pay-study driven; adopting a budget is statutorily required).</td><td><b>A mitigation-search stage.</b> The engine must actively hunt for the exculpatory context before it renders a verdict — or it manufactures scandals.</td></tr>
+<tr><td>The county document center 403s ordinary fetchers; item URLs 302-redirect to the real PDF.</td><td><b>A resilient acquisition layer</b> that records both the item URL and the resolved file URL.</td></tr>
+</table>
+
+<h2>2 · The pipeline</h2>
+<div class="pipe">
+<div class="stage"><div class="n">01</div><b>ACQUIRE</b><span>Scrapers, MCP feeds, APIs, document centers, broadcast captions, filings</span></div>
+<div class="stage"><div class="n">02</div><b>CUSTODY</b><span>sha256 + capture time + archive copy → <b>sealed before analysis</b></span></div>
+<div class="stage"><div class="n">03</div><b>RENDER</b><span>OCR / ASR / vision → page- and timestamp-anchored text</span></div>
+<div class="stage"><div class="n">04</div><b>RESOLVE</b><span>Entities, roles-by-date, participants, disambiguation</span></div>
+<div class="stage"><div class="n">05</div><b>EXTRACT</b><span>Atomic claims + check-worthiness scoring</span></div>
+<div class="stage"><div class="n">06</div><b>RETRIEVE</b><span>Evidence hunt across live web + primary records</span></div>
+<div class="stage"><div class="n">07</div><b>REASON</b><span>Evidence graph + probabilistic verdict with confidence</span></div>
+<div class="stage"><div class="n">08</div><b>CONGRUENCE</b><span>Same claim across channels &amp; time → the PCOS differentiator</span></div>
+<div class="stage"><div class="n">09</div><b>ADVERSARY</b><span>Mitigation search + refutation pass before publish</span></div>
+<div class="stage"><div class="n">10</div><b>SEAL</b><span>Verdict + full evidence chain sealed to the Q chain</span></div>
+<div class="stage"><div class="n">11</div><b>REPLY</b><span>Right-of-reply tracked as a required stage</span></div>
+<div class="stage"><div class="n">12</div><b>PUBLISH</b><span>Article + per-claim evidence view the reader can audit</span></div>
+</div>
+
+<div class="box">
+<h4>Two stages exist in no published framework — and they are the product</h4>
+<p><b>Stage 08 · Congruence.</b> Every academic system verifies one claim against the world. Ours verifies a <i>person</i> against <i>themselves</i>, across channels and across time. The verdict scale is deliberately fair: <span class="good">CONGRUENT</span> · <span class="warn">EMPHASIS SHIFT</span> (different priorities to different audiences — normal politics, not dishonesty) · INCOMPLETE · <span class="bad">INCONGRUENT</span> · <span class="bad">CONTRADICTED BY RECORD</span> (the highest-value verdict — requires a document-and-page vote citation) · <span class="good">EVOLVED</span> (changed and said so — a virtue, and the engine must be able to tell it apart from a flip-flop).</p>
+<p style="margin-bottom:0"><b>Stage 09 · Adversary.</b> Before any verdict publishes, a dedicated pass hunts for the strongest case <i>against</i> our own finding. In the pilot this stage is what turned "hypocrite" into "DISPUTED — pending response," which is both fairer and more defensible. <b>An engine that only finds fault is opposition research wearing a lab coat, and readers can smell it.</b></p>
+</div>
+
+<h2>3 · Architecture — layers and the modules that fill them</h2>
+
+<div class="layers">
+<div class="layer"><span class="tag">Layer 1 · Acquisition</span>
+<p style="margin:0"><b>Apify</b> actors for social/web scraping at scale · <b>MCP servers</b> (glama.ai registry) as live tool-feeds into the reasoning loop · <b>SearXNG</b> (self-hosted, 70+ engines, no API keys, no identity leakage) as the default search substrate · direct government portal fetchers with redirect-following and browser-realistic headers · RSS/broadcast-caption ingestion for real-time claim monitoring.</p></div>
+
+<div class="layer"><span class="tag">Layer 2 · Custody &amp; Seal <span style="opacity:.8">— ours</span></span>
+<p style="margin:0">Adapted directly from the <b>eDNA custody module</b> already running in production: sha256 at capture, blob storage with SAS-scoped retrieval, capture timestamps, and append-only registration. Extended here with archive.today/Wayback snapshotting. <b>Nothing enters analysis unsealed; nothing is destroyable from a web endpoint.</b></p></div>
+
+<div class="layer"><span class="tag">Layer 3 · Render</span>
+<p style="margin:0"><b>Tesseract 5</b> (proven in the pilot, 300dpi grayscale, page-marked output) with <b>PaddleOCR</b> or <b>Surya</b> evaluated for tables and poor scans · <b>faster-whisper</b> for speech (already in our stack from the per-speaker Zoom work) · vision models for chart/image claims. Output is always anchored: <i>document + page</i> or <i>media + timestamp</i>.</p></div>
+
+<div class="layer"><span class="tag">Layer 4 · Resolve <span style="opacity:.8">— ours, and the hardest part</span></span>
+<p style="margin:0">Entity resolution with strict word boundaries and a <b>two-identifier match rule</b>. A <b>temporal role registry</b>: who held which office, on which date, per jurisdiction — built from the same minutes we ingest. This is the layer that prevents defamation, and no off-the-shelf component does it.</p></div>
+
+<div class="layer"><span class="tag">Layer 5 · Extract</span>
+<p style="margin:0"><b>ClaimBuster claim-spotter</b> methodology for check-worthiness scoring <span class="bad">(license caution — see §6)</span> · <b>SAFE</b>-style decomposition into self-contained atomic facts (disambiguate pronouns → atomize) · <b>FActScore</b>-style atomic scoring for long-form output.</p></div>
+
+<div class="layer"><span class="tag">Layer 6 · Retrieve</span>
+<p style="margin:0"><b>Perplexica/Vane</b> (MIT, self-hostable, SearXNG-bundled, model-agnostic) as the research planner and source engine — the closest fit to what we need and permissively licensed · <b>OpenFactCheck</b> as the pluggable retriever/verifier harness (YAML-configured, treats solvers as plugins) · BM25 + vector hybrid over our own sealed corpus, so past evidence compounds instead of being re-fetched.</p></div>
+
+<div class="layer"><span class="tag">Layer 7 · Reason</span>
+<p style="margin:0"><b>Evidence graph</b>: claims, evidence, and sources as nodes; supports/contradicts as typed edges; source nodes carry credibility attributes. <b>FactReasoner</b>-style probabilistic aggregation (Markov network over atoms and contexts, NLI-derived entailment/contradiction edges) so conflicting evidence produces a <i>calibrated confidence</i>, not a coin flip. Graph paths are the explanation shown to the reader.</p></div>
+
+<div class="layer q"><span class="tag">Layer 8 · Q Integration <span style="opacity:.9">— the moat</span></span>
+<p style="margin:0"><b>QSurface / seal chain</b> — every verdict sealed with its full evidence chain, append-only, independently verifiable · <b>QBRAIN</b> (<code>fleet_brain.py</code>) — cross-agent recall so a claim checked once is known fleet-wide forever · <b>Sanctuary</b> ed25519 region keys — every seal is attributable to an authenticated agent · <b>QDNS</b> — inter-agent routing for distributed verification jobs · <b>VerityQ</b> — the legal-grade presentation layer already built (sealed <code>ledger_figures</code>, case timelines, per-figure provenance) becomes the courtroom-ready front end.</p></div>
+
+<div class="layer"><span class="tag">Layer 9 · Models</span>
+<p style="margin:0"><b>Qwen</b> family (Apache-2.0 on most weights, strong multilingual, agentic tool-use, VL variants for multimodal claims) as the primary local/self-hosted tier · <b>Claude</b> for the high-stakes reasoning stages (decomposition, adversary pass, final synthesis) where judgment quality dominates cost · small fast models (DistilBERT-class) for real-time check-worthiness triage, exactly as ClaimBuster's production API does.</p></div>
+</div>
+
+<h2>4 · Where PCOS wins — the honest competitive read</h2>
+<table>
+<tr><th>Capability</th><th>Academic / OSS state of the art</th><th>PCOS Veritas</th></tr>
+<tr><td>Claim spotting</td><td>Mature (ClaimBuster, ~0.96 precision @ top-100)</td><td>Adopt, don't reinvent</td></tr>
+<tr><td>Decompose &amp; verify</td><td>Mature (SAFE, FActScore, FacTool)</td><td>Adopt, don't reinvent</td></tr>
+<tr><td>Probabilistic aggregation</td><td>Emerging (FactReasoner)</td><td>Adopt the pattern</td></tr>
+<tr><td><b>Evidence custody / provenance</b></td><td class="bad">Essentially absent — sources are URLs that rot</td><td class="good">Sealed at capture; the core asset</td></tr>
+<tr><td><b>Cross-channel congruence</b></td><td class="bad">Not addressed by any framework surveyed</td><td class="good">The product</td></tr>
+<tr><td><b>Role/participant resolution</b></td><td class="bad">Assumed away in benchmarks</td><td class="good">Mandatory stage (pilot proved why)</td></tr>
+<tr><td><b>Fairness / mitigation search</b></td><td class="bad">Not modeled</td><td class="good">Stage 09, blocks publication</td></tr>
+<tr><td><b>Institutional memory</b></td><td class="bad">Stateless per run</td><td class="good">QBRAIN — checked once, known forever</td></tr>
+</table>
+<p class="mut">Read plainly: the truth-scoring problem is largely solved and commoditized. <b>The trust problem is not.</b> That is where we build.</p>
+
+<h2>5 · Build plan</h2>
+<table>
+<tr><th style="width:78px">Phase</th><th>Deliverable</th><th>Core work</th></tr>
+<tr><td><b>P0</b><br><span class="mut">2–3 wks</span></td><td><b>Harden the pilot into a pipeline</b></td><td>Extract the Vigo work into reusable services: acquisition + custody + OCR + the <b>roll-call vote parser</b> (turns any Indiana county's minutes into a queryable vote database — the highest-leverage artifact we found). Ship the Ellis article as proof.</td></tr>
+<tr><td><b>P1</b><br><span class="mut">3–4 wks</span></td><td><b>Claims ledger + verdict store</b></td><td>Schema for claim / evidence / verdict / seal. Wire OpenFactCheck as the retriever-verifier harness. Seal verdicts to the Q chain. Congruence matrix as a first-class data structure.</td></tr>
+<tr><td><b>P2</b><br><span class="mut">4–6 wks</span></td><td><b>Live data plane</b></td><td>MCP server integration (glama.ai registry) + Apify actors + self-hosted SearXNG/Perplexica. Real-time claim monitoring from broadcast captions and social feeds.</td></tr>
+<tr><td><b>P3</b><br><span class="mut">4–6 wks</span></td><td><b>Evidence graph + probabilistic reasoning</b></td><td>Graph store, NLI edges, FactReasoner-style calibrated confidence, explainable verdict paths.</td></tr>
+<tr><td><b>P4</b><br><span class="mut">ongoing</span></td><td><b>Vertical expansion</b></td><td>Same engine, new corpora: <b>business</b> (SEC/EDGAR, earnings calls vs. filings), <b>finance</b> (disclosure congruence), <b>world events</b> (multilingual via Qwen). Each vertical is a source adapter, not a new engine.</td></tr>
+</table>
+
+<h2>6 · Risks I need you to see before approving</h2>
+
+<div class="box red">
+<h4>Licensing — two real commercial constraints</h4>
+<p><b>ClaimBuster's claim-spotter is GPL-3.0.</b> Linking it into a proprietary product creates copyleft obligations that could force disclosure of our source. <b>Recommendation: reimplement the methodology</b> (it is published research — check-worthiness scoring on linguistic features) rather than importing the GPL code, or isolate it behind a network boundary. Counsel should confirm before a line of it is used.</p>
+<p style="margin-bottom:0"><b>Llama 3's license is not open source</b> — it carries a large-user threshold and naming/attribution conditions. <b>Recommendation: default to Qwen (Apache-2.0 on most weights) and Claude</b>, and avoid building anything load-bearing on Llama licensing. Verify the specific weight's license at adoption time; they differ model to model.</p>
+</div>
+
+<div class="box red">
+<h4>Legal exposure is the real risk, not technical failure</h4>
+<p style="margin-bottom:0">We are publishing findings about named living people. The pilot produced <b>two near-miss defamatory attributions in a single dataset</b>. Mandatory before any public launch: media-liability insurance, a standing relationship with a media-law attorney, a written pre-publication review gate, and the right-of-reply stage enforced <b>in code</b> — a verdict without a logged reply attempt should be structurally unpublishable.</p>
+</div>
+
+<div class="box gold">
+<h4>The source research needs fact-checking — and that is the lesson</h4>
+<p style="margin-bottom:0">The Gemini report contains an <b>internal contradiction</b>: one pass describes DeepMind's SAFE in technical detail; a later pass declares "there is no evidence of a tool or research project with this name from Google DeepMind." (SAFE is real — the DeepMind/Stanford long-form factuality work.) The report also asserts a "Vane (formerly Perplexica), rebranded March 2026" and cites Qwen versions beyond my verified knowledge — <b>all flagged as unverified pending a primary-source check of each repository and license.</b> A research document about automated fact-checking that fails its own standard is the single best argument for building this engine. <b>Every module in §3 gets verified at its source repo before adoption.</b></p>
+</div>
+
+<div class="box">
+<h4>Two things to decide before P0</h4>
+<p style="margin:0"><b>1 · Neutrality posture.</b> A verification engine's only asset is being trusted by people who dislike its findings. If our first published subject is a Republican sheriff candidate, the second should be a Democrat — and the standard applied must be visibly identical. Symmetry is a product requirement, not an ethic we bolt on later.</p>
+<p style="margin:8px 0 0"><b>2 · Source disclosure policy.</b> The Ellis story came from a tip. We should adopt now: <b>always disclose that a story originated from a tip, and always state whether the tipster has an interest we checked.</b> Doing this from article one costs nothing; retrofitting it after someone else discovers it costs everything.</p>
+</div>
+
+<h2>7 · Recommendation</h2>
+<p><b>Approve P0 and P1.</b> They are cheap, they are built almost entirely from work already done, and they produce two things of immediate value: a publishable article that demonstrates the method, and a roll-call vote parser that makes every county government in Indiana queryable — which is a defensible data asset regardless of where the news product goes.</p>
+<p>Hold P2–P4 until P1 ships, for a reason worth stating plainly: <b>the live-data plane is the fun part and the least differentiating.</b> Scrapers and MCP feeds are commodities. The custody chain, the congruence matrix, and the resolution layer are what nobody else has — and they are what makes a verdict survive contact with a lawyer.</p>
+<p class="mut" style="margin-top:26px">Prepared by atlas3-claude · 2026-08-26 · Repo: <code>cyberhope-ai/pcos-verified-community-news</code> · Pilot evidence: <code>research/article-001-steve-ellis-vigo-sheriff/</code> · Source research: <i>Political fact-checking software.docx</i> (Gemini), claims independently flagged where unverified.</p>
+</div></body></html>
