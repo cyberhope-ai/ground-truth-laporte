@@ -1,5 +1,82 @@
 [
  {
+  "file": "fb_1040473558903112.mp3",
+  "text": "fb_1040473558903112.txt",
+  "segments": 32,
+  "duration_s": 223.8,
+  "sha256": "55e164a29bc3075c6b6150ad7f24d54a67998ec6257eb021fefb4abc36de7ad7"
+ },
+ {
+  "file": "fb_1052990794134794.mp3",
+  "text": "fb_1052990794134794.txt",
+  "segments": 49,
+  "duration_s": 228.6,
+  "sha256": "700eb90768fdeb7819c25e8631113772a3bb46eef0a588b8468506feefedc075"
+ },
+ {
+  "file": "fb_1060276726620881.mp3",
+  "text": "fb_1060276726620881.txt",
+  "segments": 25,
+  "duration_s": 103.2,
+  "sha256": "0f989491e7e128d027b8e6af4d57378b8649f6a3b9af17f817486ce7936a581c"
+ },
+ {
+  "file": "fb_1231996169990900.mp3",
+  "text": "fb_1231996169990900.txt",
+  "segments": 97,
+  "duration_s": 239.7,
+  "sha256": "90a23f56a33ad5a813bc87df00001fc391a84380d9115a00bb685372f1110a1f"
+ },
+ {
+  "file": "fb_1322256463288467.mp3",
+  "text": "fb_1322256463288467.txt",
+  "segments": 86,
+  "duration_s": 394.9,
+  "sha256": "dbf1a53266abe4bc665cd5c2cc4aa88046929f6879406b49a630eb54966c471a"
+ },
+ {
+  "file": "fb_1354014320201045.mp3",
+  "text": "fb_1354014320201045.txt",
+  "segments": 52,
+  "duration_s": 200.0,
+  "sha256": "b0666bd7a3ffac2de12af459107b914987ce5f65aedf4a04028d916dcf2ad99d"
+ },
+ {
+  "file": "fb_1600394931654599.mp3",
+  "text": "fb_1600394931654599.txt",
+  "segments": 26,
+  "duration_s": 122.6,
+  "sha256": "2631575c1df0221433a0902edefa6e25eadd607b730c9e0e7fbc8a30620f39eb"
+ },
+ {
+  "file": "fb_1700901684504491.mp3",
+  "text": "fb_1700901684504491.txt",
+  "segments": 146,
+  "duration_s": 421.8,
+  "sha256": "f249d795b64528883257929baff93a7df30307dccb9605ddbdb97410a770cbcb"
+ },
+ {
+  "file": "fb_2090730531823652.mp3",
+  "text": "fb_2090730531823652.txt",
+  "segments": 46,
+  "duration_s": 167.4,
+  "sha256": "ad4651238ba21ef47e3dcac2a9f0953d111414ab01bc03078c55c6a9de5ee8d1"
+ },
+ {
+  "file": "fb_2157983381780451.mp3",
+  "text": "fb_2157983381780451.txt",
+  "segments": 37,
+  "duration_s": 127.5,
+  "sha256": "739bc64007748cd3bc561777682f5f439d90b2830bbd909ee6f99633c1bc3db2"
+ },
+ {
+  "file": "fb_922589810831037.mp3",
+  "text": "fb_922589810831037.txt",
+  "segments": 61,
+  "duration_s": 295.8,
+  "sha256": "2a85369223ae6209475e379c3d04f566f62343c1bf61d79907147f4035d1a299"
+ },
+ {
   "file": "yt_0lwp8Evi2Io.mp3",
   "text": "yt_0lwp8Evi2Io.txt",
   "segments": 196,
