@@ -190,7 +190,63 @@ code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:12.5px;background:
 <p style="margin:8px 0 0"><b>2 · Source disclosure policy.</b> The Ellis story came from a tip. We should adopt now: <b>always disclose that a story originated from a tip, and always state whether the tipster has an interest we checked.</b> Doing this from article one costs nothing; retrofitting it after someone else discovers it costs everything.</p>
 </div>
 
-<h2>7 · Recommendation</h2>
+<h2 id="realtime">7 · Realtime deployment — yes, but on three clocks</h2>
+
+<p class="lead">Short answer: <b>yes.</b> But "realtime fact-checking" is two different products wearing the same name, and conflating them is how this platform would get sued.</p>
+
+<div class="box red">
+<h4>The rule that governs the whole realtime design</h4>
+<p style="margin-bottom:0"><b>Realtime is safe for RECALL. Realtime is dangerous for JUDGMENT.</b><br>
+Instantly telling a viewer <i>"this exact claim was verified three months ago, here is the sealed record"</i> is safe — the adjudication already happened, survived the adversary pass, and carries its evidence chain. Instantly declaring a <i>brand-new</i> claim FALSE on air is a defamation engine with a subscription model. The architecture below makes that distinction structural rather than a matter of operator discipline.</p>
+</div>
+
+<h3>The three clocks</h3>
+<table>
+<tr><th style="width:96px">Tier</th><th>Latency</th><th>What it does</th><th>What it may publish</th></tr>
+<tr><td><b>T1 · REFLEX</b></td><td class="good"><b>&lt; 1 sec</b></td><td>Ingest live text (broadcast captions, streams, social firehose, council audio via ASR). Score check-worthiness. Match against the <b>sealed verdict corpus</b> and the subject's congruence index.</td><td class="good"><b>Prior sealed verdicts only</b> — "previously verified," "he said the opposite on 11/10/25, sealed record #…". Never a new judgment.</td></tr>
+<tr><td><b>T2 · RAPID</b></td><td class="warn"><b>seconds – minutes</b></td><td>Novel claim: decompose to atomic facts, retrieve evidence (SearXNG/Perplexica + MCP live feeds + our sealed corpus), evidence graph, probabilistic verdict with confidence.</td><td class="warn"><b>Provisional, labeled</b> — shown to editors and internal dashboards. Public only as "unverified claim detected," never as a verdict.</td></tr>
+<tr><td><b>T3 · DELIBERATE</b></td><td class="bad"><b>hours – days</b></td><td>Mitigation/adversary pass, primary-record retrieval (dockets, PDFs, FOIA/APRA), role-and-participant resolution, human editorial review, <b>right of reply</b>.</td><td class="good"><b>Publishable verdict</b>, sealed with full evidence chain. This is the only tier that produces public findings about people.</td></tr>
+</table>
+
+<div class="box grn">
+<h4>Why T1 gets faster and cheaper the longer we run — the compounding asset</h4>
+<p style="margin-bottom:0">A T3 verdict, once sealed, becomes a T1 lookup <b>forever</b>. Political claims are repeated relentlessly — the same budget figure, the same crime statistic, the same biography line, across a whole campaign. After one cycle of a race, most of what a candidate says on a debate stage is a <b>restatement</b> of something already adjudicated and sealed. That is when realtime stops being a demo and becomes genuinely useful: not "the AI thinks this is false," but <b>"this claim has been checked; here is the primary document, and here is what he said differently in March."</b> <b>QBRAIN</b> makes that recall fleet-wide and permanent. Competitors re-fetch the world on every query; we answer from memory that is signed and auditable.</p>
+</div>
+
+<h3>Realtime congruence — the feature nobody else can ship</h3>
+<p>Congruence is where realtime gets genuinely powerful, because <b>it is a lookup, not a search.</b> If a subject's statement history is already extracted, sealed, and indexed by issue, then testing a live sentence against everything they have ever said on that issue is a vector query against a pre-built index — milliseconds, not minutes. That is the on-air moment: a candidate makes a claim, and within a second the operator sees the three occasions they said something materially different, each with a sealed citation. <b>No fact-checking framework in the surveyed research does this at all, at any latency.</b></p>
+
+<h3>Deployment topology</h3>
+<table>
+<tr><th>Component</th><th>Where it runs</th><th>Notes</th></tr>
+<tr><td>Stream ingest + ASR</td><td>Fleet node, GPU</td><td>faster-whisper, already proven in our stack; ASR is the latency floor for broadcast (~1–2s)</td></tr>
+<tr><td>Check-worthiness triage</td><td>Local GPU — <b>runs on hardware we own today</b></td><td>DistilBERT-class model. ClaimBuster ships DistilBERT in production <i>specifically</i> because larger models were too slow — we adopt that finding rather than relearn it. Verified available here: RTX 3060 (6GB), 16 cores, 62GB RAM, Ollama with Qwen already resident.</td></tr>
+<tr><td>Verdict + congruence index</td><td>Fleet vector store + Postgres</td><td>The compounding asset; hot in memory</td></tr>
+<tr><td>T2 evidence retrieval</td><td>Self-hosted SearXNG + Perplexica; MCP servers; Apify actors</td><td>Self-hosting removes per-query API cost and rate limits at stream volume — the difference between a demo and production economics</td></tr>
+<tr><td>T2/T3 reasoning</td><td>Claude (hosted) + Qwen (local)</td><td>Cost tiering: local models for volume, Claude for judgment-heavy stages</td></tr>
+<tr><td>Seal &amp; custody</td><td>QSurface / Sanctuary keys</td><td>Append-only; every seal attributable to an authenticated agent</td></tr>
+<tr><td>Editorial console</td><td>Web app</td><td>Where T2 provisionals await human release; enforces right-of-reply gating <b>in code</b></td></tr>
+</table>
+
+<h3>What realtime unlocks commercially</h3>
+<ul>
+<li><b>Live debate / town-hall companion</b> — the flagship demo, and the one that sells: sealed prior verdicts and congruence hits surfacing as a candidate speaks.</li>
+<li><b>Newsroom console</b> — reporters get instant recall of what a subject has said before, with citations, instead of re-reading a year of coverage.</li>
+<li><b>Meeting monitor</b> — point it at any public body's stream; it flags claims, matches them to prior votes, and produces a sealed transcript record. <b>The Vigo pilot is exactly this, run manually.</b></li>
+<li><b>Earnings-call / disclosure congruence</b> — same engine, business vertical: what the CEO says on the call versus what the filing says. High-value, and the subjects can afford the product.</li>
+</ul>
+
+<div class="box">
+<h4>Honest constraints</h4>
+<p style="margin:0"><b>ASR sets the floor.</b> Sub-second end-to-end on live broadcast is not realistic; ~1–3 seconds is. Fine for an operator console, wrong for an on-screen chyron that must keep pace with speech.</p>
+<p style="margin:8px 0 0"><b>Novel claims cannot be adjudicated at speed — and we should never pretend otherwise.</b> The product promise must be "instant recall plus flagged uncertainty," not "instant truth." Any competitor promising the latter is either lying or about to be sued; our differentiator is being the one that doesn't.</p>
+<p style="margin:8px 0 0"><b>Numbers never pass through a summarizer.</b> Field-proven in the pilot: repeated fetches of the <i>same</i> article produced three different budget figures and three different bed counts. At realtime volume that failure mode scales into systematic fabrication. Figures are extracted by deterministic parsing of the sealed artifact, with the page anchor retained — no exceptions, at any tier.</p>
+</div>
+
+<h3>Where realtime fits the build plan</h3>
+<p><b>It is P2 — and it should stay there.</b> T1 is only valuable in proportion to the size of the sealed verdict corpus behind it; shipping realtime before P1 produces a fast system with nothing to remember, which is a demo that impresses once and then embarrasses. Build the corpus and the seal chain first, then turn on the clock. <b>The realtime layer is roughly six weeks of work on top of P1 — and worth an order of magnitude more with a year of sealed verdicts behind it than with none.</b></p>
+
+<h2>8 · Recommendation</h2>
 <p><b>Approve P0 and P1.</b> They are cheap, they are built almost entirely from work already done, and they produce two things of immediate value: a publishable article that demonstrates the method, and a roll-call vote parser that makes every county government in Indiana queryable — which is a defensible data asset regardless of where the news product goes.</p>
 <p>Hold P2–P4 until P1 ships, for a reason worth stating plainly: <b>the live-data plane is the fun part and the least differentiating.</b> Scrapers and MCP feeds are commodities. The custody chain, the congruence matrix, and the resolution layer are what nobody else has — and they are what makes a verdict survive contact with a lawyer.</p>
 <p class="mut" style="margin-top:26px">Prepared by atlas3-claude · 2026-08-26 · Repo: <code>cyberhope-ai/pcos-verified-community-news</code> · Pilot evidence: <code>research/article-001-steve-ellis-vigo-sheriff/</code> · Source research: <i>Political fact-checking software.docx</i> (Gemini), claims independently flagged where unverified.</p>
