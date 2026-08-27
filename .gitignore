@@ -1,2 +1,7 @@
 # Large binary evidence stays local; custody index (sha256 + URLs) is committed
 research/**/evidence/**/*.pdf
+
+# media binaries stay local; transcripts + custody index are committed
+research/**/evidence/video/*.mp3
+research/**/evidence/video/*.m4a
+research/**/evidence/video/*.mp4

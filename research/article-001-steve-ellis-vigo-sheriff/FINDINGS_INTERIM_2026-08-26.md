@@ -409,7 +409,78 @@ Related: **the county canvass PDF governs, not news reports.** Canvass: **Ellis 
 Fell 3,978 (48.98%). News gave 57.25% and Fell 3,505/49.01%. Treat news percentages as
 unreliable; cite the canvass.
 
-## OPEN QUESTIONS (what would resolve them)
+---
+
+## FINDING 12 — FIRST DIRECT VIDEO-vs-RECORD CONGRUENCE TEST: **HE PASSES**
+
+Ellis's Facebook video *"Drama at the County Council meeting??? 🤯"* (28K views, 314 reactions,
+4m56s) discusses **"last night's meeting"** — the **June 9, 2026** meeting whose minutes we
+independently OCR'd. Every checkable statement he makes was tested against the primary record.
+
+| What he says on video | What the minutes show | Verdict |
+|---|---|---|
+| Community Corrections "had a request for **$200,000**" | Addl. Approp. 2026-29, Bill Watson, **$200,000** from LIT-Correctional Rehab | <b>ACCURATE</b> |
+| "there's a **rule 10-3** in the council rules that says once something has been brought to the council you cannot vote on it for a period of one year" | "Randy asked about **Rule 10.3**. Can they address this again since it's within the 12 months since it was originally voted on?" | <b>ACCURATE</b> |
+| "I am proposing to amend that particular rule and change it from one year to **90 days**" | Matches independent news reporting of his rule-change proposal | <b>ACCURATE</b> |
+| Group homes: "a motion was made to table that"; "one made the motion the other seconded it and **I am one of the people that did vote in favor**" | "Nancy Allsup made a motion to table this until August… Vicki Weger seconded… The vote was **5-1 to table**" | <b>ACCURATE</b> |
+| Money was moved to the general fund in a prior budget cycle and Corrections later found they needed it | Watson: appropriation "reduced during the budgeting process the previous year… this reduction was a **mistake**" | <b>CONSISTENT</b> |
+
+**Verdict: CONGRUENT.** On a video aimed at his own supporters, with no interviewer present and
+no obvious incentive to be precise, his account of a meeting matches the official minutes on
+every point we could test — including correctly attributing a motion he merely voted for rather
+than claiming credit for it. **This is a finding in his favor and must be reported as
+prominently as anything adverse.**
+
+### Two items from the same video that remain open (not adverse — just unchecked)
+1. **A media-accuracy claim:** "I know one of the local media outlets said **20 jobs** — that
+   wasn't correct. It was **two**." Checkable against the outlet's actual wording. Note the
+   separate news reporting concerned **~100 residents** who cannot be housed at the jail, which
+   is a different quantity from staff jobs — do not conflate the two when checking.
+2. **Framing/emphasis:** he characterizes the episode as "really wasn't much of a big deal" and
+   attributes coverage to "people… just kind of looking for something to have drama over,"
+   while contemporaneous reporting described the residential center facing closure. That is a
+   **tone/emphasis** question, not a factual contradiction — log it as EMPHASIS SHIFT at most,
+   and only if a like-for-like comparison of what he said elsewhere supports it.
+
+### Bonus corroboration from the same minutes — the county's own jail-litigation cost
+Addl. Approp. 2026-32: Commissioner Chris Switzer requested **$500,000** for Liability Claims
+(LIT-Correctional Rehab) plus **$117,178** workers' comp, citing "**significant lawsuits
+underway at the County Jail**," and stated legal claims so far this year totaled
+**$181,723.51**. Independent confirmation, from the county's own record, of the federal
+jail-litigation exposure in Finding 11.
+
+## FINDING 13 — The channel predates the candidacy by eight years (video corpus captured)
+
+"Holding Vigo County Accountable" has a **YouTube channel** (20 subscribers) with two long
+interviews from **October 2018** — during the jail-tax fight, **six years before Ellis joined
+the Council** and eight before he ran for sheriff:
+- **"Interview with Brendan Kearns"** (10/15/2018, 52 min, 261 views) — description: "**Steve**
+  speaks to current councilman Brendan Kearns," with an author-supplied index: *00:58 Jail
+  Location · 09:13 New Jail Plan/Old Jail · 11:42 Tax Talk · 15:40 Jail Process/Location ·
+  17:00 Tax Effect on Community · 19:20 Convention Cent[er]…*
+- **"Interview with Terry Modesitt"** (10/18/2018, 10 min, 61 views) — "**Steve** sits down
+  with current prosecutor Terry Modesitt to discuss the prosecutor's job and the upcoming
+  election."
+
+**Two things this establishes.** First, further **attribution evidence** that Ellis runs the
+operation (first-person "Steve" in the channel's own descriptions), supplementing the
+Tribune-Star's statement. Second — and far more valuable — **a 2018 baseline on the jail and
+the jail tax, in his own voice, from before he held any office.** That enables the strongest
+congruence test available anywhere in this project: *what he said about the jail tax as a
+private citizen in 2018* versus *how he voted on jail and corrections funding as Council
+President in 2025–26*. Kearns, notably, was one of the **two NO votes** on the 2018 jail-tax
+ordinance.
+
+**Captured:** both audio files, with `_index.json` recording sha256, duration, and source.
+Transcription to timestamped text in progress — **media claims cite *video + timestamp* exactly
+as document claims cite *document + page*.**
+
+**Not captured — the biggest remaining gap:** the Facebook page's **Reels tab and full post
+history are login-walled**; only the single public video URL we were given could be retrieved.
+The page is his least-mediated channel and remains the highest-value unexamined source. This
+needs a human with a logged-in session, archiving posts **before** any contact is made.
+
+
 
 1. **Ellis's recorded vote on every sheriff/jail appropriation** → source PDF page images.
 2. **Did he ever recuse?** → same; then his own on-record answer.
