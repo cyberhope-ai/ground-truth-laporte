@@ -493,6 +493,68 @@ needs a human with a logged-in session, archiving posts **before** any contact i
    on it, so it is the richest congruence field remaining.
 7. **Media statements re: teachers** (Oct 2025) → retrieve and compare to chamber remarks.
 
+---
+
+## FINDING 14 — ATTRIBUTION TRAP #3, and the most dangerous of all: unlabeled speakers
+
+The 52-minute 2018 interview transcribes to 685 timestamped segments **with no speaker
+labels**. At `[0:11:44]` the transcript reads:
+
+> "So, as far as the county council, though, **I voted against a 0.75 tax** for a multitude of
+> reasons, mainly because we can't afford it. What I was good with was a 0.2 tax…"
+
+On a channel Ellis owns, in a video Ellis published, a naive pipeline would attribute that
+first-person statement to **Ellis** — and report that the Republican sheriff nominee voted
+against the jail tax. **It is not him. It is Brendan Kearns**, the interviewee.
+
+**Verified three independent ways:**
+1. **Chronology (decisive):** Ellis was elected to the County Council in **November 2024**. In
+   October 2018 he **held no office and could not vote on anything**.
+2. **In-transcript cue:** the same speaker asks, at `[0:16:05]`, *"how many acres do you have
+   for **your top gun facility**?"* — a question addressed **to** Ellis, so the speaker is the
+   guest, not the host.
+3. **External corroboration:** Kearns was one of the **two NO votes** on the 2018 jail-tax
+   ordinance; and the same speaker says at `[0:01:00]` *"I want to be a commissioner January
+   1st"* — Kearns was a 2018 commissioner candidate; Ellis was not.
+
+**Why this is worse than the two document traps.** Those required a name to sit near a damaging
+phrase. This one requires nothing but a pronoun. Speech-to-text output is *inherently*
+un-attributed, most interview audio is single-channel, and the surrounding metadata ("Steve
+Ellis's channel," "Steve Ellis's video") actively pushes a machine toward the wrong speaker.
+**Any system that transcribes video and searches the text without diarization will eventually
+attribute a guest's words to the host.** In political coverage that is a defamation generator
+running unattended.
+
+**Engine requirement (new, mandatory):** speaker diarization is a required stage for all media
+evidence, and **no first-person statement from an un-diarized transcript may ever be attributed
+to a named person.** Where diarization is unavailable or low-confidence, the statement must be
+recorded as *speaker-unresolved* and excluded from any congruence verdict. Our stack already has
+per-speaker capability (used previously for multi-speaker call transcription) — it must be wired
+into this pipeline **before** the 2018 tapes are mined.
+
+**Consequence for this project:** the 2018 tax material is **quarantined**. It is the
+highest-value congruence source we have, and none of it may be used until every statement is
+attributed to a verified speaker.
+
+## FINDING 15 — Page/channel attribution now VERIFIED in his own voice
+
+The same video opens at `[0:00:03]`:
+> "**Hey guys, Steve here from Holding Vigo County Accountable.** Today I had an opportunity to
+> sit with Brendan Kearns…"
+
+This upgrades the operator question from *reported by the Tribune-Star* to **confirmed in the
+subject's own recorded words**, and dates the operation to **at least October 2018** — six years
+before he took office. With the first-person channel descriptions, attribution is **VERIFIED**.
+
+**Safe to state from the 2018 material** (these are the host's own framing and questions, not
+disputed first-person claims):
+- He was running a county-accountability operation as a **private citizen** in 2018.
+- His stated focus then: **jail siting/financing** and **the convention center**.
+- His stated method, on camera: *"if you fight something, you need to be able to provide an
+  alternative solution."*
+- He ran **public polling**: *"when we ran our poll… the majority of people were in favor of
+  building a jail. They just weren't in favor of how it was financed."*
+
 ## ENGINE NOTES (for the PCOS fact-check spec)
 
 - **The county publishes its minutes as scanned images.** Text extraction returned 0 usable
