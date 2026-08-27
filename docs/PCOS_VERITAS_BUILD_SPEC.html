@@ -1,0 +1,208 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PCOS Veritas Engine — Build Specification v1</title>
+<style>
+:root{
+ --ink:#131820;--mut:#5e6b7c;--line:#e2e7ee;--bg:#fff;--panel:#f6f8fb;
+ --deep:#0f2c47;--gold:#a97c2c;--grn:#0a6b45;--red:#a33128;--amb:#8a6410;--code:#eef2f7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.65 "Iowan Old Style",Georgia,serif}
+.wrap{max-width:1000px;margin:0 auto;padding:0 30px 90px}
+header{background:linear-gradient(135deg,#0b2137,#1a4066);color:#e9f1fa;margin:0 -30px 32px;padding:42px 44px 34px}
+.eyebrow{font-family:Arial,sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#d7a94e}
+h1{font-size:32px;margin:11px 0 7px;line-height:1.16;font-weight:600}
+header .sub{font-family:Arial,sans-serif;font-size:14.5px;opacity:.92;max-width:72ch}
+.stamp{display:inline-block;margin-top:15px;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.11em;
+ text-transform:uppercase;background:rgba(215,169,78,.16);border:1px solid rgba(215,169,78,.5);color:#e6bc66;padding:5px 12px;border-radius:3px}
+h2{font-family:Arial,sans-serif;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);
+ margin:44px 0 13px;padding-bottom:6px;border-bottom:2px solid var(--deep)}
+h3{font-family:Arial,sans-serif;font-size:15.5px;margin:28px 0 7px;color:var(--deep)}
+h4{font-family:Arial,sans-serif;font-size:13.5px;margin:0 0 8px}
+p{margin:11px 0} ul{margin:11px 0 11px 21px} li{margin:6px 0}
+.lead{font-size:17.5px;line-height:1.6}
+code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:12.5px;background:var(--code);padding:1.5px 5px;border-radius:3px}
+pre{background:var(--code);border:1px solid var(--line);border-radius:7px;padding:14px 16px;overflow-x:auto;
+ font-family:"SF Mono",Menlo,Consolas,monospace;font-size:12.5px;line-height:1.55;margin:12px 0}
+pre .c{color:var(--mut)} pre .k{color:#0f2c47;font-weight:700} pre .s{color:#0a6b45}
+table{border-collapse:collapse;width:100%;font-family:Arial,sans-serif;font-size:13px;margin:14px 0}
+th{text-align:left;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--mut);padding:8px 10px;
+ border-bottom:2px solid var(--line);vertical-align:bottom}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+.box{border:1px solid var(--line);border-left:4px solid var(--deep);border-radius:7px;padding:15px 19px;margin:16px 0;background:var(--panel)}
+.box.gold{border-left-color:var(--gold);background:#fdfaf2}
+.box.red{border-left-color:var(--red);background:#fdf5f4}
+.box.grn{border-left-color:var(--grn);background:#f2faf6}
+.good{color:var(--grn);font-weight:700}.bad{color:var(--red);font-weight:700}.warn{color:var(--amb);font-weight:700}
+.mut{color:var(--mut);font-size:12.5px;font-family:Arial,sans-serif;line-height:1.55}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:9px;margin:16px 0}
+.node{border:1px solid var(--line);border-radius:7px;padding:11px 12px;background:#fff}
+.node .n{font-family:Arial,sans-serif;font-size:9.5px;letter-spacing:.1em;color:var(--gold);font-weight:700}
+.node b{display:block;font-family:Arial,sans-serif;font-size:13px;margin:3px 0 4px}
+.node span{font-family:Arial,sans-serif;font-size:11px;color:var(--mut);line-height:1.42}
+.node.gate{border-color:var(--red);border-width:2px}
+.layer{display:grid;grid-template-columns:84px 1fr;gap:12px;border:1px solid var(--line);border-radius:7px;
+ padding:11px 14px;margin:7px 0;background:#fff;align-items:start}
+.layer .lid{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;color:#fff;background:var(--deep);
+ border-radius:4px;padding:5px 7px;text-align:center}
+.layer.ours .lid{background:var(--gold)}
+.layer p{margin:0;font-size:13.5px}
+@media (prefers-color-scheme:dark){
+ :root{--ink:#e6ecf3;--mut:#97a4b5;--line:#2a3440;--bg:#0f141a;--panel:#161d26;--deep:#7fb2e8;--gold:#dcae56;--grn:#4fca8f;--red:#ea7b6f;--amb:#dbaa3c;--code:#171f29}
+ .node,.layer{background:#141b24} tr:hover td{background:#141b23}
+ .box.gold{background:#1d1a11}.box.red{background:#1f1512}.box.grn{background:#0f1d16}
+ pre{border-color:#2a3440} pre .k{color:#7fb2e8} pre .s{color:#4fca8f}
+ header{background:linear-gradient(135deg,#08172a,#12304d)}
+ .layer .lid{color:#0f141a}
+}
+:root[data-theme="dark"]{--ink:#e6ecf3;--mut:#97a4b5;--line:#2a3440;--bg:#0f141a;--panel:#161d26;--deep:#7fb2e8;--gold:#dcae56;--grn:#4fca8f;--red:#ea7b6f;--code:#171f29}
+:root[data-theme="dark"] .node,:root[data-theme="dark"] .layer{background:#141b24}
+:root[data-theme="light"]{--ink:#131820;--mut:#5e6b7c;--line:#e2e7ee;--bg:#fff;--panel:#f6f8fb;--deep:#0f2c47;--gold:#a97c2c;--grn:#0a6b45;--red:#a33128;--code:#eef2f7}
+@media print{header{background:#0b2137!important;-webkit-print-color-adjust:exact}.wrap{padding:0 10px}pre,.box,table{break-inside:avoid}}
+</style></head><body>
+<div class="wrap">
+<header>
+ <div class="eyebrow">CyberHopeAI · PrecognitionOS · Engineering Specification</div>
+ <h1>PCOS Veritas Engine — Build Spec v1</h1>
+ <div class="sub">What to build, in what order, with which modules — derived from the open-source research and hardened against every failure mode the Vigo County pilot actually produced. Schema and stage contracts are written and committed; this document is the map to them.</div>
+ <div class="stamp">Buildable now · 2026-08-27 · repo: pcos-verified-community-news/engine</div>
+</header>
+
+<p class="lead">The research report surveys the state of the art: <b>ClaimBuster</b> scores check-worthiness, <b>SAFE</b> and <b>FActScore</b> decompose and verify, <b>OpenFactCheck</b> wires solvers together as plugins, <b>FactReasoner</b> aggregates conflicting evidence probabilistically, <b>Perplexica/Vane</b> plans research over a private SearXNG. <b>We should adopt all of it.</b> None of it is our moat — and none of it survived contact with a real county record without the four safeguards below.</p>
+
+<div class="box gold">
+<h4>The one-paragraph thesis</h4>
+<p style="margin-bottom:0">Every framework in the literature answers <i>"is this statement true?"</i> and then forgets everything. PCOS answers two questions nobody else does — <b>"is this person saying the same thing in every room?"</b> and <b>"can you still prove it a year from now?"</b> The published modules are commodity parts. The <b>custody chain, the resolution layer, the congruence index, and the fairness gates</b> are the product, and they are what a lawyer will ask about.</p>
+</div>
+
+<h2>1 · What the pilot changed about the design</h2>
+<p>Four failure modes appeared in a single day of real work on one subject. Each would have produced a confident, quotable falsehood about a living person weeks before an election. <b>They are now blocked by types, not by discipline.</b></p>
+<table>
+<tr><th style="width:150px">Failure found</th><th>What happened</th><th style="width:210px">Structural fix</th></tr>
+<tr><td><b>Name proximity</b></td><td>"threats… by the Council president" sat four words from the subject. He did not hold that office on that date.</td><td><code>role_tenure</code> table + <code>office_holder(office, juris, date)</code></td></tr>
+<tr><td><b>Participant confusion</b></td><td>A physical altercation adjacent to the subject in the record. He was not involved.</td><td>Participant resolution in <code>DiarizeStage</code> / entity linking</td></tr>
+<tr><td><b>Unlabeled speaker</b></td><td>"<b>I voted against</b> a 0.75 tax" on the subject's own channel — spoken by his interviewee.</td><td><code>speaker_conf</code> enum + <code>gate()</code> raises unless <span class="good">confirmed</span></td></tr>
+<tr><td><b>Character voice</b></td><td>Subject performed a two-role skit alone. Extracted position was the <b>exact inverse</b> of his real one. <b>Diarization does not catch this.</b></td><td><code>speech_mode</code> enum + <code>ModeStage</code>; only <code>assertion</code> passes</td></tr>
+<tr><td><b>Fabricated figures</b></td><td>A summariser returned three different budget numbers and three bed counts from <i>one</i> article.</td><td><code>evidence.extracted_by</code> must be <code>deterministic-parse</code> for figures</td></tr>
+<tr><td><b>Out-of-scope null</b></td><td>Federal database showed 0 crashes for a carrier with a documented fatality — it was intrastate-only.</td><td><code>artifact.jurisdiction_scope</code> + verdict <code>NOT_COVERED</code></td></tr>
+</table>
+
+<h2>2 · Pipeline</h2>
+<div class="flow">
+ <div class="node"><div class="n">01</div><b>ACQUIRE</b><span>Apify · MCP feeds · portal fetchers with redirect-following · yt-dlp · RSS &amp; captions</span></div>
+ <div class="node"><div class="n">02</div><b>CUSTODY</b><span>sha256 + capture time + archive snapshot → <b>seal before analysis</b></span></div>
+ <div class="node"><div class="n">03</div><b>RENDER</b><span>OCR / ASR / extract → page- and timestamp-anchored text</span></div>
+ <div class="node"><div class="n">04</div><b>RESOLVE</b><span>Entities · role-by-date · participants · <b>diarization</b></span></div>
+ <div class="node gate"><div class="n">05</div><b>◆ MODE + GATE</b><span>assertion? speaker confirmed? — <b>the chokepoint</b></span></div>
+ <div class="node"><div class="n">06</div><b>EXTRACT</b><span>Atomic claims + check-worthiness triage</span></div>
+ <div class="node"><div class="n">07</div><b>RETRIEVE</b><span>Sealed corpus first, then live web</span></div>
+ <div class="node"><div class="n">08</div><b>REASON</b><span>Evidence graph → calibrated verdict</span></div>
+ <div class="node"><div class="n">09</div><b>ADVERSARY</b><span>Hunt the case <i>against</i> our finding</span></div>
+ <div class="node"><div class="n">10</div><b>CONGRUENCE</b><span>Subject vs. themselves, across channels &amp; time</span></div>
+ <div class="node"><div class="n">11</div><b>SEAL</b><span>Verdict + full chain → QSurface</span></div>
+ <div class="node gate"><div class="n">12</div><b>◆ REPLY GATE</b><span>No publish without a logged reply attempt</span></div>
+</div>
+
+<h3>The gate, in code — already written and tested</h3>
+<pre><span class="k">def</span> gate(u: Utterance) -&gt; VerdictEligible:
+    <span class="c">"""The single chokepoint. Everything downstream requires this type."""</span>
+    <span class="k">if</span> u.speaker_conf <span class="k">is not</span> SpeakerConfidence.CONFIRMED:
+        <span class="k">raise</span> GateError(<span class="s">f"speaker {u.speaker_conf.value} at {u.anchor}: "</span>
+                        <span class="s">"cannot attribute to a named person"</span>)
+    <span class="k">if</span> u.mode <span class="k">is not</span> SpeechMode.ASSERTION:
+        <span class="k">raise</span> GateError(<span class="s">f"mode={u.mode.value} at {u.anchor}: "</span>
+                        <span class="s">"only plain assertions receive verdicts"</span>)
+    <span class="k">return</span> VerdictEligible(utterance=u)</pre>
+<p class="mut">Run against the pilot's real failures: <span class="bad">BLOCKED</span> — "speaker unresolved at 0:11:44" (the Kearns/Ellis trap) · <span class="bad">BLOCKED</span> — "mode=satire at 0:11:44" (the skit trap) · <span class="good">PASSES</span> — clean assertion. <b>A <code>VerdictRecord</code> cannot be constructed without a <code>VerdictEligible</code>, so no downstream code can route around this.</b></p>
+
+<h2>3 · Layer map — onto the PCOS 11-layer architecture</h2>
+<p>The research report describes the governed-intelligence stack the engine slots into. Mapping the pipeline to it rather than inventing a parallel architecture:</p>
+<div class="layer"><div class="lid">L0–L1</div><p><b>Hardware &amp; network.</b> Fleet nodes; local GPU for triage and ASR (verified available: RTX 3060, 16 cores, 62 GB RAM, Ollama with Qwen resident).</p></div>
+<div class="layer ours"><div class="lid">L4</div><p><b>QSurface — semantic packet transport.</b> Sealed artifacts, verdicts, and congruence findings travel as semantic packets with a <b>cryptographic audit chain</b>: hash-linked, tamper-evident, traceable to origin. This is the custody backbone, already proven in eDNA.</p></div>
+<div class="layer"><div class="lid">L5</div><p><b>Semantic.</b> Claim decomposition, entity/role resolution, mode classification, topic assignment — the meaning layer where a claim is matched to the agents able to verify it.</p></div>
+<div class="layer"><div class="lid">L6</div><p><b>Application.</b> Stage execution and workflow: acquire → render → resolve → extract → retrieve → reason.</p></div>
+<div class="layer"><div class="lid">L9</div><p><b>Orchestration — multi-provider verification.</b> <b>No single model produces a final answer alone.</b> Claude and Qwen cross-check each other; the adversary pass runs on a different model than the drafting pass. Disagreement is a signal, not an error.</p></div>
+<div class="layer"><div class="lid">L10</div><p><b>Mothership — governance.</b> The publication gates, the fairness policy, the symmetry rule, the retention and correction policy.</p></div>
+
+<div class="box grn">
+<h4>Resolving the one genuine contradiction in the research</h4>
+<p style="margin-bottom:0">The report advocates <b>probabilistic</b> reasoning (FactReasoner's Markov network over atoms and evidence) in one section, and in another insists on <b>deterministic, rule-governed calculations where every final score is reproducible and defensible</b>. Both are right, and the resolution is our existing pattern: <b>probabilistic MODEL, deterministic EXECUTION.</b> The reasoner may weigh conflicting evidence probabilistically, but the evidence set is frozen and hashed (<code>verdict.inputs_hash</code>), the model and prompt are pinned (<code>model_ref</code>), and replaying the same inputs must reproduce the same verdict byte-for-byte. Confidence is calibrated; the computation is replayable. That is exactly how eDNA's as-of scoring already works.</p>
+</div>
+
+<h2>4 · Module selection</h2>
+<table>
+<tr><th>Layer</th><th>Adopt</th><th>License / note</th></tr>
+<tr><td>Check-worthiness</td><td>ClaimBuster <b>methodology</b>, DistilBERT-class model</td><td class="bad">Reference code is GPL-3.0 — <b>reimplement, do not import.</b> ClaimBuster itself ships DistilBERT in production because larger models were too slow.</td></tr>
+<tr><td>Decomposition</td><td>SAFE / FActScore "decompose-then-verify"; revise-for-self-containment before atomizing</td><td class="good">Published method; OpenFActScore exists as an open implementation</td></tr>
+<tr><td>Solver harness</td><td>OpenFactCheck — YAML-configured, treats solvers as plugins</td><td class="good">Drop-in for the retrieve/verify stages</td></tr>
+<tr><td>Research planner</td><td>Perplexica/Vane + <b>self-hosted SearXNG</b> (70+ engines, no API keys, no identity leakage)</td><td class="good">MIT. Self-hosting is what makes stream-volume economics work. ⚠ Known duplicate-citation issue → de-dup in post.</td></tr>
+<tr><td>Reasoning</td><td>FactReasoner pattern: NLI edges → graphical model → calibrated posterior</td><td class="good">Method, not a dependency</td></tr>
+<tr><td>Models</td><td><b>Qwen</b> (Apache-2.0, long context, thinking mode, agentic tool use) local + <b>Claude</b> for judgment-heavy stages</td><td class="bad">⚠ <b>Llama 3 is not open source</b> — user threshold + naming terms. Avoid anything load-bearing on it.</td></tr>
+<tr><td>OCR / ASR</td><td>Tesseract 5 @300dpi (proven on the pilot's 136 pages); faster-whisper; evaluate PaddleOCR/Surya for tables</td><td class="good">Both already in our stack and working</td></tr>
+<tr><td>Diarization</td><td><b>New — mandatory.</b> pyannote-class speaker separation</td><td class="warn">Highest-priority new dependency; blocks the 2018 tape corpus</td></tr>
+<tr><td>Store</td><td>Postgres + pgvector (congruence index), blob storage, QSurface seals</td><td class="good">Schema written: <code>engine/schema/001_core.sql</code></td></tr>
+</table>
+
+<h2>5 · Data model — the parts that carry the design</h2>
+<pre><span class="c">-- The two gates, enforced in the database so no code path can bypass them</span>
+<span class="k">CREATE TYPE</span> speech_mode <span class="k">AS ENUM</span> (
+  <span class="s">'assertion'</span>,   <span class="c">-- the only verdict-eligible mode</span>
+  <span class="s">'question'</span>, <span class="s">'quotation'</span>, <span class="s">'hypothetical'</span>,
+  <span class="s">'satire'</span>,      <span class="c">-- character voice — INVERTS meaning</span>
+  <span class="s">'sarcasm'</span>, <span class="s">'unclassified'</span>);
+
+<span class="k">CREATE TYPE</span> speaker_confidence <span class="k">AS ENUM</span> (<span class="s">'confirmed'</span>,<span class="s">'probable'</span>,<span class="s">'unresolved'</span>);
+
+<span class="c">-- Who held which office WHEN — the anti-defamation table</span>
+<span class="k">CREATE FUNCTION</span> office_holder(p_office text, p_juris text, p_on date) ...
+
+<span class="c">-- A publication cannot go live unless every finding has a reply record</span>
+<span class="k">CREATE TRIGGER</span> publication_reply_gate <span class="k">BEFORE INSERT OR UPDATE ON</span> publication ...</pre>
+<p>Other load-bearing columns: <code>artifact.jurisdiction_scope</code> (what a source does <i>not</i> cover), <code>rendition.is_machine_text</code> (OCR/ASR text is a search index, never a quotation source), <code>evidence.stance='mitigates'</code> (what the adversary pass finds), <code>evidence.source_tier</code> (tier 5 social proves a claim was <i>made</i>, never that it is <i>true</i>), <code>verdict.supersedes_id</code> (corrections are new rows — the chain is append-only).</p>
+
+<div class="box">
+<h4>The sleeper asset: a roll-call vote parser</h4>
+<p style="margin-bottom:0">County minutes encode votes as repeating prose — <code>"Name — aye; Name — nay;"</code> — with movers and seconders named inline. The <code>meeting → agenda_item → vote</code> tables turn that into queryable structured data, including <code>is_seconder</code> (which is how we found that the subject <b>seconded</b> the budget he publicly calls wasteful). <b>Point this at every county in Indiana and you have a vote database nobody else has</b> — independently valuable regardless of where the news product goes.</p>
+</div>
+
+<h2>6 · Build order</h2>
+<table>
+<tr><th style="width:74px">Phase</th><th>Deliverable</th><th>Definition of done</th></tr>
+<tr><td><b>P0</b><br><span class="mut">2–3 wks</span></td><td><b>Custody + render + vote parser</b></td><td>Any county document center → sealed artifacts with sha256/archive → OCR'd, page-anchored text → parsed roll-call votes in Postgres. Replays the Vigo pilot end-to-end with zero manual steps.</td></tr>
+<tr><td><b>P1</b><br><span class="mut">3–4 wks</span></td><td><b>Resolution + gates + ledger</b></td><td>Role registry populated from minutes; diarization wired; mode classifier; <code>gate()</code> enforced; claims ledger and verdict store live with seals. <b>Acceptance test: the four pilot failures are all blocked, and the clean assertion passes.</b></td></tr>
+<tr><td><b>P2</b><br><span class="mut">3–4 wks</span></td><td><b>Retrieve + reason + adversary</b></td><td>SearXNG/Perplexica self-hosted; OpenFactCheck harness; evidence graph with calibrated confidence; adversary pass demonstrably downgrades at least one real finding. Deterministic replay verified via <code>inputs_hash</code>.</td></tr>
+<tr><td><b>P3</b><br><span class="mut">3–4 wks</span></td><td><b>Congruence + editorial console + publish gate</b></td><td>Position index built; congruence matrix generated for a real subject; right-of-reply tracked; publish trigger blocks an ungated finding in a live test.</td></tr>
+<tr><td><b>P4</b><br><span class="mut">~6 wks</span></td><td><b>Realtime tier</b></td><td>T1 reflex: live captions → check-worthiness → <b>sealed-verdict recall + congruence lookup only</b>. Never a new judgment at speed. Value scales with corpus size, which is why it comes last.</td></tr>
+<tr><td><b>P5</b><br><span class="mut">ongoing</span></td><td><b>Verticals</b></td><td>Business (filings vs. earnings calls), finance, world events. Each is a source adapter and a topic taxonomy — not a new engine.</td></tr>
+</table>
+
+<h2>7 · Already committed — you can start Monday</h2>
+<table>
+<tr><td><code>engine/schema/001_core.sql</code></td><td>Full Postgres schema: subjects, role tenure, custody, renditions, utterances with both gates, claims, evidence, verdicts, congruence index (pgvector), meetings/votes, right-of-reply, and the publish trigger.</td></tr>
+<tr><td><code>engine/pipeline/stages.py</code></td><td>Typed stage contracts for all twelve stages, with <code>gate()</code> implemented and <b>tested against the pilot's real failures</b>.</td></tr>
+<tr><td><code>research/article-001…/ocr_minutes.sh</code></td><td>Working OCR pipeline — 136 scanned pages → 369k page-anchored characters.</td></tr>
+<tr><td><code>research/article-001…/transcribe_video.py</code></td><td>Working media transcription with sha256 custody and timestamp anchors.</td></tr>
+<tr><td><code>research/article-001…/CLAIMS_LEDGER.md</code></td><td>20 worked entries — the schema's acceptance criteria in human-readable form, including the two permanent regression cases.</td></tr>
+</table>
+
+<h2>8 · Risks that belong on the build plan, not in a footnote</h2>
+<div class="box red">
+<h4>Legal exposure is the real risk — not technical failure</h4>
+<p style="margin-bottom:0">We publish findings about named living people, and one day of pilot work produced <b>four</b> distinct ways to generate a confident falsehood. Before any public launch: media-liability insurance, a standing media-law attorney, a written pre-publication review, and the reply gate enforced in code (it is). <b>Budget these in P1, not "later."</b></p>
+</div>
+<div class="box red">
+<h4>Licensing</h4>
+<p style="margin-bottom:0"><b>ClaimBuster's claim-spotter is GPL-3.0</b> — reimplement the published method or isolate it behind a network boundary; counsel confirms before a line is used. <b>Llama 3's licence is not open source</b> — default to Qwen (Apache-2.0) and Claude, and verify each specific weight's licence at adoption.</p>
+</div>
+<div class="box gold">
+<h4>The source research needs fact-checking — verify every module at its repo</h4>
+<p style="margin-bottom:0">The report <b>contradicts itself on DeepMind's SAFE</b>: one section gives a full technical account, a later section states no such project exists. (SAFE is real.) It also asserts a "Vane, rebranded from Perplexica in March 2026" and cites Qwen versions and parameter counts that are unverified here. <b>Every module in §4 gets confirmed at its source repository and licence file before adoption.</b> A research document about automated fact-checking that fails its own standard is the best possible argument for building this engine — and a standing reminder that <b>plausible and sourced are different things.</b></p>
+</div>
+<div class="box">
+<h4>Two policy decisions to make before P1 ships</h4>
+<p style="margin:0"><b>Symmetry.</b> If the first published subject is a Republican, the second is a Democrat, and the standard applied must be visibly identical. This is a product requirement — the engine's only asset is being trusted by people who dislike its findings.</p>
+<p style="margin:8px 0 0"><b>Source disclosure.</b> Adopt now: always disclose that a story came from a tip, and always state whether the tipster's interest was checked. Free from article one; ruinous to retrofit.</p>
+</div>
+
+<p class="mut" style="margin-top:32px;padding-top:15px;border-top:1px solid var(--line)">
+Prepared by atlas3-claude · 2026-08-27 · Derived from <i>Political fact-checking software.docx</i> (Gemini research, claims independently flagged where unverified) and from the Vigo County pilot in the same repository. Schema and stage contracts are committed and runnable; everything else in this document is a plan awaiting approval.</p>
+</div></body></html>
