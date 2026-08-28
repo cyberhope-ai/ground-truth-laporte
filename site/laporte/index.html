@@ -1,0 +1,180 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>INformed LaPorte — What was promised. What arrived.</title>
+<meta name="description" content="A community record of the LaPorte data center project. Every number carries its receipt.">
+<style>
+:root{
+  --ink:#16202b; --ink-2:#3d4c5c; --mut:#6d7c8c; --rule:#e4e9ef;
+  --paper:#ffffff; --panel:#f7f9fb;
+  --deep:#123a52;        /* headline ink */
+  --verify:#0b6b4f;      /* verified */
+  --pending:#8a6410;     /* awaiting measurement */
+  --stamp:#a8402e;       /* the stamp */
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:17px/1.65 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+
+/* ── masthead ── */
+header{border-bottom:3px double var(--rule);padding:34px 0 24px;margin-bottom:6px}
+.kicker{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut)}
+h1{font-size:clamp(34px,7vw,52px);line-height:1.02;margin:12px 0 10px;font-weight:600;
+  letter-spacing:-.015em;color:var(--deep)}
+h1 .in{color:var(--stamp)}
+.dek{font-size:19px;line-height:1.5;color:var(--ink-2);max-width:34em;margin:0}
+.soon{display:inline-block;margin-top:20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--stamp);
+  border:2px solid var(--stamp);border-radius:3px;padding:7px 13px;transform:rotate(-1.2deg)}
+
+h2{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);
+  margin:52px 0 14px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+h3{font-size:21px;margin:28px 0 6px;color:var(--deep);font-weight:600;line-height:1.25}
+p{margin:13px 0}
+a{color:var(--deep)}
+.lede{font-size:19px;line-height:1.6}
+.note{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:13.5px;color:var(--mut);line-height:1.55}
+
+/* ── the thermometer ── */
+.gauge-list{margin:22px 0 8px}
+.gauge{border-top:1px solid var(--rule);padding:16px 0}
+.gauge:last-child{border-bottom:1px solid var(--rule)}
+.gauge .top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.gauge .label{font-size:17px;font-weight:600;color:var(--ink)}
+.gauge .state{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+.state.p{color:var(--pending)} .state.v{color:var(--verify)} .state.n{color:var(--mut)}
+.track{height:9px;background:var(--panel);border:1px solid var(--rule);border-radius:99px;margin:11px 0 9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.fill.v{background:var(--verify)}
+.fill.p{background:repeating-linear-gradient(135deg,#d9c48a 0 7px,#e8dcb8 7px 14px)}
+.fill.n{background:transparent}
+.gauge .sub{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:13px;color:var(--mut);line-height:1.5}
+
+/* ── principles ── */
+.principle{border-left:3px solid var(--rule);padding:2px 0 2px 18px;margin:20px 0}
+.principle b{color:var(--deep)}
+.stamped{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:18px 22px;margin:22px 0}
+.stamped h3{margin-top:0}
+
+ul{margin:13px 0 13px 20px} li{margin:8px 0}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin:20px 0}
+.cols h3{margin-top:0;font-size:18px}
+.cols p{font-size:15.5px;margin:6px 0}
+
+footer{margin-top:60px;border-top:3px double var(--rule);padding:26px 0 70px}
+.by{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:13px;color:var(--mut);line-height:1.6}
+.by strong{color:var(--ink-2)}
+
+@media (prefers-color-scheme:dark){
+ :root{--ink:#e8edf3;--ink-2:#b9c6d3;--mut:#8d9cad;--rule:#2b3644;--paper:#111820;--panel:#18212b;
+       --deep:#8dc0e4;--verify:#4ecb96;--pending:#d9ab45;--stamp:#e8836e}
+ .fill.p{background:repeating-linear-gradient(135deg,#584a24 0 7px,#6d5c2c 7px 14px)}
+}
+:root[data-theme="dark"]{--ink:#e8edf3;--ink-2:#b9c6d3;--mut:#8d9cad;--rule:#2b3644;--paper:#111820;--panel:#18212b;--deep:#8dc0e4;--verify:#4ecb96;--pending:#d9ab45;--stamp:#e8836e}
+:root[data-theme="light"]{--ink:#16202b;--ink-2:#3d4c5c;--mut:#6d7c8c;--rule:#e4e9ef;--paper:#fff;--panel:#f7f9fb;--deep:#123a52;--verify:#0b6b4f;--pending:#8a6410;--stamp:#a8402e}
+@media print{.soon{border-color:#000;color:#000}}
+</style></head><body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">A community record · La Porte County, Indiana</div>
+  <h1><span class="in">IN</span>formed LaPorte</h1>
+  <p class="dek">What was promised. What arrived. And the receipt for every number.</p>
+  <div class="soon">Launching this fall</div>
+</header>
+
+<p class="lede">A data center is being built in LaPorte. Promises were made — about jobs, about taxes, about water and electricity. Some of those promises are already being kept. Some cannot be measured yet. <b>This site will track all of them in one place, and show you the source document behind every figure.</b></p>
+
+<p>We are not for the project or against it. We are for the record.</p>
+
+<h2>The tracker</h2>
+<p>Every public commitment becomes a line you can watch fill in over time — the way a fundraising thermometer works. Below is how it will look. <b>These are the categories we will track, not results: nothing has been published yet.</b></p>
+
+<div class="gauge-list">
+
+  <div class="gauge">
+    <div class="top"><span class="label">Property taxes to LaPorte schools</span><span class="state p">Agreement in place</span></div>
+    <div class="track"><div class="fill p" style="width:22%"></div></div>
+    <div class="sub">A share of the project's property-tax revenue is committed to the school corporation. Revenue is expected to begin in 2028 — so this line stays honest and mostly empty until money actually moves.</div>
+  </div>
+
+  <div class="gauge">
+    <div class="top"><span class="label">Permanent jobs</span><span class="state p">Not yet measurable</span></div>
+    <div class="track"><div class="fill p" style="width:8%"></div></div>
+    <div class="sub">Construction jobs and permanent jobs are different things, and they are often blurred together. We will count them separately, against state employment data rather than announcements.</div>
+  </div>
+
+  <div class="gauge">
+    <div class="top"><span class="label">Water use and replenishment</span><span class="state n">No independent measurement exists</span></div>
+    <div class="track"><div class="fill n" style="width:0%"></div></div>
+    <div class="sub">Public estimates for this site currently differ by a factor of hundreds. Until someone publishes a real figure, this line stays at zero and says so.</div>
+  </div>
+
+  <div class="gauge">
+    <div class="top"><span class="label">Electricity — impact on residential bills</span><span class="state n">No independent measurement exists</span></div>
+    <div class="track"><div class="fill n" style="width:0%"></div></div>
+    <div class="sub">The most common question we hear. It will be answered from utility filings, not from press releases — and a widely-shared figure about Indiana data center power turns out to belong to a different company entirely.</div>
+  </div>
+
+  <div class="gauge">
+    <div class="top"><span class="label">Local hiring</span><span class="state n">Awaiting a defined measure</span></div>
+    <div class="track"><div class="fill n" style="width:0%"></div></div>
+    <div class="sub">A commitment to hire locally is only checkable once "local" has a definition and a number attached. Asking for that is our first question, not an accusation.</div>
+  </div>
+
+</div>
+
+<p class="note"><b>Some lines will sit empty for a long time.</b> That is the honest state of a project that broke ground in 2026 and opens in 2029 — and a tracker that showed otherwise would be lying to you.</p>
+
+<h2>How we work</h2>
+
+<div class="principle"><b>Every number has a receipt.</b> Click any figure and you will see the document and page — or the recording and timestamp — it came from. If we cannot show you the source, we do not print the number.</div>
+
+<div class="principle"><b>We save the source before we read it.</b> Every document and recording is preserved and fingerprinted the moment we obtain it. If a page is later edited or taken down, we can still prove what it said.</div>
+
+<div class="principle"><b>We check the good news too.</b> When a commitment is kept, that is a headline here. When a widely-shared claim against the project turns out to be wrong, we say so. A tracker that only ever reports failures is a campaign, not a record.</div>
+
+<div class="principle"><b>Nobody is quoted unless we know who spoke.</b> In a room full of officials, company representatives and residents, it is easy for a machine to put one person's words in another person's mouth. We separate and confirm every speaker first. When we cannot, we do not attribute.</div>
+
+<div class="principle"><b>We ask before we publish.</b> Anyone named in a finding is offered a real chance to respond, with a deadline, and their answer runs alongside it. This is built into our system: a finding without a logged response attempt <b>cannot</b> be published.</div>
+
+<div class="principle"><b>We correct in the open.</b> When we get something wrong, the correction stays visible along with what it replaced. We have already corrected ourselves once, publicly, in our own working files.</div>
+
+<h2>What this site will not do</h2>
+<ul>
+  <li>No comment sections, no ratings, no scoring companies or officials.</li>
+  <li>No opinion columns and no endorsements — for the project or against it.</li>
+  <li>No publishing anonymous claims. Submit evidence; we will verify it or we will not run it.</li>
+  <li>No advertiser, sponsor or partner has any say over a single figure on this site. Ever. We will publish who funds us.</li>
+</ul>
+
+<h2>Have something we should see?</h2>
+<div class="cols">
+  <div>
+    <h3>Send us a document</h3>
+    <p>Meeting recordings, letters, notices, permits, utility bills, photographs. We will check whether it is authentic before it goes anywhere near the site.</p>
+  </div>
+  <div>
+    <h3>Ask us a question</h3>
+    <p>The questions residents actually ask are what we research first — water, electricity, zoning, jobs, and what happens if the company leaves.</p>
+  </div>
+</div>
+
+<div class="stamped">
+  <h3>Submissions open at launch</h3>
+  <p class="note" style="margin-bottom:0">We are preparing the intake process now, including how we verify what is sent to us and how we protect people who send it. Anything submitted is reviewed before publication — never posted automatically.</p>
+</div>
+
+<footer>
+  <p class="by"><strong>INformed LaPorte</strong> is a community information project of <strong>CyberHopeAI</strong>, built on <strong>PrecognitionOS</strong> — a verification system that preserves, seals and traces every piece of evidence it uses.<br><br>
+  We are independent of Microsoft, the City of La Porte, La Porte County, and the State of Indiana. We will name every source of our funding on this site.<br><br>
+  <span style="color:var(--mut)">Preview page · no findings have been published · last updated August 2026</span></p>
+</footer>
+
+</div></body></html>
