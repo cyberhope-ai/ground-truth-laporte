@@ -1,0 +1,167 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LaPorte First Site — Data Center Truth · Integration &amp; Recommendation</title>
+<style>
+:root{
+ --ink:#131820;--mut:#5e6b7c;--line:#e2e7ee;--bg:#fff;--panel:#f6f8fb;
+ --deep:#0f2c47;--gold:#a97c2c;--grn:#0a6b45;--red:#a33128;--amb:#8a6410;--code:#eef2f7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.66 "Iowan Old Style",Georgia,serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 30px 90px}
+header{background:linear-gradient(135deg,#0b2137,#1a4066);color:#e9f1fa;margin:0 -30px 32px;padding:42px 44px 34px}
+.eyebrow{font-family:Arial,sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#d7a94e}
+h1{font-size:32px;margin:11px 0 7px;line-height:1.16;font-weight:600}
+header .sub{font-family:Arial,sans-serif;font-size:14.5px;opacity:.92;max-width:70ch}
+.stamp{display:inline-block;margin-top:15px;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.11em;
+ text-transform:uppercase;background:rgba(215,169,78,.16);border:1px solid rgba(215,169,78,.5);color:#e6bc66;padding:5px 12px;border-radius:3px}
+h2{font-family:Arial,sans-serif;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);
+ margin:44px 0 13px;padding-bottom:6px;border-bottom:2px solid var(--deep)}
+h3{font-family:Arial,sans-serif;font-size:15.5px;margin:28px 0 7px;color:var(--deep)}
+h4{font-family:Arial,sans-serif;font-size:13.5px;margin:0 0 8px}
+p{margin:11px 0} ul{margin:11px 0 11px 21px} li{margin:6px 0}
+.lead{font-size:17.5px;line-height:1.6}
+code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:12.5px;background:var(--code);padding:1.5px 5px;border-radius:3px}
+table{border-collapse:collapse;width:100%;font-family:Arial,sans-serif;font-size:13px;margin:14px 0}
+th{text-align:left;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--mut);padding:8px 10px;
+ border-bottom:2px solid var(--line);vertical-align:bottom}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+.box{border:1px solid var(--line);border-left:4px solid var(--deep);border-radius:7px;padding:15px 19px;margin:16px 0;background:var(--panel)}
+.box.gold{border-left-color:var(--gold);background:#fdfaf2}
+.box.red{border-left-color:var(--red);background:#fdf5f4}
+.box.grn{border-left-color:var(--grn);background:#f2faf6}
+.good{color:var(--grn);font-weight:700}.bad{color:var(--red);font-weight:700}.warn{color:var(--amb);font-weight:700}
+.mut{color:var(--mut);font-size:12.5px;font-family:Arial,sans-serif;line-height:1.55}
+.layer{display:grid;grid-template-columns:70px 1fr;gap:12px;border:1px solid var(--line);border-radius:7px;
+ padding:11px 14px;margin:6px 0;background:#fff;align-items:start}
+.layer .lid{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;color:#fff;background:var(--deep);
+ border-radius:4px;padding:5px 6px;text-align:center}
+.layer.ours .lid{background:var(--gold)}
+.layer p{margin:0;font-size:13.5px}
+.ledger{font-family:Arial,sans-serif;font-size:13px}
+.ledger td{padding:9px 10px}
+.pill{display:inline-block;font-size:9.5px;font-family:Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase;
+ font-weight:700;padding:3px 8px;border-radius:3px}
+.p-open{background:#e8edf3;color:#41546a}.p-met{background:#dff2e8;color:#0a6b45}
+.p-miss{background:#fbe3e0;color:#a33128}.p-unv{background:#fdf1d8;color:#8a6210}
+@media (prefers-color-scheme:dark){
+ :root{--ink:#e6ecf3;--mut:#97a4b5;--line:#2a3440;--bg:#0f141a;--panel:#161d26;--deep:#7fb2e8;--gold:#dcae56;--grn:#4fca8f;--red:#ea7b6f;--amb:#dbaa3c;--code:#171f29}
+ .layer{background:#141b24} tr:hover td{background:#141b23}
+ .box.gold{background:#1d1a11}.box.red{background:#1f1512}.box.grn{background:#0f1d16}
+ header{background:linear-gradient(135deg,#08172a,#12304d)} .layer .lid{color:#0f141a}
+ .p-open{background:#1e2733;color:#9db0c6}.p-met{background:#123324;color:#63d69f}
+ .p-miss{background:#331915;color:#eb8b7f}.p-unv{background:#33290f;color:#e0b452}
+}
+:root[data-theme="dark"]{--ink:#e6ecf3;--mut:#97a4b5;--line:#2a3440;--bg:#0f141a;--panel:#161d26;--deep:#7fb2e8;--gold:#dcae56;--grn:#4fca8f;--red:#ea7b6f;--code:#171f29}
+:root[data-theme="dark"] .layer{background:#141b24}
+:root[data-theme="light"]{--ink:#131820;--mut:#5e6b7c;--line:#e2e7ee;--bg:#fff;--panel:#f6f8fb;--deep:#0f2c47;--gold:#a97c2c;--grn:#0a6b45;--red:#a33128;--code:#eef2f7}
+@media print{header{background:#0b2137!important;-webkit-print-color-adjust:exact}.wrap{padding:0 10px}.box,table{break-inside:avoid}}
+</style></head><body>
+<div class="wrap">
+<header>
+ <div class="eyebrow">CyberHopeAI · PrecognitionOS · Strategy &amp; Integration</div>
+ <h1>LaPorte First Site<br>The Truth About Data Centers</h1>
+ <div class="sub">Integrating the INformed Indiana concept with the Veritas engine already under construction — and a sharp recommendation about what to build first, what to defer, and the one structural risk that could discredit the whole thing.</div>
+ <div class="stamp">For decision · 2026-08-28</div>
+</header>
+
+<p class="lead">The INformed Indiana plan and the Veritas engine are <b>the same system described at two altitudes.</b> Its "PCOS Trust Plane" — ingestion, provenance, entity resolution, claim extraction, verification, corroboration, governance, publication — is the pipeline we already specced and partly built. There is no architectural conflict to resolve. <b>But it adds one thing we genuinely did not have, and that thing turns out to be the whole product for LaPorte.</b></p>
+
+<h2>1 · What the plan adds: the temporal axis</h2>
+<p>Our engine answers <i>"is this statement true right now?"</i> That is the wrong question for a data center. Almost every public statement about an infrastructure project is a <b>promise about the future</b>: jobs, tax revenue, water use, megawatts, road improvements, training seats. <b>A promise is not false when it is made.</b> It becomes true or false years later, usually after everyone has stopped paying attention.</p>
+<p>So the plan's Claim → Commitment → Outcome loop is not a nice-to-have. It is the missing half of the engine, and I have already built it:</p>
+<div class="box grn">
+<h4>Committed: <code>engine/schema/002_promise_ledger.sql</code></h4>
+<p><code>project</code> · <code>commitment</code> · <code>outcome</code> · <code>submission</code> · <code>verification_record</code>, plus a deterministic <code>commitment_status_for()</code> and a public <code>promise_ledger</code> view. Six decisions in it are load-bearing:</p>
+<ul style="margin-bottom:0">
+<li><b><code>project.aliases</code></b> — data centers are announced under LLC shells and codenames. Without alias history, every promise made under the codename <b>detaches from the operator</b> the moment the real name is revealed. This is how accountability normally evaporates.</li>
+<li><b><code>jobs_permanent</code> vs <code>jobs_construction</code></b> as separate types. Conflating them is the single most common move in economic-development announcements.</li>
+<li><b><code>tax_abatement_usd</code> is a commitment type.</b> What the public <i>gives up</i> belongs in the ledger beside what it is promised.</li>
+<li><b><code>deadline_stated</code></b> — a promise with no date cannot be missed, which is frequently the point. Publish the absence of a date as its own finding.</li>
+<li><b><code>outcome.authored_by_promisor</code></b> with a CHECK constraint: self-reported numbers are recorded but <b>can never move a commitment to "met."</b></li>
+<li><b><code>verification_record</code> is versioned</b>, never overwritten. 82% confidence today can become 98% in six months as a new version, without rewriting history.</li>
+</ul>
+</div>
+<p>The public surface this produces is the entire pitch, and it fits on one line: <b>600 jobs promised · 491 independently documented · 81.8% · show me the receipts.</b></p>
+
+<h2>2 · The structural risk — please read this before anything else</h2>
+<div class="box red">
+<h4>Do not put SkillDNA careers and data-center truth on the same site in V1</h4>
+<p>The flywheel in the plan routes people from <i>learning the truth about data centers</i> into <i>training for data-center jobs</i>. Commercially that is elegant. <b>For a truth product it is disqualifying.</b></p>
+<p style="margin-bottom:0">If the same organization tells the public whether the data center is good for LaPorte <b>and</b> sells training for data-center jobs, then <b>we are financially interested in the answer being yes.</b> The first person to notice that — a remonstrator, a reporter, an opposing official — ends the project's credibility permanently, and they will be right to. Our only asset is being trusted by people who dislike our findings. Keep SkillDNA and the truth site as <b>separate brands, separate domains, separate governance</b>, and let them connect later through a disclosed, arms-length referral. <b>The cost of separating them now is small. The cost of separating them after the accusation is total.</b></p>
+</div>
+<div class="box red">
+<h4>The second neutrality trap: everyone will assume a "data center truth" site is opposition</h4>
+<p style="margin-bottom:0">The name alone signals activism to a company, an economic-development office, and half the county. The only defense is <b>demonstrated symmetry, early and loudly</b>: publish findings that favor Microsoft and the officials as prominently as findings that don't. If the company hits a commitment, that is a headline. If a viral local claim about water use turns out to be wrong, <b>we debunk it</b> — and that single act will do more for our standing than ten critical pieces. Build the first ten items in the ledger to include company wins. <b>A ledger that only ever reads "missed" is a campaign, not a record.</b></p>
+</div>
+
+<h2>3 · Why LaPorte is the right first site</h2>
+<table>
+<tr><th style="width:190px">Property</th><th>Why it matters</th></tr>
+<tr><td><b>Bounded and finite</b></td><td>One project, one county, a handful of named officials, a countable set of public meetings. The whole domain fits in a corpus we can actually complete — unlike "Indiana."</td></tr>
+<tr><td><b>Everything is numeric and dated</b></td><td>Jobs, dollars, acres, megawatts, gallons, abatement years. Perfect ledger material; nearly nothing is a matter of taste.</td></tr>
+<tr><td><b>The records already exist</b></td><td>City council, county commissioners, county council, plan commission, redevelopment commission, IURC filings, IEDC agreements, Gateway/DLGF. Public, dated, and — as in Vigo — probably scanned images nobody has read.</td></tr>
+<tr><td><b>Real turbulence</b></td><td>A community in conflict is a community that will actually use a source of truth. Quiet counties do not need one.</td></tr>
+<tr><td><b>It generalizes on day one</b></td><td>Every county facing a data center has the same fight with the same categories. LaPorte is the template, not a one-off.</td></tr>
+<tr><td><b>The recordings</b></td><td>Your own meeting and conference recordings become tier-1 primary evidence — provided they clear the gates below.</td></tr>
+</table>
+
+<h2>4 · The 11 layers, applied to LaPorte</h2>
+<div class="layer"><div class="lid">L0–L1</div><p><b>Hardware &amp; network.</b> Fleet nodes for ingestion, OCR, and transcription; Azure for the public surface. Local GPU handles the heavy media work at no marginal cost — the LaPorte corpus is mostly video and scanned PDFs.</p></div>
+<div class="layer"><div class="lid">L2–L3</div><p><b>Storage &amp; data.</b> Blob for original evidence (video, audio, PDFs), Postgres for the 22-table graph, pgvector for the congruence and search indexes.</p></div>
+<div class="layer ours"><div class="lid">L4</div><p><b>QSurface — the receipts layer.</b> Every artifact, verdict, commitment, and outcome sealed into the hash-linked audit chain. <b>This is what "show me the receipts" resolves to</b>, and it is the one thing no competitor and no news outlet has. When the company disputes a number, we hand them a sealed chain instead of an argument.</p></div>
+<div class="layer"><div class="lid">L5</div><p><b>Semantic.</b> Entity resolution across the project's alias history; role-by-date for every official; claim extraction; <b>commitment detection</b> — deciding whether a statement is an observation, a projection, or a measurable pledge. That classifier is the highest-value new model work.</p></div>
+<div class="layer"><div class="lid">L6</div><p><b>Application.</b> The twelve pipeline stages, plus public evidence intake with quarantine-by-default.</p></div>
+<div class="layer"><div class="lid">L7–L8</div><p><b>Presentation &amp; access.</b> Project page, promise ledger, evidence tab on every number, and "Ask" over the sealed corpus only. Public read; contributor and organization portals gated.</p></div>
+<div class="layer ours"><div class="lid">L9</div><p><b>Orchestration — multi-provider verification.</b> <b>No single model produces a final answer alone.</b> Claude and Qwen cross-check; the adversary pass runs on a different model than the drafting pass. For a project where a trillion-dollar company may dispute our findings, "two independent models agreed, here is the reasoning" is a materially stronger position than one model's confidence.</p></div>
+<div class="layer"><div class="lid">L10</div><p><b>Mothership — governance.</b> Publication gates, the right-to-respond policy, correction policy, retention policy for rejected submissions, and the symmetry rule. This is where the neutrality commitments become enforced rules rather than intentions.</p></div>
+
+<h2>5 · Your recordings — a warning worth more than the tape</h2>
+<div class="box gold">
+<h4>Meeting recordings are multi-speaker. Every trap we found in Vigo applies, and one is worse here.</h4>
+<p>The Vigo pilot produced four ways to generate a confident falsehood, and a room containing a mayor, councillors, company representatives, and public commenters is where all four converge:</p>
+<ul>
+<li><b>Unlabeled speakers</b> — the failure that nearly attributed an interviewee's vote to our subject. In a council chamber with a dozen voices this is not an edge case, it is the default. <b>Speaker diarization is a hard prerequisite before any recording enters the ledger.</b></li>
+<li><b>Role-by-date</b> — officials change seats; a promise made by "the council president" must attach to whoever held it that day.</li>
+<li><b>Rhetorical mode</b> — officials read constituent letters aloud, quote company statements, and pose hypotheticals. Each of those is someone else's words in their mouth.</li>
+<li><b>Numbers</b> — never through a summarizer. A misheard "fourteen" for "forty" in a jobs figure is a correction and a credibility hit.</li>
+</ul>
+<p style="margin-bottom:0"><b>One additional rule specific to your recordings:</b> if any were made in a setting that was not clearly public, or where participants had a reasonable expectation of privacy, they are <b>not publishable evidence</b> regardless of what they contain. Public meetings and public conferences are fair game; a side conversation is not. Establish that provenance per recording <i>before</i> ingestion, not after.</p>
+</div>
+
+<h2>6 · What V1 is — and what it deliberately is not</h2>
+<p><b>V1 is one project page and one promise ledger.</b> That is the entire product. It is small enough to be complete, and completeness is what makes it credible.</p>
+<table class="ledger">
+<tr><th colspan="5">What the LaPorte page looks like on day one <span class="mut">(illustrative structure — figures pending verification)</span></th></tr>
+<tr><th>Promise</th><th>Promised</th><th>By when</th><th>Independently documented</th><th>Status</th></tr>
+<tr><td>Permanent full-time jobs</td><td class="mut">as stated</td><td class="mut">as stated</td><td class="mut">state employment data</td><td><span class="pill p-open">Open</span></td></tr>
+<tr><td>Construction jobs <span class="mut">(counted separately, always)</span></td><td class="mut">as stated</td><td class="mut">as stated</td><td class="mut">—</td><td><span class="pill p-open">Open</span></td></tr>
+<tr><td>Capital investment</td><td class="mut">as stated</td><td class="mut">as stated</td><td class="mut">assessor / IEDC agreement</td><td><span class="pill p-open">Open</span></td></tr>
+<tr><td>Tax abatement granted <span class="mut">(what the public gives up)</span></td><td class="mut">from the ordinance</td><td class="mut">term in years</td><td class="mut">county records</td><td><span class="pill p-met">Documented</span></td></tr>
+<tr><td>Water use</td><td class="mut">as stated</td><td class="mut">—</td><td class="mut">utility filings</td><td><span class="pill p-unv">No independent measure</span></td></tr>
+<tr><td>Power load</td><td class="mut">as stated</td><td class="mut">—</td><td class="mut">IURC filings</td><td><span class="pill p-open">Open</span></td></tr>
+</table>
+<p class="mut">Every cell links to its receipts. Where no independent measurement exists, we say so — <b>"unverifiable" is a finding, not a gap to hide.</b> Several rows will be exactly that at launch, and publishing them honestly is what tells a skeptical reader this is a record rather than a case.</p>
+
+<h3>Defer, deliberately</h3>
+<p>The plan's own "do not build these" list is right, and I would cut further for V1: no forums, no scores, no leaderboards, no company ratings, no political commentary — <b>and also</b> no SkillDNA integration, no careers, no training surface, no statewide map, no multi-topic Learn section, no Ask interface until the corpus is large enough to answer well. A thin Ask over a small corpus makes the whole system look unreliable at exactly the moment first impressions form.</p>
+<p><b>Add one thing the plan does not have:</b> a plainly-worded <b>"How we work"</b> page — sources hierarchy, verdict scale, correction policy, right-to-respond, funding, and who we are. For a site whose only product is trust, that page is not boilerplate; it is the product's warranty, and it should ship in V1.</p>
+
+<h2>7 · Sequence</h2>
+<table>
+<tr><th style="width:78px">Step</th><th>Work</th><th>Done when</th></tr>
+<tr><td><b>1</b></td><td><b>Corpus</b> — pull every LaPorte city/county/plan-commission record touching the project; OCR; parse roll-call votes; seal everything</td><td>The full public record of the project is searchable for the first time</td></tr>
+<tr><td><b>2</b></td><td><b>Commitment extraction</b> — every dated numeric promise, with speaker, forum, and source anchor</td><td>The ledger has its rows, each traceable to a document and page or a video timestamp</td></tr>
+<tr><td><b>3</b></td><td><b>Independent outcomes</b> — wire the measurement sources (state employment data, utility/IURC filings, assessor records, Gateway)</td><td>At least one commitment has a real independent observation, and at least one is honestly marked unverifiable</td></tr>
+<tr><td><b>4</b></td><td><b>Right to respond</b> — formally offer Microsoft, the mayor, and the county the chance to respond <b>before</b> launch</td><td>Every ledger row carries a logged reply attempt (the DB trigger enforces this)</td></tr>
+<tr><td><b>5</b></td><td><b>Launch</b> — one project page, the ledger, evidence tabs, "How we work"</td><td>Live, with company-favorable and community-favorable findings both visible on day one</td></tr>
+<tr><td><b>6</b></td><td><b>Second county</b></td><td>The template proves portable — which is the actual business</td></tr>
+</table>
+
+<h2>8 · My recommendation</h2>
+<p><b>Build the LaPorte promise ledger and nothing else.</b> It is achievable in weeks on the schema that now exists, it uses the pilot's proven ingestion, and it produces something no newsroom, no company, and no county government currently has: <b>a dated, sealed, independently-measured record of what was promised and what arrived.</b></p>
+<p>Hold the platform. INformed Indiana is a good eventual shape, but every additional surface multiplies the surface area for a credibility mistake, and the flywheel cannot spin until the ledger is trusted anyway. <b>Trust is the constraint, not features.</b></p>
+<p>And keep the careers business at arm's length from the truth business — permanently. That is the single decision most likely to determine whether this thing is believed in five years.</p>
+
+<p class="mut" style="margin-top:32px;padding-top:15px;border-top:1px solid var(--line)">
+Prepared by atlas3-claude · 2026-08-28 · Integrates <i>community-data-center-truth.txt</i> with the Veritas build spec and the Vigo County pilot. Schema committed: <code>engine/schema/001_core.sql</code>, <code>engine/schema/002_promise_ledger.sql</code> (22 tables). LaPorte project specifics are under active research and will be appended when verified — <b>no figures are asserted in this document.</b></p>
+</div></body></html>
