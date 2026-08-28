@@ -1,180 +1,282 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>INformed LaPorte — What was promised. What arrived.</title>
-<meta name="description" content="A community record of the LaPorte data center project. Every number carries its receipt.">
+<meta name="description" content="A verified community record of the LaPorte data center project. Every number carries its receipt. Powered by PrecognitionOS.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#16202b; --ink-2:#3d4c5c; --mut:#6d7c8c; --rule:#e4e9ef;
-  --paper:#ffffff; --panel:#f7f9fb;
-  --deep:#123a52;        /* headline ink */
-  --verify:#0b6b4f;      /* verified */
-  --pending:#8a6410;     /* awaiting measurement */
-  --stamp:#a8402e;       /* the stamp */
+  --bg:#0a0d14; --bg-2:#0f141d; --panel:#141b26; --line:#222c3a; --line-2:#2e3a4b;
+  --fg:#e9eaee; --fg-2:#a6b0be; --mut:#6f7d8d;
+  --gold:#d1a84b; --gold-dim:rgba(209,168,75,.13); --gold-line:rgba(209,168,75,.32);
+  --nav:rgba(10,13,20,.9); --track:#0c1018;
+  --verify:#31d296; --pending:#d9ab45; --null:#5a6875;
+  --display:"Space Grotesk",system-ui,sans-serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font:17px/1.65 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
-.wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans);
+  background-image:
+    radial-gradient(900px 500px at 15% -8%, rgba(209,168,75,.07), transparent 60%),
+    radial-gradient(700px 420px at 92% 4%, rgba(49,210,150,.05), transparent 62%);
+  background-attachment:fixed}
+.wrap{max-width:1040px;margin:0 auto;padding:0 26px}
+.narrow{max-width:760px}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:3px}
 
-/* ── masthead ── */
-header{border-bottom:3px double var(--rule);padding:34px 0 24px;margin-bottom:6px}
-.kicker{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut)}
-h1{font-size:clamp(34px,7vw,52px);line-height:1.02;margin:12px 0 10px;font-weight:600;
-  letter-spacing:-.015em;color:var(--deep)}
-h1 .in{color:var(--stamp)}
-.dek{font-size:19px;line-height:1.5;color:var(--ink-2);max-width:34em;margin:0}
-.soon{display:inline-block;margin-top:20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--stamp);
-  border:2px solid var(--stamp);border-radius:3px;padding:7px 13px;transform:rotate(-1.2deg)}
+/* ── nav ── */
+nav{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;
+  background:var(--nav);backdrop-filter:blur(10px)}
+nav .in{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  max-width:1040px;margin:0 auto;padding:13px 26px}
+.brand{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.01em}
+.brand .hl{color:var(--gold)}
+.navlinks{display:flex;gap:22px;font-size:13.5px;color:var(--fg-2)}
+.navlinks a{color:var(--fg-2)}
+.navlinks a:hover{color:var(--gold);text-decoration:none}
+@media(max-width:640px){.navlinks{display:none}}
 
-h2{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);
-  margin:52px 0 14px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
-h3{font-size:21px;margin:28px 0 6px;color:var(--deep);font-weight:600;line-height:1.25}
-p{margin:13px 0}
-a{color:var(--deep)}
-.lede{font-size:19px;line-height:1.6}
-.note{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  font-size:13.5px;color:var(--mut);line-height:1.55}
+/* ── hero ── */
+header{padding:74px 0 60px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(40px,7.2vw,72px);line-height:.99;
+  letter-spacing:-.03em;margin:20px 0 0}
+h1 .l2{display:block;color:var(--fg-2)}
+.dek{font-size:20px;line-height:1.55;color:var(--fg-2);max-width:36em;margin:24px 0 0}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:32px}
+.pill{font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:500;
+  color:var(--gold);border:1px solid var(--gold-line);background:var(--gold-dim);padding:9px 15px;border-radius:4px}
+.pill.live{color:var(--verify);border-color:rgba(49,210,150,.3);background:rgba(49,210,150,.08)}
+.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--verify);margin-right:7px;
+  box-shadow:0 0 0 0 rgba(49,210,150,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 7px rgba(49,210,150,0)}100%{box-shadow:0 0 0 0 rgba(49,210,150,0)}}
+@media(prefers-reduced-motion:reduce){.dot{animation:none}}
 
-/* ── the thermometer ── */
-.gauge-list{margin:22px 0 8px}
-.gauge{border-top:1px solid var(--rule);padding:16px 0}
-.gauge:last-child{border-bottom:1px solid var(--rule)}
-.gauge .top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
-.gauge .label{font-size:17px;font-weight:600;color:var(--ink)}
-.gauge .state{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;white-space:nowrap}
-.state.p{color:var(--pending)} .state.v{color:var(--verify)} .state.n{color:var(--mut)}
-.track{height:9px;background:var(--panel);border:1px solid var(--rule);border-radius:99px;margin:11px 0 9px;overflow:hidden}
+/* ── sections ── */
+section{padding:62px 0;border-bottom:1px solid var(--line)}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(27px,4vw,40px);line-height:1.1;
+  letter-spacing:-.02em;margin:0 0 8px}
+h2 .hl{color:var(--gold)}
+.sublabel{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--mut);margin-bottom:16px}
+h3{font-family:var(--display);font-weight:500;font-size:19px;margin:0 0 6px;letter-spacing:-.01em}
+p{margin:14px 0;color:var(--fg-2)}
+p.big{font-size:18.5px;color:var(--fg);line-height:1.6}
+strong{color:var(--fg);font-weight:600}
+
+/* ── tracker ── */
+.gauges{margin:26px 0 6px;border-top:1px solid var(--line)}
+.g{border-bottom:1px solid var(--line);padding:19px 0}
+.g .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.g .name{font-family:var(--display);font-weight:500;font-size:18px;color:var(--fg)}
+.g .state{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;white-space:nowrap}
+.state.v{color:var(--verify)} .state.p{color:var(--pending)} .state.n{color:var(--null)}
+.track{height:7px;background:var(--track);border:1px solid var(--line);border-radius:99px;margin:13px 0 10px;overflow:hidden}
 .fill{height:100%;border-radius:99px}
-.fill.v{background:var(--verify)}
-.fill.p{background:repeating-linear-gradient(135deg,#d9c48a 0 7px,#e8dcb8 7px 14px)}
-.fill.n{background:transparent}
-.gauge .sub{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  font-size:13px;color:var(--mut);line-height:1.5}
+.fill.v{background:linear-gradient(90deg,#1f9a6e,var(--verify))}
+.fill.p{background:repeating-linear-gradient(115deg,rgba(217,171,69,.55) 0 6px,rgba(217,171,69,.16) 6px 12px)}
+.g .why{font-size:14.5px;color:var(--mut);line-height:1.55;max-width:64em}
+
+/* ── cards ── */
+.grid{display:grid;gap:15px;margin-top:26px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(258px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:20px 22px}
+.card .num{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--gold);margin-bottom:9px}
+.card p{margin:7px 0 0;font-size:15px}
+.card.accent{border-color:var(--gold-line);background:linear-gradient(160deg,rgba(209,168,75,.07),var(--panel) 55%)}
 
 /* ── principles ── */
-.principle{border-left:3px solid var(--rule);padding:2px 0 2px 18px;margin:20px 0}
-.principle b{color:var(--deep)}
-.stamped{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:18px 22px;margin:22px 0}
-.stamped h3{margin-top:0}
+.pr{border-left:2px solid var(--line-2);padding:3px 0 3px 20px;margin:19px 0}
+.pr b{color:var(--fg);font-family:var(--display);font-weight:500}
+.pr:hover{border-left-color:var(--gold)}
 
-ul{margin:13px 0 13px 20px} li{margin:8px 0}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin:20px 0}
-.cols h3{margin-top:0;font-size:18px}
-.cols p{font-size:15.5px;margin:6px 0}
+/* ── team ── */
+.person{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;
+  background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:22px 24px;margin-top:15px}
+.mono-badge{font-family:var(--mono);font-size:19px;font-weight:500;color:var(--gold);
+  border:1px solid var(--gold-line);background:var(--gold-dim);border-radius:7px;
+  width:52px;height:52px;display:grid;place-items:center}
+.person .role{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--mut);margin:3px 0 8px}
+@media(max-width:520px){.person{grid-template-columns:1fr}}
 
-footer{margin-top:60px;border-top:3px double var(--rule);padding:26px 0 70px}
-.by{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:13px;color:var(--mut);line-height:1.6}
-.by strong{color:var(--ink-2)}
+.callout{background:linear-gradient(160deg,rgba(209,168,75,.09),var(--panel) 60%);
+  border:1px solid var(--gold-line);border-radius:10px;padding:24px 26px;margin:26px 0}
+.callout h3{color:var(--gold)}
+.quiet{background:var(--bg-2);border:1px solid var(--line);border-radius:9px;padding:20px 24px;margin:22px 0}
+ul{margin:14px 0 14px 20px;color:var(--fg-2)} li{margin:9px 0}
+footer{padding:40px 0 80px;color:var(--mut);font-size:13.5px;line-height:1.7}
+footer strong{color:var(--fg-2)}
+.sig{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-top:18px}
 
-@media (prefers-color-scheme:dark){
- :root{--ink:#e8edf3;--ink-2:#b9c6d3;--mut:#8d9cad;--rule:#2b3644;--paper:#111820;--panel:#18212b;
-       --deep:#8dc0e4;--verify:#4ecb96;--pending:#d9ab45;--stamp:#e8836e}
- .fill.p{background:repeating-linear-gradient(135deg,#584a24 0 7px,#6d5c2c 7px 14px)}
+@media (prefers-color-scheme:light){
+ :root{--bg:#fbfcfd;--bg-2:#f4f7fa;--panel:#fff;--line:#e2e8ef;--line-2:#cfd8e3;
+       --fg:#101720;--fg-2:#3f4c5b;--mut:#6b7887;--gold:#8c6c1f;--gold-dim:rgba(140,108,31,.07);
+       --gold-line:rgba(140,108,31,.3);--verify:#0b7a56;--pending:#8a6410;--null:#8d99a6;
+       --nav:rgba(251,252,253,.92);--track:#eef2f6}
+ body{background-image:radial-gradient(900px 500px at 15% -8%,rgba(140,108,31,.05),transparent 60%)}
 }
-:root[data-theme="dark"]{--ink:#e8edf3;--ink-2:#b9c6d3;--mut:#8d9cad;--rule:#2b3644;--paper:#111820;--panel:#18212b;--deep:#8dc0e4;--verify:#4ecb96;--pending:#d9ab45;--stamp:#e8836e}
-:root[data-theme="light"]{--ink:#16202b;--ink-2:#3d4c5c;--mut:#6d7c8c;--rule:#e4e9ef;--paper:#fff;--panel:#f7f9fb;--deep:#123a52;--verify:#0b6b4f;--pending:#8a6410;--stamp:#a8402e}
-@media print{.soon{border-color:#000;color:#000}}
+:root[data-theme="light"]{--bg:#fbfcfd;--bg-2:#f4f7fa;--panel:#fff;--line:#e2e8ef;--line-2:#cfd8e3;--fg:#101720;--fg-2:#3f4c5b;--mut:#6b7887;--gold:#8c6c1f;--gold-dim:rgba(140,108,31,.07);--gold-line:rgba(140,108,31,.3);--verify:#0b7a56;--pending:#8a6410;--null:#8d99a6;--nav:rgba(251,252,253,.92);--track:#eef2f6}
+:root[data-theme="dark"]{--bg:#0a0d14;--bg-2:#0f141d;--panel:#141b26;--line:#222c3a;--line-2:#2e3a4b;--fg:#e9eaee;--fg-2:#a6b0be;--mut:#6f7d8d;--gold:#d1a84b;--gold-dim:rgba(209,168,75,.13);--gold-line:rgba(209,168,75,.32);--verify:#31d296;--pending:#d9ab45;--null:#5a6875;--nav:rgba(10,13,20,.9);--track:#0c1018}
 </style></head><body>
+
+<nav><div class="in">
+  <div class="brand"><span class="hl">IN</span>formed LaPorte</div>
+  <div class="navlinks">
+    <a href="#tracker">Tracker</a><a href="#why">Why we built this</a>
+    <a href="#how">How it works</a><a href="#who">Who we are</a><a href="#submit">Submit evidence</a>
+  </div>
+</div></nav>
+
 <div class="wrap">
 
 <header>
-  <div class="kicker">A community record · La Porte County, Indiana</div>
-  <h1><span class="in">IN</span>formed LaPorte</h1>
-  <p class="dek">What was promised. What arrived. And the receipt for every number.</p>
-  <div class="soon">Launching this fall</div>
+  <div class="eyebrow">La Porte County, Indiana · Data Center Project Record</div>
+  <h1>What was promised.<span class="l2">What actually arrived.</span></h1>
+  <p class="dek">A public record of the LaPorte data center — every commitment tracked, every figure traceable to the document or recording it came from.</p>
+  <div class="hero-cta">
+    <span class="pill live"><span class="dot"></span>Launching this fall</span>
+    <span class="pill">Powered by PrecognitionOS</span>
+  </div>
 </header>
 
-<p class="lede">A data center is being built in LaPorte. Promises were made — about jobs, about taxes, about water and electricity. Some of those promises are already being kept. Some cannot be measured yet. <b>This site will track all of them in one place, and show you the source document behind every figure.</b></p>
+<section id="why">
+  <div class="sublabel">Why we built this</div>
+  <h2>Nobody was arguing about <span class="hl">facts</span>.<br>They were arguing about <span class="hl">numbers nobody could check</span>.</h2>
+  <div class="narrow">
+    <p class="big">A billion-dollar data center is going up in LaPorte. Residents started asking exactly the right questions — about water, about electricity bills, about jobs, about what the county actually agreed to.</p>
+    <p>The answers they got came from press releases, from opponents, and from social media. Almost none of it could be traced back to a source. And some of the numbers circulating most widely in Indiana turn out, on inspection, to describe <strong>an entirely different company's project</strong>.</p>
+    <p>Meanwhile the state's own economic development leadership said publicly, in August 2026, that the message about growth "is not landing." <strong>That is not a messaging problem. It is a trust problem</strong> — and more messaging has never once solved one.</p>
+    <p>So we built the other thing. Not another voice in the argument: <strong>the shared record underneath it</strong>, where anyone — supporter, skeptic, reporter, or the company itself — can click a number and see exactly where it came from.</p>
+  </div>
+  <div class="grid g3">
+    <div class="card"><div class="num">01</div><h3>For residents</h3><p>Straight answers to the questions actually being asked, with the source document attached to every figure.</p></div>
+    <div class="card"><div class="num">02</div><h3>For local officials</h3><p>A durable record of what was agreed to, so commitments survive election cycles and staff turnover.</p></div>
+    <div class="card"><div class="num">03</div><h3>For the companies</h3><p>A venue where keeping your word is visible and verifiable. Verified good news is worth more than a press release, because it can be checked.</p></div>
+  </div>
+</section>
 
-<p>We are not for the project or against it. We are for the record.</p>
+<section id="tracker">
+  <div class="sublabel">The tracker</div>
+  <h2>Every promise becomes a line that fills in</h2>
+  <p class="narrow big">Like a fundraising thermometer: it starts empty and climbs as commitments are independently confirmed. Below are the categories we will track. <strong>These are not results — nothing has been published yet.</strong></p>
 
-<h2>The tracker</h2>
-<p>Every public commitment becomes a line you can watch fill in over time — the way a fundraising thermometer works. Below is how it will look. <b>These are the categories we will track, not results: nothing has been published yet.</b></p>
-
-<div class="gauge-list">
-
-  <div class="gauge">
-    <div class="top"><span class="label">Property taxes to LaPorte schools</span><span class="state p">Agreement in place</span></div>
-    <div class="track"><div class="fill p" style="width:22%"></div></div>
-    <div class="sub">A share of the project's property-tax revenue is committed to the school corporation. Revenue is expected to begin in 2028 — so this line stays honest and mostly empty until money actually moves.</div>
+  <div class="gauges">
+    <div class="g">
+      <div class="row"><span class="name">Property taxes to LaPorte schools</span><span class="state p">Agreement in place</span></div>
+      <div class="track"><div class="fill p" style="width:22%"></div></div>
+      <div class="why">A share of the project's property-tax revenue is committed to the school corporation for 20 years. Revenue is expected to begin in 2028 — so this line stays mostly empty until money actually moves.</div>
+    </div>
+    <div class="g">
+      <div class="row"><span class="name">Permanent jobs</span><span class="state p">Not yet measurable</span></div>
+      <div class="track"><div class="fill p" style="width:8%"></div></div>
+      <div class="why">Construction jobs and permanent jobs are different things and are frequently blurred together. We count them separately, against state employment data rather than announcements.</div>
+    </div>
+    <div class="g">
+      <div class="row"><span class="name">Water use and replenishment</span><span class="state n">No independent measurement exists</span></div>
+      <div class="track"><div class="fill" style="width:0%"></div></div>
+      <div class="why">Public estimates for this site currently differ by a factor of hundreds. Until a real figure is published, this line stays at zero and says so.</div>
+    </div>
+    <div class="g">
+      <div class="row"><span class="name">Electricity — impact on residential bills</span><span class="state n">No independent measurement exists</span></div>
+      <div class="track"><div class="fill" style="width:0%"></div></div>
+      <div class="why">The most common question we hear. It will be answered from utility regulatory filings, not from either side's characterization of them.</div>
+    </div>
+    <div class="g">
+      <div class="row"><span class="name">Local hiring</span><span class="state n">Awaiting a defined measure</span></div>
+      <div class="track"><div class="fill" style="width:0%"></div></div>
+      <div class="why">A commitment to hire locally becomes checkable once "local" has a definition and a number attached. Asking for that is our first question — not an accusation.</div>
+    </div>
   </div>
 
-  <div class="gauge">
-    <div class="top"><span class="label">Permanent jobs</span><span class="state p">Not yet measurable</span></div>
-    <div class="track"><div class="fill p" style="width:8%"></div></div>
-    <div class="sub">Construction jobs and permanent jobs are different things, and they are often blurred together. We will count them separately, against state employment data rather than announcements.</div>
+  <div class="quiet">
+    <h3>Three of five lines are empty. That is the point.</h3>
+    <p style="margin-bottom:0">This project broke ground in 2026 and opens in 2029. A tracker showing confident numbers today would be inventing them. <strong>Where no independent measurement exists, we say so and leave the bar at zero</strong> — and we name who would have to publish the figure for that to change.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="sublabel">How it works</div>
+  <h2>Evidence, sealed before it is read</h2>
+  <div class="narrow">
+    <p class="big">This site runs on <strong>PrecognitionOS</strong>, a governed AI system built to produce findings that survive being challenged — by a resident, a reporter, a county attorney, or a trillion-dollar company's lawyer.</p>
   </div>
 
-  <div class="gauge">
-    <div class="top"><span class="label">Water use and replenishment</span><span class="state n">No independent measurement exists</span></div>
-    <div class="track"><div class="fill n" style="width:0%"></div></div>
-    <div class="sub">Public estimates for this site currently differ by a factor of hundreds. Until someone publishes a real figure, this line stays at zero and says so.</div>
+  <div class="pr"><b>Every number has a receipt.</b> Click any figure and you get the document and page — or the recording and timestamp — it came from. If we can't show the source, we don't print the number.</div>
+  <div class="pr"><b>Sources are preserved before analysis.</b> Every document and recording is fingerprinted and sealed the moment we obtain it. If a page is later edited or deleted, we can still prove what it said.</div>
+  <div class="pr"><b>Figures are never summarized by AI.</b> Numbers are extracted mechanically from the sealed source. We have watched AI summarizers invent three different budget figures from a single article — so ours are not permitted to touch them.</div>
+  <div class="pr"><b>Nobody is quoted unless we know who spoke.</b> In a room of officials, company representatives and residents, it is trivially easy for software to put one person's words in another's mouth. We separate and confirm every speaker first. When we can't, we don't attribute.</div>
+  <div class="pr"><b>We look for the case against our own finding.</b> Before anything is recorded, the system searches for the strongest evidence that we are wrong. Findings that don't survive that don't run.</div>
+  <div class="pr"><b>We ask before we publish.</b> Anyone named is offered a real chance to respond, with a deadline, and their answer runs alongside the finding. This is enforced in the software: <strong>a finding with no logged response attempt cannot be published.</strong></div>
+  <div class="pr"><b>We check the good news too.</b> A kept commitment is a headline here. A widely-shared claim against the project that turns out to be false gets corrected here. A tracker that only reports failures is a campaign, not a record.</div>
+
+  <div class="callout">
+    <h3>What this technology is, plainly</h3>
+    <p>PrecognitionOS is CyberHopeAI's evidence-chain platform — the same system used for regulated, audit-grade work where an AI's conclusion has to be defensible months later. It preserves the original source, tracks who said what and when, weighs conflicting evidence, and seals the whole chain so any finding can be re-examined and reproduced.</p>
+    <p style="margin-bottom:0">This site is a public demonstration of it. We think showing the work in a community that genuinely needs it beats any advertisement we could buy.</p>
+  </div>
+</section>
+
+<section id="who">
+  <div class="sublabel">Who we are</div>
+  <h2>Independent, and openly funded</h2>
+  <div class="narrow">
+    <p class="big">INformed LaPorte is a community information project of <strong>CyberHopeAI</strong>, an Indiana artificial-intelligence company. We are not funded by, affiliated with, or directed by Microsoft, the City of La Porte, La Porte County, or the State of Indiana.</p>
+    <p>We do have commercial interests, and we would rather state them than have you discover them. CyberHopeAI builds the technology this site runs on, and we expect the site to be advertised on by workforce-training providers — an open marketplace, not one company. <strong>No advertiser, sponsor or partner has any influence over a single figure on this site.</strong> We will publish every source of our funding.</p>
   </div>
 
-  <div class="gauge">
-    <div class="top"><span class="label">Electricity — impact on residential bills</span><span class="state n">No independent measurement exists</span></div>
-    <div class="track"><div class="fill n" style="width:0%"></div></div>
-    <div class="sub">The most common question we hear. It will be answered from utility filings, not from press releases — and a widely-shared figure about Indiana data center power turns out to belong to a different company entirely.</div>
+  <div class="person">
+    <div class="mono-badge">RB</div>
+    <div>
+      <h3>Rick Barretto</h3>
+      <div class="role">Founder, CyberHopeAI</div>
+      <p style="margin:0">Indiana technology founder. Builds the AI evidence-chain systems behind PrecognitionOS, used for audit-grade verification work where conclusions have to hold up under scrutiny.</p>
+    </div>
   </div>
 
-  <div class="gauge">
-    <div class="top"><span class="label">Local hiring</span><span class="state n">Awaiting a defined measure</span></div>
-    <div class="track"><div class="fill n" style="width:0%"></div></div>
-    <div class="sub">A commitment to hire locally is only checkable once "local" has a definition and a number attached. Asking for that is our first question, not an accusation.</div>
+  <div class="person">
+    <div class="mono-badge">CH</div>
+    <div>
+      <h3>Charles “Charlie” Hiltunen</h3>
+      <div class="role">Public policy advisor</div>
+      <p style="margin:0">Indiana attorney with more than 40 years in government affairs, including service as Counsel to the Majority in the Indiana House of Representatives. He advises on how public records, legislative process and state policy actually work — so that what we publish is grounded in the real machinery of Indiana government.</p>
+    </div>
   </div>
 
-</div>
-
-<p class="note"><b>Some lines will sit empty for a long time.</b> That is the honest state of a project that broke ground in 2026 and opens in 2029 — and a tracker that showed otherwise would be lying to you.</p>
-
-<h2>How we work</h2>
-
-<div class="principle"><b>Every number has a receipt.</b> Click any figure and you will see the document and page — or the recording and timestamp — it came from. If we cannot show you the source, we do not print the number.</div>
-
-<div class="principle"><b>We save the source before we read it.</b> Every document and recording is preserved and fingerprinted the moment we obtain it. If a page is later edited or taken down, we can still prove what it said.</div>
-
-<div class="principle"><b>We check the good news too.</b> When a commitment is kept, that is a headline here. When a widely-shared claim against the project turns out to be wrong, we say so. A tracker that only ever reports failures is a campaign, not a record.</div>
-
-<div class="principle"><b>Nobody is quoted unless we know who spoke.</b> In a room full of officials, company representatives and residents, it is easy for a machine to put one person's words in another person's mouth. We separate and confirm every speaker first. When we cannot, we do not attribute.</div>
-
-<div class="principle"><b>We ask before we publish.</b> Anyone named in a finding is offered a real chance to respond, with a deadline, and their answer runs alongside it. This is built into our system: a finding without a logged response attempt <b>cannot</b> be published.</div>
-
-<div class="principle"><b>We correct in the open.</b> When we get something wrong, the correction stays visible along with what it replaced. We have already corrected ourselves once, publicly, in our own working files.</div>
-
-<h2>What this site will not do</h2>
-<ul>
-  <li>No comment sections, no ratings, no scoring companies or officials.</li>
-  <li>No opinion columns and no endorsements — for the project or against it.</li>
-  <li>No publishing anonymous claims. Submit evidence; we will verify it or we will not run it.</li>
-  <li>No advertiser, sponsor or partner has any say over a single figure on this site. Ever. We will publish who funds us.</li>
-</ul>
-
-<h2>Have something we should see?</h2>
-<div class="cols">
-  <div>
-    <h3>Send us a document</h3>
-    <p>Meeting recordings, letters, notices, permits, utility bills, photographs. We will check whether it is authentic before it goes anywhere near the site.</p>
+  <div class="quiet">
+    <h3>What this site will never do</h3>
+    <ul style="margin-bottom:0">
+      <li>No comment sections, no ratings, no scoring of companies or officials.</li>
+      <li>No opinion columns and no endorsements — for the project or against it.</li>
+      <li>No publishing of anonymous claims. Submit evidence; we verify it or we don't run it.</li>
+      <li>No political advocacy of any kind. We are for the record, not for a side.</li>
+    </ul>
   </div>
-  <div>
-    <h3>Ask us a question</h3>
-    <p>The questions residents actually ask are what we research first — water, electricity, zoning, jobs, and what happens if the company leaves.</p>
-  </div>
-</div>
+</section>
 
-<div class="stamped">
-  <h3>Submissions open at launch</h3>
-  <p class="note" style="margin-bottom:0">We are preparing the intake process now, including how we verify what is sent to us and how we protect people who send it. Anything submitted is reviewed before publication — never posted automatically.</p>
-</div>
+<section id="submit">
+  <div class="sublabel">Contribute</div>
+  <h2>Have something we should see?</h2>
+  <div class="grid g2">
+    <div class="card accent">
+      <h3>Send a document or recording</h3>
+      <p>Meeting recordings, letters, notices, permits, utility bills, photographs. We verify authenticity before anything goes near the site — and nothing is ever posted automatically.</p>
+    </div>
+    <div class="card accent">
+      <h3>Ask a question</h3>
+      <p>The questions residents actually ask are what we research first: water, electricity, zoning, jobs — and what happens if the company leaves.</p>
+    </div>
+  </div>
+  <p class="narrow">Submissions open at launch. We're finishing the intake process now, including how we verify what's sent and how we protect the people who send it.</p>
+</section>
 
 <footer>
-  <p class="by"><strong>INformed LaPorte</strong> is a community information project of <strong>CyberHopeAI</strong>, built on <strong>PrecognitionOS</strong> — a verification system that preserves, seals and traces every piece of evidence it uses.<br><br>
-  We are independent of Microsoft, the City of La Porte, La Porte County, and the State of Indiana. We will name every source of our funding on this site.<br><br>
-  <span style="color:var(--mut)">Preview page · no findings have been published · last updated August 2026</span></p>
+  <p><strong>INformed LaPorte</strong> — a community information project of <strong>CyberHopeAI</strong>, built on <strong>PrecognitionOS</strong>.</p>
+  <p>Independent of Microsoft, the City of La Porte, La Porte County, and the State of Indiana. Every source of funding will be named on this site. Corrections are published in the open, alongside what they replaced.</p>
+  <div class="sig">Preview · no findings published yet · August 2026</div>
 </footer>
 
 </div></body></html>
