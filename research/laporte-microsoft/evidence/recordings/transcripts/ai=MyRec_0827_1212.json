@@ -1,0 +1,588 @@
+{
+ "stem": "ai=MyRec_0827_1212",
+ "duration_s": 484.8,
+ "segments": [
+  {
+   "t": 0.0,
+   "text": "CICP, CICP, come up several times now, and also serve as a CICP's newest life science",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 7.0,
+   "text": "on one health fund called Crossroads Health Ventures.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 13.0,
+   "text": "For 27 years, CICP has been bringing together the Indians, leading businesses, higher education,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 21.0,
+   "text": "and philanthropy to drive economic growth and prosperity for all who choose.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 27.0,
+   "text": "We do that through a lot of engagement work, particularly in our industry engagement work.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 32.0,
+   "text": "As you can imagine, AI has been in front of our conversation quite hopefully for the last few years.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 38.0,
+   "text": "With so many heard, all the excitement, leading a lot of conversation that happened this morning,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 43.0,
+   "text": "and the so uncertainty, I wish the ITAA weighed the data center topic to the forefront.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 49.0,
+   "text": "And increasingly the desire from businesses and organizations to move from just simply talking about it",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 56.0,
+   "text": "to actually putting the technology to work.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 59.0,
+   "text": "And I was grateful for Governor Brown and his commerce team for recognizing the opportunity",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 65.0,
+   "text": "and making human-centered, AI-enabled product, TV grills, a statewide economic development party.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 73.0,
+   "text": "In many ways, this kind of continues allowing me in a tradition that for those who've been around",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 80.7,
+   "text": "and not long enough, I know this legislators here in the room in 1999 in general,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 85.7,
+   "text": "assembly created a 21-father not has been a gender-fly ITAA priority for a number of years.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 90.7,
+   "text": "So thank you for the work you do.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 92.7,
+   "text": "And to this day, 27 years, Indiana continued to invest in innovation through that bomb for more than a quarter century.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 100.7,
+   "text": "And technologies changed, and market condition changed, and strategies really evolved,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 104.7,
+   "text": "but Indiana's commitment to innovation hasn't.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 108.7,
+   "text": "So thank you for our state legislators, for those who are championing the work,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 113.7,
+   "text": "but to you those in the room.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 115.7,
+   "text": "So why now?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 117.7,
+   "text": "Most of us have heard the stories long.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 120.7,
+   "text": "I was talking to David early on, and he was telling me that low processing time now used to take weeks,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 125.7,
+   "text": "now stays in even hours.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 127.7,
+   "text": "Remember that episode?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 129.7,
+   "text": "We know that work that consumes days of employees' time and increases your down to minutes.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 134.7,
+   "text": "At the same time, we consistently hear from Indiana companies, you all heard it again this morning,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 140.7,
+   "text": "the shortage of skilled labor that are limiting their ability to grow and compete effectively.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 147.7,
+   "text": "These are productivity plays.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 150.7,
+   "text": "And the matter, because Indiana's demographic projection tells us that population growth alone",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 157.7,
+   "text": "isn't going to deliver the economic growth we want.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 161.7,
+   "text": "For those of you who are data-heaps, that number is actually about 380, 3,000 projected population,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 167.7,
+   "text": "and that population grows for the next 35 years, according to IDRC.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 174.7,
+   "text": "That's why Indiana under Governor Brown's leadership is making human-centered,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 179.7,
+   "text": "AI-enabled productivity growth a core economic development strategy,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 185.7,
+   "text": "and why we're one of the first days in the country to do so.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 190.7,
+   "text": "Our ambition is simple.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 193.7,
+   "text": "To make Indiana the most AI-ready economy in the country.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 200.3,
+   "text": "And we're doing that by building a statewide platform to activate AI adoption across different sectors,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 208.3,
+   "text": "every community in our state, and companies will all sizes, particularly small medium-sized businesses,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 214.3,
+   "text": "from one corner of a state.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 216.3,
+   "text": "And we're making an adoption practical and easier to navigate.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 221.3,
+   "text": "Here are the four responses to four mostly frequently cited problem statement we hear from the community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 228.3,
+   "text": "I don't know how to guess where to start.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 231.3,
+   "text": "We develop AI use cases, Indiana-based AI use cases, not McKenzie use cases, and we have project ideas",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 239.3,
+   "text": "that you can all work on.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 241.3,
+   "text": "I don't know, I don't have a resource to execute, how do I make the project work,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 246.3,
+   "text": "we developed a project portal, can engage you with commercial and on education partners.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 251.3,
+   "text": "And I need to try my employees, my employees are reusing that,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 255.3,
+   "text": "for some of that this morning, how do I get my employees up to speed,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 258.3,
+   "text": "we have training help against surfacing the resources that are existing in the commercial and education sector in our state world.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 265.3,
+   "text": "Last but not least, I run into problems, specific problems,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 269.3,
+   "text": "and I talk to somebody who are faced with the same challenges, I mean.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 273.3,
+   "text": "The great uses as one of the joys in my current role is I'm starting to discover various grassroots community organizations",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 281.3,
+   "text": "who are doing the peer learning.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 283.3,
+   "text": "So if you're hearing as about how to do something to get out of business,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 287.3,
+   "text": "you want to get in the same room with other educators around AI and education conversations,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 292.3,
+   "text": "you even publish.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 293.3,
+   "text": "I care about the impact in my community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 296.3,
+   "text": "How do I get into policy conversations, ITAs, part of the statewide AI learning group.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 302.3,
+   "text": "And we're also doing the series of statewide activation events around the community",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 308.5,
+   "text": "to really rally the community and harness the energy that's already happening in this topic.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 314.5,
+   "text": "And people outside of the union already noticing us,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 319.3,
+   "text": "where we're heard from the people who are finding us,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 322.3,
+   "text": "because they're looking for this kind of coordinated statewide effort around AI adoption,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 327.3,
+   "text": "and we're the only one that showed up.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 330.3,
+   "text": "And just this week, somebody drove from Springfield, Illinois, all the way to West Lafayette,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 337.3,
+   "text": "specifically to participate in our AI roadshow,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 341.3,
+   "text": "because of the level of AI conversations that's happening in Indiana",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 345.3,
+   "text": "or simply do not exist in the community is there.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 349.3,
+   "text": "And the numbers being close to that, I mean, it just in the first last four months that we launched,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 355.3,
+   "text": "and we have already 20 plus partners, and the ITAs is a wonderful partner,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 360.3,
+   "text": "and I thank you very much, and as well as many others here in the room.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 364.3,
+   "text": "And we have generated about 268 million nationwide and urban media exposure.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 370.3,
+   "text": "We have 2.9 million in direct digital content reach,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 374.3,
+   "text": "and we'll reach about direct and program 85,000 participants,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 378.3,
+   "text": "and engage more than 1,000 companies.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 381.3,
+   "text": "We're early, but the market is responding.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 387.1,
+   "text": "So what's next?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 389.1,
+   "text": "We need more businesses and organizations to step forward",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 394.1,
+   "text": "and accelerate AI adoption curve, because the talent is ready.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 399.1,
+   "text": "And you heard from this morning,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 401.1,
+   "text": "this various education partners initiatives are helping our talent to be ready.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 407.1,
+   "text": "Across Indiana, we have students and faculty members who are hungry,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 412.1,
+   "text": "specifically by the recruitment opportunities,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 428.2,
+   "text": "that could be doing market research for you, you wouldn't believe, as a way to go around the state,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 434.7,
+   "text": "but how many manufacturing are still using whiteboards",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 437.7,
+   "text": "and spreadsheets to do inventory sketching.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 440.7,
+   "text": "So those are the common points, but this is changing opportunities to students and faculty,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 445.5,
+   "text": "and commercial partners, and immediate at-value to help you grow and be more competitive.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 451.7,
+   "text": "So to wrap up, and get everybody to the lunch, my invitation here is very simple.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 459.5,
+   "text": "Join the in AI movement.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 462.1,
+   "text": "The talent is ready, our partners are ready, and the market is telling us it's ready.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 468.5,
+   "text": "Together, let's accelerate Indiana's AI adoption and make us the most AI-ready economy in the",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 476.3,
+   "text": "country.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 477.3,
+   "text": "Thank you.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  }
+ ]
+}

@@ -1,0 +1,536 @@
+# itia__0827_1047
+# duration 2811s | 531 segments | 6 speakers
+# source sha256 c75c7e266efdf803a11f6ec35362740b677691a4f77a6e64f3dbdddd90bd9e44
+# SPEAKER TAGS ARE NOT IDENTITIES. Map them to people before attributing anything.
+
+[0:00:00] SPEAKER_00: And we're seeing major projects representing millions of dollars in investment across our state.
+[0:00:06] SPEAKER_00: But how do we make sure we're doing it right and benefiting the communities that are hosting these data centers?
+[0:00:12] SPEAKER_00: That's what this next panel will talk about.
+[0:00:14] SPEAKER_00: So, I would like to welcome to the stage our panelists, the LaPorte Mayor, Tom Dirmity,
+[0:00:22] SPEAKER_00: the Director of Infrastructure and Government Affairs for Microsoft Hotel LaBroye,
+[0:00:27] SPEAKER_00: and the Director of the West State Government Affairs for the Data Center Coalition, Brad Teats.
+[0:00:33] SPEAKER_00: And our moderator for this panel is also ITA Board Member Megan Glover,
+[0:00:38] SPEAKER_00: the Chief Digital Officer for New South Wales.
+[0:00:41] SPEAKER_00: Hi.
+[0:00:42] SPEAKER_00: Okay. Thank you.
+[0:00:43] SPEAKER_00: Hi.
+[0:00:54] SPEAKER_04: Are you ready to talk about some data centers?
+[0:00:59] SPEAKER_04: Please keep your water bottles on your tables.
+[0:01:01] SPEAKER_04: Don't throw them this way.
+[0:01:02] SPEAKER_03: There's also going to be a positive conversation.
+[0:01:05] SPEAKER_03: Thank you.
+[0:01:08] SPEAKER_04: Okay.
+[0:01:09] SPEAKER_04: Well, yeah.
+[0:01:10] SPEAKER_04: We thought we couldn't have a technology summit without talking about the elephant in the room, which is data centers.
+[0:01:17] SPEAKER_04: And if you could, interesting point out, data centers are not in the Department of Data Centers built the foundation for cloud computing,
+[0:01:24] SPEAKER_04: which many of us are in this room to build very successful SaaS businesses and so on and so forth.
+[0:01:30] SPEAKER_04: The magnitude at which the data center structures, if you will, and the speed at which the structures are needed to develop or something that we just never, never seen before.
+[0:01:42] SPEAKER_04: So, I think when we talk about data centers, we are really talking about that race to win.
+[0:01:47] SPEAKER_04: The four-auto revolution of AI and how big the tech is going to come in and really playing their piece of time.
+[0:01:54] SPEAKER_04: When it comes to data centers and infrastructures and working with these, they decide to place their centers in.
+[0:01:59] SPEAKER_04: So, again, we've heard a lot about data centers, but hopefully today we get to know more about data centers and specifically how Indiana is participating in the strategy and how good and responsible I think data center development can actually fuel local economies, not only now, but in the future.
+[0:02:18] SPEAKER_04: So, I am super excited to have our panelists today representing all the different stages of the AI economy, right, from site selection and building in our hometown with Mayor Year to partnering with big tech from Teal in Microsoft.
+[0:02:35] SPEAKER_04: And I think, Brad, you bring up in our what's happening around this point of view that you can kind of share and say, how is Indiana compared to their new neighbors with regards to data center development?
+[0:02:45] SPEAKER_04: So, let's kind of start there and then work our way down to the local level.
+[0:02:50] SPEAKER_04: So, Brad, can you help us paint the picture?
+[0:02:53] SPEAKER_04: Indiana definitely seems to open for business and from a data center perspective, but how should we think about ourselves in the state of Indiana compared to our new neighbors?
+[0:03:03] SPEAKER_05: Yeah, good morning everybody and thank you for having me, looking forward to the conversation.
+[0:03:08] SPEAKER_05: Yes, I'm the Director of Government Affairs from the Midwest, the Dance Center Coalition, and we are the National Trade and Membership Association for the History.
+[0:03:16] SPEAKER_05: I'm glad me here on the stage was a mayor and Microsoft is an important member of the DCC, but yeah, it's certainly a fun time for us as you might imagine, but, you know, I think really quick before I get into kind of where Indiana is,
+[0:03:30] SPEAKER_05: because I think it's a huge opportunity for the state and for the industry, but, you know, when you think about when the iPhone started, right, it was 2008, 2009, and instead I'd often love to think about so from 2010 to 2018.
+[0:03:46] SPEAKER_05: So, right as we're all starting to use more and more data, digital services, computing outputs, the data that we all use rose 550% but energy consumption from data centers only rose 6%.
+[0:03:59] SPEAKER_05: So we were getting more and more efficient as an industry as we were all using more and more data and digital services.
+[0:04:05] SPEAKER_05: But now you obviously have the blue part of this one, intelligence about computing, which is looking to remain the predominant work of in data centers.
+[0:04:12] SPEAKER_05: There's about 2035, but we have all these things happening where we're much more visual in the public discourse.
+[0:04:19] SPEAKER_05: There's a large national conversation happening about the industry, but Indiana historically has been one of the secondary markets.
+[0:04:27] SPEAKER_05: Across the Midwest, Illinois was the leading market in Ohio, then Indiana, then Wisconsin, Michigan.
+[0:04:34] SPEAKER_05: I would suggest, not from Chicago, my home state is quickly losing.
+[0:04:38] SPEAKER_05: It's just standing on the data center in history and it's Indiana's benefit.
+[0:04:43] SPEAKER_05: So a lot of projects that we're looking at in Illinois three or four years ago are now being built in Indiana.
+[0:04:49] SPEAKER_05: And, you know, Illinois is getting, for instance, a lot of these, what I was talking about, the projects, Indiana is getting the real projects.
+[0:04:56] SPEAKER_05: If you look at what Microsoft is doing in the U.S. and Google, we have a number of our goal location data centers too, who are now building here.
+[0:05:03] SPEAKER_05: So, I think, you know, Indiana is right on the customer becoming one of the big primary markets.
+[0:05:10] SPEAKER_05: Illinois is obviously Virginia, which I'm sure there are Texas, Georgia, California, Arizona, etc.
+[0:05:17] SPEAKER_05: So we'll see, but now I mean, you know, Indiana has all the attributes to do really well-listed history and do it responsibly.
+[0:05:24] SPEAKER_05: So I think that's the goal here and I'll see what it looks like.
+[0:05:28] SPEAKER_04: Yeah, absolutely.
+[0:05:29] SPEAKER_04: I think you get out of the way that you talked about, you talked about the, you know, three workers.
+[0:05:33] SPEAKER_04: They're not whole projects, they're created equal.
+[0:05:35] SPEAKER_04: And so understanding what are responsible projects and actually benefiting community, you know, long term.
+[0:05:40] SPEAKER_04: Those are the projects we want here in Indiana, right?
+[0:05:43] SPEAKER_04: And we're getting them.
+[0:05:45] SPEAKER_04: So, but Mary, talk a bit about then, you know, the climate in the state of Indiana.
+[0:05:48] SPEAKER_04: Do you think Indiana has a strategy?
+[0:05:50] SPEAKER_04: How did you go?
+[0:05:51] SPEAKER_04: Did you just, you know, how did you go about kind of getting in the game and leaving kind of the model good in the state of Indiana?
+[0:05:59] SPEAKER_01: So first of all, thank you for the Chicago Bears coming over.
+[0:06:02] SPEAKER_01: We appreciate that.
+[0:06:03] SPEAKER_05: I'm happy that there's a day of Sunday, right?
+[0:06:07] SPEAKER_01: You know, the court has had the large tech investment in the state of Indiana with our Microsoft partnership.
+[0:06:16] SPEAKER_01: And I apologize.
+[0:06:17] SPEAKER_01: You see the mayor here using tenant paper.
+[0:06:20] SPEAKER_01: I am getting better.
+[0:06:21] SPEAKER_01: I'm looking to move down to Eclotile.
+[0:06:23] SPEAKER_01: So I promise.
+[0:06:24] SPEAKER_01: But, you know, what I would, and I served in the state house for 10 years.
+[0:06:30] SPEAKER_01: So everything that I did is coming back to haunt me at a local government level.
+[0:06:35] SPEAKER_01: But I don't think Indiana has opened for business yet.
+[0:06:40] SPEAKER_01: Everybody knows what the Congress did last week during the storms and privately.
+[0:06:45] SPEAKER_01: They were like, oh my gosh, I can't believe this.
+[0:06:47] SPEAKER_01: This is great.
+[0:06:48] SPEAKER_01: We're fully supportive of you know, as long as I don't have to say publicly.
+[0:06:52] SPEAKER_01: And I think what Holbert has done, what the court has done for Wayne is starting to show the state house and the state of Indiana that it's going to be okay.
+[0:07:03] SPEAKER_01: And this is a great way to compete.
+[0:07:06] SPEAKER_01: The court is my hometown.
+[0:07:08] SPEAKER_01: It's when I came back to it.
+[0:07:10] SPEAKER_01: People said we want something big.
+[0:07:11] SPEAKER_01: We have to shake things up.
+[0:07:13] SPEAKER_01: And while it wasn't easy and we told plenty of data centers, no.
+[0:07:19] SPEAKER_01: And we had every tech global company come to our community to build.
+[0:07:24] SPEAKER_01: We found that Microsoft wasn't a perfect one.
+[0:07:28] SPEAKER_01: It took us four years.
+[0:07:30] SPEAKER_01: But they were really the main that showed care about the future of the court.
+[0:07:37] SPEAKER_01: And it was worthwhile.
+[0:07:40] SPEAKER_01: But we definitely had a strategy to as simple as keep our kids home or bring them back home
+[0:07:48] SPEAKER_01: and give them a reason to be in the court.
+[0:07:51] SPEAKER_01: They can grant income to be around family.
+[0:07:54] SPEAKER_01: And it's working out extremely well.
+[0:07:56] SPEAKER_04: I think that's a really interesting point.
+[0:08:01] SPEAKER_04: And I love the perspective of do you think the state needs a strategy?
+[0:08:06] SPEAKER_04: I have no opinion on the matter.
+[0:08:07] SPEAKER_04: But I mean, I think there are very basic guardrails, if you will, that I think the mayor is putting out.
+[0:08:12] SPEAKER_04: This was a four year decision.
+[0:08:14] SPEAKER_04: You took the strategy and you're on it.
+[0:08:16] SPEAKER_04: Are there communities out there that don't have those same guardrails and are taking kind of the highest bidder?
+[0:08:21] SPEAKER_04: And that's how we end up with some of these wackable solutions and maybe not great development partners.
+[0:08:28] SPEAKER_04: So I guess, did everyone talk about the state data strategy?
+[0:08:32] SPEAKER_04: Like what steps could we actually take to have a police strategy in the state?
+[0:08:36] SPEAKER_04: Sure.
+[0:08:37] SPEAKER_05: That'd be good.
+[0:08:38] SPEAKER_05: Yeah.
+[0:08:39] SPEAKER_05: That'd be good.
+[0:08:40] SPEAKER_05: Yeah.
+[0:08:41] SPEAKER_05: No, I mean, I actually am a believer in having a state framework and some kind of state rules.
+[0:08:51] SPEAKER_05: Because ultimately, you can especially give in the industry right now.
+[0:08:55] SPEAKER_05: My hope is that it'll give communities some level of comfort and industry some level of stability.
+[0:09:01] SPEAKER_05: But I think if you think about it, that the state is going to handle this differently.
+[0:09:06] SPEAKER_05: And, you know, handle it according to what is unique to their state, right?
+[0:09:11] SPEAKER_05: So there are many states that came to the wrong cloud markets.
+[0:09:14] SPEAKER_05: There are many states like Indiana that are strong, I think, you know, hyperscale markets.
+[0:09:19] SPEAKER_05: But you look at even like a state like New York and they have more oriented places now.
+[0:09:23] SPEAKER_05: But they've been courting a lot of the semiconductor manufacturers, the battery manufacturers,
+[0:09:28] SPEAKER_05: and that's kind of how they're engaging with the industry to make growth perspective.
+[0:09:33] SPEAKER_05: You know, I think we, like a state like framework, obviously, you don't want it to go so far where it deters the kind of investment that you're looking for.
+[0:09:42] SPEAKER_05: But, you know, put in place, you know, rules around energy and water and community considerations.
+[0:09:47] SPEAKER_05: I mean, and Indiana actually last year, HB 1007, put forth a very fascinating energy law that I think gave the confidence for the hyperscalers to invest in Indiana.
+[0:09:59] SPEAKER_05: So no, I mean, we're certainly open to those conversations.
+[0:10:02] SPEAKER_05: We are having a robust discussion with our member at the moment about, you know, nationally, what that kind of framework can look like.
+[0:10:10] SPEAKER_05: And, you know, it's opening some really interesting conversations.
+[0:10:13] SPEAKER_05: But we're working there, I think the goal is, as we head in 2027, has an organization come out of the broader principles that every state can look to.
+[0:10:23] SPEAKER_02: And I just want to just add that the reason why we selected the port, and why we're even in Indiana,
+[0:10:30] SPEAKER_02: we're looking at the land availability. We're looking, of course, at electricity and usage in the ecosystem.
+[0:10:37] SPEAKER_02: We're also looking at places like the port that want long-term economic development partnerships.
+[0:10:43] SPEAKER_02: And that is why we are here in Indiana, why we actually select the port as the community that we want to partner with.
+[0:10:49] SPEAKER_01: And I think the other part is that the data center groups, the tech companies have done a core job of educating people.
+[0:10:57] SPEAKER_01: And I've been building that for years. And as I told our team, and we've got high expectations, but I told our team, our work is only beginning now.
+[0:11:06] SPEAKER_01: You know, we're helping Evansville. We're helping yesterday. We went to Portage to help.
+[0:11:12] SPEAKER_01: We haven't put the facts out there. We have a system, a process that worked.
+[0:11:17] SPEAKER_01: And I think once you educate people, you know, and they have to rely on personal attacks and all the things that happen that we went through.
+[0:11:26] SPEAKER_01: All types. But when you get down to the facts and you educate people, it's hard to say why you would be opposed to it.
+[0:11:35] SPEAKER_02: Can I talk a little bit about that? I just want to just, Mayor Dermi has done a great job on educating the community.
+[0:11:42] SPEAKER_02: Of course, the way that residents feel, you know, it's real. They have questions about electricity and water usage and environment and noise.
+[0:11:51] SPEAKER_02: And what Mayor Dermi did in partnership with our community relations manager and our land development managers, he went to those residents to their houses to educate them on data centers.
+[0:12:02] SPEAKER_02: He meant to make coffee shops as well to educate them as well. And that partnership, just allowing the community to see how transparent we wanted to be in terms of the development we wanted to have in the community was excellent.
+[0:12:16] SPEAKER_02: So Mayor Dermi did a great job in educating his residents about the data centers so that we can come there and be a partner.
+[0:12:23] SPEAKER_04: Yeah, and I do think this is where the state could step in and add a little part of the good message.
+[0:12:29] SPEAKER_04: We often hear bad messages quite frankly, that's the news that they want to promote, right?
+[0:12:33] SPEAKER_04: They've bad news for us a lot faster and a lot louder than the good, right?
+[0:12:38] SPEAKER_04: So I think how can, you know, right, one by one by one, how can the state be taking more forward thinking approach to what's a positive side of data center development so that communities don't have to go hand-hand combat with their residents, right?
+[0:12:53] SPEAKER_05: Yeah, and I think the communities need to see the tangible benefits from the project.
+[0:13:00] SPEAKER_05: I think something, you know, we'll go out there and talk about all the property taxes that, you know, this is significant.
+[0:13:06] SPEAKER_05: I mean, you know, these are being changed for generations, for communities.
+[0:13:10] SPEAKER_05: But oftentimes, we don't have control over how the property taxes are out of hand, right?
+[0:13:15] SPEAKER_05: And, you know, we can't say, hey, go reduce your property taxes.
+[0:13:19] SPEAKER_05: You know, like they might want to invest in new schools or things like that, but the residents aren't always seeing them at first hand or immediately.
+[0:13:27] SPEAKER_05: So I think, you know, as soon as the companies like Microsoft got it, like they're being very forward thinking about making sure that, you know, we need to know, sort of, you know, think about it.
+[0:13:35] SPEAKER_04: Yeah, yeah.
+[0:13:36] SPEAKER_04: Okay, so let's go there, like, tactical.
+[0:13:39] SPEAKER_04: Like, let's look at a pack of the benefits, because we're, you know, we know the Microsoft's been a wonderful partner, obviously, to look forward in others.
+[0:13:47] SPEAKER_04: So what makes a wonderful partner?
+[0:13:49] SPEAKER_04: Yes, obviously, site selection, we have to have enough of the resources to actually fuel the infrastructure and, you know, what's he doing?
+[0:13:56] SPEAKER_04: Like, what are the other things that we may not appreciate that goes into winning that bill before?
+[0:14:03] SPEAKER_04: Because, like, yes, if you weren't the only bidder courting the mayor over here.
+[0:14:06] SPEAKER_04: So what makes you stand up?
+[0:14:09] SPEAKER_02: Well, firstly, make five commitments.
+[0:14:11] SPEAKER_02: We announced those in January.
+[0:14:13] SPEAKER_02: Number one, we are going to pay for our energy and our infrastructure.
+[0:14:16] SPEAKER_02: So that would not come on the residents.
+[0:14:18] SPEAKER_02: Residents would not have high electricity bills because of our base and consumption usage.
+[0:14:23] SPEAKER_02: Number two, that we're going to minimize our water usage and we're going to replenish more water than we actually use.
+[0:14:29] SPEAKER_02: Number three, we don't want to take a tax abatement.
+[0:14:32] SPEAKER_02: So that tax revenue is actually going back to the court.
+[0:14:35] SPEAKER_02: So they can use that revenue for their hospitals or schools.
+[0:14:39] SPEAKER_02: Public safety, anything that they feel is important to the community.
+[0:14:43] SPEAKER_02: Number four, we are looking at student workers in the labor in the court.
+[0:14:48] SPEAKER_02: And we wanted to make sure that we use workers in labor from the community.
+[0:14:53] SPEAKER_02: And five, we wanted to just educate folks on EI infrastructure.
+[0:14:58] SPEAKER_02: We wanted to invest in those nonprofits in the communities and organizations that the community actually cared about.
+[0:15:05] SPEAKER_02: So those are five commitments to the community.
+[0:15:07] SPEAKER_02: That is why that is our partnership with the court and quality communities that we are in.
+[0:15:12] SPEAKER_02: And we were stick to that.
+[0:15:15] SPEAKER_04: What is your selection that you look like?
+[0:15:17] SPEAKER_04: Like, how do you even start to being aligned with something like this?
+[0:15:24] SPEAKER_01: You know, we have a team, a leadership team.
+[0:15:27] SPEAKER_01: We have people that want to take the blinders off or to change the future of our community first of all.
+[0:15:34] SPEAKER_01: So we rally with those individuals.
+[0:15:37] SPEAKER_01: And again, we went through many interviews, many processes.
+[0:15:40] SPEAKER_01: And again, said, no, people forget the number of times we've said no to data center companies,
+[0:15:47] SPEAKER_01: attack companies because it wasn't right for the court.
+[0:15:50] SPEAKER_01: And then we just walked through and met with many individuals, residents.
+[0:15:59] SPEAKER_01: And what I think worked was we met with 10 to 15 people at a time.
+[0:16:04] SPEAKER_01: Because when you get to the 15 to 25, everybody wants to, you know, stand out by yelling personal things.
+[0:16:11] SPEAKER_01: You get nowhere.
+[0:16:12] SPEAKER_01: We did 10 to 15 people at a time.
+[0:16:15] SPEAKER_01: And we walked through with Microsoft and with our team.
+[0:16:18] SPEAKER_01: Every issue that they say they're concerned about and address those.
+[0:16:22] SPEAKER_01: And then the other big thing that we did, we made this 100% union investment.
+[0:16:30] SPEAKER_01: And I think that was key to it.
+[0:16:33] SPEAKER_01: And every time we had a public meeting, in fact, I brought one to show.
+[0:16:38] SPEAKER_01: We had 150 union representatives standing outside the front door of city hall wearing this shirt.
+[0:16:46] SPEAKER_01: Attack the ass shirt.
+[0:16:51] SPEAKER_01: This was in our smooth colors, orange and black at a port.
+[0:16:55] SPEAKER_01: And it made people feel uncomfortable that if you were going to oppose, you better have some legitimate reasons.
+[0:17:02] SPEAKER_01: And the community began to come around.
+[0:17:05] SPEAKER_01: And it was just hard to argue.
+[0:17:08] SPEAKER_01: We now worked everybody relentless.
+[0:17:13] SPEAKER_01: And the community.
+[0:17:16] SPEAKER_01: And the other thing we did, I'll also mention, the county was a horrendous partner.
+[0:17:21] SPEAKER_01: A county government, I'm sure we go around there, or a horrendous.
+[0:17:24] SPEAKER_01: And I said it directly to them.
+[0:17:26] SPEAKER_01: I said it publicly.
+[0:17:27] SPEAKER_01: So we didn't feel, because they were such opposition to this project, that I would have felt uncomfortable forcing them to take tax money from a data center.
+[0:17:42] SPEAKER_01: So we bypass them, said you'll get nothing.
+[0:17:45] SPEAKER_01: We set up a tip.
+[0:17:47] SPEAKER_01: Now we gave 15% direct to our school system.
+[0:17:52] SPEAKER_01: And our school system, we have a wonderful superintendent.
+[0:17:55] SPEAKER_01: And the state of Indiana has set up a competitive market for K-12.
+[0:18:00] SPEAKER_01: So we now want to set a port up to be different and to go take those kids from around.
+[0:18:06] SPEAKER_01: We can either back to the port and add them to the port.
+[0:18:09] SPEAKER_01: And they are sitting in a great situation.
+[0:18:14] SPEAKER_01: But how is the community going to argue that we're improving our school system?
+[0:18:19] SPEAKER_01: By funding them in such a great way.
+[0:18:22] SPEAKER_05: Can I add two points to that one?
+[0:18:25] SPEAKER_05: You know, if, I believe this is, if this is the infrastructure for the 21st century, it should be built with the building trades, from what I expected.
+[0:18:33] SPEAKER_05: And they've been significant partners as we work for this.
+[0:18:37] SPEAKER_05: And, you know, we are running into workforce shortage here in the next several years.
+[0:18:42] SPEAKER_05: I think it's coming on the industry to really partner the building trades, invest in community college, educational schools, workforce development programs, and trying to shift all these different things.
+[0:18:52] SPEAKER_05: So I was actually with the Indiana building trades last week during the World Conference.
+[0:18:57] SPEAKER_05: And it was a fascinating conversation.
+[0:18:59] SPEAKER_05: But just the amount of opportunities they're seeing from the industry that Indiana has been significant.
+[0:19:04] SPEAKER_05: The other point I wanted to make and, you know, we're looking at national polling.
+[0:19:08] SPEAKER_05: And, you know, we're increasingly the industry, groups like ours, you know, we're not that trusted evaluator, right, for these three hundred projects.
+[0:19:16] SPEAKER_05: The building trades are also losing some credibility in that as well.
+[0:19:20] SPEAKER_05: But the most trusted evaluators are going to be those local leaders on the ground.
+[0:19:25] SPEAKER_05: So it's incumbent upon us to make sure that they are comfortable with these projects that are with the best.
+[0:19:31] SPEAKER_05: And really work with them to get out and talk to their friends and neighbors across the country.
+[0:19:36] SPEAKER_04: Well, I want to unpack the workforce development, the near and long term impact here in a minute.
+[0:19:44] SPEAKER_04: But I want to put a number in our free work.
+[0:19:48] SPEAKER_04: I think you mentioned that because of the incentive to school system, you were able to bypass what would have been a $6 million referendum on the next kind of ballot.
+[0:20:01] SPEAKER_04: Is that correct?
+[0:20:02] SPEAKER_01: So if you look at the state of Indiana, I think I saw 32 to 38 school corporations are going to a referendum for $500 million, including the neighboring community of Michigan City right next to us.
+[0:20:17] SPEAKER_01: And the court was scheduled to go for a $6 million referendum, which would have obviously added increased tax to our local residents.
+[0:20:26] SPEAKER_01: They have completely put that away.
+[0:20:29] SPEAKER_01: It's that with what the soft is doing now and in the future, they will not need to do that.
+[0:20:36] SPEAKER_01: But not only have enough funds to just pay teachers what they deserve and more than just get by but really change what education looks like and preparing our kids for the future.
+[0:20:52] SPEAKER_04: So let's unpack workforce development.
+[0:20:56] SPEAKER_04: I think I heard some where this is only short term.
+[0:21:00] SPEAKER_04: Once the plans are up to 20, it takes very little labor.
+[0:21:03] SPEAKER_04: So it's not really a self-sustaining workforce initiative.
+[0:21:08] SPEAKER_04: So what are some of the numbers around the year term workforce development impact that these fiction museums have on the communities, but then what should we expect reasonably from how will that workforce continue as the data center operates?
+[0:21:27] SPEAKER_05: You know, I think you have to think about the differences in data center, right?
+[0:21:33] SPEAKER_05: And some of the kind of traditional historic data centers that has clustered in more areas.
+[0:21:40] SPEAKER_05: There's going to be a couple hundred construction jobs, right?
+[0:21:43] SPEAKER_05: And oftentimes people call it temporary, but I can't find the transfer.
+[0:21:48] SPEAKER_05: Because I mean, those, you know, oftentimes you're out on the jobs for five to seven years.
+[0:21:53] SPEAKER_05: I don't know what we call that temporary today's workforce.
+[0:21:57] SPEAKER_05: But, you know, the permanent jobs you're looking at 20 to 30, but for the projects that you're looking at, you're looking at a couple of dollars in construction jobs.
+[0:22:06] SPEAKER_05: And then, you know, I mean, you know, 100 to 300 employees on site, but you also can't discount the kind of economic or doing cancelary benefits.
+[0:22:16] SPEAKER_05: So, you know, we're in the PWC for every one of the data center jobs.
+[0:22:20] SPEAKER_05: Four and a half jobs are created elsewhere in the economy.
+[0:22:23] SPEAKER_05: And you think about all the supply chain opportunities.
+[0:22:26] SPEAKER_05: When you think about companies like Deere and Caterpillar who are servicing building out products for data center.
+[0:22:32] SPEAKER_05: But we're also seeing increasing evidence to a, you know, economic activity for restaurants and movie albums.
+[0:22:38] SPEAKER_05: Actually, they travel economic research for a female last week and show that some of these communities that are seeing significant data center projects will tell off.
+[0:22:49] SPEAKER_05: You can see it's actually up 10 to 15% for those hotels.
+[0:22:52] SPEAKER_05: So, you know, again, these can be changed down the line not just on site jobs, but across the ecosystem.
+[0:22:59] SPEAKER_05: And I think, you know, typically, you know, technology companies like yourselves, other data center will tend to kind of want to cluster around each other.
+[0:23:06] SPEAKER_05: And share ideas and share innovation together.
+[0:23:09] SPEAKER_05: So, there's so many opportunities again if you can plan responsibly and plan properly.
+[0:23:13] SPEAKER_01: Well, I don't know what data centers you working on for 20 to 30 people.
+[0:23:19] SPEAKER_01: I want to tell you, we have construction jobs right now that Microsoft is going to need.
+[0:23:25] SPEAKER_01: We have 2,000 local contractors that is on the axis of our capacity.
+[0:23:33] SPEAKER_01: We need 4,000.
+[0:23:35] SPEAKER_01: So, we know we're going to have another 2,000 union contractors coming into the court.
+[0:23:41] SPEAKER_01: I was in a lunch and learned in Google yesterday and they had placed an order, as you mentioned, for 1,000 meals for lunch.
+[0:23:50] SPEAKER_01: And what that can do to have small business.
+[0:23:52] SPEAKER_01: I think State Joe County has booked in the last year 156,000 rooms because of that.
+[0:23:58] SPEAKER_01: We're in trouble from a housing perspective.
+[0:24:00] SPEAKER_01: We're working on that quickly.
+[0:24:02] SPEAKER_01: I will tell you this.
+[0:24:03] SPEAKER_01: How many people have actually toured the data center?
+[0:24:08] SPEAKER_01: I would make sure, yeah, that's actually well, but I would make sure you check one out because I got back from Microsoft going recently.
+[0:24:17] SPEAKER_01: And they started, I think in 2008, they have 700 full-time Microsoft employees that you know what their wages, you know.
+[0:24:28] SPEAKER_01: The President came, Brad Smith, to look for the ribbon coming and said, we have the best benefits anywhere.
+[0:24:35] SPEAKER_01: So, $7,500,000 or more plus benefits.
+[0:24:40] SPEAKER_01: That's been going since 2008, but the interesting thing about the short-term contractor.
+[0:24:46] SPEAKER_01: Many of the contractors were still working at Microsoft 10 years ago.
+[0:24:52] SPEAKER_01: And it continues to happen, and we expect we've got 17 buildings on our campus.
+[0:24:57] SPEAKER_01: So, we're going to be here a while, and they're going to be here a while building.
+[0:25:02] SPEAKER_01: So, I think that's why we believe a portion of the place to be.
+[0:25:07] SPEAKER_02: Just to add to that, just in the first phase of the board construction, we're going to have over 700 per day job,
+[0:25:14] SPEAKER_02: as well as the partnership with Evangelism and
+[0:25:15] SPEAKER_02: I would say, with our day-to-day center of Canada.
+[0:25:18] SPEAKER_02: So, we're training the workforce.
+[0:25:20] SPEAKER_02: We are providing scholarships.
+[0:25:22] SPEAKER_02: We're making sure that the students know how to give these jobs, not just for Microsoft, but for any day center, as the jobs are out there.
+[0:25:31] SPEAKER_04: The other question I've heard postman, I don't really have any answer.
+[0:25:36] SPEAKER_04: I'm curious who you will do.
+[0:25:38] SPEAKER_04: As entrepreneurs, we're looking to build technology infrastructure to support the AI company, or build products on top of AI to further our industries.
+[0:25:51] SPEAKER_04: How is having the proximity of the data center close to me help me as an entrepreneur?
+[0:25:58] SPEAKER_04: Is that a question posed?
+[0:26:00] SPEAKER_04: How can we take advantage of the proximity of having kind of plastic glass in data centers in our backyard, if you will?
+[0:26:07] SPEAKER_04: Yeah.
+[0:26:08] SPEAKER_04: Well, you think about that.
+[0:26:09] SPEAKER_05: I mean, one, just the proximity to companies like Microsoft and Google AWS, and that it's actually innovating.
+[0:26:18] SPEAKER_05: And think about things.
+[0:26:19] SPEAKER_05: Obviously, you know, you're probably going to have your data stored in process, you know, in these facilities as well.
+[0:26:26] SPEAKER_05: But, you know, I'll give you another example.
+[0:26:29] SPEAKER_05: It's in my home state of Illinois, but it's very relevant to Northwest Indiana.
+[0:26:33] SPEAKER_05: It's the quantity.
+[0:26:34] SPEAKER_05: And, you know, I mean, when you think about kind of the innovation, they're saying right now they're not going to use data center there for obvious reasons, but they're going to use data center there at some point as its quantity is scaled.
+[0:26:46] SPEAKER_05: You know, I mean, and they're saying, you know, we're not a data center and like that is correct, but you are in technology and play AI.
+[0:26:55] SPEAKER_05: So that's the kind of things that, you know, I think can happen, but underpinning all of that is the infrastructure, which is the data center.
+[0:27:03] SPEAKER_01: So I would tell you again, I've been a business owner, businesses, most of my adult life.
+[0:27:12] SPEAKER_01: And I will tell you, it's very important right now, because not only for Microsoft, but for how we have a large airplane manufacturer or a little party of other college jobs that we need kids that are prepared to do the new way of doing things.
+[0:27:28] SPEAKER_01: I mean, I was impressed with our public golf course.
+[0:27:31] SPEAKER_01: I saw what I called the Roombas for the first time in the last yesterday.
+[0:27:37] SPEAKER_01: But what Microsoft does is when they come in, they have set up the first data center academy in this, I believe in the state, through the support of the school system, so that and with IDTAC in our partnership with IDTAC, so those kids are now going to be prepared to walk out with the degree
+[0:27:57] SPEAKER_01: and hopefully be ready to step into those AI-tech positions that are so unique in that way at Microsoft, but across Northwest in the year.
+[0:28:05] SPEAKER_04: Yeah, and I'll just double down. I was in San Francisco at one of your competitors actually headquarters, and the rate in which they were investing.
+[0:28:14] SPEAKER_04: This is on the water, the sustainability giant, but just new technologies to help accelerate the build and their sustainability footprint was just really incredible.
+[0:28:25] SPEAKER_04: I mean, companies that would even have a shot three years ago were now getting massive deals with big tech simply because they're creating the environment of, no, we want to innovate, we want to sugar, but we want to find best available technologies to make this as stable as possible.
+[0:28:40] SPEAKER_04: And so it's pretty incredible I think when you can bring partners in and create those ecosystems around that, what can be done in certain industries.
+[0:28:49] SPEAKER_05: No, absolutely no, and thank you for being here.
+[0:28:51] SPEAKER_05: Obviously, I think, especially on the cool inside, the amount of solutions there are significant.
+[0:28:56] SPEAKER_05: So I mean, from a procurement standpoint, when you're working with these bigger companies, these are significant too.
+[0:29:03] SPEAKER_05: So they can play.
+[0:29:04] SPEAKER_04: Yeah, yeah, yeah, just big get it up.
+[0:29:07] SPEAKER_04: Okay, so let's, you know, while we're kind of in the energy and so on and so forth, because that's a big topic.
+[0:29:16] SPEAKER_04: It's like, we're going to hide our consumption under NDA.
+[0:29:18] SPEAKER_04: So no one's actually going to ever know what, you know, what we're using or what we're discharging and so on and so forth.
+[0:29:24] SPEAKER_04: So, Mayor, I guess what kind of arrangements do you want to have which comes to the sustainability and the footprint of a resource in one of these data centers and what are some best practices that we can share?
+[0:29:36] SPEAKER_01: Well, and that's where we have wonderful water, wastewater team, Microsoft.
+[0:29:44] SPEAKER_01: Very cool environment.
+[0:29:46] SPEAKER_01: And so it's been great to see the financial community that they've made and it includes the water, the wastewater system in our community.
+[0:29:55] SPEAKER_01: And again, we know where the statehouse is headed with reducing dollars.
+[0:30:01] SPEAKER_01: And again, I was, I'll say I was a part of it and it's coming back to haunt me now.
+[0:30:06] SPEAKER_01: I see my friend in that here's back there.
+[0:30:08] SPEAKER_01: But we have to think as local government, different ways to do anything.
+[0:30:13] SPEAKER_01: We don't want to rely on the state.
+[0:30:15] SPEAKER_01: We want to partner with the private sector, whether it's environmental and I don't know if I'm allowed to say this, but Microsoft's committed $4 million to some watershed projects that haven't been addressed in 55 years in the important county.
+[0:30:29] SPEAKER_01: And it doesn't even affect so much the city of the court, but it's better for the environment.
+[0:30:33] SPEAKER_01: It's better for our county to see this work being done.
+[0:30:38] SPEAKER_01: So yeah, we're we're having a nuclear summit in the middle of September.
+[0:30:43] SPEAKER_01: We're hoping and trying and looking at everything to either drive costs down or to improve lives of our residents with power, with water, with wastewater.
+[0:30:55] SPEAKER_01: And we're going to be able to separate sewer releases, storm water that, you know, when I took over 2020, we had a hundred million dollar infrastructure problem because our infrastructure was 100 years old.
+[0:31:09] SPEAKER_01: We're now addressing that because we have somebody that cares about our community.
+[0:31:14] SPEAKER_02: And I can just add that we don't have any.
+[0:31:17] SPEAKER_02: So Microsoft does not have any as a community.
+[0:31:20] SPEAKER_02: So when you think about the court, it's going to be a close loop cleaning system.
+[0:31:25] SPEAKER_02: So after the initial bill, the only usage because some squat consumption is going to be for domestic purposes, like drinking water or fresh food.
+[0:31:34] SPEAKER_02: So we're looking at that.
+[0:31:35] SPEAKER_02: And of course, I mentioned earlier that, you know, residents are not going to have to pay for high electric electric bills because we are going to actually cover that infrastructure costs.
+[0:31:43] SPEAKER_02: So, you know, residents will not be impacted by anything.
+[0:31:46] SPEAKER_02: There's no reason why we're using finished water for most industries, especially that, right?
+[0:31:52] SPEAKER_04: So I applaud you for pioneering that.
+[0:31:54] SPEAKER_04: We need to tell that story.
+[0:31:55] SPEAKER_04: Because Indian always gets better out, but we're not going to have to do this one circular water thing that I've added.
+[0:32:01] SPEAKER_04: Well, it would be like that.
+[0:32:03] SPEAKER_05: I mean, I think, you know, one to mark perspective and, you know, we would love for all of you to kind of help with this messaging.
+[0:32:10] SPEAKER_05: But, you know, context matters and we do use far less water than a lot of other industries.
+[0:32:14] SPEAKER_05: And we can get into that.
+[0:32:15] SPEAKER_05: But I can yell at it now when I do slightly more industry stuff.
+[0:32:18] SPEAKER_05: I kind of like that.
+[0:32:19] SPEAKER_05: But, you know, I mean, you know, you have closed loop systems.
+[0:32:22] SPEAKER_05: You have direct chip, liquid version.
+[0:32:24] SPEAKER_05: In climate service, states like Indiana, where the climate is cold for months of the year, you do have companies that are literally taking in the Amazon air for 90% of the year.
+[0:32:33] SPEAKER_05: And then turning to a liquid or water cooling solution for a few weeks during the summer.
+[0:32:38] SPEAKER_05: So, I think, you know, we see a lot of calls nationally to mandate certain kind of technologies.
+[0:32:44] SPEAKER_05: But those technologies might be obsolete in the next two to three years.
+[0:32:47] SPEAKER_05: So, from our perspective, I think, you know, focus on outcome-based, you know, measures here.
+[0:32:52] SPEAKER_05: What's the actual health of the watershed we're hoping from?
+[0:32:56] SPEAKER_05: There are sources that are abundant.
+[0:32:57] SPEAKER_05: There are sources that are struggling too.
+[0:32:59] SPEAKER_05: And that should be where the focus is.
+[0:33:01] SPEAKER_05: And is this project data center or, you know, other industries?
+[0:33:04] SPEAKER_05: Is that going to harm that watershed should we think about it?
+[0:33:07] SPEAKER_05: Is that kind of how we're thinking about it?
+[0:33:09] SPEAKER_04: And that happens in year one for your pursuit, right?
+[0:33:12] SPEAKER_04: Because that should be happening, I would think, in the site selection process.
+[0:33:15] SPEAKER_04: And actually, it's just like, what is the watershed in the geographical makeup of the site that we're looking at?
+[0:33:21] SPEAKER_04: I mean, but I want to confirm that.
+[0:33:22] SPEAKER_04: But that is part of what we think about the pillars of good and good development site selection is a key piece of that.
+[0:33:28] SPEAKER_04: Potium, would you like to speak a little bit on how Microsoft purchased site selection or how you think about that?
+[0:33:34] SPEAKER_03: I'm sorry.
+[0:33:35] SPEAKER_02: Yeah, so we do look at site selection.
+[0:33:37] SPEAKER_02: We do look at the availability of resources, the whole ecosystem.
+[0:33:42] SPEAKER_02: So that is something that's important to us.
+[0:33:44] SPEAKER_02: And of course, like Grant mentioned, we are looking at ways, of course, for our water usage to not consume as much water.
+[0:33:51] SPEAKER_02: So those are things we all would say.
+[0:33:54] SPEAKER_04: I know it seems like an obvious question.
+[0:33:56] SPEAKER_04: But I mean, we do have to put in the news for a certain district in London that they did not necessarily look at the watershed numbers.
+[0:34:04] SPEAKER_04: A big project.
+[0:34:05] SPEAKER_04: So I would say, I mean, I don't want to poke the bear, but, you know, it's not always been at the forefront of the conversation, right?
+[0:34:11] SPEAKER_04: Absolutely.
+[0:34:12] SPEAKER_05: Yeah.
+[0:34:13] SPEAKER_05: No, but one of the more fascinating developments I would say we are seeing, like, Stan Lewis, for instance, their water director came out.
+[0:34:20] SPEAKER_05: And they built that water system permanently in residence.
+[0:34:23] SPEAKER_05: And they have 300,000 residents now.
+[0:34:24] SPEAKER_05: So the water director there is actually like, no, we want to do this.
+[0:34:27] SPEAKER_05: We have the capacity to put in support then.
+[0:34:30] SPEAKER_05: And also, that data center can help upgrade and modernize the infrastructure for everybody, you know.
+[0:34:35] SPEAKER_05: So we are seeing things like that, too.
+[0:34:36] SPEAKER_05: But you also have to take into account the inherent trade-offs between energy and water usage.
+[0:34:42] SPEAKER_05: In some states, you know, especially all of us, you know, you're probably going to look more towards their pooling system, where there are so they can get water challenges.
+[0:34:49] SPEAKER_05: But, you know, where there is water abundance, you want to reduce your energy consumption.
+[0:34:53] SPEAKER_05: You might think about it differently, and those are very exciting.
+[0:34:56] SPEAKER_03: Yeah.
+[0:34:59] SPEAKER_03: Yeah.
+[0:35:02] SPEAKER_01: Well, and I'm going to add, you know, we hear about this closed loop like it's something new today.
+[0:35:07] SPEAKER_01: And we heard that from the community.
+[0:35:09] SPEAKER_01: Oh, how could you put the report in danger, trying this new closed loop system?
+[0:35:13] SPEAKER_01: So we said, hey, let's get on a bus.
+[0:35:15] SPEAKER_01: Let's go over to the agency attack, which is one of our 300 person employee manufactured in report.
+[0:35:24] SPEAKER_01: Oh, by the way, they have this closed loop system, which is the exact system Microsoft's going to use, and they've had it for 25 years.
+[0:35:32] SPEAKER_01: So what have you done for the last 25 years? Look what's happened, nothing.
+[0:35:36] SPEAKER_01: So we address directly. We think people need to hear it directly, and there are no new surprises.
+[0:35:45] SPEAKER_01: Yeah.
+[0:35:46] SPEAKER_04: So I'm going to end on the community side.
+[0:35:50] SPEAKER_04: I think a community sentiment getting community on board is everything.
+[0:35:54] SPEAKER_04: And so, you mentioned the t-shirts and getting the other side.
+[0:36:00] SPEAKER_04: I should share for the message.
+[0:36:02] SPEAKER_04: What were some of just the common, what were the common plays that your community had?
+[0:36:09] SPEAKER_01: Besides myself putting money in my pocket.
+[0:36:15] SPEAKER_01: I can think of all.
+[0:36:16] SPEAKER_01: And I know things, you know, and I talk about this, like the Holbert Mayor, Mayor Josh, the things that he went through.
+[0:36:24] SPEAKER_01: He's younger.
+[0:36:25] SPEAKER_01: And I don't care that he's a Democrat, not only Republican, but things that the community put him through is unacceptable.
+[0:36:34] SPEAKER_01: You know, we need to stay up level and have honest conversation.
+[0:36:38] SPEAKER_01: But again, I think number one was fear factor.
+[0:36:41] SPEAKER_01: Number two, the tech companies are doing a very poor job of really promoting what they do over the many years caught up.
+[0:36:50] SPEAKER_01: And we were left.
+[0:36:52] SPEAKER_01: Science Microsoft.
+[0:36:53] SPEAKER_01: We were left on an island, a state walk away, a feds walk away.
+[0:36:57] SPEAKER_01: And we had to take on all commerce at a local level.
+[0:37:01] SPEAKER_01: And I think number one was lack of education, fear factor.
+[0:37:05] SPEAKER_01: And it's taken some time over finally over that stretch.
+[0:37:09] SPEAKER_01: And now the same people that oppose this one out, you think you can give the job at Microsoft.
+[0:37:18] SPEAKER_01: Or the penis a guy that was completely opposed, wanted to close down his business.
+[0:37:24] SPEAKER_01: And then he signed up as a part of our program to say, oh, I didn't know we were going to be able to supply 250 pieces of meat.
+[0:37:31] SPEAKER_01: I said, oh, we don't think you should do what we know I feel about that.
+[0:37:34] SPEAKER_01: But now everybody's starting to see that our roads are being paid.
+[0:37:40] SPEAKER_01: And again, people don't want to increase taxes.
+[0:37:44] SPEAKER_01: They don't want a real tax.
+[0:37:45] SPEAKER_01: They don't want another increased tax here.
+[0:37:49] SPEAKER_01: And I know the county just tried passing one and it was opposed.
+[0:37:52] SPEAKER_01: We see what the legislature is doing with property taxes.
+[0:37:56] SPEAKER_01: And we say fine.
+[0:37:58] SPEAKER_01: We're not going to rely on anybody.
+[0:38:00] SPEAKER_01: We want to generate like a business.
+[0:38:02] SPEAKER_01: Our cost, you know, what we need to give our residents the best life.
+[0:38:07] SPEAKER_01: And it's a new day in the court because we've taken a partnership step with a company like Microsoft.
+[0:38:13] SPEAKER_01: And who doesn't want the top level for one of the top core companies in the global world to be in our backyard.
+[0:38:26] SPEAKER_04: Do you have how many resources you can provide your community stakeholders with to arm them with either personnel or agencies or a playbook, if you will, to kind of handle the, you know, how do you handle the objections that they naturally face going into?
+[0:38:40] SPEAKER_02: Well, you know, what we've done and what we did in the court was we invited all of the community in to speak with our symptomatic experts.
+[0:38:48] SPEAKER_02: And so residents were able to go from table to table to talk about energy and water and the noise and anything that they had to say anything that they had questions about.
+[0:38:58] SPEAKER_02: So, you know, whether that is the open house or taking phone calls or having a place where residents can email indirectly and get responses or partnering with the mayor to have these conversations in a coffee shop or in their homes, you know, we did those things to try to help educate the community.
+[0:39:16] SPEAKER_02: And that's what we're most proud of. We want to be transparent. We want people to know that we are not hiding.
+[0:39:21] SPEAKER_02: And we want you to be educated. We want you to have the information that you need to know that we are a good partner.
+[0:39:27] SPEAKER_02: And we're vested. And we want to be here. We want to help to grow the economy and to grow the court.
+[0:39:34] SPEAKER_05: Yeah, right is add to, I mean, I'll make two points. One, there is a lot of speculation in this market right now and it's hurting us in a number of different ways.
+[0:39:46] SPEAKER_05: And, you know, there are a lot of new developers who see an opportunity here and some are doing well and some aren't doing as well.
+[0:39:53] SPEAKER_05: And I think for me, community engagement perspective, we're seeing that happen in some of these communities.
+[0:39:58] SPEAKER_05: But from our perspective, I mean, build trust before you build and really understand that community. You understand what makes them tick.
+[0:40:06] SPEAKER_05: You know, who are the community groups that you should be able to talk about? This is the community of like, open to deputy data center or to get it plugged.
+[0:40:12] SPEAKER_05: And that might inform what you do next, right? So I think, you know, early and as engaged community engagement as possible is really needed in the moment.
+[0:40:24] SPEAKER_05: And moving forward, I think there's been an industry who, you know, given how important and critical information getting facilities is, you know, for the last 20 or 30 years, you know, we would work with local government and we kind of go behind all these trees and then in that really, you know, talk to anybody.
+[0:40:40] SPEAKER_05: But now we have to, right.
+[0:40:42] SPEAKER_05: So I think there's a learning curve not for companies like Microsoft, but for a lot of our members in terms of how they do this engagement.
+[0:40:49] SPEAKER_05: But again, you know, before you do anything and you apply for zoning or anything, get to know community, build that level of trust and then, you know, move there.
+[0:40:58] SPEAKER_04: Yeah. So when do we see development peak? Like at one point in time, this maximum site selection and projects peak and we kind of, I mean, entrepreneurs here, I mean, have the peak of this illusion and go into a trap.
+[0:41:11] SPEAKER_04: Or do you know what I mean? Like, and this just becomes normal. Like, how, over years, decades, you know what I mean?
+[0:41:19] SPEAKER_05: No, I think, look, this window, so right now you're seeing this built out. I think it's actually a fascinating way to think about it.
+[0:41:30] SPEAKER_05: You know, cloud computing is going to remain a deep predominant or low occurring data centers through at least 2035.
+[0:41:37] SPEAKER_05: But right now we're in this moment of build out for artificial intelligence training, right?
+[0:41:43] SPEAKER_05: And, you know, most studies, most analyses suggest that, you know, over the next two to three years, you're going to see the training slowed down a little bit that we're going to stop or anything.
+[0:41:54] SPEAKER_05: But, and then artificial intelligence inference, which is where we are deploying the AI to the end user, which is everyone in this room, right?
+[0:42:03] SPEAKER_05: And, you know, those are going to be different considerations because we need to be closer to the end user.
+[0:42:07] SPEAKER_05: So, library connectivity is going to be really important. They're probably going to look like smaller data centers and use less power.
+[0:42:14] SPEAKER_05: So, again, I think it goes back to a planning perspective and what makes sense for a greater community.
+[0:42:20] SPEAKER_05: I mean, if you think of some of the communities outside of the United States or even in my old time of Chicago, where you have a lot of fiber running into the city,
+[0:42:28] SPEAKER_05: maybe you're not ready for a data center right now, but maybe in three or four years you've done your new diligence and whatnot.
+[0:42:33] SPEAKER_05: And you want to track what you think of the data center. So, that's kind of how I would, you know, advise people to think about it.
+[0:42:38] SPEAKER_04: Yeah, and I was like, it's a high-tech computer. Yeah, I really did it. Okay. Yeah.
+[0:42:43] SPEAKER_04: Amazing. Okay. So, I've wanted them to make fun. So, I think it's 2035.
+[0:42:48] SPEAKER_04: And we sit back and we're like, we got that right. You know, Indiana, the Port, you know, my town, we got that right.
+[0:42:56] SPEAKER_04: What does that look like? And then I'm going to post that question to each of you.
+[0:43:01] SPEAKER_04: What's I got on?
+[0:43:03] SPEAKER_05: No, I honestly think there's going to be a lot of states who are taking themselves in five or six years because they have the reaction that they have at this moment, right?
+[0:43:12] SPEAKER_05: Indiana, obviously, there are a lot of concerns locally and whatnot, but it has been welcomed and it has opened itself up to a lot of these.
+[0:43:21] SPEAKER_05: I would say, regional and change these projects.
+[0:43:24] SPEAKER_05: So, you're going to see, you know, clustering of innovation and all these different things happening around these facilities and the property type of things that are generated and the key benefits that are coming.
+[0:43:36] SPEAKER_05: I think it's going to be a boom for states like Indiana.
+[0:43:39] SPEAKER_05: And I think my own state is going to be looking, you know, here in five years of wondering, you know, I wish they had a kind of reaction.
+[0:43:46] SPEAKER_01: When we took over 2020, we said we want to be 30 by 50.
+[0:43:50] SPEAKER_01: We've been a population in the city of court for 22,000 and change 40 years because our community, my hometown said no to everything.
+[0:44:00] SPEAKER_01: We are now changing our future and the momentum that we are generating now and continuing to generate.
+[0:44:10] SPEAKER_01: We're going to teach a community, hopefully a region, that it's okay to say yes.
+[0:44:15] SPEAKER_01: And the naysayers, the trolls, all those people do not have enough power to stop the momentum.
+[0:44:25] SPEAKER_01: And hopefully, as I told you, as our team and our development team all says, hey, we've got to hire ourselves.
+[0:44:31] SPEAKER_01: I'm so worried about educating people around the state.
+[0:44:35] SPEAKER_01: And I'm like, back to my original point, our job is just begun here.
+[0:44:39] SPEAKER_01: We need to help every other community.
+[0:44:42] SPEAKER_01: We'll meet with whoever might ever say this is our future.
+[0:44:47] SPEAKER_01: And when that happens, the state of Indiana will be a special place to compete.
+[0:44:52] SPEAKER_02: I think that we will believe that we've gotten it right when the community actually sees the benefit.
+[0:45:01] SPEAKER_02: As I think about the community, like Putsi Washington, they opened our first day of the seminary in 2008.
+[0:45:06] SPEAKER_02: And now they have, their property taxes have decreased.
+[0:45:11] SPEAKER_02: And they have new schools and a new city hall and new public safety buildings.
+[0:45:16] SPEAKER_02: And the poverty rate has gone down.
+[0:45:19] SPEAKER_02: When we see those things in a community like the court and some of the other communities that we've invested in,
+[0:45:25] SPEAKER_02: I think they're going to be better at it.
+[0:45:30] SPEAKER_05: We haven't really got into it, but to the point of saying yes,
+[0:45:35] SPEAKER_05: we also need states and localities that are saying yes, energy projects.
+[0:45:40] SPEAKER_05: You know, I mean, we've been in a country that experienced flat,
+[0:45:44] SPEAKER_05: we're planning to go over the last 20 years.
+[0:45:47] SPEAKER_05: And now we're in this new era where not just data centers,
+[0:45:50] SPEAKER_05: but every kind of key growth sector for the next 20, 30 years is going to rely on more and more energy.
+[0:45:57] SPEAKER_05: So obviously, after we get asked about things around advanced nuclear, geo thermal,
+[0:46:01] SPEAKER_05: long-duration batteries, storage, and no other industry in the country is investing in these technologies,
+[0:46:07] SPEAKER_05: like the data center industry.
+[0:46:09] SPEAKER_05: But we do need help in getting the projects cited there through this pandemic.
+[0:46:13] SPEAKER_04: Well, the mayor, as you said, we opened our free, you're kind of open for business.
+[0:46:17] SPEAKER_04: But I think what you point out is we really need to be open at the state level and really need to tie some of the initiatives
+[0:46:22] SPEAKER_04: we'll be having at that level down to our community so that we can make sure that we accomplish what a can be,
+[0:46:28] SPEAKER_04: what a future can look like when I buy it, right?
+[0:46:31] SPEAKER_04: It is a, it's not a need to be a closed system in and of itself.
+[0:46:36] SPEAKER_04: Right?
+[0:46:37] SPEAKER_04: More energy.
+[0:46:38] SPEAKER_03: More energy.
+[0:46:39] SPEAKER_04: More energy.
+[0:46:40] SPEAKER_04: Okay.
+[0:46:41] SPEAKER_04: Well, thank you all so much.
+[0:46:42] SPEAKER_04: We're going to be all there.
+[0:46:43] SPEAKER_04: Thank you.
+[0:46:44] SPEAKER_04: Thank you.
+[0:46:45] SPEAKER_04: Thank you.

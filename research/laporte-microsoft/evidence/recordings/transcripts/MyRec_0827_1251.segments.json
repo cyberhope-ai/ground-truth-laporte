@@ -1,0 +1,269 @@
+{
+ "source_file": "MyRec_0827_1251.mp3",
+ "sha256": "8a400dcaca14bc57ef1d11c0b3911d00b406885056fdd6482894359589b9cbcf",
+ "duration_s": 353.7,
+ "diarization_model": "pyannote/speaker-diarization-3.1",
+ "asr_model": "base.en",
+ "speaker_map": {
+  "SPEAKER_00": {
+   "subject_id": null,
+   "display_name": null,
+   "basis": null
+  },
+  "SPEAKER_01": {
+   "subject_id": null,
+   "display_name": null,
+   "basis": null
+  }
+ },
+ "segments": [
+  {
+   "t_start": 0.0,
+   "t_end": 34.76,
+   "speaker_tag": "SPEAKER_00",
+   "text": "It is an honor to be here. I have to give a shout out to my friend Jennifer. You know in the hallways, legislators, I think we all can agree we're bombarded with all sorts of special interests and lobbyists, and Jennifer was the type of advocate where when she's calling and her name is Bob and I'm on my phone.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 34.76,
+   "t_end": 47.76,
+   "speaker_tag": "SPEAKER_00",
+   "text": "Unless I'm meeting with the appropriations chair, Ryan Mishler, I'm going to take that call. You are very, very well served with Jennifer and Sabra and the old great team.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 47.76,
+   "t_end": 59.76,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And I also have to give a special shout out to, I love you all, but the most important person in this room is a person who's a constituent of mine. Instead of District 38, she's on the board of this great organization at Shelley Klingerman.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 59.76,
+   "t_end": 75.76,
+   "speaker_tag": "SPEAKER_00",
+   "text": "I greatly appreciate your friendship and your counseling. And the last shout out I have to give is to my good friend Kyle Walker. I can sometimes even get choked up every time I mention his name because it's going to be a tremendous loss when you're not at that state house.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 75.76,
+   "t_end": 82.76,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And I greatly, greatly appreciate you so much and your quiet steadfast leadership and your unifying style.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 82.76,
+   "t_end": 87.76,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And I'm going to try to do everything I can to continue your legacy in every regard.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 87.76,
+   "t_end": 97.76,
+   "speaker_tag": "SPEAKER_00",
+   "text": "So some of you may embrace this statement. Some of you may be offended by it, but I'm going to say it anyway. I am from the government and I'm here to help.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 97.76,
+   "t_end": 124.8,
+   "speaker_tag": "SPEAKER_00",
+   "text": "The philosophy also is to do everything I can and double down, especially after the experience I had between the months of March and May the 5th to promote my partisanship.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 124.8,
+   "t_end": 131.8,
+   "speaker_tag": "SPEAKER_00",
+   "text": "Because we don't need more boxers in Indiana. We don't need any more dividers.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 131.8,
+   "t_end": 143.8,
+   "speaker_tag": "SPEAKER_00",
+   "text": "You certainly don't need a scare tactics around data centers, although Secretary Goodrich, I'm going to continue to use the phrase that you have charged me to computing centers.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 143.8,
+   "t_end": 159.5,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And I'm sure it's how I'm not going to scare the technology. I want to embrace it. I want to create a culture for young people all the way to those who are the driving force of the silver tsunami.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 159.5,
+   "t_end": 165.84,
+   "speaker_tag": "SPEAKER_00",
+   "text": "That that's what's going to be the answer for the cure of cancer.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 165.84,
+   "t_end": 184.84,
+   "speaker_tag": "SPEAKER_00",
+   "text": "To uplift a personnel apology to create new transportation systems, to make our livestock resilient, to biological threats, to keep the power on, to help advance the American civilization.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 184.84,
+   "t_end": 190.84,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And yes, I use the worthy American civilization because I'm an unapologetic patriot.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 190.84,
+   "t_end": 203.57,
+   "speaker_tag": "SPEAKER_00",
+   "text": "I will go anywhere and everywhere to say that just as the free world needs the United States of America, the United States of America needs to stay at Indiana.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 203.57,
+   "t_end": 210.57,
+   "speaker_tag": "SPEAKER_00",
+   "text": "Because we are at the forefront of life sciences, human, animal, and plant health.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 210.57,
+   "t_end": 216.57,
+   "speaker_tag": "SPEAKER_00",
+   "text": "We are at the forefront as they are doing a groundbreaking ceremony in Tippecanoe County.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 216.57,
+   "t_end": 222.57,
+   "speaker_tag": "SPEAKER_00",
+   "text": "With the multi-billion dollar investment of S. K. Heineck's today.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 222.57,
+   "t_end": 229.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "That's where United States Senator Todd Young is. We're at the forefront of microelectronics and chip manufacturing.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 229.23,
+   "t_end": 235.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "We're at the forefront of the great quantum corridor in Northern Indiana.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 235.23,
+   "t_end": 243.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "We're at the forefront of incredible national and economic security in places like the Naval Surface Warfare at Crane.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 243.23,
+   "t_end": 261.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "Did you know that just last week, a four-star ad world named Richard Corral, who oversees United States for teacher command, happens to be an alum at Rose Home and Institute of Technology in my district.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 261.23,
+   "t_end": 267.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "So all things future is happening right here in the state of Indiana.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 267.23,
+   "t_end": 275.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "Much of it is being led not by government, but by entrepreneurial leaders such as yourselves.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 275.23,
+   "t_end": 290.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And so when I think about the things that are being discussed today, the need for capital, the need for that tax credit to help spur that venture capital investment.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 290.23,
+   "t_end": 303.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "When I think about the investments needed to continue to bolster and to sustain our research and technology fund.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 303.23,
+   "t_end": 314.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "I think about the great words that were spoken up here just recently on the workforce to embrace AI and education.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 315.23,
+   "t_end": 333.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And to make sure that our who's your children are the leaders in AI, STEM education, apprenticeships, work-based learning and absolutely to continue to bolster our ecosystem through tools such as our certified technology partners.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 334.23,
+   "t_end": 340.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "These are the things that you all are the forefront. You all are leading.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 340.23,
+   "t_end": 350.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And you have my pledge to continue to do everything I can to help tee up those opportunities to get behind them and then to get out of your way.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t_start": 350.23,
+   "t_end": 353.23,
+   "speaker_tag": "SPEAKER_00",
+   "text": "Thank you all very much. It's great to be with you.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved"
+  }
+ ]
+}

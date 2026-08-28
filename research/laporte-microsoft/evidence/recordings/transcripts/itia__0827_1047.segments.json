@@ -1,0 +1,4826 @@
+{
+ "source_file": "itia__0827_1047.mp3",
+ "sha256": "c75c7e266efdf803a11f6ec35362740b677691a4f77a6e64f3dbdddd90bd9e44",
+ "duration_s": 2810.6,
+ "diarization_model": "pyannote/speaker-diarization-3.1",
+ "asr_model": "base.en",
+ "speaker_map": {
+  "SPEAKER_00": {
+   "subject_id": null,
+   "display_name": "ITIA emcee (unidentified)",
+   "speaker_conf": "unresolved",
+   "basis": "Performs the panel introduction; not a panelist. Voice not independently identified."
+  },
+  "SPEAKER_04": {
+   "subject_id": null,
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco",
+   "speaker_conf": "confirmed",
+   "basis": "Introduced as moderator at 0:00:33; assumes moderator role at 0:00:54 and directs every question ('So, Brad...', 'So, Mayor...')."
+  },
+  "SPEAKER_05": {
+   "subject_id": null,
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition",
+   "speaker_conf": "confirmed",
+   "basis": "SELF-IDENTIFIES at 0:03:08 ('I'm the Director of Government Affairs for the Midwest, the Data Center Coalition'); moderator names him immediately prior at 0:02:50."
+  },
+  "SPEAKER_01": {
+   "subject_id": null,
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte",
+   "speaker_conf": "confirmed",
+   "basis": "Answers the moderator's direct address 'So, Mayor...' at 0:29:24; speaks throughout as the city's chief executive ('our community', 'my hometown'); at 0:43:50 cites the city's population (~22,000), consistent with La Porte."
+  },
+  "SPEAKER_02": {
+   "subject_id": null,
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft",
+   "speaker_conf": "confirmed",
+   "basis": "Answers the moderator's Microsoft site-selection question at 0:33:28; speaks in Microsoft's first person ('not just for Microsoft, but for any data center', 0:25:22)."
+  },
+  "SPEAKER_03": {
+   "subject_id": null,
+   "display_name": null,
+   "speaker_conf": "unresolved",
+   "basis": "6 short segments, mostly crosstalk/interjection. NOT identified \u2014 do not attribute."
+  }
+ },
+ "segments": [
+  {
+   "t_start": 0.27,
+   "t_end": 6.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And we're seeing major projects representing millions of dollars in investment across our state.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 6.27,
+   "t_end": 12.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "But how do we make sure we're doing it right and benefiting the communities that are hosting these data centers?",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 12.27,
+   "t_end": 14.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "That's what this next panel will talk about.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 14.27,
+   "t_end": 22.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "So, I would like to welcome to the stage our panelists, the LaPorte Mayor, Tom Dirmity,",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 22.27,
+   "t_end": 27.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "the Director of Infrastructure and Government Affairs for Microsoft Hotel LaBroye,",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 27.27,
+   "t_end": 33.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "and the Director of the West State Government Affairs for the Data Center Coalition, Brad Teats.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 33.27,
+   "t_end": 38.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "And our moderator for this panel is also ITA Board Member Megan Glover,",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 38.27,
+   "t_end": 41.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "the Chief Digital Officer for New South Wales.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 41.27,
+   "t_end": 42.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "Hi.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 42.27,
+   "t_end": 43.27,
+   "speaker_tag": "SPEAKER_00",
+   "text": "Okay. Thank you.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 43.27,
+   "t_end": 54.77,
+   "speaker_tag": "SPEAKER_00",
+   "text": "Hi.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": "ITIA emcee (unidentified)"
+  },
+  {
+   "t_start": 54.77,
+   "t_end": 59.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Are you ready to talk about some data centers?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 59.2,
+   "t_end": 61.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Please keep your water bottles on your tables.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 61.2,
+   "t_end": 62.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Don't throw them this way.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 62.2,
+   "t_end": 65.2,
+   "speaker_tag": "SPEAKER_03",
+   "text": "There's also going to be a positive conversation.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": null
+  },
+  {
+   "t_start": 65.2,
+   "t_end": 67.2,
+   "speaker_tag": "SPEAKER_03",
+   "text": "Thank you.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": null
+  },
+  {
+   "t_start": 68.2,
+   "t_end": 69.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Okay.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 69.2,
+   "t_end": 70.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Well, yeah.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 70.2,
+   "t_end": 77.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "We thought we couldn't have a technology summit without talking about the elephant in the room, which is data centers.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 77.2,
+   "t_end": 84.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And if you could, interesting point out, data centers are not in the Department of Data Centers built the foundation for cloud computing,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 84.2,
+   "t_end": 90.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "which many of us are in this room to build very successful SaaS businesses and so on and so forth.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 90.2,
+   "t_end": 102.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "The magnitude at which the data center structures, if you will, and the speed at which the structures are needed to develop or something that we just never, never seen before.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 102.2,
+   "t_end": 107.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So, I think when we talk about data centers, we are really talking about that race to win.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 107.2,
+   "t_end": 114.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "The four-auto revolution of AI and how big the tech is going to come in and really playing their piece of time.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 114.2,
+   "t_end": 119.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "When it comes to data centers and infrastructures and working with these, they decide to place their centers in.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 119.2,
+   "t_end": 137.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So, again, we've heard a lot about data centers, but hopefully today we get to know more about data centers and specifically how Indiana is participating in the strategy and how good and responsible I think data center development can actually fuel local economies, not only now, but in the future.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 138.2,
+   "t_end": 154.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So, I am super excited to have our panelists today representing all the different stages of the AI economy, right, from site selection and building in our hometown with Mayor Year to partnering with big tech from Teal in Microsoft.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 155.2,
+   "t_end": 165.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And I think, Brad, you bring up in our what's happening around this point of view that you can kind of share and say, how is Indiana compared to their new neighbors with regards to data center development?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 165.2,
+   "t_end": 170.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So, let's kind of start there and then work our way down to the local level.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 170.2,
+   "t_end": 173.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So, Brad, can you help us paint the picture?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 173.2,
+   "t_end": 183.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Indiana definitely seems to open for business and from a data center perspective, but how should we think about ourselves in the state of Indiana compared to our new neighbors?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 183.2,
+   "t_end": 188.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Yeah, good morning everybody and thank you for having me, looking forward to the conversation.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 188.2,
+   "t_end": 196.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Yes, I'm the Director of Government Affairs from the Midwest, the Dance Center Coalition, and we are the National Trade and Membership Association for the History.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 196.2,
+   "t_end": 210.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I'm glad me here on the stage was a mayor and Microsoft is an important member of the DCC, but yeah, it's certainly a fun time for us as you might imagine, but, you know, I think really quick before I get into kind of where Indiana is,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 210.2,
+   "t_end": 226.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "because I think it's a huge opportunity for the state and for the industry, but, you know, when you think about when the iPhone started, right, it was 2008, 2009, and instead I'd often love to think about so from 2010 to 2018.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 226.2,
+   "t_end": 239.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, right as we're all starting to use more and more data, digital services, computing outputs, the data that we all use rose 550% but energy consumption from data centers only rose 6%.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 239.2,
+   "t_end": 245.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So we were getting more and more efficient as an industry as we were all using more and more data and digital services.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 245.2,
+   "t_end": 252.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But now you obviously have the blue part of this one, intelligence about computing, which is looking to remain the predominant work of in data centers.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 252.2,
+   "t_end": 258.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "There's about 2035, but we have all these things happening where we're much more visual in the public discourse.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 259.2,
+   "t_end": 267.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "There's a large national conversation happening about the industry, but Indiana historically has been one of the secondary markets.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 267.2,
+   "t_end": 274.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Across the Midwest, Illinois was the leading market in Ohio, then Indiana, then Wisconsin, Michigan.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 274.2,
+   "t_end": 278.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I would suggest, not from Chicago, my home state is quickly losing.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 278.2,
+   "t_end": 283.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "It's just standing on the data center in history and it's Indiana's benefit.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 283.2,
+   "t_end": 289.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So a lot of projects that we're looking at in Illinois three or four years ago are now being built in Indiana.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 289.2,
+   "t_end": 296.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, Illinois is getting, for instance, a lot of these, what I was talking about, the projects, Indiana is getting the real projects.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 296.2,
+   "t_end": 303.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "If you look at what Microsoft is doing in the U.S. and Google, we have a number of our goal location data centers too, who are now building here.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 303.2,
+   "t_end": 310.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, I think, you know, Indiana is right on the customer becoming one of the big primary markets.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 310.2,
+   "t_end": 317.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Illinois is obviously Virginia, which I'm sure there are Texas, Georgia, California, Arizona, etc.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 317.2,
+   "t_end": 324.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So we'll see, but now I mean, you know, Indiana has all the attributes to do really well-listed history and do it responsibly.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 324.2,
+   "t_end": 328.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So I think that's the goal here and I'll see what it looks like.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 328.2,
+   "t_end": 329.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Yeah, absolutely.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 329.2,
+   "t_end": 333.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I think you get out of the way that you talked about, you talked about the, you know, three workers.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 333.2,
+   "t_end": 335.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "They're not whole projects, they're created equal.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 335.2,
+   "t_end": 340.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And so understanding what are responsible projects and actually benefiting community, you know, long term.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 340.2,
+   "t_end": 343.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Those are the projects we want here in Indiana, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 343.2,
+   "t_end": 345.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And we're getting them.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 345.2,
+   "t_end": 348.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So, but Mary, talk a bit about then, you know, the climate in the state of Indiana.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 348.2,
+   "t_end": 350.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Do you think Indiana has a strategy?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 350.2,
+   "t_end": 351.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "How did you go?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 351.2,
+   "t_end": 359.2,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Did you just, you know, how did you go about kind of getting in the game and leaving kind of the model good in the state of Indiana?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 359.2,
+   "t_end": 362.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So first of all, thank you for the Chicago Bears coming over.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 362.2,
+   "t_end": 363.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We appreciate that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 363.2,
+   "t_end": 367.2,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I'm happy that there's a day of Sunday, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 367.2,
+   "t_end": 376.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "You know, the court has had the large tech investment in the state of Indiana with our Microsoft partnership.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 376.2,
+   "t_end": 377.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I apologize.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 377.2,
+   "t_end": 380.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "You see the mayor here using tenant paper.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 380.2,
+   "t_end": 381.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I am getting better.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 381.2,
+   "t_end": 383.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I'm looking to move down to Eclotile.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 383.2,
+   "t_end": 384.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So I promise.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 384.2,
+   "t_end": 390.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But, you know, what I would, and I served in the state house for 10 years.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 390.2,
+   "t_end": 395.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So everything that I did is coming back to haunt me at a local government level.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 395.2,
+   "t_end": 400.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But I don't think Indiana has opened for business yet.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 400.2,
+   "t_end": 405.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Everybody knows what the Congress did last week during the storms and privately.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 405.2,
+   "t_end": 407.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "They were like, oh my gosh, I can't believe this.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 407.2,
+   "t_end": 408.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "This is great.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 408.2,
+   "t_end": 412.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We're fully supportive of you know, as long as I don't have to say publicly.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 412.2,
+   "t_end": 423.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I think what Holbert has done, what the court has done for Wayne is starting to show the state house and the state of Indiana that it's going to be okay.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 423.2,
+   "t_end": 426.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And this is a great way to compete.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 426.2,
+   "t_end": 428.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "The court is my hometown.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 428.2,
+   "t_end": 430.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "It's when I came back to it.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 430.2,
+   "t_end": 431.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "People said we want something big.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 431.2,
+   "t_end": 433.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We have to shake things up.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 433.2,
+   "t_end": 438.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And while it wasn't easy and we told plenty of data centers, no.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 439.2,
+   "t_end": 444.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And we had every tech global company come to our community to build.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 444.2,
+   "t_end": 448.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We found that Microsoft wasn't a perfect one.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 448.2,
+   "t_end": 450.2,
+   "speaker_tag": "SPEAKER_01",
+   "text": "It took us four years.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 450.2,
+   "t_end": 457.58,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But they were really the main that showed care about the future of the court.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 457.58,
+   "t_end": 460.58,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And it was worthwhile.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 460.58,
+   "t_end": 468.58,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But we definitely had a strategy to as simple as keep our kids home or bring them back home",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 468.58,
+   "t_end": 471.58,
+   "speaker_tag": "SPEAKER_01",
+   "text": "and give them a reason to be in the court.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 471.58,
+   "t_end": 474.58,
+   "speaker_tag": "SPEAKER_01",
+   "text": "They can grant income to be around family.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 474.58,
+   "t_end": 476.58,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And it's working out extremely well.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 476.58,
+   "t_end": 481.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I think that's a really interesting point.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 481.66,
+   "t_end": 486.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And I love the perspective of do you think the state needs a strategy?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 486.66,
+   "t_end": 487.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I have no opinion on the matter.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 487.66,
+   "t_end": 492.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "But I mean, I think there are very basic guardrails, if you will, that I think the mayor is putting out.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 492.66,
+   "t_end": 494.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "This was a four year decision.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 494.66,
+   "t_end": 496.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "You took the strategy and you're on it.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 496.66,
+   "t_end": 501.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Are there communities out there that don't have those same guardrails and are taking kind of the highest bidder?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 501.66,
+   "t_end": 508.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And that's how we end up with some of these wackable solutions and maybe not great development partners.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 508.66,
+   "t_end": 512.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So I guess, did everyone talk about the state data strategy?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 512.66,
+   "t_end": 516.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Like what steps could we actually take to have a police strategy in the state?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 516.66,
+   "t_end": 517.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Sure.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 517.66,
+   "t_end": 518.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "That'd be good.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 518.66,
+   "t_end": 519.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Yeah.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 519.66,
+   "t_end": 520.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "That'd be good.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 520.66,
+   "t_end": 521.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Yeah.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 521.66,
+   "t_end": 531.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "No, I mean, I actually am a believer in having a state framework and some kind of state rules.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 531.66,
+   "t_end": 535.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Because ultimately, you can especially give in the industry right now.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 535.66,
+   "t_end": 541.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "My hope is that it'll give communities some level of comfort and industry some level of stability.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 541.66,
+   "t_end": 546.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But I think if you think about it, that the state is going to handle this differently.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 546.66,
+   "t_end": 551.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, handle it according to what is unique to their state, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 551.66,
+   "t_end": 554.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So there are many states that came to the wrong cloud markets.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 554.66,
+   "t_end": 559.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "There are many states like Indiana that are strong, I think, you know, hyperscale markets.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 559.66,
+   "t_end": 563.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But you look at even like a state like New York and they have more oriented places now.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 563.66,
+   "t_end": 568.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But they've been courting a lot of the semiconductor manufacturers, the battery manufacturers,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 568.66,
+   "t_end": 573.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "and that's kind of how they're engaging with the industry to make growth perspective.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 573.66,
+   "t_end": 582.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You know, I think we, like a state like framework, obviously, you don't want it to go so far where it deters the kind of investment that you're looking for.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 582.66,
+   "t_end": 587.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But, you know, put in place, you know, rules around energy and water and community considerations.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 587.66,
+   "t_end": 599.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I mean, and Indiana actually last year, HB 1007, put forth a very fascinating energy law that I think gave the confidence for the hyperscalers to invest in Indiana.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 599.66,
+   "t_end": 602.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So no, I mean, we're certainly open to those conversations.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 602.66,
+   "t_end": 610.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "We are having a robust discussion with our member at the moment about, you know, nationally, what that kind of framework can look like.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 610.66,
+   "t_end": 613.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, it's opening some really interesting conversations.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 613.66,
+   "t_end": 623.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But we're working there, I think the goal is, as we head in 2027, has an organization come out of the broader principles that every state can look to.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 623.66,
+   "t_end": 630.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And I just want to just add that the reason why we selected the port, and why we're even in Indiana,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 630.66,
+   "t_end": 637.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "we're looking at the land availability. We're looking, of course, at electricity and usage in the ecosystem.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 637.66,
+   "t_end": 643.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "We're also looking at places like the port that want long-term economic development partnerships.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 643.66,
+   "t_end": 649.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And that is why we are here in Indiana, why we actually select the port as the community that we want to partner with.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 649.66,
+   "t_end": 657.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I think the other part is that the data center groups, the tech companies have done a core job of educating people.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 657.66,
+   "t_end": 666.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I've been building that for years. And as I told our team, and we've got high expectations, but I told our team, our work is only beginning now.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 666.66,
+   "t_end": 672.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "You know, we're helping Evansville. We're helping yesterday. We went to Portage to help.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 672.66,
+   "t_end": 677.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We haven't put the facts out there. We have a system, a process that worked.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 677.66,
+   "t_end": 686.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I think once you educate people, you know, and they have to rely on personal attacks and all the things that happen that we went through.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 686.66,
+   "t_end": 695.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "All types. But when you get down to the facts and you educate people, it's hard to say why you would be opposed to it.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 695.66,
+   "t_end": 702.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Can I talk a little bit about that? I just want to just, Mayor Dermi has done a great job on educating the community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 702.66,
+   "t_end": 711.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Of course, the way that residents feel, you know, it's real. They have questions about electricity and water usage and environment and noise.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 711.66,
+   "t_end": 722.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And what Mayor Dermi did in partnership with our community relations manager and our land development managers, he went to those residents to their houses to educate them on data centers.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 722.66,
+   "t_end": 735.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "He meant to make coffee shops as well to educate them as well. And that partnership, just allowing the community to see how transparent we wanted to be in terms of the development we wanted to have in the community was excellent.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 736.66,
+   "t_end": 743.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So Mayor Dermi did a great job in educating his residents about the data centers so that we can come there and be a partner.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 743.66,
+   "t_end": 749.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Yeah, and I do think this is where the state could step in and add a little part of the good message.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 749.66,
+   "t_end": 753.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "We often hear bad messages quite frankly, that's the news that they want to promote, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 753.66,
+   "t_end": 758.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "They've bad news for us a lot faster and a lot louder than the good, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 758.66,
+   "t_end": 773.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So I think how can, you know, right, one by one by one, how can the state be taking more forward thinking approach to what's a positive side of data center development so that communities don't have to go hand-hand combat with their residents, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 773.66,
+   "t_end": 779.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Yeah, and I think the communities need to see the tangible benefits from the project.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 780.66,
+   "t_end": 786.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I think something, you know, we'll go out there and talk about all the property taxes that, you know, this is significant.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 786.66,
+   "t_end": 790.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I mean, you know, these are being changed for generations, for communities.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 790.66,
+   "t_end": 795.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But oftentimes, we don't have control over how the property taxes are out of hand, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 795.66,
+   "t_end": 799.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, we can't say, hey, go reduce your property taxes.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 799.66,
+   "t_end": 806.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You know, like they might want to invest in new schools or things like that, but the residents aren't always seeing them at first hand or immediately.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 807.66,
+   "t_end": 815.66,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So I think, you know, as soon as the companies like Microsoft got it, like they're being very forward thinking about making sure that, you know, we need to know, sort of, you know, think about it.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 815.66,
+   "t_end": 816.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Yeah, yeah.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 816.66,
+   "t_end": 819.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Okay, so let's go there, like, tactical.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 819.66,
+   "t_end": 827.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Like, let's look at a pack of the benefits, because we're, you know, we know the Microsoft's been a wonderful partner, obviously, to look forward in others.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 827.66,
+   "t_end": 829.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So what makes a wonderful partner?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 829.66,
+   "t_end": 836.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Yes, obviously, site selection, we have to have enough of the resources to actually fuel the infrastructure and, you know, what's he doing?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 836.66,
+   "t_end": 843.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Like, what are the other things that we may not appreciate that goes into winning that bill before?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 843.66,
+   "t_end": 846.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Because, like, yes, if you weren't the only bidder courting the mayor over here.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 846.66,
+   "t_end": 849.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So what makes you stand up?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 849.66,
+   "t_end": 851.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Well, firstly, make five commitments.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 851.66,
+   "t_end": 853.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "We announced those in January.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 853.66,
+   "t_end": 856.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Number one, we are going to pay for our energy and our infrastructure.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 856.66,
+   "t_end": 858.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So that would not come on the residents.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 858.66,
+   "t_end": 863.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Residents would not have high electricity bills because of our base and consumption usage.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 863.66,
+   "t_end": 869.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Number two, that we're going to minimize our water usage and we're going to replenish more water than we actually use.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 869.66,
+   "t_end": 872.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Number three, we don't want to take a tax abatement.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 872.66,
+   "t_end": 875.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So that tax revenue is actually going back to the court.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 875.66,
+   "t_end": 879.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So they can use that revenue for their hospitals or schools.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 879.66,
+   "t_end": 883.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Public safety, anything that they feel is important to the community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 883.66,
+   "t_end": 888.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Number four, we are looking at student workers in the labor in the court.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 888.66,
+   "t_end": 893.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And we wanted to make sure that we use workers in labor from the community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 893.66,
+   "t_end": 898.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And five, we wanted to just educate folks on EI infrastructure.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 898.66,
+   "t_end": 905.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "We wanted to invest in those nonprofits in the communities and organizations that the community actually cared about.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 905.66,
+   "t_end": 907.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So those are five commitments to the community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 907.66,
+   "t_end": 912.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "That is why that is our partnership with the court and quality communities that we are in.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 912.66,
+   "t_end": 915.66,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And we were stick to that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 915.66,
+   "t_end": 917.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "What is your selection that you look like?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 917.66,
+   "t_end": 924.66,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Like, how do you even start to being aligned with something like this?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 924.66,
+   "t_end": 927.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "You know, we have a team, a leadership team.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 927.66,
+   "t_end": 934.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We have people that want to take the blinders off or to change the future of our community first of all.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 934.66,
+   "t_end": 937.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So we rally with those individuals.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 937.66,
+   "t_end": 940.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And again, we went through many interviews, many processes.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 940.66,
+   "t_end": 947.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And again, said, no, people forget the number of times we've said no to data center companies,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 947.66,
+   "t_end": 950.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "attack companies because it wasn't right for the court.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 950.66,
+   "t_end": 959.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And then we just walked through and met with many individuals, residents.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 959.66,
+   "t_end": 964.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And what I think worked was we met with 10 to 15 people at a time.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 964.66,
+   "t_end": 971.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Because when you get to the 15 to 25, everybody wants to, you know, stand out by yelling personal things.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 971.66,
+   "t_end": 972.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "You get nowhere.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 972.66,
+   "t_end": 975.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We did 10 to 15 people at a time.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 975.66,
+   "t_end": 978.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And we walked through with Microsoft and with our team.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 978.66,
+   "t_end": 982.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Every issue that they say they're concerned about and address those.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 982.66,
+   "t_end": 990.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And then the other big thing that we did, we made this 100% union investment.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 990.66,
+   "t_end": 993.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I think that was key to it.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 993.66,
+   "t_end": 998.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And every time we had a public meeting, in fact, I brought one to show.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 998.66,
+   "t_end": 1006.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We had 150 union representatives standing outside the front door of city hall wearing this shirt.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1006.66,
+   "t_end": 1011.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Attack the ass shirt.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1011.66,
+   "t_end": 1015.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "This was in our smooth colors, orange and black at a port.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1015.66,
+   "t_end": 1022.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And it made people feel uncomfortable that if you were going to oppose, you better have some legitimate reasons.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1022.66,
+   "t_end": 1025.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And the community began to come around.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1025.66,
+   "t_end": 1028.66,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And it was just hard to argue.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1028.66,
+   "t_end": 1033.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We now worked everybody relentless.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1033.1,
+   "t_end": 1036.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And the community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1036.1,
+   "t_end": 1041.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And the other thing we did, I'll also mention, the county was a horrendous partner.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1041.1,
+   "t_end": 1044.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "A county government, I'm sure we go around there, or a horrendous.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1044.1,
+   "t_end": 1046.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I said it directly to them.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1046.1,
+   "t_end": 1047.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I said it publicly.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1047.1,
+   "t_end": 1062.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So we didn't feel, because they were such opposition to this project, that I would have felt uncomfortable forcing them to take tax money from a data center.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1062.1,
+   "t_end": 1065.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So we bypass them, said you'll get nothing.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1065.1,
+   "t_end": 1067.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We set up a tip.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1067.1,
+   "t_end": 1071.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Now we gave 15% direct to our school system.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1072.1,
+   "t_end": 1075.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And our school system, we have a wonderful superintendent.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1075.1,
+   "t_end": 1080.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And the state of Indiana has set up a competitive market for K-12.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1080.1,
+   "t_end": 1086.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So we now want to set a port up to be different and to go take those kids from around.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1086.1,
+   "t_end": 1089.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We can either back to the port and add them to the port.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1089.1,
+   "t_end": 1094.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And they are sitting in a great situation.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1094.1,
+   "t_end": 1099.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But how is the community going to argue that we're improving our school system?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1099.1,
+   "t_end": 1102.1,
+   "speaker_tag": "SPEAKER_01",
+   "text": "By funding them in such a great way.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1102.1,
+   "t_end": 1105.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Can I add two points to that one?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1105.1,
+   "t_end": 1113.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You know, if, I believe this is, if this is the infrastructure for the 21st century, it should be built with the building trades, from what I expected.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1113.1,
+   "t_end": 1117.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And they've been significant partners as we work for this.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1117.1,
+   "t_end": 1122.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, we are running into workforce shortage here in the next several years.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1122.1,
+   "t_end": 1132.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I think it's coming on the industry to really partner the building trades, invest in community college, educational schools, workforce development programs, and trying to shift all these different things.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1132.1,
+   "t_end": 1137.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So I was actually with the Indiana building trades last week during the World Conference.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1137.1,
+   "t_end": 1139.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And it was a fascinating conversation.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1139.1,
+   "t_end": 1144.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But just the amount of opportunities they're seeing from the industry that Indiana has been significant.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1144.1,
+   "t_end": 1148.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "The other point I wanted to make and, you know, we're looking at national polling.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1148.1,
+   "t_end": 1156.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, we're increasingly the industry, groups like ours, you know, we're not that trusted evaluator, right, for these three hundred projects.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1156.1,
+   "t_end": 1160.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "The building trades are also losing some credibility in that as well.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1160.1,
+   "t_end": 1165.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But the most trusted evaluators are going to be those local leaders on the ground.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1165.1,
+   "t_end": 1171.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So it's incumbent upon us to make sure that they are comfortable with these projects that are with the best.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1171.1,
+   "t_end": 1176.1,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And really work with them to get out and talk to their friends and neighbors across the country.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1176.1,
+   "t_end": 1184.18,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Well, I want to unpack the workforce development, the near and long term impact here in a minute.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1184.18,
+   "t_end": 1188.18,
+   "speaker_tag": "SPEAKER_04",
+   "text": "But I want to put a number in our free work.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1188.18,
+   "t_end": 1201.18,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I think you mentioned that because of the incentive to school system, you were able to bypass what would have been a $6 million referendum on the next kind of ballot.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1201.18,
+   "t_end": 1202.18,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Is that correct?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1202.18,
+   "t_end": 1217.18,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So if you look at the state of Indiana, I think I saw 32 to 38 school corporations are going to a referendum for $500 million, including the neighboring community of Michigan City right next to us.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1217.18,
+   "t_end": 1226.18,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And the court was scheduled to go for a $6 million referendum, which would have obviously added increased tax to our local residents.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1226.18,
+   "t_end": 1229.18,
+   "speaker_tag": "SPEAKER_01",
+   "text": "They have completely put that away.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1229.18,
+   "t_end": 1236.18,
+   "speaker_tag": "SPEAKER_01",
+   "text": "It's that with what the soft is doing now and in the future, they will not need to do that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1236.18,
+   "t_end": 1249.18,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But not only have enough funds to just pay teachers what they deserve and more than just get by but really change what education looks like and preparing our kids for the future.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1252.1,
+   "t_end": 1256.1,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So let's unpack workforce development.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1256.1,
+   "t_end": 1260.1,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I think I heard some where this is only short term.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1260.1,
+   "t_end": 1263.1,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Once the plans are up to 20, it takes very little labor.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1263.1,
+   "t_end": 1267.1,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So it's not really a self-sustaining workforce initiative.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1268.1,
+   "t_end": 1284.1,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So what are some of the numbers around the year term workforce development impact that these fiction museums have on the communities, but then what should we expect reasonably from how will that workforce continue as the data center operates?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1287.94,
+   "t_end": 1293.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You know, I think you have to think about the differences in data center, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1293.94,
+   "t_end": 1300.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And some of the kind of traditional historic data centers that has clustered in more areas.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1300.94,
+   "t_end": 1303.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "There's going to be a couple hundred construction jobs, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1303.94,
+   "t_end": 1307.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And oftentimes people call it temporary, but I can't find the transfer.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1308.94,
+   "t_end": 1313.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Because I mean, those, you know, oftentimes you're out on the jobs for five to seven years.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1313.94,
+   "t_end": 1317.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I don't know what we call that temporary today's workforce.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1317.94,
+   "t_end": 1326.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But, you know, the permanent jobs you're looking at 20 to 30, but for the projects that you're looking at, you're looking at a couple of dollars in construction jobs.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1326.94,
+   "t_end": 1336.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And then, you know, I mean, you know, 100 to 300 employees on site, but you also can't discount the kind of economic or doing cancelary benefits.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1336.94,
+   "t_end": 1340.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, you know, we're in the PWC for every one of the data center jobs.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1340.94,
+   "t_end": 1343.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Four and a half jobs are created elsewhere in the economy.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1343.94,
+   "t_end": 1346.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And you think about all the supply chain opportunities.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1346.94,
+   "t_end": 1352.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "When you think about companies like Deere and Caterpillar who are servicing building out products for data center.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1352.94,
+   "t_end": 1358.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But we're also seeing increasing evidence to a, you know, economic activity for restaurants and movie albums.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1358.94,
+   "t_end": 1369.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Actually, they travel economic research for a female last week and show that some of these communities that are seeing significant data center projects will tell off.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1369.94,
+   "t_end": 1372.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You can see it's actually up 10 to 15% for those hotels.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1372.94,
+   "t_end": 1379.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, you know, again, these can be changed down the line not just on site jobs, but across the ecosystem.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1379.94,
+   "t_end": 1386.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And I think, you know, typically, you know, technology companies like yourselves, other data center will tend to kind of want to cluster around each other.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1386.94,
+   "t_end": 1389.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And share ideas and share innovation together.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1389.94,
+   "t_end": 1393.94,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, there's so many opportunities again if you can plan responsibly and plan properly.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1393.94,
+   "t_end": 1399.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Well, I don't know what data centers you working on for 20 to 30 people.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1399.54,
+   "t_end": 1405.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I want to tell you, we have construction jobs right now that Microsoft is going to need.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1405.54,
+   "t_end": 1413.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We have 2,000 local contractors that is on the axis of our capacity.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1413.54,
+   "t_end": 1415.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We need 4,000.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1415.54,
+   "t_end": 1421.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So, we know we're going to have another 2,000 union contractors coming into the court.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1421.54,
+   "t_end": 1430.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I was in a lunch and learned in Google yesterday and they had placed an order, as you mentioned, for 1,000 meals for lunch.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1430.54,
+   "t_end": 1432.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And what that can do to have small business.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1432.54,
+   "t_end": 1438.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I think State Joe County has booked in the last year 156,000 rooms because of that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1438.54,
+   "t_end": 1440.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We're in trouble from a housing perspective.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1440.54,
+   "t_end": 1442.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We're working on that quickly.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1442.54,
+   "t_end": 1443.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I will tell you this.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1443.54,
+   "t_end": 1446.54,
+   "speaker_tag": "SPEAKER_01",
+   "text": "How many people have actually toured the data center?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1448.4,
+   "t_end": 1457.4,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I would make sure, yeah, that's actually well, but I would make sure you check one out because I got back from Microsoft going recently.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1457.4,
+   "t_end": 1467.4,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And they started, I think in 2008, they have 700 full-time Microsoft employees that you know what their wages, you know.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1468.4,
+   "t_end": 1475.4,
+   "speaker_tag": "SPEAKER_01",
+   "text": "The President came, Brad Smith, to look for the ribbon coming and said, we have the best benefits anywhere.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1475.4,
+   "t_end": 1480.4,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So, $7,500,000 or more plus benefits.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1480.4,
+   "t_end": 1486.4,
+   "speaker_tag": "SPEAKER_01",
+   "text": "That's been going since 2008, but the interesting thing about the short-term contractor.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1486.4,
+   "t_end": 1492.4,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Many of the contractors were still working at Microsoft 10 years ago.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1492.4,
+   "t_end": 1497.4,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And it continues to happen, and we expect we've got 17 buildings on our campus.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1497.4,
+   "t_end": 1502.4,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So, we're going to be here a while, and they're going to be here a while building.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1502.4,
+   "t_end": 1507.4,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So, I think that's why we believe a portion of the place to be.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1507.4,
+   "t_end": 1514.4,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Just to add to that, just in the first phase of the board construction, we're going to have over 700 per day job,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1514.4,
+   "t_end": 1515.72,
+   "speaker_tag": "SPEAKER_02",
+   "text": "as well as the partnership with Evangelism and",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1515.72,
+   "t_end": 1518.72,
+   "speaker_tag": "SPEAKER_02",
+   "text": "I would say, with our day-to-day center of Canada.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1518.72,
+   "t_end": 1520.72,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So, we're training the workforce.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1520.72,
+   "t_end": 1522.72,
+   "speaker_tag": "SPEAKER_02",
+   "text": "We are providing scholarships.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1522.72,
+   "t_end": 1531.72,
+   "speaker_tag": "SPEAKER_02",
+   "text": "We're making sure that the students know how to give these jobs, not just for Microsoft, but for any day center, as the jobs are out there.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1531.72,
+   "t_end": 1536.72,
+   "speaker_tag": "SPEAKER_04",
+   "text": "The other question I've heard postman, I don't really have any answer.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1536.72,
+   "t_end": 1538.72,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I'm curious who you will do.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1538.72,
+   "t_end": 1551.72,
+   "speaker_tag": "SPEAKER_04",
+   "text": "As entrepreneurs, we're looking to build technology infrastructure to support the AI company, or build products on top of AI to further our industries.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1551.72,
+   "t_end": 1557.72,
+   "speaker_tag": "SPEAKER_04",
+   "text": "How is having the proximity of the data center close to me help me as an entrepreneur?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1558.72,
+   "t_end": 1560.72,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Is that a question posed?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1560.72,
+   "t_end": 1567.72,
+   "speaker_tag": "SPEAKER_04",
+   "text": "How can we take advantage of the proximity of having kind of plastic glass in data centers in our backyard, if you will?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1567.72,
+   "t_end": 1568.72,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Yeah.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1568.72,
+   "t_end": 1569.72,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Well, you think about that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1569.72,
+   "t_end": 1578.72,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I mean, one, just the proximity to companies like Microsoft and Google AWS, and that it's actually innovating.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1578.72,
+   "t_end": 1579.72,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And think about things.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1579.72,
+   "t_end": 1586.72,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Obviously, you know, you're probably going to have your data stored in process, you know, in these facilities as well.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1586.72,
+   "t_end": 1589.72,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But, you know, I'll give you another example.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1589.72,
+   "t_end": 1593.72,
+   "speaker_tag": "SPEAKER_05",
+   "text": "It's in my home state of Illinois, but it's very relevant to Northwest Indiana.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1593.72,
+   "t_end": 1594.72,
+   "speaker_tag": "SPEAKER_05",
+   "text": "It's the quantity.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1594.72,
+   "t_end": 1606.72,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, I mean, when you think about kind of the innovation, they're saying right now they're not going to use data center there for obvious reasons, but they're going to use data center there at some point as its quantity is scaled.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1606.72,
+   "t_end": 1615.72,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You know, I mean, and they're saying, you know, we're not a data center and like that is correct, but you are in technology and play AI.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1615.72,
+   "t_end": 1623.72,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So that's the kind of things that, you know, I think can happen, but underpinning all of that is the infrastructure, which is the data center.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1623.72,
+   "t_end": 1632.72,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So I would tell you again, I've been a business owner, businesses, most of my adult life.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1632.72,
+   "t_end": 1648.72,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I will tell you, it's very important right now, because not only for Microsoft, but for how we have a large airplane manufacturer or a little party of other college jobs that we need kids that are prepared to do the new way of doing things.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1648.72,
+   "t_end": 1651.72,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I mean, I was impressed with our public golf course.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1651.72,
+   "t_end": 1657.72,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I saw what I called the Roombas for the first time in the last yesterday.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1657.72,
+   "t_end": 1677.72,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But what Microsoft does is when they come in, they have set up the first data center academy in this, I believe in the state, through the support of the school system, so that and with IDTAC in our partnership with IDTAC, so those kids are now going to be prepared to walk out with the degree",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1677.72,
+   "t_end": 1685.72,
+   "speaker_tag": "SPEAKER_01",
+   "text": "and hopefully be ready to step into those AI-tech positions that are so unique in that way at Microsoft, but across Northwest in the year.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1685.72,
+   "t_end": 1694.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Yeah, and I'll just double down. I was in San Francisco at one of your competitors actually headquarters, and the rate in which they were investing.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1694.42,
+   "t_end": 1704.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "This is on the water, the sustainability giant, but just new technologies to help accelerate the build and their sustainability footprint was just really incredible.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1705.42,
+   "t_end": 1720.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I mean, companies that would even have a shot three years ago were now getting massive deals with big tech simply because they're creating the environment of, no, we want to innovate, we want to sugar, but we want to find best available technologies to make this as stable as possible.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1720.42,
+   "t_end": 1728.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And so it's pretty incredible I think when you can bring partners in and create those ecosystems around that, what can be done in certain industries.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1729.42,
+   "t_end": 1731.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "No, absolutely no, and thank you for being here.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1731.42,
+   "t_end": 1736.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Obviously, I think, especially on the cool inside, the amount of solutions there are significant.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1736.42,
+   "t_end": 1743.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So I mean, from a procurement standpoint, when you're working with these bigger companies, these are significant too.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1743.42,
+   "t_end": 1744.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So they can play.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1744.42,
+   "t_end": 1747.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Yeah, yeah, yeah, just big get it up.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1747.42,
+   "t_end": 1756.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Okay, so let's, you know, while we're kind of in the energy and so on and so forth, because that's a big topic.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1756.42,
+   "t_end": 1758.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "It's like, we're going to hide our consumption under NDA.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1758.42,
+   "t_end": 1764.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So no one's actually going to ever know what, you know, what we're using or what we're discharging and so on and so forth.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1764.42,
+   "t_end": 1776.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So, Mayor, I guess what kind of arrangements do you want to have which comes to the sustainability and the footprint of a resource in one of these data centers and what are some best practices that we can share?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1776.42,
+   "t_end": 1783.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Well, and that's where we have wonderful water, wastewater team, Microsoft.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1784.42,
+   "t_end": 1786.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Very cool environment.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1786.42,
+   "t_end": 1795.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And so it's been great to see the financial community that they've made and it includes the water, the wastewater system in our community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1795.42,
+   "t_end": 1801.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And again, we know where the statehouse is headed with reducing dollars.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1801.42,
+   "t_end": 1806.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And again, I was, I'll say I was a part of it and it's coming back to haunt me now.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1806.42,
+   "t_end": 1808.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I see my friend in that here's back there.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1808.42,
+   "t_end": 1813.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But we have to think as local government, different ways to do anything.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1813.42,
+   "t_end": 1815.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We don't want to rely on the state.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1815.42,
+   "t_end": 1829.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We want to partner with the private sector, whether it's environmental and I don't know if I'm allowed to say this, but Microsoft's committed $4 million to some watershed projects that haven't been addressed in 55 years in the important county.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1829.42,
+   "t_end": 1833.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And it doesn't even affect so much the city of the court, but it's better for the environment.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1833.42,
+   "t_end": 1838.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "It's better for our county to see this work being done.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1838.42,
+   "t_end": 1843.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So yeah, we're we're having a nuclear summit in the middle of September.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1843.42,
+   "t_end": 1855.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We're hoping and trying and looking at everything to either drive costs down or to improve lives of our residents with power, with water, with wastewater.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1855.42,
+   "t_end": 1869.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And we're going to be able to separate sewer releases, storm water that, you know, when I took over 2020, we had a hundred million dollar infrastructure problem because our infrastructure was 100 years old.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1869.42,
+   "t_end": 1874.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We're now addressing that because we have somebody that cares about our community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 1874.42,
+   "t_end": 1877.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And I can just add that we don't have any.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1877.42,
+   "t_end": 1880.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So Microsoft does not have any as a community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1880.42,
+   "t_end": 1885.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So when you think about the court, it's going to be a close loop cleaning system.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1885.42,
+   "t_end": 1894.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So after the initial bill, the only usage because some squat consumption is going to be for domestic purposes, like drinking water or fresh food.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1894.42,
+   "t_end": 1895.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So we're looking at that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1895.42,
+   "t_end": 1903.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And of course, I mentioned earlier that, you know, residents are not going to have to pay for high electric electric bills because we are going to actually cover that infrastructure costs.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1903.42,
+   "t_end": 1906.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So, you know, residents will not be impacted by anything.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1906.42,
+   "t_end": 1912.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "There's no reason why we're using finished water for most industries, especially that, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 1912.42,
+   "t_end": 1914.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So I applaud you for pioneering that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1914.42,
+   "t_end": 1915.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "We need to tell that story.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1915.42,
+   "t_end": 1921.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Because Indian always gets better out, but we're not going to have to do this one circular water thing that I've added.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1921.42,
+   "t_end": 1923.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Well, it would be like that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1923.42,
+   "t_end": 1930.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I mean, I think, you know, one to mark perspective and, you know, we would love for all of you to kind of help with this messaging.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1930.42,
+   "t_end": 1934.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But, you know, context matters and we do use far less water than a lot of other industries.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1934.42,
+   "t_end": 1935.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And we can get into that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1935.42,
+   "t_end": 1938.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But I can yell at it now when I do slightly more industry stuff.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1938.42,
+   "t_end": 1939.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I kind of like that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1939.42,
+   "t_end": 1942.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But, you know, I mean, you know, you have closed loop systems.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1942.42,
+   "t_end": 1944.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You have direct chip, liquid version.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1944.42,
+   "t_end": 1953.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "In climate service, states like Indiana, where the climate is cold for months of the year, you do have companies that are literally taking in the Amazon air for 90% of the year.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1953.42,
+   "t_end": 1958.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And then turning to a liquid or water cooling solution for a few weeks during the summer.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1958.42,
+   "t_end": 1964.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, I think, you know, we see a lot of calls nationally to mandate certain kind of technologies.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1964.42,
+   "t_end": 1967.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But those technologies might be obsolete in the next two to three years.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1967.42,
+   "t_end": 1972.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, from our perspective, I think, you know, focus on outcome-based, you know, measures here.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1972.42,
+   "t_end": 1976.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "What's the actual health of the watershed we're hoping from?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1976.42,
+   "t_end": 1977.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "There are sources that are abundant.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1977.42,
+   "t_end": 1979.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "There are sources that are struggling too.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1979.42,
+   "t_end": 1981.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And that should be where the focus is.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1981.42,
+   "t_end": 1984.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And is this project data center or, you know, other industries?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1984.42,
+   "t_end": 1987.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Is that going to harm that watershed should we think about it?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1987.42,
+   "t_end": 1989.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Is that kind of how we're thinking about it?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 1989.42,
+   "t_end": 1992.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And that happens in year one for your pursuit, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1992.42,
+   "t_end": 1995.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Because that should be happening, I would think, in the site selection process.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 1995.42,
+   "t_end": 2001.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And actually, it's just like, what is the watershed in the geographical makeup of the site that we're looking at?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2001.42,
+   "t_end": 2002.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I mean, but I want to confirm that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2002.42,
+   "t_end": 2008.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "But that is part of what we think about the pillars of good and good development site selection is a key piece of that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2008.42,
+   "t_end": 2014.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Potium, would you like to speak a little bit on how Microsoft purchased site selection or how you think about that?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2014.42,
+   "t_end": 2015.42,
+   "speaker_tag": "SPEAKER_03",
+   "text": "I'm sorry.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": null
+  },
+  {
+   "t_start": 2015.42,
+   "t_end": 2017.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Yeah, so we do look at site selection.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2017.42,
+   "t_end": 2022.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "We do look at the availability of resources, the whole ecosystem.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2022.42,
+   "t_end": 2024.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So that is something that's important to us.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2024.42,
+   "t_end": 2031.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And of course, like Grant mentioned, we are looking at ways, of course, for our water usage to not consume as much water.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2031.42,
+   "t_end": 2034.42,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So those are things we all would say.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2034.42,
+   "t_end": 2036.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I know it seems like an obvious question.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2036.42,
+   "t_end": 2043.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "But I mean, we do have to put in the news for a certain district in London that they did not necessarily look at the watershed numbers.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2044.42,
+   "t_end": 2045.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "A big project.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2045.42,
+   "t_end": 2051.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So I would say, I mean, I don't want to poke the bear, but, you know, it's not always been at the forefront of the conversation, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2051.42,
+   "t_end": 2052.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Absolutely.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2052.42,
+   "t_end": 2053.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Yeah.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2053.42,
+   "t_end": 2060.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "No, but one of the more fascinating developments I would say we are seeing, like, Stan Lewis, for instance, their water director came out.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2060.42,
+   "t_end": 2063.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And they built that water system permanently in residence.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2063.42,
+   "t_end": 2064.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And they have 300,000 residents now.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2064.42,
+   "t_end": 2067.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So the water director there is actually like, no, we want to do this.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2067.42,
+   "t_end": 2070.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "We have the capacity to put in support then.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2070.42,
+   "t_end": 2075.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And also, that data center can help upgrade and modernize the infrastructure for everybody, you know.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2075.42,
+   "t_end": 2076.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So we are seeing things like that, too.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2076.42,
+   "t_end": 2082.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But you also have to take into account the inherent trade-offs between energy and water usage.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2082.42,
+   "t_end": 2089.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "In some states, you know, especially all of us, you know, you're probably going to look more towards their pooling system, where there are so they can get water challenges.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2089.42,
+   "t_end": 2093.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But, you know, where there is water abundance, you want to reduce your energy consumption.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2093.42,
+   "t_end": 2096.42,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You might think about it differently, and those are very exciting.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2096.42,
+   "t_end": 2099.42,
+   "speaker_tag": "SPEAKER_03",
+   "text": "Yeah.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": null
+  },
+  {
+   "t_start": 2099.42,
+   "t_end": 2102.42,
+   "speaker_tag": "SPEAKER_03",
+   "text": "Yeah.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": null
+  },
+  {
+   "t_start": 2102.42,
+   "t_end": 2107.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Well, and I'm going to add, you know, we hear about this closed loop like it's something new today.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2107.42,
+   "t_end": 2109.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And we heard that from the community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2109.42,
+   "t_end": 2113.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Oh, how could you put the report in danger, trying this new closed loop system?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2113.42,
+   "t_end": 2115.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So we said, hey, let's get on a bus.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2115.42,
+   "t_end": 2124.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Let's go over to the agency attack, which is one of our 300 person employee manufactured in report.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2124.42,
+   "t_end": 2132.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Oh, by the way, they have this closed loop system, which is the exact system Microsoft's going to use, and they've had it for 25 years.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2132.42,
+   "t_end": 2136.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So what have you done for the last 25 years? Look what's happened, nothing.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2136.42,
+   "t_end": 2145.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "So we address directly. We think people need to hear it directly, and there are no new surprises.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2145.42,
+   "t_end": 2146.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Yeah.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2146.42,
+   "t_end": 2150.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "So I'm going to end on the community side.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2150.42,
+   "t_end": 2154.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I think a community sentiment getting community on board is everything.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2154.42,
+   "t_end": 2160.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And so, you mentioned the t-shirts and getting the other side.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2160.42,
+   "t_end": 2162.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "I should share for the message.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2162.42,
+   "t_end": 2169.42,
+   "speaker_tag": "SPEAKER_04",
+   "text": "What were some of just the common, what were the common plays that your community had?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2169.42,
+   "t_end": 2175.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Besides myself putting money in my pocket.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2175.42,
+   "t_end": 2176.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I can think of all.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2176.42,
+   "t_end": 2184.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I know things, you know, and I talk about this, like the Holbert Mayor, Mayor Josh, the things that he went through.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2184.42,
+   "t_end": 2185.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "He's younger.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2185.42,
+   "t_end": 2194.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I don't care that he's a Democrat, not only Republican, but things that the community put him through is unacceptable.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2194.42,
+   "t_end": 2198.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "You know, we need to stay up level and have honest conversation.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2198.42,
+   "t_end": 2201.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But again, I think number one was fear factor.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2201.42,
+   "t_end": 2210.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Number two, the tech companies are doing a very poor job of really promoting what they do over the many years caught up.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2210.42,
+   "t_end": 2212.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And we were left.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2212.42,
+   "t_end": 2213.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Science Microsoft.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2213.42,
+   "t_end": 2217.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We were left on an island, a state walk away, a feds walk away.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2217.42,
+   "t_end": 2221.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And we had to take on all commerce at a local level.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2221.42,
+   "t_end": 2225.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I think number one was lack of education, fear factor.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2225.42,
+   "t_end": 2229.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And it's taken some time over finally over that stretch.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2229.42,
+   "t_end": 2238.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And now the same people that oppose this one out, you think you can give the job at Microsoft.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2238.42,
+   "t_end": 2244.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Or the penis a guy that was completely opposed, wanted to close down his business.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2244.42,
+   "t_end": 2251.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And then he signed up as a part of our program to say, oh, I didn't know we were going to be able to supply 250 pieces of meat.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2251.42,
+   "t_end": 2254.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I said, oh, we don't think you should do what we know I feel about that.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2254.42,
+   "t_end": 2260.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "But now everybody's starting to see that our roads are being paid.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2260.42,
+   "t_end": 2264.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And again, people don't want to increase taxes.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2264.42,
+   "t_end": 2265.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "They don't want a real tax.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2265.42,
+   "t_end": 2269.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "They don't want another increased tax here.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2269.42,
+   "t_end": 2272.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I know the county just tried passing one and it was opposed.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2272.42,
+   "t_end": 2276.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We see what the legislature is doing with property taxes.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2276.42,
+   "t_end": 2278.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And we say fine.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2278.42,
+   "t_end": 2280.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We're not going to rely on anybody.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2280.42,
+   "t_end": 2282.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We want to generate like a business.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2282.42,
+   "t_end": 2287.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "Our cost, you know, what we need to give our residents the best life.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2287.42,
+   "t_end": 2293.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And it's a new day in the court because we've taken a partnership step with a company like Microsoft.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2293.42,
+   "t_end": 2302.42,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And who doesn't want the top level for one of the top core companies in the global world to be in our backyard.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2306.26,
+   "t_end": 2320.26,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Do you have how many resources you can provide your community stakeholders with to arm them with either personnel or agencies or a playbook, if you will, to kind of handle the, you know, how do you handle the objections that they naturally face going into?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2320.26,
+   "t_end": 2327.26,
+   "speaker_tag": "SPEAKER_02",
+   "text": "Well, you know, what we've done and what we did in the court was we invited all of the community in to speak with our symptomatic experts.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2328.26,
+   "t_end": 2338.26,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And so residents were able to go from table to table to talk about energy and water and the noise and anything that they had to say anything that they had questions about.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2338.26,
+   "t_end": 2356.26,
+   "speaker_tag": "SPEAKER_02",
+   "text": "So, you know, whether that is the open house or taking phone calls or having a place where residents can email indirectly and get responses or partnering with the mayor to have these conversations in a coffee shop or in their homes, you know, we did those things to try to help educate the community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2356.26,
+   "t_end": 2361.26,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And that's what we're most proud of. We want to be transparent. We want people to know that we are not hiding.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2361.26,
+   "t_end": 2367.26,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And we want you to be educated. We want you to have the information that you need to know that we are a good partner.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2367.26,
+   "t_end": 2374.26,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And we're vested. And we want to be here. We want to help to grow the economy and to grow the court.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2374.26,
+   "t_end": 2386.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Yeah, right is add to, I mean, I'll make two points. One, there is a lot of speculation in this market right now and it's hurting us in a number of different ways.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2386.26,
+   "t_end": 2393.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, there are a lot of new developers who see an opportunity here and some are doing well and some aren't doing as well.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2393.26,
+   "t_end": 2398.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And I think for me, community engagement perspective, we're seeing that happen in some of these communities.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2398.26,
+   "t_end": 2406.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But from our perspective, I mean, build trust before you build and really understand that community. You understand what makes them tick.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2406.26,
+   "t_end": 2412.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You know, who are the community groups that you should be able to talk about? This is the community of like, open to deputy data center or to get it plugged.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2412.26,
+   "t_end": 2423.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And that might inform what you do next, right? So I think, you know, early and as engaged community engagement as possible is really needed in the moment.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2424.26,
+   "t_end": 2440.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And moving forward, I think there's been an industry who, you know, given how important and critical information getting facilities is, you know, for the last 20 or 30 years, you know, we would work with local government and we kind of go behind all these trees and then in that really, you know, talk to anybody.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2440.26,
+   "t_end": 2442.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But now we have to, right.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2442.26,
+   "t_end": 2449.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So I think there's a learning curve not for companies like Microsoft, but for a lot of our members in terms of how they do this engagement.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2449.26,
+   "t_end": 2458.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But again, you know, before you do anything and you apply for zoning or anything, get to know community, build that level of trust and then, you know, move there.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2458.26,
+   "t_end": 2471.26,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Yeah. So when do we see development peak? Like at one point in time, this maximum site selection and projects peak and we kind of, I mean, entrepreneurs here, I mean, have the peak of this illusion and go into a trap.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2471.26,
+   "t_end": 2478.26,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Or do you know what I mean? Like, and this just becomes normal. Like, how, over years, decades, you know what I mean?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2479.26,
+   "t_end": 2490.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "No, I think, look, this window, so right now you're seeing this built out. I think it's actually a fascinating way to think about it.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2490.26,
+   "t_end": 2497.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You know, cloud computing is going to remain a deep predominant or low occurring data centers through at least 2035.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2497.26,
+   "t_end": 2503.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But right now we're in this moment of build out for artificial intelligence training, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2503.26,
+   "t_end": 2514.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, most studies, most analyses suggest that, you know, over the next two to three years, you're going to see the training slowed down a little bit that we're going to stop or anything.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2514.26,
+   "t_end": 2523.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But, and then artificial intelligence inference, which is where we are deploying the AI to the end user, which is everyone in this room, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2523.26,
+   "t_end": 2527.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And, you know, those are going to be different considerations because we need to be closer to the end user.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2527.26,
+   "t_end": 2534.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, library connectivity is going to be really important. They're probably going to look like smaller data centers and use less power.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2534.26,
+   "t_end": 2540.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, again, I think it goes back to a planning perspective and what makes sense for a greater community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2540.26,
+   "t_end": 2548.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I mean, if you think of some of the communities outside of the United States or even in my old time of Chicago, where you have a lot of fiber running into the city,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2548.26,
+   "t_end": 2553.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "maybe you're not ready for a data center right now, but maybe in three or four years you've done your new diligence and whatnot.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2553.26,
+   "t_end": 2558.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And you want to track what you think of the data center. So, that's kind of how I would, you know, advise people to think about it.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2558.26,
+   "t_end": 2563.26,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Yeah, and I was like, it's a high-tech computer. Yeah, I really did it. Okay. Yeah.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2563.26,
+   "t_end": 2568.26,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Amazing. Okay. So, I've wanted them to make fun. So, I think it's 2035.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2568.26,
+   "t_end": 2576.26,
+   "speaker_tag": "SPEAKER_04",
+   "text": "And we sit back and we're like, we got that right. You know, Indiana, the Port, you know, my town, we got that right.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2576.26,
+   "t_end": 2580.26,
+   "speaker_tag": "SPEAKER_04",
+   "text": "What does that look like? And then I'm going to post that question to each of you.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2581.26,
+   "t_end": 2583.26,
+   "speaker_tag": "SPEAKER_04",
+   "text": "What's I got on?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2583.26,
+   "t_end": 2592.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "No, I honestly think there's going to be a lot of states who are taking themselves in five or six years because they have the reaction that they have at this moment, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2592.26,
+   "t_end": 2601.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "Indiana, obviously, there are a lot of concerns locally and whatnot, but it has been welcomed and it has opened itself up to a lot of these.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2601.26,
+   "t_end": 2604.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I would say, regional and change these projects.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2604.26,
+   "t_end": 2616.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So, you're going to see, you know, clustering of innovation and all these different things happening around these facilities and the property type of things that are generated and the key benefits that are coming.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2616.26,
+   "t_end": 2619.26,
+   "speaker_tag": "SPEAKER_05",
+   "text": "I think it's going to be a boom for states like Indiana.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2619.26,
+   "t_end": 2625.67,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And I think my own state is going to be looking, you know, here in five years of wondering, you know, I wish they had a kind of reaction.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2626.67,
+   "t_end": 2630.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "When we took over 2020, we said we want to be 30 by 50.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2630.67,
+   "t_end": 2640.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We've been a population in the city of court for 22,000 and change 40 years because our community, my hometown said no to everything.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2640.67,
+   "t_end": 2649.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We are now changing our future and the momentum that we are generating now and continuing to generate.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2650.67,
+   "t_end": 2655.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We're going to teach a community, hopefully a region, that it's okay to say yes.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2655.67,
+   "t_end": 2665.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And the naysayers, the trolls, all those people do not have enough power to stop the momentum.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2665.67,
+   "t_end": 2671.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And hopefully, as I told you, as our team and our development team all says, hey, we've got to hire ourselves.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2671.67,
+   "t_end": 2674.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "I'm so worried about educating people around the state.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2675.67,
+   "t_end": 2679.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And I'm like, back to my original point, our job is just begun here.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2679.67,
+   "t_end": 2682.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We need to help every other community.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2682.67,
+   "t_end": 2687.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "We'll meet with whoever might ever say this is our future.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2687.67,
+   "t_end": 2692.67,
+   "speaker_tag": "SPEAKER_01",
+   "text": "And when that happens, the state of Indiana will be a special place to compete.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Tom Dermody \u2014 Mayor, City of La Porte"
+  },
+  {
+   "t_start": 2692.67,
+   "t_end": 2700.85,
+   "speaker_tag": "SPEAKER_02",
+   "text": "I think that we will believe that we've gotten it right when the community actually sees the benefit.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2701.85,
+   "t_end": 2706.85,
+   "speaker_tag": "SPEAKER_02",
+   "text": "As I think about the community, like Putsi Washington, they opened our first day of the seminary in 2008.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2706.85,
+   "t_end": 2711.85,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And now they have, their property taxes have decreased.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2711.85,
+   "t_end": 2716.85,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And they have new schools and a new city hall and new public safety buildings.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2716.85,
+   "t_end": 2719.85,
+   "speaker_tag": "SPEAKER_02",
+   "text": "And the poverty rate has gone down.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2719.85,
+   "t_end": 2725.85,
+   "speaker_tag": "SPEAKER_02",
+   "text": "When we see those things in a community like the court and some of the other communities that we've invested in,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2725.85,
+   "t_end": 2729.38,
+   "speaker_tag": "SPEAKER_02",
+   "text": "I think they're going to be better at it.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Cloteal LaBroi \u2014 Dir. Infrastructure & Gov't Affairs, Microsoft"
+  },
+  {
+   "t_start": 2730.38,
+   "t_end": 2735.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "We haven't really got into it, but to the point of saying yes,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2735.38,
+   "t_end": 2740.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "we also need states and localities that are saying yes, energy projects.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2740.38,
+   "t_end": 2744.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "You know, I mean, we've been in a country that experienced flat,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2744.38,
+   "t_end": 2747.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "we're planning to go over the last 20 years.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2747.38,
+   "t_end": 2750.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "And now we're in this new era where not just data centers,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2750.38,
+   "t_end": 2756.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "but every kind of key growth sector for the next 20, 30 years is going to rely on more and more energy.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2757.38,
+   "t_end": 2761.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "So obviously, after we get asked about things around advanced nuclear, geo thermal,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2761.38,
+   "t_end": 2767.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "long-duration batteries, storage, and no other industry in the country is investing in these technologies,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2767.38,
+   "t_end": 2769.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "like the data center industry.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2769.38,
+   "t_end": 2773.38,
+   "speaker_tag": "SPEAKER_05",
+   "text": "But we do need help in getting the projects cited there through this pandemic.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Brad Tietz \u2014 Dir. Midwest State Gov't Affairs, Data Center Coalition"
+  },
+  {
+   "t_start": 2773.38,
+   "t_end": 2777.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Well, the mayor, as you said, we opened our free, you're kind of open for business.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2777.38,
+   "t_end": 2782.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "But I think what you point out is we really need to be open at the state level and really need to tie some of the initiatives",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2782.38,
+   "t_end": 2788.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "we'll be having at that level down to our community so that we can make sure that we accomplish what a can be,",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2788.38,
+   "t_end": 2791.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "what a future can look like when I buy it, right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2791.38,
+   "t_end": 2796.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "It is a, it's not a need to be a closed system in and of itself.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2796.38,
+   "t_end": 2797.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Right?",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2797.38,
+   "t_end": 2798.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "More energy.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2798.38,
+   "t_end": 2799.38,
+   "speaker_tag": "SPEAKER_03",
+   "text": "More energy.",
+   "speaker_id": null,
+   "speaker_conf": "unresolved",
+   "display_name": null
+  },
+  {
+   "t_start": 2799.38,
+   "t_end": 2800.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "More energy.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2800.38,
+   "t_end": 2801.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Okay.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2801.38,
+   "t_end": 2802.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Well, thank you all so much.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2802.38,
+   "t_end": 2803.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "We're going to be all there.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2803.38,
+   "t_end": 2804.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Thank you.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2804.38,
+   "t_end": 2805.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Thank you.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  },
+  {
+   "t_start": 2805.38,
+   "t_end": 2806.38,
+   "speaker_tag": "SPEAKER_04",
+   "text": "Thank you.",
+   "speaker_id": null,
+   "speaker_conf": "confirmed",
+   "display_name": "Megan Glover \u2014 moderator, Chief Digital Officer, Usalco"
+  }
+ ]
+}

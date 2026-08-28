@@ -1,0 +1,36 @@
+# MyRec_0827_1251
+# duration 354s | 31 segments | 2 speakers
+# source sha256 8a400dcaca14bc57ef1d11c0b3911d00b406885056fdd6482894359589b9cbcf
+# SPEAKER TAGS ARE NOT IDENTITIES. Map them to people before attributing anything.
+
+[0:00:00] SPEAKER_00: It is an honor to be here. I have to give a shout out to my friend Jennifer. You know in the hallways, legislators, I think we all can agree we're bombarded with all sorts of special interests and lobbyists, and Jennifer was the type of advocate where when she's calling and her name is Bob and I'm on my phone.
+[0:00:34] SPEAKER_00: Unless I'm meeting with the appropriations chair, Ryan Mishler, I'm going to take that call. You are very, very well served with Jennifer and Sabra and the old great team.
+[0:00:47] SPEAKER_00: And I also have to give a special shout out to, I love you all, but the most important person in this room is a person who's a constituent of mine. Instead of District 38, she's on the board of this great organization at Shelley Klingerman.
+[0:00:59] SPEAKER_00: I greatly appreciate your friendship and your counseling. And the last shout out I have to give is to my good friend Kyle Walker. I can sometimes even get choked up every time I mention his name because it's going to be a tremendous loss when you're not at that state house.
+[0:01:15] SPEAKER_00: And I greatly, greatly appreciate you so much and your quiet steadfast leadership and your unifying style.
+[0:01:22] SPEAKER_00: And I'm going to try to do everything I can to continue your legacy in every regard.
+[0:01:27] SPEAKER_00: So some of you may embrace this statement. Some of you may be offended by it, but I'm going to say it anyway. I am from the government and I'm here to help.
+[0:01:37] SPEAKER_00: The philosophy also is to do everything I can and double down, especially after the experience I had between the months of March and May the 5th to promote my partisanship.
+[0:02:04] SPEAKER_00: Because we don't need more boxers in Indiana. We don't need any more dividers.
+[0:02:11] SPEAKER_00: You certainly don't need a scare tactics around data centers, although Secretary Goodrich, I'm going to continue to use the phrase that you have charged me to computing centers.
+[0:02:23] SPEAKER_00: And I'm sure it's how I'm not going to scare the technology. I want to embrace it. I want to create a culture for young people all the way to those who are the driving force of the silver tsunami.
+[0:02:39] SPEAKER_00: That that's what's going to be the answer for the cure of cancer.
+[0:02:45] SPEAKER_00: To uplift a personnel apology to create new transportation systems, to make our livestock resilient, to biological threats, to keep the power on, to help advance the American civilization.
+[0:03:04] SPEAKER_00: And yes, I use the worthy American civilization because I'm an unapologetic patriot.
+[0:03:10] SPEAKER_00: I will go anywhere and everywhere to say that just as the free world needs the United States of America, the United States of America needs to stay at Indiana.
+[0:03:23] SPEAKER_00: Because we are at the forefront of life sciences, human, animal, and plant health.
+[0:03:30] SPEAKER_00: We are at the forefront as they are doing a groundbreaking ceremony in Tippecanoe County.
+[0:03:36] SPEAKER_00: With the multi-billion dollar investment of S. K. Heineck's today.
+[0:03:42] SPEAKER_00: That's where United States Senator Todd Young is. We're at the forefront of microelectronics and chip manufacturing.
+[0:03:49] SPEAKER_00: We're at the forefront of the great quantum corridor in Northern Indiana.
+[0:03:55] SPEAKER_00: We're at the forefront of incredible national and economic security in places like the Naval Surface Warfare at Crane.
+[0:04:03] SPEAKER_00: Did you know that just last week, a four-star ad world named Richard Corral, who oversees United States for teacher command, happens to be an alum at Rose Home and Institute of Technology in my district.
+[0:04:21] SPEAKER_00: So all things future is happening right here in the state of Indiana.
+[0:04:27] SPEAKER_00: Much of it is being led not by government, but by entrepreneurial leaders such as yourselves.
+[0:04:35] SPEAKER_00: And so when I think about the things that are being discussed today, the need for capital, the need for that tax credit to help spur that venture capital investment.
+[0:04:50] SPEAKER_00: When I think about the investments needed to continue to bolster and to sustain our research and technology fund.
+[0:05:03] SPEAKER_00: I think about the great words that were spoken up here just recently on the workforce to embrace AI and education.
+[0:05:15] SPEAKER_00: And to make sure that our who's your children are the leaders in AI, STEM education, apprenticeships, work-based learning and absolutely to continue to bolster our ecosystem through tools such as our certified technology partners.
+[0:05:34] SPEAKER_00: These are the things that you all are the forefront. You all are leading.
+[0:05:40] SPEAKER_00: And you have my pledge to continue to do everything I can to help tee up those opportunities to get behind them and then to get out of your way.
+[0:05:50] SPEAKER_00: Thank you all very much. It's great to be with you.

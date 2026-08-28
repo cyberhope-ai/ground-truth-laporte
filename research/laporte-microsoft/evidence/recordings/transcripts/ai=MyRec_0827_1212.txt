@@ -1,0 +1,102 @@
+# ai=MyRec_0827_1212
+# 485s · 97 segments
+# sha256(mp3) 28f5ad5b511590604b3641819c410b4aed9afdf83ccc00160697a25ab1598853
+# ⚠ NOT DIARIZED — every line is speaker-unresolved. Do not attribute.
+
+[0:00:00] CICP, CICP, come up several times now, and also serve as a CICP's newest life science
+[0:00:07] on one health fund called Crossroads Health Ventures.
+[0:00:13] For 27 years, CICP has been bringing together the Indians, leading businesses, higher education,
+[0:00:21] and philanthropy to drive economic growth and prosperity for all who choose.
+[0:00:27] We do that through a lot of engagement work, particularly in our industry engagement work.
+[0:00:32] As you can imagine, AI has been in front of our conversation quite hopefully for the last few years.
+[0:00:38] With so many heard, all the excitement, leading a lot of conversation that happened this morning,
+[0:00:43] and the so uncertainty, I wish the ITAA weighed the data center topic to the forefront.
+[0:00:49] And increasingly the desire from businesses and organizations to move from just simply talking about it
+[0:00:56] to actually putting the technology to work.
+[0:00:59] And I was grateful for Governor Brown and his commerce team for recognizing the opportunity
+[0:01:05] and making human-centered, AI-enabled product, TV grills, a statewide economic development party.
+[0:01:13] In many ways, this kind of continues allowing me in a tradition that for those who've been around
+[0:01:20] and not long enough, I know this legislators here in the room in 1999 in general,
+[0:01:25] assembly created a 21-father not has been a gender-fly ITAA priority for a number of years.
+[0:01:30] So thank you for the work you do.
+[0:01:32] And to this day, 27 years, Indiana continued to invest in innovation through that bomb for more than a quarter century.
+[0:01:40] And technologies changed, and market condition changed, and strategies really evolved,
+[0:01:44] but Indiana's commitment to innovation hasn't.
+[0:01:48] So thank you for our state legislators, for those who are championing the work,
+[0:01:53] but to you those in the room.
+[0:01:55] So why now?
+[0:01:57] Most of us have heard the stories long.
+[0:02:00] I was talking to David early on, and he was telling me that low processing time now used to take weeks,
+[0:02:05] now stays in even hours.
+[0:02:07] Remember that episode?
+[0:02:09] We know that work that consumes days of employees' time and increases your down to minutes.
+[0:02:14] At the same time, we consistently hear from Indiana companies, you all heard it again this morning,
+[0:02:20] the shortage of skilled labor that are limiting their ability to grow and compete effectively.
+[0:02:27] These are productivity plays.
+[0:02:30] And the matter, because Indiana's demographic projection tells us that population growth alone
+[0:02:37] isn't going to deliver the economic growth we want.
+[0:02:41] For those of you who are data-heaps, that number is actually about 380, 3,000 projected population,
+[0:02:47] and that population grows for the next 35 years, according to IDRC.
+[0:02:54] That's why Indiana under Governor Brown's leadership is making human-centered,
+[0:02:59] AI-enabled productivity growth a core economic development strategy,
+[0:03:05] and why we're one of the first days in the country to do so.
+[0:03:10] Our ambition is simple.
+[0:03:13] To make Indiana the most AI-ready economy in the country.
+[0:03:20] And we're doing that by building a statewide platform to activate AI adoption across different sectors,
+[0:03:28] every community in our state, and companies will all sizes, particularly small medium-sized businesses,
+[0:03:34] from one corner of a state.
+[0:03:36] And we're making an adoption practical and easier to navigate.
+[0:03:41] Here are the four responses to four mostly frequently cited problem statement we hear from the community.
+[0:03:48] I don't know how to guess where to start.
+[0:03:51] We develop AI use cases, Indiana-based AI use cases, not McKenzie use cases, and we have project ideas
+[0:03:59] that you can all work on.
+[0:04:01] I don't know, I don't have a resource to execute, how do I make the project work,
+[0:04:06] we developed a project portal, can engage you with commercial and on education partners.
+[0:04:11] And I need to try my employees, my employees are reusing that,
+[0:04:15] for some of that this morning, how do I get my employees up to speed,
+[0:04:18] we have training help against surfacing the resources that are existing in the commercial and education sector in our state world.
+[0:04:25] Last but not least, I run into problems, specific problems,
+[0:04:29] and I talk to somebody who are faced with the same challenges, I mean.
+[0:04:33] The great uses as one of the joys in my current role is I'm starting to discover various grassroots community organizations
+[0:04:41] who are doing the peer learning.
+[0:04:43] So if you're hearing as about how to do something to get out of business,
+[0:04:47] you want to get in the same room with other educators around AI and education conversations,
+[0:04:52] you even publish.
+[0:04:53] I care about the impact in my community.
+[0:04:56] How do I get into policy conversations, ITAs, part of the statewide AI learning group.
+[0:05:02] And we're also doing the series of statewide activation events around the community
+[0:05:08] to really rally the community and harness the energy that's already happening in this topic.
+[0:05:14] And people outside of the union already noticing us,
+[0:05:19] where we're heard from the people who are finding us,
+[0:05:22] because they're looking for this kind of coordinated statewide effort around AI adoption,
+[0:05:27] and we're the only one that showed up.
+[0:05:30] And just this week, somebody drove from Springfield, Illinois, all the way to West Lafayette,
+[0:05:37] specifically to participate in our AI roadshow,
+[0:05:41] because of the level of AI conversations that's happening in Indiana
+[0:05:45] or simply do not exist in the community is there.
+[0:05:49] And the numbers being close to that, I mean, it just in the first last four months that we launched,
+[0:05:55] and we have already 20 plus partners, and the ITAs is a wonderful partner,
+[0:06:00] and I thank you very much, and as well as many others here in the room.
+[0:06:04] And we have generated about 268 million nationwide and urban media exposure.
+[0:06:10] We have 2.9 million in direct digital content reach,
+[0:06:14] and we'll reach about direct and program 85,000 participants,
+[0:06:18] and engage more than 1,000 companies.
+[0:06:21] We're early, but the market is responding.
+[0:06:27] So what's next?
+[0:06:29] We need more businesses and organizations to step forward
+[0:06:34] and accelerate AI adoption curve, because the talent is ready.
+[0:06:39] And you heard from this morning,
+[0:06:41] this various education partners initiatives are helping our talent to be ready.
+[0:06:47] Across Indiana, we have students and faculty members who are hungry,
+[0:06:52] specifically by the recruitment opportunities,
+[0:07:08] that could be doing market research for you, you wouldn't believe, as a way to go around the state,
+[0:07:14] but how many manufacturing are still using whiteboards
+[0:07:17] and spreadsheets to do inventory sketching.
+[0:07:20] So those are the common points, but this is changing opportunities to students and faculty,
+[0:07:25] and commercial partners, and immediate at-value to help you grow and be more competitive.
+[0:07:31] So to wrap up, and get everybody to the lunch, my invitation here is very simple.
+[0:07:39] Join the in AI movement.
+[0:07:42] The talent is ready, our partners are ready, and the market is telling us it's ready.
+[0:07:48] Together, let's accelerate Indiana's AI adoption and make us the most AI-ready economy in the
+[0:07:56] country.
+[0:07:57] Thank you.

@@ -5,3 +5,13 @@ research/**/evidence/**/*.pdf
 research/**/evidence/video/*.mp3
 research/**/evidence/video/*.m4a
 research/**/evidence/video/*.mp4
+
+# never commit secrets
+*.env
+hugging.txt
+
+# large media stays local
+research/**/evidence/recordings/*.m4a
+research/**/evidence/recordings/*.mp3
+research/**/evidence/recordings/*.jpg
+.venv-audio/

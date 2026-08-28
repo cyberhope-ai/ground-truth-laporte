@@ -1,0 +1,3144 @@
+{
+ "stem": "itia__0827_1047",
+ "duration_s": 2810.6,
+ "segments": [
+  {
+   "t": 0.3,
+   "text": "And we're seeing major projects representing millions of dollars in investment across our state.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 6.3,
+   "text": "But how do we make sure we're doing it right and benefiting the communities that are hosting these data centers?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 12.3,
+   "text": "That's what this next panel will talk about.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 14.3,
+   "text": "So, I would like to welcome to the stage our panelists, the LaPorte Mayor, Tom Dirmity,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 22.3,
+   "text": "the Director of Infrastructure and Government Affairs for Microsoft Hotel LaBroye,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 27.3,
+   "text": "and the Director of the West State Government Affairs for the Data Center Coalition, Brad Teats.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 33.3,
+   "text": "And our moderator for this panel is also ITA Board Member Megan Glover,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 38.3,
+   "text": "the Chief Digital Officer for New South Wales.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 41.3,
+   "text": "Hi.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 42.3,
+   "text": "Okay. Thank you.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 43.3,
+   "text": "Hi.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 54.8,
+   "text": "Are you ready to talk about some data centers?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 59.2,
+   "text": "Please keep your water bottles on your tables.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 61.2,
+   "text": "Don't throw them this way.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 62.2,
+   "text": "There's also going to be a positive conversation.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 65.2,
+   "text": "Thank you.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 68.2,
+   "text": "Okay.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 69.2,
+   "text": "Well, yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 70.2,
+   "text": "We thought we couldn't have a technology summit without talking about the elephant in the room, which is data centers.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 77.2,
+   "text": "And if you could, interesting point out, data centers are not in the Department of Data Centers built the foundation for cloud computing,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 84.2,
+   "text": "which many of us are in this room to build very successful SaaS businesses and so on and so forth.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 90.2,
+   "text": "The magnitude at which the data center structures, if you will, and the speed at which the structures are needed to develop or something that we just never, never seen before.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 102.2,
+   "text": "So, I think when we talk about data centers, we are really talking about that race to win.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 107.2,
+   "text": "The four-auto revolution of AI and how big the tech is going to come in and really playing their piece of time.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 114.2,
+   "text": "When it comes to data centers and infrastructures and working with these, they decide to place their centers in.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 119.2,
+   "text": "So, again, we've heard a lot about data centers, but hopefully today we get to know more about data centers and specifically how Indiana is participating in the strategy and how good and responsible I think data center development can actually fuel local economies, not only now, but in the future.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 138.2,
+   "text": "So, I am super excited to have our panelists today representing all the different stages of the AI economy, right, from site selection and building in our hometown with Mayor Year to partnering with big tech from Teal in Microsoft.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 155.2,
+   "text": "And I think, Brad, you bring up in our what's happening around this point of view that you can kind of share and say, how is Indiana compared to their new neighbors with regards to data center development?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 165.2,
+   "text": "So, let's kind of start there and then work our way down to the local level.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 170.2,
+   "text": "So, Brad, can you help us paint the picture?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 173.2,
+   "text": "Indiana definitely seems to open for business and from a data center perspective, but how should we think about ourselves in the state of Indiana compared to our new neighbors?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 183.2,
+   "text": "Yeah, good morning everybody and thank you for having me, looking forward to the conversation.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 188.2,
+   "text": "Yes, I'm the Director of Government Affairs from the Midwest, the Dance Center Coalition, and we are the National Trade and Membership Association for the History.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 196.2,
+   "text": "I'm glad me here on the stage was a mayor and Microsoft is an important member of the DCC, but yeah, it's certainly a fun time for us as you might imagine, but, you know, I think really quick before I get into kind of where Indiana is,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 210.2,
+   "text": "because I think it's a huge opportunity for the state and for the industry, but, you know, when you think about when the iPhone started, right, it was 2008, 2009, and instead I'd often love to think about so from 2010 to 2018.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 226.2,
+   "text": "So, right as we're all starting to use more and more data, digital services, computing outputs, the data that we all use rose 550% but energy consumption from data centers only rose 6%.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 239.2,
+   "text": "So we were getting more and more efficient as an industry as we were all using more and more data and digital services.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 245.2,
+   "text": "But now you obviously have the blue part of this one, intelligence about computing, which is looking to remain the predominant work of in data centers.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 252.2,
+   "text": "There's about 2035, but we have all these things happening where we're much more visual in the public discourse.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 259.2,
+   "text": "There's a large national conversation happening about the industry, but Indiana historically has been one of the secondary markets.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 267.2,
+   "text": "Across the Midwest, Illinois was the leading market in Ohio, then Indiana, then Wisconsin, Michigan.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 274.2,
+   "text": "I would suggest, not from Chicago, my home state is quickly losing.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 278.2,
+   "text": "It's just standing on the data center in history and it's Indiana's benefit.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 283.2,
+   "text": "So a lot of projects that we're looking at in Illinois three or four years ago are now being built in Indiana.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 289.2,
+   "text": "And, you know, Illinois is getting, for instance, a lot of these, what I was talking about, the projects, Indiana is getting the real projects.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 296.2,
+   "text": "If you look at what Microsoft is doing in the U.S. and Google, we have a number of our goal location data centers too, who are now building here.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 303.2,
+   "text": "So, I think, you know, Indiana is right on the customer becoming one of the big primary markets.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 310.2,
+   "text": "Illinois is obviously Virginia, which I'm sure there are Texas, Georgia, California, Arizona, etc.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 317.2,
+   "text": "So we'll see, but now I mean, you know, Indiana has all the attributes to do really well-listed history and do it responsibly.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 324.2,
+   "text": "So I think that's the goal here and I'll see what it looks like.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 328.2,
+   "text": "Yeah, absolutely.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 329.2,
+   "text": "I think you get out of the way that you talked about, you talked about the, you know, three workers.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 333.2,
+   "text": "They're not whole projects, they're created equal.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 335.2,
+   "text": "And so understanding what are responsible projects and actually benefiting community, you know, long term.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 340.2,
+   "text": "Those are the projects we want here in Indiana, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 343.2,
+   "text": "And we're getting them.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 345.2,
+   "text": "So, but Mary, talk a bit about then, you know, the climate in the state of Indiana.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 348.2,
+   "text": "Do you think Indiana has a strategy?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 350.2,
+   "text": "How did you go?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 351.2,
+   "text": "Did you just, you know, how did you go about kind of getting in the game and leaving kind of the model good in the state of Indiana?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 359.2,
+   "text": "So first of all, thank you for the Chicago Bears coming over.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 362.2,
+   "text": "We appreciate that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 363.2,
+   "text": "I'm happy that there's a day of Sunday, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 367.2,
+   "text": "You know, the court has had the large tech investment in the state of Indiana with our Microsoft partnership.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 376.2,
+   "text": "And I apologize.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 377.2,
+   "text": "You see the mayor here using tenant paper.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 380.2,
+   "text": "I am getting better.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 381.2,
+   "text": "I'm looking to move down to Eclotile.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 383.2,
+   "text": "So I promise.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 384.2,
+   "text": "But, you know, what I would, and I served in the state house for 10 years.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 390.2,
+   "text": "So everything that I did is coming back to haunt me at a local government level.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 395.2,
+   "text": "But I don't think Indiana has opened for business yet.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 400.2,
+   "text": "Everybody knows what the Congress did last week during the storms and privately.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 405.2,
+   "text": "They were like, oh my gosh, I can't believe this.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 407.2,
+   "text": "This is great.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 408.2,
+   "text": "We're fully supportive of you know, as long as I don't have to say publicly.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 412.2,
+   "text": "And I think what Holbert has done, what the court has done for Wayne is starting to show the state house and the state of Indiana that it's going to be okay.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 423.2,
+   "text": "And this is a great way to compete.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 426.2,
+   "text": "The court is my hometown.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 428.2,
+   "text": "It's when I came back to it.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 430.2,
+   "text": "People said we want something big.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 431.2,
+   "text": "We have to shake things up.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 433.2,
+   "text": "And while it wasn't easy and we told plenty of data centers, no.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 439.2,
+   "text": "And we had every tech global company come to our community to build.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 444.2,
+   "text": "We found that Microsoft wasn't a perfect one.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 448.2,
+   "text": "It took us four years.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 450.2,
+   "text": "But they were really the main that showed care about the future of the court.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 457.6,
+   "text": "And it was worthwhile.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 460.6,
+   "text": "But we definitely had a strategy to as simple as keep our kids home or bring them back home",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 468.6,
+   "text": "and give them a reason to be in the court.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 471.6,
+   "text": "They can grant income to be around family.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 474.6,
+   "text": "And it's working out extremely well.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 476.6,
+   "text": "I think that's a really interesting point.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 481.7,
+   "text": "And I love the perspective of do you think the state needs a strategy?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 486.7,
+   "text": "I have no opinion on the matter.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 487.7,
+   "text": "But I mean, I think there are very basic guardrails, if you will, that I think the mayor is putting out.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 492.7,
+   "text": "This was a four year decision.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 494.7,
+   "text": "You took the strategy and you're on it.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 496.7,
+   "text": "Are there communities out there that don't have those same guardrails and are taking kind of the highest bidder?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 501.7,
+   "text": "And that's how we end up with some of these wackable solutions and maybe not great development partners.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 508.7,
+   "text": "So I guess, did everyone talk about the state data strategy?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 512.7,
+   "text": "Like what steps could we actually take to have a police strategy in the state?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 516.7,
+   "text": "Sure.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 517.7,
+   "text": "That'd be good.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 518.7,
+   "text": "Yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 519.7,
+   "text": "That'd be good.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 520.7,
+   "text": "Yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 521.7,
+   "text": "No, I mean, I actually am a believer in having a state framework and some kind of state rules.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 531.7,
+   "text": "Because ultimately, you can especially give in the industry right now.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 535.7,
+   "text": "My hope is that it'll give communities some level of comfort and industry some level of stability.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 541.7,
+   "text": "But I think if you think about it, that the state is going to handle this differently.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 546.7,
+   "text": "And, you know, handle it according to what is unique to their state, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 551.7,
+   "text": "So there are many states that came to the wrong cloud markets.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 554.7,
+   "text": "There are many states like Indiana that are strong, I think, you know, hyperscale markets.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 559.7,
+   "text": "But you look at even like a state like New York and they have more oriented places now.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 563.7,
+   "text": "But they've been courting a lot of the semiconductor manufacturers, the battery manufacturers,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 568.7,
+   "text": "and that's kind of how they're engaging with the industry to make growth perspective.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 573.7,
+   "text": "You know, I think we, like a state like framework, obviously, you don't want it to go so far where it deters the kind of investment that you're looking for.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 582.7,
+   "text": "But, you know, put in place, you know, rules around energy and water and community considerations.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 587.7,
+   "text": "I mean, and Indiana actually last year, HB 1007, put forth a very fascinating energy law that I think gave the confidence for the hyperscalers to invest in Indiana.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 599.7,
+   "text": "So no, I mean, we're certainly open to those conversations.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 602.7,
+   "text": "We are having a robust discussion with our member at the moment about, you know, nationally, what that kind of framework can look like.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 610.7,
+   "text": "And, you know, it's opening some really interesting conversations.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 613.7,
+   "text": "But we're working there, I think the goal is, as we head in 2027, has an organization come out of the broader principles that every state can look to.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 623.7,
+   "text": "And I just want to just add that the reason why we selected the port, and why we're even in Indiana,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 630.7,
+   "text": "we're looking at the land availability. We're looking, of course, at electricity and usage in the ecosystem.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 637.7,
+   "text": "We're also looking at places like the port that want long-term economic development partnerships.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 643.7,
+   "text": "And that is why we are here in Indiana, why we actually select the port as the community that we want to partner with.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 649.7,
+   "text": "And I think the other part is that the data center groups, the tech companies have done a core job of educating people.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 657.7,
+   "text": "And I've been building that for years. And as I told our team, and we've got high expectations, but I told our team, our work is only beginning now.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 666.7,
+   "text": "You know, we're helping Evansville. We're helping yesterday. We went to Portage to help.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 672.7,
+   "text": "We haven't put the facts out there. We have a system, a process that worked.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 677.7,
+   "text": "And I think once you educate people, you know, and they have to rely on personal attacks and all the things that happen that we went through.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 686.7,
+   "text": "All types. But when you get down to the facts and you educate people, it's hard to say why you would be opposed to it.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 695.7,
+   "text": "Can I talk a little bit about that? I just want to just, Mayor Dermi has done a great job on educating the community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 702.7,
+   "text": "Of course, the way that residents feel, you know, it's real. They have questions about electricity and water usage and environment and noise.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 711.7,
+   "text": "And what Mayor Dermi did in partnership with our community relations manager and our land development managers, he went to those residents to their houses to educate them on data centers.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 722.7,
+   "text": "He meant to make coffee shops as well to educate them as well. And that partnership, just allowing the community to see how transparent we wanted to be in terms of the development we wanted to have in the community was excellent.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 736.7,
+   "text": "So Mayor Dermi did a great job in educating his residents about the data centers so that we can come there and be a partner.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 743.7,
+   "text": "Yeah, and I do think this is where the state could step in and add a little part of the good message.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 749.7,
+   "text": "We often hear bad messages quite frankly, that's the news that they want to promote, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 753.7,
+   "text": "They've bad news for us a lot faster and a lot louder than the good, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 758.7,
+   "text": "So I think how can, you know, right, one by one by one, how can the state be taking more forward thinking approach to what's a positive side of data center development so that communities don't have to go hand-hand combat with their residents, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 773.7,
+   "text": "Yeah, and I think the communities need to see the tangible benefits from the project.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 780.7,
+   "text": "I think something, you know, we'll go out there and talk about all the property taxes that, you know, this is significant.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 786.7,
+   "text": "I mean, you know, these are being changed for generations, for communities.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 790.7,
+   "text": "But oftentimes, we don't have control over how the property taxes are out of hand, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 795.7,
+   "text": "And, you know, we can't say, hey, go reduce your property taxes.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 799.7,
+   "text": "You know, like they might want to invest in new schools or things like that, but the residents aren't always seeing them at first hand or immediately.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 807.7,
+   "text": "So I think, you know, as soon as the companies like Microsoft got it, like they're being very forward thinking about making sure that, you know, we need to know, sort of, you know, think about it.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 815.7,
+   "text": "Yeah, yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 816.7,
+   "text": "Okay, so let's go there, like, tactical.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 819.7,
+   "text": "Like, let's look at a pack of the benefits, because we're, you know, we know the Microsoft's been a wonderful partner, obviously, to look forward in others.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 827.7,
+   "text": "So what makes a wonderful partner?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 829.7,
+   "text": "Yes, obviously, site selection, we have to have enough of the resources to actually fuel the infrastructure and, you know, what's he doing?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 836.7,
+   "text": "Like, what are the other things that we may not appreciate that goes into winning that bill before?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 843.7,
+   "text": "Because, like, yes, if you weren't the only bidder courting the mayor over here.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 846.7,
+   "text": "So what makes you stand up?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 849.7,
+   "text": "Well, firstly, make five commitments.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 851.7,
+   "text": "We announced those in January.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 853.7,
+   "text": "Number one, we are going to pay for our energy and our infrastructure.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 856.7,
+   "text": "So that would not come on the residents.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 858.7,
+   "text": "Residents would not have high electricity bills because of our base and consumption usage.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 863.7,
+   "text": "Number two, that we're going to minimize our water usage and we're going to replenish more water than we actually use.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 869.7,
+   "text": "Number three, we don't want to take a tax abatement.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 872.7,
+   "text": "So that tax revenue is actually going back to the court.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 875.7,
+   "text": "So they can use that revenue for their hospitals or schools.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 879.7,
+   "text": "Public safety, anything that they feel is important to the community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 883.7,
+   "text": "Number four, we are looking at student workers in the labor in the court.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 888.7,
+   "text": "And we wanted to make sure that we use workers in labor from the community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 893.7,
+   "text": "And five, we wanted to just educate folks on EI infrastructure.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 898.7,
+   "text": "We wanted to invest in those nonprofits in the communities and organizations that the community actually cared about.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 905.7,
+   "text": "So those are five commitments to the community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 907.7,
+   "text": "That is why that is our partnership with the court and quality communities that we are in.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 912.7,
+   "text": "And we were stick to that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 915.7,
+   "text": "What is your selection that you look like?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 917.7,
+   "text": "Like, how do you even start to being aligned with something like this?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 924.7,
+   "text": "You know, we have a team, a leadership team.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 927.7,
+   "text": "We have people that want to take the blinders off or to change the future of our community first of all.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 934.7,
+   "text": "So we rally with those individuals.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 937.7,
+   "text": "And again, we went through many interviews, many processes.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 940.7,
+   "text": "And again, said, no, people forget the number of times we've said no to data center companies,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 947.7,
+   "text": "attack companies because it wasn't right for the court.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 950.7,
+   "text": "And then we just walked through and met with many individuals, residents.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 959.7,
+   "text": "And what I think worked was we met with 10 to 15 people at a time.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 964.7,
+   "text": "Because when you get to the 15 to 25, everybody wants to, you know, stand out by yelling personal things.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 971.7,
+   "text": "You get nowhere.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 972.7,
+   "text": "We did 10 to 15 people at a time.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 975.7,
+   "text": "And we walked through with Microsoft and with our team.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 978.7,
+   "text": "Every issue that they say they're concerned about and address those.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 982.7,
+   "text": "And then the other big thing that we did, we made this 100% union investment.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 990.7,
+   "text": "And I think that was key to it.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 993.7,
+   "text": "And every time we had a public meeting, in fact, I brought one to show.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 998.7,
+   "text": "We had 150 union representatives standing outside the front door of city hall wearing this shirt.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1006.7,
+   "text": "Attack the ass shirt.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1011.7,
+   "text": "This was in our smooth colors, orange and black at a port.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1015.7,
+   "text": "And it made people feel uncomfortable that if you were going to oppose, you better have some legitimate reasons.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1022.7,
+   "text": "And the community began to come around.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1025.7,
+   "text": "And it was just hard to argue.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1028.7,
+   "text": "We now worked everybody relentless.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1033.1,
+   "text": "And the community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1036.1,
+   "text": "And the other thing we did, I'll also mention, the county was a horrendous partner.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1041.1,
+   "text": "A county government, I'm sure we go around there, or a horrendous.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1044.1,
+   "text": "And I said it directly to them.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1046.1,
+   "text": "I said it publicly.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1047.1,
+   "text": "So we didn't feel, because they were such opposition to this project, that I would have felt uncomfortable forcing them to take tax money from a data center.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1062.1,
+   "text": "So we bypass them, said you'll get nothing.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1065.1,
+   "text": "We set up a tip.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1067.1,
+   "text": "Now we gave 15% direct to our school system.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1072.1,
+   "text": "And our school system, we have a wonderful superintendent.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1075.1,
+   "text": "And the state of Indiana has set up a competitive market for K-12.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1080.1,
+   "text": "So we now want to set a port up to be different and to go take those kids from around.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1086.1,
+   "text": "We can either back to the port and add them to the port.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1089.1,
+   "text": "And they are sitting in a great situation.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1094.1,
+   "text": "But how is the community going to argue that we're improving our school system?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1099.1,
+   "text": "By funding them in such a great way.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1102.1,
+   "text": "Can I add two points to that one?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1105.1,
+   "text": "You know, if, I believe this is, if this is the infrastructure for the 21st century, it should be built with the building trades, from what I expected.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1113.1,
+   "text": "And they've been significant partners as we work for this.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1117.1,
+   "text": "And, you know, we are running into workforce shortage here in the next several years.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1122.1,
+   "text": "I think it's coming on the industry to really partner the building trades, invest in community college, educational schools, workforce development programs, and trying to shift all these different things.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1132.1,
+   "text": "So I was actually with the Indiana building trades last week during the World Conference.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1137.1,
+   "text": "And it was a fascinating conversation.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1139.1,
+   "text": "But just the amount of opportunities they're seeing from the industry that Indiana has been significant.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1144.1,
+   "text": "The other point I wanted to make and, you know, we're looking at national polling.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1148.1,
+   "text": "And, you know, we're increasingly the industry, groups like ours, you know, we're not that trusted evaluator, right, for these three hundred projects.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1156.1,
+   "text": "The building trades are also losing some credibility in that as well.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1160.1,
+   "text": "But the most trusted evaluators are going to be those local leaders on the ground.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1165.1,
+   "text": "So it's incumbent upon us to make sure that they are comfortable with these projects that are with the best.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1171.1,
+   "text": "And really work with them to get out and talk to their friends and neighbors across the country.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1176.1,
+   "text": "Well, I want to unpack the workforce development, the near and long term impact here in a minute.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1184.2,
+   "text": "But I want to put a number in our free work.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1188.2,
+   "text": "I think you mentioned that because of the incentive to school system, you were able to bypass what would have been a $6 million referendum on the next kind of ballot.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1201.2,
+   "text": "Is that correct?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1202.2,
+   "text": "So if you look at the state of Indiana, I think I saw 32 to 38 school corporations are going to a referendum for $500 million, including the neighboring community of Michigan City right next to us.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1217.2,
+   "text": "And the court was scheduled to go for a $6 million referendum, which would have obviously added increased tax to our local residents.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1226.2,
+   "text": "They have completely put that away.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1229.2,
+   "text": "It's that with what the soft is doing now and in the future, they will not need to do that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1236.2,
+   "text": "But not only have enough funds to just pay teachers what they deserve and more than just get by but really change what education looks like and preparing our kids for the future.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1252.1,
+   "text": "So let's unpack workforce development.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1256.1,
+   "text": "I think I heard some where this is only short term.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1260.1,
+   "text": "Once the plans are up to 20, it takes very little labor.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1263.1,
+   "text": "So it's not really a self-sustaining workforce initiative.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1268.1,
+   "text": "So what are some of the numbers around the year term workforce development impact that these fiction museums have on the communities, but then what should we expect reasonably from how will that workforce continue as the data center operates?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1287.9,
+   "text": "You know, I think you have to think about the differences in data center, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1293.9,
+   "text": "And some of the kind of traditional historic data centers that has clustered in more areas.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1300.9,
+   "text": "There's going to be a couple hundred construction jobs, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1303.9,
+   "text": "And oftentimes people call it temporary, but I can't find the transfer.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1308.9,
+   "text": "Because I mean, those, you know, oftentimes you're out on the jobs for five to seven years.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1313.9,
+   "text": "I don't know what we call that temporary today's workforce.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1317.9,
+   "text": "But, you know, the permanent jobs you're looking at 20 to 30, but for the projects that you're looking at, you're looking at a couple of dollars in construction jobs.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1326.9,
+   "text": "And then, you know, I mean, you know, 100 to 300 employees on site, but you also can't discount the kind of economic or doing cancelary benefits.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1336.9,
+   "text": "So, you know, we're in the PWC for every one of the data center jobs.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1340.9,
+   "text": "Four and a half jobs are created elsewhere in the economy.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1343.9,
+   "text": "And you think about all the supply chain opportunities.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1346.9,
+   "text": "When you think about companies like Deere and Caterpillar who are servicing building out products for data center.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1352.9,
+   "text": "But we're also seeing increasing evidence to a, you know, economic activity for restaurants and movie albums.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1358.9,
+   "text": "Actually, they travel economic research for a female last week and show that some of these communities that are seeing significant data center projects will tell off.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1369.9,
+   "text": "You can see it's actually up 10 to 15% for those hotels.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1372.9,
+   "text": "So, you know, again, these can be changed down the line not just on site jobs, but across the ecosystem.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1379.9,
+   "text": "And I think, you know, typically, you know, technology companies like yourselves, other data center will tend to kind of want to cluster around each other.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1386.9,
+   "text": "And share ideas and share innovation together.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1389.9,
+   "text": "So, there's so many opportunities again if you can plan responsibly and plan properly.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1393.9,
+   "text": "Well, I don't know what data centers you working on for 20 to 30 people.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1399.5,
+   "text": "I want to tell you, we have construction jobs right now that Microsoft is going to need.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1405.5,
+   "text": "We have 2,000 local contractors that is on the axis of our capacity.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1413.5,
+   "text": "We need 4,000.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1415.5,
+   "text": "So, we know we're going to have another 2,000 union contractors coming into the court.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1421.5,
+   "text": "I was in a lunch and learned in Google yesterday and they had placed an order, as you mentioned, for 1,000 meals for lunch.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1430.5,
+   "text": "And what that can do to have small business.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1432.5,
+   "text": "I think State Joe County has booked in the last year 156,000 rooms because of that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1438.5,
+   "text": "We're in trouble from a housing perspective.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1440.5,
+   "text": "We're working on that quickly.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1442.5,
+   "text": "I will tell you this.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1443.5,
+   "text": "How many people have actually toured the data center?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1448.4,
+   "text": "I would make sure, yeah, that's actually well, but I would make sure you check one out because I got back from Microsoft going recently.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1457.4,
+   "text": "And they started, I think in 2008, they have 700 full-time Microsoft employees that you know what their wages, you know.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1468.4,
+   "text": "The President came, Brad Smith, to look for the ribbon coming and said, we have the best benefits anywhere.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1475.4,
+   "text": "So, $7,500,000 or more plus benefits.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1480.4,
+   "text": "That's been going since 2008, but the interesting thing about the short-term contractor.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1486.4,
+   "text": "Many of the contractors were still working at Microsoft 10 years ago.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1492.4,
+   "text": "And it continues to happen, and we expect we've got 17 buildings on our campus.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1497.4,
+   "text": "So, we're going to be here a while, and they're going to be here a while building.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1502.4,
+   "text": "So, I think that's why we believe a portion of the place to be.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1507.4,
+   "text": "Just to add to that, just in the first phase of the board construction, we're going to have over 700 per day job,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1514.4,
+   "text": "as well as the partnership with Evangelism and",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1515.7,
+   "text": "I would say, with our day-to-day center of Canada.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1518.7,
+   "text": "So, we're training the workforce.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1520.7,
+   "text": "We are providing scholarships.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1522.7,
+   "text": "We're making sure that the students know how to give these jobs, not just for Microsoft, but for any day center, as the jobs are out there.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1531.7,
+   "text": "The other question I've heard postman, I don't really have any answer.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1536.7,
+   "text": "I'm curious who you will do.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1538.7,
+   "text": "As entrepreneurs, we're looking to build technology infrastructure to support the AI company, or build products on top of AI to further our industries.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1551.7,
+   "text": "How is having the proximity of the data center close to me help me as an entrepreneur?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1558.7,
+   "text": "Is that a question posed?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1560.7,
+   "text": "How can we take advantage of the proximity of having kind of plastic glass in data centers in our backyard, if you will?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1567.7,
+   "text": "Yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1568.7,
+   "text": "Well, you think about that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1569.7,
+   "text": "I mean, one, just the proximity to companies like Microsoft and Google AWS, and that it's actually innovating.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1578.7,
+   "text": "And think about things.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1579.7,
+   "text": "Obviously, you know, you're probably going to have your data stored in process, you know, in these facilities as well.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1586.7,
+   "text": "But, you know, I'll give you another example.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1589.7,
+   "text": "It's in my home state of Illinois, but it's very relevant to Northwest Indiana.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1593.7,
+   "text": "It's the quantity.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1594.7,
+   "text": "And, you know, I mean, when you think about kind of the innovation, they're saying right now they're not going to use data center there for obvious reasons, but they're going to use data center there at some point as its quantity is scaled.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1606.7,
+   "text": "You know, I mean, and they're saying, you know, we're not a data center and like that is correct, but you are in technology and play AI.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1615.7,
+   "text": "So that's the kind of things that, you know, I think can happen, but underpinning all of that is the infrastructure, which is the data center.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1623.7,
+   "text": "So I would tell you again, I've been a business owner, businesses, most of my adult life.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1632.7,
+   "text": "And I will tell you, it's very important right now, because not only for Microsoft, but for how we have a large airplane manufacturer or a little party of other college jobs that we need kids that are prepared to do the new way of doing things.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1648.7,
+   "text": "I mean, I was impressed with our public golf course.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1651.7,
+   "text": "I saw what I called the Roombas for the first time in the last yesterday.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1657.7,
+   "text": "But what Microsoft does is when they come in, they have set up the first data center academy in this, I believe in the state, through the support of the school system, so that and with IDTAC in our partnership with IDTAC, so those kids are now going to be prepared to walk out with the degree",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1677.7,
+   "text": "and hopefully be ready to step into those AI-tech positions that are so unique in that way at Microsoft, but across Northwest in the year.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1685.7,
+   "text": "Yeah, and I'll just double down. I was in San Francisco at one of your competitors actually headquarters, and the rate in which they were investing.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1694.4,
+   "text": "This is on the water, the sustainability giant, but just new technologies to help accelerate the build and their sustainability footprint was just really incredible.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1705.4,
+   "text": "I mean, companies that would even have a shot three years ago were now getting massive deals with big tech simply because they're creating the environment of, no, we want to innovate, we want to sugar, but we want to find best available technologies to make this as stable as possible.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1720.4,
+   "text": "And so it's pretty incredible I think when you can bring partners in and create those ecosystems around that, what can be done in certain industries.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1729.4,
+   "text": "No, absolutely no, and thank you for being here.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1731.4,
+   "text": "Obviously, I think, especially on the cool inside, the amount of solutions there are significant.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1736.4,
+   "text": "So I mean, from a procurement standpoint, when you're working with these bigger companies, these are significant too.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1743.4,
+   "text": "So they can play.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1744.4,
+   "text": "Yeah, yeah, yeah, just big get it up.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1747.4,
+   "text": "Okay, so let's, you know, while we're kind of in the energy and so on and so forth, because that's a big topic.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1756.4,
+   "text": "It's like, we're going to hide our consumption under NDA.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1758.4,
+   "text": "So no one's actually going to ever know what, you know, what we're using or what we're discharging and so on and so forth.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1764.4,
+   "text": "So, Mayor, I guess what kind of arrangements do you want to have which comes to the sustainability and the footprint of a resource in one of these data centers and what are some best practices that we can share?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1776.4,
+   "text": "Well, and that's where we have wonderful water, wastewater team, Microsoft.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1784.4,
+   "text": "Very cool environment.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1786.4,
+   "text": "And so it's been great to see the financial community that they've made and it includes the water, the wastewater system in our community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1795.4,
+   "text": "And again, we know where the statehouse is headed with reducing dollars.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1801.4,
+   "text": "And again, I was, I'll say I was a part of it and it's coming back to haunt me now.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1806.4,
+   "text": "I see my friend in that here's back there.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1808.4,
+   "text": "But we have to think as local government, different ways to do anything.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1813.4,
+   "text": "We don't want to rely on the state.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1815.4,
+   "text": "We want to partner with the private sector, whether it's environmental and I don't know if I'm allowed to say this, but Microsoft's committed $4 million to some watershed projects that haven't been addressed in 55 years in the important county.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1829.4,
+   "text": "And it doesn't even affect so much the city of the court, but it's better for the environment.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1833.4,
+   "text": "It's better for our county to see this work being done.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1838.4,
+   "text": "So yeah, we're we're having a nuclear summit in the middle of September.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1843.4,
+   "text": "We're hoping and trying and looking at everything to either drive costs down or to improve lives of our residents with power, with water, with wastewater.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1855.4,
+   "text": "And we're going to be able to separate sewer releases, storm water that, you know, when I took over 2020, we had a hundred million dollar infrastructure problem because our infrastructure was 100 years old.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1869.4,
+   "text": "We're now addressing that because we have somebody that cares about our community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1874.4,
+   "text": "And I can just add that we don't have any.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1877.4,
+   "text": "So Microsoft does not have any as a community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1880.4,
+   "text": "So when you think about the court, it's going to be a close loop cleaning system.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1885.4,
+   "text": "So after the initial bill, the only usage because some squat consumption is going to be for domestic purposes, like drinking water or fresh food.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1894.4,
+   "text": "So we're looking at that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1895.4,
+   "text": "And of course, I mentioned earlier that, you know, residents are not going to have to pay for high electric electric bills because we are going to actually cover that infrastructure costs.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1903.4,
+   "text": "So, you know, residents will not be impacted by anything.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1906.4,
+   "text": "There's no reason why we're using finished water for most industries, especially that, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1912.4,
+   "text": "So I applaud you for pioneering that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1914.4,
+   "text": "We need to tell that story.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1915.4,
+   "text": "Because Indian always gets better out, but we're not going to have to do this one circular water thing that I've added.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1921.4,
+   "text": "Well, it would be like that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1923.4,
+   "text": "I mean, I think, you know, one to mark perspective and, you know, we would love for all of you to kind of help with this messaging.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1930.4,
+   "text": "But, you know, context matters and we do use far less water than a lot of other industries.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1934.4,
+   "text": "And we can get into that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1935.4,
+   "text": "But I can yell at it now when I do slightly more industry stuff.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1938.4,
+   "text": "I kind of like that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1939.4,
+   "text": "But, you know, I mean, you know, you have closed loop systems.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1942.4,
+   "text": "You have direct chip, liquid version.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1944.4,
+   "text": "In climate service, states like Indiana, where the climate is cold for months of the year, you do have companies that are literally taking in the Amazon air for 90% of the year.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1953.4,
+   "text": "And then turning to a liquid or water cooling solution for a few weeks during the summer.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1958.4,
+   "text": "So, I think, you know, we see a lot of calls nationally to mandate certain kind of technologies.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1964.4,
+   "text": "But those technologies might be obsolete in the next two to three years.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1967.4,
+   "text": "So, from our perspective, I think, you know, focus on outcome-based, you know, measures here.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1972.4,
+   "text": "What's the actual health of the watershed we're hoping from?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1976.4,
+   "text": "There are sources that are abundant.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1977.4,
+   "text": "There are sources that are struggling too.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1979.4,
+   "text": "And that should be where the focus is.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1981.4,
+   "text": "And is this project data center or, you know, other industries?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1984.4,
+   "text": "Is that going to harm that watershed should we think about it?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1987.4,
+   "text": "Is that kind of how we're thinking about it?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1989.4,
+   "text": "And that happens in year one for your pursuit, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1992.4,
+   "text": "Because that should be happening, I would think, in the site selection process.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 1995.4,
+   "text": "And actually, it's just like, what is the watershed in the geographical makeup of the site that we're looking at?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2001.4,
+   "text": "I mean, but I want to confirm that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2002.4,
+   "text": "But that is part of what we think about the pillars of good and good development site selection is a key piece of that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2008.4,
+   "text": "Potium, would you like to speak a little bit on how Microsoft purchased site selection or how you think about that?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2014.4,
+   "text": "I'm sorry.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2015.4,
+   "text": "Yeah, so we do look at site selection.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2017.4,
+   "text": "We do look at the availability of resources, the whole ecosystem.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2022.4,
+   "text": "So that is something that's important to us.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2024.4,
+   "text": "And of course, like Grant mentioned, we are looking at ways, of course, for our water usage to not consume as much water.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2031.4,
+   "text": "So those are things we all would say.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2034.4,
+   "text": "I know it seems like an obvious question.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2036.4,
+   "text": "But I mean, we do have to put in the news for a certain district in London that they did not necessarily look at the watershed numbers.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2044.4,
+   "text": "A big project.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2045.4,
+   "text": "So I would say, I mean, I don't want to poke the bear, but, you know, it's not always been at the forefront of the conversation, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2051.4,
+   "text": "Absolutely.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2052.4,
+   "text": "Yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2053.4,
+   "text": "No, but one of the more fascinating developments I would say we are seeing, like, Stan Lewis, for instance, their water director came out.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2060.4,
+   "text": "And they built that water system permanently in residence.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2063.4,
+   "text": "And they have 300,000 residents now.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2064.4,
+   "text": "So the water director there is actually like, no, we want to do this.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2067.4,
+   "text": "We have the capacity to put in support then.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2070.4,
+   "text": "And also, that data center can help upgrade and modernize the infrastructure for everybody, you know.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2075.4,
+   "text": "So we are seeing things like that, too.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2076.4,
+   "text": "But you also have to take into account the inherent trade-offs between energy and water usage.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2082.4,
+   "text": "In some states, you know, especially all of us, you know, you're probably going to look more towards their pooling system, where there are so they can get water challenges.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2089.4,
+   "text": "But, you know, where there is water abundance, you want to reduce your energy consumption.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2093.4,
+   "text": "You might think about it differently, and those are very exciting.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2096.4,
+   "text": "Yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2099.4,
+   "text": "Yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2102.4,
+   "text": "Well, and I'm going to add, you know, we hear about this closed loop like it's something new today.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2107.4,
+   "text": "And we heard that from the community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2109.4,
+   "text": "Oh, how could you put the report in danger, trying this new closed loop system?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2113.4,
+   "text": "So we said, hey, let's get on a bus.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2115.4,
+   "text": "Let's go over to the agency attack, which is one of our 300 person employee manufactured in report.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2124.4,
+   "text": "Oh, by the way, they have this closed loop system, which is the exact system Microsoft's going to use, and they've had it for 25 years.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2132.4,
+   "text": "So what have you done for the last 25 years? Look what's happened, nothing.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2136.4,
+   "text": "So we address directly. We think people need to hear it directly, and there are no new surprises.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2145.4,
+   "text": "Yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2146.4,
+   "text": "So I'm going to end on the community side.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2150.4,
+   "text": "I think a community sentiment getting community on board is everything.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2154.4,
+   "text": "And so, you mentioned the t-shirts and getting the other side.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2160.4,
+   "text": "I should share for the message.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2162.4,
+   "text": "What were some of just the common, what were the common plays that your community had?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2169.4,
+   "text": "Besides myself putting money in my pocket.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2175.4,
+   "text": "I can think of all.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2176.4,
+   "text": "And I know things, you know, and I talk about this, like the Holbert Mayor, Mayor Josh, the things that he went through.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2184.4,
+   "text": "He's younger.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2185.4,
+   "text": "And I don't care that he's a Democrat, not only Republican, but things that the community put him through is unacceptable.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2194.4,
+   "text": "You know, we need to stay up level and have honest conversation.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2198.4,
+   "text": "But again, I think number one was fear factor.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2201.4,
+   "text": "Number two, the tech companies are doing a very poor job of really promoting what they do over the many years caught up.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2210.4,
+   "text": "And we were left.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2212.4,
+   "text": "Science Microsoft.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2213.4,
+   "text": "We were left on an island, a state walk away, a feds walk away.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2217.4,
+   "text": "And we had to take on all commerce at a local level.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2221.4,
+   "text": "And I think number one was lack of education, fear factor.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2225.4,
+   "text": "And it's taken some time over finally over that stretch.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2229.4,
+   "text": "And now the same people that oppose this one out, you think you can give the job at Microsoft.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2238.4,
+   "text": "Or the penis a guy that was completely opposed, wanted to close down his business.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2244.4,
+   "text": "And then he signed up as a part of our program to say, oh, I didn't know we were going to be able to supply 250 pieces of meat.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2251.4,
+   "text": "I said, oh, we don't think you should do what we know I feel about that.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2254.4,
+   "text": "But now everybody's starting to see that our roads are being paid.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2260.4,
+   "text": "And again, people don't want to increase taxes.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2264.4,
+   "text": "They don't want a real tax.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2265.4,
+   "text": "They don't want another increased tax here.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2269.4,
+   "text": "And I know the county just tried passing one and it was opposed.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2272.4,
+   "text": "We see what the legislature is doing with property taxes.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2276.4,
+   "text": "And we say fine.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2278.4,
+   "text": "We're not going to rely on anybody.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2280.4,
+   "text": "We want to generate like a business.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2282.4,
+   "text": "Our cost, you know, what we need to give our residents the best life.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2287.4,
+   "text": "And it's a new day in the court because we've taken a partnership step with a company like Microsoft.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2293.4,
+   "text": "And who doesn't want the top level for one of the top core companies in the global world to be in our backyard.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2306.3,
+   "text": "Do you have how many resources you can provide your community stakeholders with to arm them with either personnel or agencies or a playbook, if you will, to kind of handle the, you know, how do you handle the objections that they naturally face going into?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2320.3,
+   "text": "Well, you know, what we've done and what we did in the court was we invited all of the community in to speak with our symptomatic experts.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2328.3,
+   "text": "And so residents were able to go from table to table to talk about energy and water and the noise and anything that they had to say anything that they had questions about.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2338.3,
+   "text": "So, you know, whether that is the open house or taking phone calls or having a place where residents can email indirectly and get responses or partnering with the mayor to have these conversations in a coffee shop or in their homes, you know, we did those things to try to help educate the community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2356.3,
+   "text": "And that's what we're most proud of. We want to be transparent. We want people to know that we are not hiding.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2361.3,
+   "text": "And we want you to be educated. We want you to have the information that you need to know that we are a good partner.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2367.3,
+   "text": "And we're vested. And we want to be here. We want to help to grow the economy and to grow the court.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2374.3,
+   "text": "Yeah, right is add to, I mean, I'll make two points. One, there is a lot of speculation in this market right now and it's hurting us in a number of different ways.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2386.3,
+   "text": "And, you know, there are a lot of new developers who see an opportunity here and some are doing well and some aren't doing as well.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2393.3,
+   "text": "And I think for me, community engagement perspective, we're seeing that happen in some of these communities.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2398.3,
+   "text": "But from our perspective, I mean, build trust before you build and really understand that community. You understand what makes them tick.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2406.3,
+   "text": "You know, who are the community groups that you should be able to talk about? This is the community of like, open to deputy data center or to get it plugged.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2412.3,
+   "text": "And that might inform what you do next, right? So I think, you know, early and as engaged community engagement as possible is really needed in the moment.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2424.3,
+   "text": "And moving forward, I think there's been an industry who, you know, given how important and critical information getting facilities is, you know, for the last 20 or 30 years, you know, we would work with local government and we kind of go behind all these trees and then in that really, you know, talk to anybody.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2440.3,
+   "text": "But now we have to, right.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2442.3,
+   "text": "So I think there's a learning curve not for companies like Microsoft, but for a lot of our members in terms of how they do this engagement.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2449.3,
+   "text": "But again, you know, before you do anything and you apply for zoning or anything, get to know community, build that level of trust and then, you know, move there.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2458.3,
+   "text": "Yeah. So when do we see development peak? Like at one point in time, this maximum site selection and projects peak and we kind of, I mean, entrepreneurs here, I mean, have the peak of this illusion and go into a trap.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2471.3,
+   "text": "Or do you know what I mean? Like, and this just becomes normal. Like, how, over years, decades, you know what I mean?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2479.3,
+   "text": "No, I think, look, this window, so right now you're seeing this built out. I think it's actually a fascinating way to think about it.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2490.3,
+   "text": "You know, cloud computing is going to remain a deep predominant or low occurring data centers through at least 2035.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2497.3,
+   "text": "But right now we're in this moment of build out for artificial intelligence training, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2503.3,
+   "text": "And, you know, most studies, most analyses suggest that, you know, over the next two to three years, you're going to see the training slowed down a little bit that we're going to stop or anything.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2514.3,
+   "text": "But, and then artificial intelligence inference, which is where we are deploying the AI to the end user, which is everyone in this room, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2523.3,
+   "text": "And, you know, those are going to be different considerations because we need to be closer to the end user.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2527.3,
+   "text": "So, library connectivity is going to be really important. They're probably going to look like smaller data centers and use less power.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2534.3,
+   "text": "So, again, I think it goes back to a planning perspective and what makes sense for a greater community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2540.3,
+   "text": "I mean, if you think of some of the communities outside of the United States or even in my old time of Chicago, where you have a lot of fiber running into the city,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2548.3,
+   "text": "maybe you're not ready for a data center right now, but maybe in three or four years you've done your new diligence and whatnot.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2553.3,
+   "text": "And you want to track what you think of the data center. So, that's kind of how I would, you know, advise people to think about it.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2558.3,
+   "text": "Yeah, and I was like, it's a high-tech computer. Yeah, I really did it. Okay. Yeah.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2563.3,
+   "text": "Amazing. Okay. So, I've wanted them to make fun. So, I think 2035, and we sit back and we're like, we got that right.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2572.3,
+   "text": "You know, Indiana, the Ford, you know, my town, we got that right.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2576.3,
+   "text": "What does that look like? And then I would post that question to each of you.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2581.3,
+   "text": "What's the idea about it?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2583.3,
+   "text": "No, I honestly think there's going to be a lot of states who are taking themselves in five or six years because they have the reaction that they have at this moment, right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2592.3,
+   "text": "Indiana, obviously, there are a lot of concerns locally and whatnot, but it has been welcomed and it has opened itself up to a lot of these,",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2601.3,
+   "text": "and I would say, regionally changed these projects.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2604.3,
+   "text": "So, you're going to see, you know, clustering of innovation and all these different things happening around these facilities and the property type of thing that are generated, the community benefits that are coming.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2615.3,
+   "text": "It's, I think it's going to be a good one for states like Indiana.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2619.3,
+   "text": "And I think my own state is going to be looking, you know, here in five years of wondering, you know, they wish they had a kind of reaction.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2625.7,
+   "text": "I'm going to tell you what, when we took over 2020, we said we want to be 30 by 50.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2630.7,
+   "text": "We've been in a population in the city of court for 22,000 and change 40 years because our community, my hometown said no to everything.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2640.7,
+   "text": "We are now changing our future and the momentum that we are generating now and continuing to generate.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2650.7,
+   "text": "We're going to teach a community, hopefully a region that it's okay to say yes, and the naysayers, the trolls, all those people do not have enough power to stop the momentum.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2665.7,
+   "text": "And hopefully, as I told you, as our economic development team all says, hey, we've got to hire ourselves.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2671.7,
+   "text": "Why are we so worried about educating people around the state?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2674.7,
+   "text": "And I'm like, back to my personal point, our job is just begun here.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2679.7,
+   "text": "We need to help every other community.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2682.7,
+   "text": "We'll meet with whoever, whenever, to say this is our future.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2687.7,
+   "text": "And when that happens, the state of Indiana will be a special place to compete.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2692.7,
+   "text": "I think that we will believe that we've gotten it right when the community actually sees the benefit.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2700.8,
+   "text": "As I think about the community, like Putsi Washington, they opened our first day of the seminary in 2008.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2705.8,
+   "text": "And now they have, their property taxes have decreased.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2710.8,
+   "text": "And they have new schools in a new city hall and new public safety buildings.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2715.8,
+   "text": "And the poverty rate has gone down.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2718.8,
+   "text": "When we see those things in a community like a court and some of the other communities that we've invested in, I think they're going to be better at it.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2729.4,
+   "text": "We haven't really got into it, but to the point of saying yes, we also need states and localities that are saying yes, energy projects.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2741.4,
+   "text": "You know, I mean, we've been in a country that experienced flatify and low growth in the last 20 years.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2747.4,
+   "text": "And now we're in this new era where, not just data centers, but every kind of key growth sector for the next 20-30 years is going to rely on more and more energy.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2756.4,
+   "text": "So obviously, after we'll get asked about things around advanced nuclear, geo-thermal, long-creation batteries, storage, and no other industry in the country is investing in these technologies like the data center industry.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2768.4,
+   "text": "So, but we do need help in getting the projects cited there through this pandemic.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2773.4,
+   "text": "Well, as mayor, as you said, we open and we're free.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2775.4,
+   "text": "We're kind of open for business, but I think what you point out is we really need to be open at the state level and really need to tie some of the industries.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2782.4,
+   "text": "We'll be having it at that level, down to our community, so that we can make sure that we accomplish what the future can look like in 25.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2790.4,
+   "text": "Right? It is a, it's not a need to be a closed system in and of itself.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2795.4,
+   "text": "Right?",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2796.4,
+   "text": "More energy.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2798.4,
+   "text": "More energy.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2799.4,
+   "text": "Okay.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2800.4,
+   "text": "Well, thank you all so much.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2802.4,
+   "text": "We're going to be all there.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2803.4,
+   "text": "Thank you.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2804.4,
+   "text": "Thank you.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2805.4,
+   "text": "Thank you.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  },
+  {
+   "t": 2806.4,
+   "text": "Thank you.",
+   "speaker_tag": null,
+   "speaker_conf": "unresolved"
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+[
+ {
+  "file": "MyRec_0827_1251.m4a",
+  "sha256": "3518e89270402f352bf6ec695d91a7efa8f1d5a7fe78801247962f5b506368b9",
+  "bytes": 5731323,
+  "duration_s": 353.7,
+  "source": "Rick Barretto, attendee recording, 2026 ITIA Summit, Fishers IN, 2026-08-27",
+  "setting": "PUBLIC \u2014 ticketed industry conference, on-record panels",
+  "captured_by": "attendee",
+  "provenance_confirmed": true
+ },
+ {
+  "file": "ai=MyRec_0827_1212.m4a",
+  "sha256": "97867505ae999e8dd1f5b6f6ef00cf7843233b3fd3f01e525b72219bc0a36303",
+  "bytes": 7854019,
+  "duration_s": 484.7,
+  "source": "Rick Barretto, attendee recording, 2026 ITIA Summit, Fishers IN, 2026-08-27",
+  "setting": "PUBLIC \u2014 ticketed industry conference, on-record panels",
+  "captured_by": "attendee",
+  "provenance_confirmed": true
+ },
+ {
+  "file": "apprentMyRec_0827_1154.m4a",
+  "sha256": "a031d5d0ebfda6aa6c872c5256c07f0939fe37de30de12e8b4980cb80b863597",
+  "bytes": 13052347,
+  "duration_s": 805.6,
+  "source": "Rick Barretto, attendee recording, 2026 ITIA Summit, Fishers IN, 2026-08-27",
+  "setting": "PUBLIC \u2014 ticketed industry conference, on-record panels",
+  "captured_by": "attendee",
+  "provenance_confirmed": true
+ },
+ {
+  "file": "itia _0827_1047.m4a",
+  "sha256": "c04ff0c7840fbc10c39058963da2b93bcde877b98c1cf51d35ee7be6ee6390bb",
+  "bytes": 45532145,
+  "duration_s": 2810.6,
+  "source": "Rick Barretto, attendee recording, 2026 ITIA Summit, Fishers IN, 2026-08-27",
+  "setting": "PUBLIC \u2014 ticketed industry conference, on-record panels",
+  "captured_by": "attendee",
+  "provenance_confirmed": true
+ },
+ {
+  "file": "vc-MyRec_0827_1139.m4a",
+  "sha256": "2751b6df619fb76a7e121788d9a23a3c650cbf1fe6e13fafbed8f2f7f06d70f5",
+  "bytes": 33702612,
+  "duration_s": 2080.4,
+  "source": "Rick Barretto, attendee recording, 2026 ITIA Summit, Fishers IN, 2026-08-27",
+  "setting": "PUBLIC \u2014 ticketed industry conference, on-record panels",
+  "captured_by": "attendee",
+  "provenance_confirmed": true
+ },
+ {
+  "file": "itia_agenda_2026-08-27.jpg",
+  "sha256": "b39e4b7b29aeb632c0400b155200ee835d1f1b2e09e1be20f703970315ced6c4",
+  "bytes": 976554,
+  "duration_s": null,
+  "source": "Rick Barretto, attendee recording, 2026 ITIA Summit, Fishers IN, 2026-08-27",
+  "setting": "PUBLIC \u2014 ticketed industry conference, on-record panels",
+  "captured_by": "attendee",
+  "provenance_confirmed": true
+ }
+]
