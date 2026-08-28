@@ -83,15 +83,25 @@ td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
 </div>
 <p>The public surface this produces is the entire pitch, and it fits on one line: <b>600 jobs promised · 491 independently documented · 81.8% · show me the receipts.</b></p>
 
-<h2>2 · The structural risk — please read this before anything else</h2>
-<div class="box red">
-<h4>Do not put SkillDNA careers and data-center truth on the same site in V1</h4>
-<p>The flywheel in the plan routes people from <i>learning the truth about data centers</i> into <i>training for data-center jobs</i>. Commercially that is elegant. <b>For a truth product it is disqualifying.</b></p>
-<p style="margin-bottom:0">If the same organization tells the public whether the data center is good for LaPorte <b>and</b> sells training for data-center jobs, then <b>we are financially interested in the answer being yes.</b> The first person to notice that — a remonstrator, a reporter, an opposing official — ends the project's credibility permanently, and they will be right to. Our only asset is being trusted by people who dislike our findings. Keep SkillDNA and the truth site as <b>separate brands, separate domains, separate governance</b>, and let them connect later through a disclosed, arms-length referral. <b>The cost of separating them now is small. The cost of separating them after the accusation is total.</b></p>
+<h2>2 · The market signal is explicit — and it came from the state</h2>
+<div class="box grn">
+<h4>The demand was stated out loud, by the people who most need it solved</h4>
+<p>At the ITIA summit on <b>August 27, 2026</b> in Fishers, Indiana Commerce Secretary <b>Chuck Goodrich</b> said state and industry officials "need to better communicate the benefits of growth as large new projects increasingly face opposition." Meanwhile: <b>dozens of Indiana counties have paused data-center development</b>, passed restrictive zoning, or voted projects down — and <b>Indianapolis has finalized a pause through 2027</b>.</p>
+<p style="margin-bottom:0">Read those two facts together. <b>The state's own economic-development leadership is publicly saying the message is not landing, while the market keeps closing.</b> That is a validated demand signal for a public-education product, stated by the buyer, in public, unprompted. It is also the clearest possible evidence that <b>more brochures will not fix it</b> — the communication being attempted is not being believed.</p>
 </div>
-<div class="box red">
-<h4>The second neutrality trap: everyone will assume a "data center truth" site is opposition</h4>
-<p style="margin-bottom:0">The name alone signals activism to a company, an economic-development office, and half the county. The only defense is <b>demonstrated symmetry, early and loudly</b>: publish findings that favor Microsoft and the officials as prominently as findings that don't. If the company hits a commitment, that is a headline. If a viral local claim about water use turns out to be wrong, <b>we debunk it</b> — and that single act will do more for our standing than ten critical pieces. Build the first ten items in the ledger to include company wins. <b>A ledger that only ever reads "missed" is a campaign, not a record.</b></p>
+
+<h3>Which resolves the credibility question, in a way worth being precise about</h3>
+<div class="box gold">
+<h4>The site's value to Microsoft and the state is <i>exactly proportional</i> to its credibility with people who distrust Microsoft and the state</h4>
+<p>This is the strategic core, and it collapses the apparent tension between "promote the good news" and "be rigorous."</p>
+<p style="margin-bottom:0">A site that only says favorable things is <b>worth nothing to a company</b>, because nobody who needs persuading will read it. Microsoft does not lack the ability to publish good news about itself; it lacks a venue where skeptics will accept it. <b>Rigor is not a constraint on the business model — rigor is the product being sold.</b> Every verified item that cuts against the project is what makes the verified items that favor it believable. The debunking of a false viral claim about water use is worth more to the company than ten press releases, precisely because we would have published it had it been true.</p>
+</div>
+
+<h3>The one boundary I would still hold: a business/editorial firewall</h3>
+<div class="box">
+<h4>Have interests. Disclose them. Never let them touch the ledger.</h4>
+<p>Selling ad slots to <b>Hope Training Academy alongside Ivy Tech and other providers</b> materially changes my earlier concern — an open marketplace of training providers is an advertising channel, not a funnel, and that is a normal, honest way to fund civic media. The failure mode is not <i>having</i> commercial interests; it is having <b>undisclosed</b> interests while implying independence.</p>
+<p style="margin-bottom:0">So: the standard newspaper firewall, stated publicly. <b>Sponsors and advertisers have no input into any verdict, commitment, or outcome record — ever.</b> A funding page names every sponsor. Ad units are visibly labeled and visually distinct from evidence. And SkillDNA's role here is <b>contributor identity verification</b>, not career placement — that is a genuinely good fit and does not create the conflict I flagged. Write these into the governance layer (L10) as enforced rules, not intentions, and the model is defensible to anyone who asks.</p>
 </div>
 
 <h2>3 · Why LaPorte is the right first site</h2>
@@ -128,8 +138,34 @@ td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
 <p style="margin-bottom:0"><b>One additional rule specific to your recordings:</b> if any were made in a setting that was not clearly public, or where participants had a reasonable expectation of privacy, they are <b>not publishable evidence</b> regardless of what they contain. Public meetings and public conferences are fair game; a side conversation is not. Establish that provenance per recording <i>before</i> ingestion, not after.</p>
 </div>
 
-<h2>6 · What V1 is — and what it deliberately is not</h2>
-<p><b>V1 is one project page and one promise ledger.</b> That is the entire product. It is small enough to be complete, and completeness is what makes it credible.</p>
+<h2>6 · The Thermometer — the right public metaphor</h2>
+<div class="box grn">
+<h4>Same data, opposite emotional register — and the positive framing is the more accurate one</h4>
+<p>A fundraising thermometer starts at zero and climbs. It is a picture of <b>progress toward completion</b>, not a scoreboard of failures. That reframing is better than "promise ledger" in every way that matters, and it is not spin — <b>for a project under construction, "in progress" is the literally correct status</b> for most commitments. A ledger that reads as an indictment on day one would be inaccurate, not merely unfriendly.</p>
+<p style="margin-bottom:0">The underlying schema does not change at all — <code>commitment</code> + <code>outcome</code> + <code>commitment_status_for()</code> already produce exactly this. What changes is presentation: <b>a filling gauge per commitment, a project-level completion percentage, and dates showing movement over time.</b> The honest version is also the encouraging version, because most of these promises are on their way to being kept.</p>
+</div>
+<table class="ledger">
+<tr><th colspan="3">Thermometer semantics</th></tr>
+<tr><td><span class="pill p-open">Climbing</span></td><td>Independent measurement shows movement toward the target</td><td>the normal state early in a project</td></tr>
+<tr><td><span class="pill p-met">Reached</span></td><td>Target met, independently documented</td><td class="mut">celebrate these loudly — they are the good news, verified</td></tr>
+<tr><td><span class="pill p-unv">Not yet measurable</span></td><td>No independent measurement exists yet</td><td class="mut">honest and common; says nothing bad about anyone</td></tr>
+<tr><td><span class="pill p-miss">Past deadline</span></td><td>The stated date passed without the target being reached</td><td class="mut">rare early; always shown with the promisor's response</td></tr>
+</table>
+<p class="mut">Note what this does for the company: <b>a thermometer at 78% with sealed receipts is a far stronger public statement than a press release claiming success</b> — because a reader can check it. Verified good news is the scarce commodity here, and we would be the only ones producing it.</p>
+
+<h2>7 · Answer the questions people are actually asking</h2>
+<p>You heard citizens at that conference asking about <b>water, electricity, and zoning</b>. That is the education product, and it is demand-driven rather than guessed. Each becomes a short, evidence-backed explainer with every figure carrying an evidence link:</p>
+<ul>
+<li><b>Where does the water come from, how much, and who else uses it?</b> — utility agreements, permits, consumption figures</li>
+<li><b>Does this raise my electricity bill?</b> — the single most-asked question statewide; IURC filings, rate structures, who pays for interconnection</li>
+<li><b>What did the county actually agree to?</b> — zoning, abatement terms, commitments, in plain language</li>
+<li><b>What jobs are real, and when?</b> — construction vs. permanent, with the thermometer beside it</li>
+<li><b>What happens if the company leaves?</b> — the question nobody answers, and the one that drives the most fear</li>
+</ul>
+<p><b>Two rules make these trustworthy:</b> every number links to its receipt, and where the honest answer is "no one has published this," we say exactly that. <b>"We don't know yet, and here is who would have to tell us"</b> is more persuasive to a skeptical reader than a confident answer, and it also generates the public-records requests that fill the gap.</p>
+
+<h2>8 · What V1 is — and what it deliberately is not</h2>
+<p><b>V1 is one project page, one thermometer, a handful of citizen-question explainers, and authenticated evidence intake.</b> Small enough to be complete — and completeness is what makes it credible.</p>
 <table class="ledger">
 <tr><th colspan="5">What the LaPorte page looks like on day one <span class="mut">(illustrative structure — figures pending verification)</span></th></tr>
 <tr><th>Promise</th><th>Promised</th><th>By when</th><th>Independently documented</th><th>Status</th></tr>
@@ -143,10 +179,10 @@ td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
 <p class="mut">Every cell links to its receipts. Where no independent measurement exists, we say so — <b>"unverifiable" is a finding, not a gap to hide.</b> Several rows will be exactly that at launch, and publishing them honestly is what tells a skeptical reader this is a record rather than a case.</p>
 
 <h3>Defer, deliberately</h3>
-<p>The plan's own "do not build these" list is right, and I would cut further for V1: no forums, no scores, no leaderboards, no company ratings, no political commentary — <b>and also</b> no SkillDNA integration, no careers, no training surface, no statewide map, no multi-topic Learn section, no Ask interface until the corpus is large enough to answer well. A thin Ask over a small corpus makes the whole system look unreliable at exactly the moment first impressions form.</p>
+<p>The plan's own "do not build these" list is right: no forums, no scores, no leaderboards, no company ratings, no political commentary. I would also defer for V1 the statewide map, the multi-topic Learn section beyond the citizen questions above, career matching, and the Ask interface — <b>Ask especially</b>, until the corpus is large enough to answer well. A thin Ask over a small corpus makes the whole system look unreliable at exactly the moment first impressions form.</p>
 <p><b>Add one thing the plan does not have:</b> a plainly-worded <b>"How we work"</b> page — sources hierarchy, verdict scale, correction policy, right-to-respond, funding, and who we are. For a site whose only product is trust, that page is not boilerplate; it is the product's warranty, and it should ship in V1.</p>
 
-<h2>7 · Sequence</h2>
+<h2>9 · Sequence</h2>
 <table>
 <tr><th style="width:78px">Step</th><th>Work</th><th>Done when</th></tr>
 <tr><td><b>1</b></td><td><b>Corpus</b> — pull every LaPorte city/county/plan-commission record touching the project; OCR; parse roll-call votes; seal everything</td><td>The full public record of the project is searchable for the first time</td></tr>
@@ -157,10 +193,10 @@ td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
 <tr><td><b>6</b></td><td><b>Second county</b></td><td>The template proves portable — which is the actual business</td></tr>
 </table>
 
-<h2>8 · My recommendation</h2>
-<p><b>Build the LaPorte promise ledger and nothing else.</b> It is achievable in weeks on the schema that now exists, it uses the pilot's proven ingestion, and it produces something no newsroom, no company, and no county government currently has: <b>a dated, sealed, independently-measured record of what was promised and what arrived.</b></p>
-<p>Hold the platform. INformed Indiana is a good eventual shape, but every additional surface multiplies the surface area for a credibility mistake, and the flywheel cannot spin until the ledger is trusted anyway. <b>Trust is the constraint, not features.</b></p>
-<p>And keep the careers business at arm's length from the truth business — permanently. That is the single decision most likely to determine whether this thing is believed in five years.</p>
+<h2>10 · My recommendation</h2>
+<p><b>Build LaPorte as a complete, single-project education site with a live thermometer and authenticated citizen evidence intake.</b> Achievable in weeks on the schema that now exists, using the pilot's proven ingestion — and it produces the one thing nobody in this fight currently has: <b>verified good news, with receipts.</b></p>
+<p>Hold the rest of the platform. Not because the vision is wrong — it is right, and the state just said so out loud — but because <b>the second county is the proof that matters commercially</b>, and you only get to attempt it if the first one is unimpeachable. Every additional surface in V1 multiplies the chance of the mistake that costs you that.</p>
+<p>Then replicate per project. <b>Dozens of Indiana counties have paused development</b> — each pause is a community that needs exactly this, and a template that travels is the actual business. The public demonstration of PCOS is the marketing, exactly as you framed it: the site does not describe what the technology does, it <i>is</i> the technology doing it, in public, where the Commerce Secretary and Microsoft can both watch it work.</p>
 
 <p class="mut" style="margin-top:32px;padding-top:15px;border-top:1px solid var(--line)">
 Prepared by atlas3-claude · 2026-08-28 · Integrates <i>community-data-center-truth.txt</i> with the Veritas build spec and the Vigo County pilot. Schema committed: <code>engine/schema/001_core.sql</code>, <code>engine/schema/002_promise_ledger.sql</code> (22 tables). LaPorte project specifics are under active research and will be appended when verified — <b>no figures are asserted in this document.</b></p>
