@@ -1,38 +1,74 @@
-# pcos-verified-community-news
-Verified Community News powered by PrecognitionOS
+# Data Center Truth Platform
+**Verified community records for hyperscale data center projects — powered by PrecognitionOS.**
 
-## What this is
-A community news platform modeled on the hyperlocal community-news format
-(reference: [Current Publishing / youarecurrent.com](https://www.youarecurrent.com/) —
-local, positive, verifiable reporting for a defined community) — with one structural
-difference: **every factual claim we publish carries a sealed, PCOS-verified evidence
-chain.** The reader can follow any sentence back to the primary record it rests on.
+> **START HERE:** [`docs/PCOS_DATACENTER_TRUTH_HANDOFF.html`](docs/PCOS_DATACENTER_TRUTH_HANDOFF.html)
+> — the complete analysis and build handoff. Everything below is a summary of it.
 
-## The engine underneath
-The longer-term product is a PCOS-native **fact-checking engine** — applicable to
-politics, business, finance, and world events:
+## The thesis
+Companies and agencies don't lack the ability to publish good news about themselves. They lack
+**a venue where skeptics will accept it.** Rigor isn't a constraint on this business — rigor
+*is* the product. **Verified good news is the scarce commodity, and nobody is producing it.**
 
-- **Claims ledger** — every checkable claim extracted, categorized, and assigned a
-  verdict on a fixed scale: VERIFIED · CORROBORATED · UNSUPPORTED · DISPUTED · FALSE ·
-  OPINION.
-- **Source hierarchy** — primary record > official statement > on-record interview >
-  established media > social media (a post proves a claim was *made*, never that it is
-  *true*).
-- **Evidence custody** — every cited source is archived at capture time (URL, archived
-  copy, screenshot, sha256, timestamp) and sealed through PCOS custody, so the evidence
-  behind an article survives edits, deletions, and disputes.
-- **Fairness as process** — right-of-reply is a required pipeline stage, not a courtesy.
+Three facts define the opportunity:
+- Indiana's Commerce Secretary said publicly (8/27/2026) that the message about growth "is not landing."
+- ~1/3 of Indiana counties have passed ordinances, moratoriums, or outright bans.
+- The information genuinely is broken — the most-circulated Indiana megawatt figure (2,400 MW)
+  belongs to **Amazon**, not Microsoft, and water estimates for the LaPorte site span **three
+  orders of magnitude**.
 
-## Structure
-- `research/` — one directory per article: research charter/prompt, dossier, evidence
-  archive index.
-  - `article-001-steve-ellis-vigo-sheriff/` — first research project: the
-    "Holding Vigo County Accountable" Facebook page and its operator's campaign for
-    Vigo County Sheriff. See `RESEARCH_PROMPT.md` (this doc doubles as the prototype
-    of the fact-check methodology).
+## Status
+| | |
+|---|---|
+| **Engine** | ✅ Running — 22 tables on Postgres/pgvector, `engine/run_local.sh` |
+| **Evidence** | ✅ 109 min of conference audio sealed; 47-min panel **97% speaker-attributed** |
+| **Pipelines** | ✅ OCR, transcription, GPU speaker diarization |
+| **Findings** | ✅ 6 commitments loaded from sealed sources — **none published** |
+| **Public site** | ⏳ To be scoped and built (name TBD; `INformed LaPorte` rejected) |
 
-## Roadmap
-1. Article 001 research → dossier → first published article
-2. Extract the methodology from Article 001 into a reusable pipeline spec
-3. Site build (hyperlocal news front end + per-article evidence-chain view)
-4. Generalize the engine: business / finance / world-events verticals
+## What the evidence shows
+Microsoft's Director of Infrastructure & Government Affairs enumerated **five commitments** on
+the record at the ITIA Summit (8/27/2026) — pay full energy and infrastructure costs so
+residents' bills aren't affected; minimize water and *"replenish more water than we actually
+use"*; take no tax abatement; use local workers; invest in local nonprofits. Three are cleanly
+measurable. **None carries a date** — the first right-of-reply question, not an accusation.
+
+Mayor Dermody's on-stage *"we gave 15% direct to our school system"* is **congruent** with the
+city's own 3/3/2026 agreement.
+
+## The moat — six failure modes found in the field
+Name proximity · participant confusion · unlabeled speakers · character voice · deceptive
+metadata · and a **false fabrication flag** (we wrongly accused an AI of inventing a vote and
+two names that were all real). Each produced or nearly produced a confident falsehood about a
+real person. All are now blocked structurally, not by convention.
+
+Plus a confirmed one: a summarizer produced **three different budget figures from one article**.
+Figures are therefore extracted mechanically from sealed sources and never pass through an LLM.
+
+## Non-negotiables
+1. **No finding publishes without a logged right-of-reply attempt** — enforced by a database trigger.
+2. **Every number links to its receipt** (document + page, or video + timestamp).
+3. **"No independent measurement exists" is a first-class state**, not an empty value.
+4. **Sponsor firewall** — advertisers have no influence over any figure; funding is published.
+5. **Symmetry** — company-favorable and community-favorable findings both visible at launch.
+
+## Layout
+```
+engine/
+  schema/     22 tables, 3 migrations
+  pipeline/   stages.py (12 typed stages + the gate) · diarize_transcribe.py
+  seed/       laporte_seed.sql — the live commitments
+  run_local.sh
+site/laporte/ preview — COPY AND STRUCTURE REFERENCE ONLY, not visual design
+research/
+  laporte-microsoft/        commitment seed, panel findings, sealed recordings + transcripts
+  article-001-steve-ellis…/ the Vigo County pilot that produced every safeguard
+docs/         the handoff analysis
+```
+
+## For the site build team
+Read the handoff first. Two things to know going in:
+- **Build dark-only.** CyberHopeAI is dark-committed; the preview was built theme-responsive
+  and rendered white on light-preference browsers. Tokens are sampled in the handoff.
+- **The thermometer is the signature element**, and **empty gauges are the feature** — three of
+  five LaPorte lines legitimately read "no independent measurement exists," which is the
+  strongest credibility signal on the page.

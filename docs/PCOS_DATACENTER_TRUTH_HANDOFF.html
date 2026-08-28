@@ -1,0 +1,211 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Data Center Truth Platform — Complete Analysis &amp; Build Handoff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0d14;--bg2:#0f141d;--panel:#141b26;--line:#222c3a;--line2:#2e3a4b;
+ --fg:#e9eaee;--fg2:#a6b0be;--mut:#6f7d8d;--gold:#d1a84b;--gdim:rgba(209,168,75,.12);
+ --gline:rgba(209,168,75,.32);--ok:#31d296;--warn:#d9ab45;--bad:#e8776b;
+ --display:"Space Grotesk",system-ui,sans-serif;--sans:"IBM Plex Sans",system-ui,sans-serif;
+ --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15.5px/1.65 var(--sans);
+ background-image:radial-gradient(900px 480px at 12% -6%,rgba(209,168,75,.07),transparent 60%);
+ background-attachment:fixed}
+.wrap{max-width:1000px;margin:0 auto;padding:0 26px 90px}
+header{padding:52px 0 34px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(32px,5.6vw,50px);line-height:1.02;
+ letter-spacing:-.025em;margin:16px 0 12px}
+.dek{font-size:18px;color:var(--fg2);max-width:60ch;line-height:1.55;margin:0}
+.stamp{display:inline-block;margin-top:20px;font-family:var(--mono);font-size:11px;letter-spacing:.13em;
+ text-transform:uppercase;color:var(--gold);border:1px solid var(--gline);background:var(--gdim);padding:7px 13px;border-radius:4px}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(23px,3.4vw,31px);letter-spacing:-.02em;
+ margin:50px 0 10px;line-height:1.12}
+h2 .n{font-family:var(--mono);font-size:13px;color:var(--gold);letter-spacing:.1em;display:block;margin-bottom:8px;font-weight:500}
+h3{font-family:var(--display);font-weight:500;font-size:18.5px;margin:26px 0 6px}
+p{margin:12px 0;color:var(--fg2)} p.big{font-size:17.5px;color:var(--fg)}
+strong{color:var(--fg);font-weight:600}
+a{color:var(--gold)}
+code{font-family:var(--mono);font-size:12.5px;background:#0d1219;border:1px solid var(--line);padding:1.5px 6px;border-radius:4px;color:var(--fg2)}
+pre{background:#0d1219;border:1px solid var(--line);border-radius:8px;padding:14px 16px;overflow-x:auto;
+ font-family:var(--mono);font-size:12.5px;line-height:1.55;color:var(--fg2)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin:14px 0}
+th{text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+ color:var(--mut);padding:9px 10px;border-bottom:1px solid var(--line2);vertical-align:bottom;font-weight:500}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--fg2)}
+td strong{color:var(--fg)}
+.box{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--line2);
+ border-radius:8px;padding:16px 20px;margin:16px 0}
+.box.g{border-left-color:var(--gold);background:linear-gradient(160deg,rgba(209,168,75,.07),var(--panel) 55%)}
+.box.ok{border-left-color:var(--ok)} .box.bad{border-left-color:var(--bad)}
+.box h3{margin-top:0}
+.ok{color:var(--ok);font-weight:600}.warn{color:var(--warn);font-weight:600}.bad{color:var(--bad);font-weight:600}
+.mut{color:var(--mut);font-size:13px}
+ul{margin:12px 0 12px 20px;color:var(--fg2)} li{margin:7px 0}
+.grid{display:grid;gap:13px;margin:18px 0}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.card h3{margin:0 0 5px;font-size:16px}.card p{margin:5px 0 0;font-size:14px}
+.sw{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}
+.sw div{font-family:var(--mono);font-size:10.5px;padding:9px 11px;border-radius:5px;border:1px solid var(--line)}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);color:var(--mut);font-size:13px;line-height:1.7}
+</style></head><body><div class="wrap">
+
+<header>
+<div class="eyebrow">CyberHopeAI · PrecognitionOS · Complete Analysis &amp; Build Handoff</div>
+<h1>Data Center Truth Platform</h1>
+<p class="dek">Everything established, built, verified and decided — written for the team that will scope and build the public site. Includes what is already running, what the evidence shows, the design direction, and the open decisions.</p>
+<div class="stamp">v1 · 2026-08-28 · engine live · site to be built</div>
+</header>
+
+<h2><span class="n">01</span>The opportunity, in three facts</h2>
+<table>
+<tr><th style="width:32%">Fact</th><th>Why it matters</th></tr>
+<tr><td><strong>The state says its message is failing</strong></td><td>Indiana Commerce Secretary Chuck Goodrich, ITIA Summit, <strong>8/27/2026</strong>: officials "need to better communicate the benefits of growth." Stated in public, unprompted, by the buyer.</td></tr>
+<tr><td><strong>The market is closing anyway</strong></td><td>Roughly a third of Indiana counties have acted — <strong>~11 with ordinances, 17+ moratoriums, 2 outright bans</strong> (Marshall, Cass). Indianapolis paused through 2027.</td></tr>
+<tr><td><strong>The information really is broken</strong></td><td>The most-circulated Indiana megawatt figure — <strong>2,400 MW — is Amazon's</strong>, from an IURC order that contains zero mentions of LaPorte or Microsoft. Water estimates for the LaPorte site span <strong>three orders of magnitude</strong>. No MW figure for that site exists in any government record.</td></tr>
+</table>
+<div class="box g">
+<h3>The thesis</h3>
+<p style="margin-bottom:0">Companies and agencies do not lack the ability to publish good news about themselves. They lack <strong>a venue where skeptics will accept it</strong>. Rigor is not a constraint on this business — <strong>rigor is the product</strong>. Verified good news is the scarce commodity, and nobody is producing it.</p>
+</div>
+
+<h2><span class="n">02</span>What is already built and running</h2>
+<div class="grid g3">
+<div class="card"><h3 class="ok">Engine · live</h3><p>22-table Postgres schema, loaded and running on pgvector. One-command bring-up.</p></div>
+<div class="card"><h3 class="ok">Evidence · sealed</h3><p>109 min of conference audio, 5 recordings, sha256 + provenance. 47-min panel <strong>97% speaker-attributed</strong>.</p></div>
+<div class="card"><h3 class="ok">Pipelines · working</h3><p>OCR (proved on 136 scanned pages), transcription, and speaker diarization on GPU.</p></div>
+</div>
+<pre>$ engine/run_local.sh
+
+ promisor    | metric_label                                    | target | dated
+-------------+-------------------------------------------------+--------+------
+ Microsoft   | Share of property-tax revenue to LaPorte schools |    15% |  yes
+ Microsoft   | Tax abatement sought                            |     $0 |  no
+ Microsoft   | Water replenished vs consumed (water positive)  |   100% |  no
+ Microsoft   | Residential bills not increased by DC load      |      — |  no
+ Microsoft   | Local workers and labor                         |      — |  no
+ Microsoft   | Investment in local nonprofits                  |      — |  no</pre>
+<p>Six real commitments, each traced to a sealed source — five to a public panel recording at <em>video + timestamp</em>, one to the city's own agreement. <strong>Five of six carry no stated deadline</strong>, recorded as <code>deadline_stated = false</code>.</p>
+<div class="box ok">
+<h3>The fairness gate is enforced in the database</h3>
+<pre style="margin:8px 0 0">$ UPDATE publication SET published_at = now() …
+<span class="bad">ERROR: publish blocked: 1 finding(s) have no right-of-reply record</span></pre>
+</div>
+
+<h2><span class="n">03</span>What the evidence already shows</h2>
+<h3>Microsoft made five commitments on the record</h3>
+<p>At the ITIA Summit (8/27/2026), Microsoft's Director of Infrastructure &amp; Government Affairs enumerated them on stage, tying them to the January 2026 Brad Smith announcement. Speaker confirmed by two independent anchors; 0:14:09–0:15:12.</p>
+<table>
+<tr><th>#</th><th>Commitment</th><th style="width:26%">Measurable?</th></tr>
+<tr><td>1</td><td>Pay for energy and infrastructure — "residents would not have high electricity bills because of our base and consumption usage"</td><td class="ok">Yes — utility filings</td></tr>
+<tr><td>2</td><td>Minimize water use and <strong>"replenish more water than we actually use"</strong></td><td class="ok">Yes — the strongest kind of promise: falsifiable, and it cuts against the dominant local fear</td></tr>
+<tr><td>3</td><td>"We don't want to take a tax abatement" — revenue goes to hospitals, schools, public safety</td><td class="ok">Yes — assessor + city records</td></tr>
+<tr><td>4</td><td>Use workers and labor from the community, including student workers</td><td class="warn">Needs a defined metric</td></tr>
+<tr><td>5</td><td>Educate on AI infrastructure; invest in local nonprofits</td><td class="warn">Needs named amounts</td></tr>
+</table>
+<p class="mut">Closing: <em>"So those are five commitments to the community… and we [will] stick to that."</em> <strong>None carries a date</strong> — which is the first, entirely fair question for right-of-reply, not an accusation.</p>
+
+<h3>A verified positive, and a correction worth publishing</h3>
+<div class="grid g2">
+<div class="box ok"><h3>Congruent</h3><p style="margin-bottom:0">Mayor Dermody on stage: <em>"we gave 15% direct to our school system"</em> — matches LaPorte's own 3/3/2026 agreement exactly. Microsoft also gave up a 40-year personal-property exemption worth up to $100M in PILOT terms and now pays full property tax. <strong>Launch with this.</strong></p></div>
+<div class="box g"><h3>The correction</h3><p style="margin-bottom:0">The 2,400 MW figure circulating in Indiana is <strong>Amazon's</strong>. The "538 MW" figure attributed to Microsoft LaPorte appears only on aggregator sites <strong>with no cited source</strong>. This is probably the single most useful thing the site can tell this community — and it helps Microsoft.</p></div>
+</div>
+
+<h2><span class="n">04</span>The moat: six failure modes, found in the field</h2>
+<p>Each of these produced — or nearly produced — a confident, quotable falsehood about a real person. All are now blocked structurally.</p>
+<table>
+<tr><th style="width:20%">Failure</th><th>What actually happened</th><th style="width:22%">Blocked by</th></tr>
+<tr><td><strong>Name proximity</strong></td><td>A threat allegation sat four words from our subject. He did not hold that office on that date.</td><td><code>role_tenure</code></td></tr>
+<tr><td><strong>Participant confusion</strong></td><td>A physical altercation adjacent to him in the record. He was not involved.</td><td>participant resolution</td></tr>
+<tr><td><strong>Unlabeled speaker</strong></td><td>"<strong>I voted against</strong> a 0.75 tax" — on his own channel, spoken by his interviewee.</td><td>diarization + speaker gate</td></tr>
+<tr><td><strong>Character voice</strong></td><td>He performed a two-role skit alone. The extracted position was the <strong>exact inverse</strong> of his real one. Diarization does not catch this.</td><td>rhetorical-mode gate</td></tr>
+<tr><td><strong>Metadata deceit</strong></td><td>Filename, timestamp and agenda all pointed to the Commerce Secretary. The audio was a legislator.</td><td>content-confirmed mapping</td></tr>
+<tr><td><strong>False fabrication flag</strong></td><td><strong>We wrongly accused an AI</strong> of inventing a vote and two names — all three turned out real and correctly placed.</td><td>a fabrication finding is itself a claim</td></tr>
+</table>
+<p class="mut">Plus a confirmed one: an AI summarizer produced <strong>three different budget figures from a single article</strong>. Hence the hard rule — figures are extracted mechanically from the sealed source and never pass through a summarizer.</p>
+
+<h2><span class="n">05</span>Design direction for the site build</h2>
+<div class="box bad">
+<h3>What went wrong in my preview — read this first</h3>
+<p style="margin-bottom:0">I built the page <strong>theme-responsive</strong> (dark + light). CyberHopeAI is <strong>dark-committed</strong>. On a browser set to light preference it rendered white and looked nothing like the brand. <strong>Build dark-only.</strong> No light variant, no <code>prefers-color-scheme</code> fallback. The corrected preview is now forced dark and is in the repo as a content reference — <strong>treat it as copy and structure, not as visual design.</strong></p>
+</div>
+<h3>Brand tokens, sampled from the live cyberhopeai.com</h3>
+<div class="sw">
+<div style="background:#0a0d14;color:#e9eaee">#0a0d14 bg</div>
+<div style="background:#141b26;color:#e9eaee">#141b26 panel</div>
+<div style="background:#222c3a;color:#e9eaee">#222c3a line</div>
+<div style="background:#d1a84b;color:#0a0d14">#d1a84b gold</div>
+<div style="background:#31d296;color:#0a0d14">#31d296 verified</div>
+<div style="background:#e9eaee;color:#0a0d14">#e9eaee text</div>
+</div>
+<p><strong>Type:</strong> Space Grotesk 700 (display) · IBM Plex Sans (body) · IBM Plex Mono (labels, data, eyebrows).<br>
+<strong>Voice:</strong> short and declarative, matching "Evidence. Not Excuses."</p>
+<h3>The signature element</h3>
+<p><strong>The thermometer.</strong> Each commitment is a horizontal gauge that fills as it is independently confirmed. <strong>Empty gauges are the feature, not a gap</strong> — three of five LaPorte lines legitimately read "no independent measurement exists," and that honesty is the strongest credibility signal on the page. Every figure needs a visible <strong>receipt affordance</strong> (document + page, or video + timestamp) — that interaction is the product.</p>
+
+<h2><span class="n">06</span>Naming — direction, not a decision</h2>
+<p><strong>"INformed LaPorte" is rejected</strong> — too generic, too Indiana-locked, not data-center-specific. The brief is: <em>data-center focused, works per-project and nationally, tech-credible, not activist.</em></p>
+<table>
+<tr><th style="width:24%">Direction</th><th>Examples</th><th>Read</th></tr>
+<tr><td><strong>Ground truth</strong></td><td>Ground Truth · GroundTruth DC</td><td>ML term for verified reference data <em>and</em> literally about land. Tech-credible, travels nationally, non-partisan.</td></tr>
+<tr><td><strong>The receipt</strong></td><td>Receipts · Datacenter Receipts</td><td>Matches "show me the receipts." Memorable; possibly too casual for officials.</td></tr>
+<tr><td><strong>Infrastructure record</strong></td><td>The Hyperscale Record · Datacenter Record</td><td>Institutional, neutral, obviously about this sector.</td></tr>
+<tr><td><strong>Measurement</strong></td><td>Baseline · Meridian · The Gauge</td><td>Ties to the thermometer; sounds like instrumentation, not journalism.</td></tr>
+</table>
+<div class="box">
+<p style="margin:0"><strong>Two structural recommendations regardless of the name.</strong> First, keep <strong>two brands</strong>: a public-facing site name, and <strong>PrecognitionOS</strong> as the engine you license to enterprise — different buyers, and it reinforces the firewall. Second, the name should <strong>survive leaving Indiana</strong>: the second county is what proves the template travels, and that is the actual business.</p>
+</div>
+
+<h2><span class="n">07</span>Site scope for the build team</h2>
+<div class="grid g2">
+<div class="card"><h3>Must ship in V1</h3><p>Project page · the thermometer · receipt view on every figure · "How we work" · "Why we built this" · "Who we are" with funding disclosure · evidence submission · citizen-question explainers (water, electricity, zoning, jobs, "what if the company leaves")</p></div>
+<div class="card"><h3>Explicitly deferred</h3><p>Comment sections · ratings or scores · company leaderboards · opinion content · statewide map · career/training matching · the "Ask" interface (until the corpus can answer well — a thin Ask makes the whole system look unreliable)</p></div>
+</div>
+<h3>Non-negotiables the site must honor</h3>
+<ul>
+<li><strong>No finding publishes without a logged right-of-reply attempt.</strong> Enforced in the database; the front end must respect it.</li>
+<li><strong>Every number links to its receipt.</strong> If there is no source, the number does not appear.</li>
+<li><strong>"No independent measurement exists" is a first-class display state</strong>, not an error or an empty div.</li>
+<li><strong>Sponsor firewall, stated publicly.</strong> Advertisers have no influence over any figure; a funding page names all of them; ad units look visually distinct from evidence.</li>
+<li><strong>Symmetry.</strong> Company-favorable and community-favorable findings both visible at launch.</li>
+</ul>
+
+<h2><span class="n">08</span>Open decisions for Rick</h2>
+<table>
+<tr><th style="width:26%">Decision</th><th>Recommendation</th></tr>
+<tr><td><strong>Name + domain</strong></td><td>Data-center-focused, nationally portable. Verify availability before committing.</td></tr>
+<tr><td><strong>One county or several</strong></td><td><strong>One, done completely.</strong> The second county proves the template — you only get to attempt it if the first is unimpeachable.</td></tr>
+<tr><td><strong>Charlie's bio scope</strong></td><td>I published credentials relevant to <em>this</em> work (Indiana attorney, 40 yrs government affairs, Counsel to the Majority in the Indiana House) and left board affiliations to his LinkedIn. On a site whose entire asset is credibility with people who dislike its findings, political affiliations invite a framing attack regardless of the work's quality. <strong>Ask Charlie — he will read Indiana better than either of us.</strong></td></tr>
+<tr><td><strong>Approach Microsoft before or after launch</strong></td><td><strong>Before.</strong> Right-of-reply is required anyway, and arriving with "we are publishing your five commitments and want your dates" is a far better first conversation than arriving after.</td></tr>
+<tr><td><strong>Legal readiness</strong></td><td>Media-liability insurance and a standing media-law attorney <strong>in V1, not later.</strong> Six failure modes in a few days of work on two subjects.</td></tr>
+</table>
+
+<h2><span class="n">09</span>Immediate next work</h2>
+<table>
+<tr><td style="width:34px">1</td><td>Seal the LaPorte primary records — city council, RDC, plan commission, county commissioners, the adopted ordinance, IEDC agreement, IURC Cause 46183. Most local minutes are scanned images requiring OCR.</td></tr>
+<tr><td>2</td><td>Draft right-of-reply letters to <strong>Microsoft</strong> (dates and metrics for the five commitments) and <strong>the mayor</strong> (the $6M averted-referendum claim; three different construction-workforce figures).</td></tr>
+<tr><td>3</td><td>Resolve the megawatt and water questions properly — NIPSCO/IURC filings and the city water utility, in writing.</td></tr>
+<tr><td>4</td><td>Publish the <strong>Amazon/Microsoft megawatt correction</strong> as launch content.</td></tr>
+<tr><td>5</td><td>Diarize the remaining three recordings (VC panel, K-12/AI panel, lawmaker remarks).</td></tr>
+</table>
+
+<h2><span class="n">10</span>Where everything lives</h2>
+<table>
+<tr><td><code>engine/schema/</code></td><td>22 tables across 3 migrations — subjects, role tenure, custody, renditions, utterances with both gates, claims, evidence, verdicts, congruence, meetings/votes, commitments, outcomes, submissions, versioned verification records, right-of-reply, publish trigger</td></tr>
+<tr><td><code>engine/pipeline/</code></td><td><code>stages.py</code> (12 typed stage contracts + the gate, tested against the real failures) · <code>diarize_transcribe.py</code> (working, GPU)</td></tr>
+<tr><td><code>engine/seed/</code></td><td><code>laporte_seed.sql</code> — the six live commitments</td></tr>
+<tr><td><code>engine/run_local.sh</code></td><td>One-command bring-up</td></tr>
+<tr><td><code>site/laporte/index.html</code></td><td>Preview — <strong>copy and structure reference only</strong></td></tr>
+<tr><td><code>research/laporte-microsoft/</code></td><td>Commitment seed from primary records · panel findings · sealed recordings, transcripts, custody index, session roster</td></tr>
+<tr><td><code>research/article-001…/</code></td><td>The Vigo County pilot that proved the method and produced every safeguard</td></tr>
+</table>
+
+<footer>
+Prepared by atlas3-claude · 2026-08-28 · Repo <code>cyberhope-ai/pcos-verified-community-news</code><br>
+Supersedes the earlier engine design, build spec, LaPorte strategy and master plan documents, which remain available as working history.<br>
+Nothing in this analysis has been published. No finding has been put to any subject for response.
+</footer>
+</div></body></html>
