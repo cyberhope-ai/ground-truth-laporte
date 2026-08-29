@@ -8,6 +8,7 @@ import {
   createSubmission, listSubmissionsByUser, listAllSubmissions, updateSubmissionStatus,
   listVerifiedSubmissions,
   listMeetings, getMeetingBySlug, listMeetingCommitments, seedMeeting,
+  listAllUsers, setUserRole, userStats,
 } from "./db";
 import { storagePut } from "./storage";
 import { TRPCError } from "@trpc/server";
@@ -41,6 +42,16 @@ export const appRouter = router({
         success: true,
       } as const;
     }),
+  }),
+
+  // Admin backend — citizen management (admin-gated). Submission moderation lives
+  // under the `submissions` router (listAll / setStatus), also admin-gated.
+  admin: router({
+    stats: adminProcedure.query(() => userStats()),
+    users: adminProcedure.query(() => listAllUsers()),
+    setRole: adminProcedure
+      .input(z.object({ id: z.number().int(), role: z.enum(["user", "admin"]) }))
+      .mutation(({ input }) => setUserRole(input.id, input.role)),
   }),
 
   /* ── Evidence submissions — authenticated, quarantined by default ── */

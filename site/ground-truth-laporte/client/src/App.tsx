@@ -16,6 +16,7 @@ import Corrections from "./pages/Corrections";
 import AdminReview from "./pages/AdminReview";
 import Vault from "./pages/Vault";
 import OAuthReturn from "./pages/OAuthReturn";
+import Admin from "./pages/Admin";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/corrections" component={Corrections} />
       <Route path={"/vault"} component={Vault} />
       <Route path={"/admin/review"} component={AdminReview} />
+      <Route path={"/admin"} component={Admin} />
       <Route path={"/how-we-work"} component={HowWeWork} />
       <Route path={"/submit"} component={Submit} />
       <Route path={"/404"} component={NotFound} />

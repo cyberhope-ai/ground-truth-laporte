@@ -177,11 +177,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             )}
             {isAuthenticated && user?.role === "admin" && (
               <Link
-                href="/admin/review"
+                href="/admin"
                 className="whitespace-nowrap text-[13.5px] font-medium tracking-tight px-3 py-2 rounded-md border transition-colors hover:border-[var(--gt-gold-line)]"
                 style={{ fontFamily: "var(--font-display)", color: "var(--gt-gold)", borderColor: "var(--gt-gold-line)" }}
               >
-                Review
+                Admin
               </Link>
             )}
           </div>

@@ -129,6 +129,37 @@ export async function createPasswordUser(input: {
   return openId;
 }
 
+/* ── Admin: citizen management (never selects passwordHash) ── */
+export async function listAllUsers() {
+  const db = await getDb();
+  if (!db) return [];
+  return db
+    .select({
+      id: users.id, name: users.name, email: users.email,
+      loginMethod: users.loginMethod, role: users.role,
+      createdAt: users.createdAt, lastSignedIn: users.lastSignedIn,
+    })
+    .from(users)
+    .orderBy(desc(users.createdAt));
+}
+
+export async function setUserRole(id: number, role: "user" | "admin") {
+  const db = await getDb();
+  if (!db) return;
+  await db.update(users).set({ role }).where(eq(users.id, id));
+}
+
+export async function userStats() {
+  const all = await listAllUsers();
+  const byMethod: Record<string, number> = {};
+  let admins = 0;
+  for (const u of all) {
+    byMethod[u.loginMethod || "unknown"] = (byMethod[u.loginMethod || "unknown"] || 0) + 1;
+    if (u.role === "admin") admins++;
+  }
+  return { total: all.length, admins, byMethod };
+}
+
 /* ── Evidence submissions (quarantine-by-default intake) ── */
 
 export async function createSubmission(row: InsertSubmission) {
