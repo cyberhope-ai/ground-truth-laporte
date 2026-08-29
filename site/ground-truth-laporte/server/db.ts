@@ -94,6 +94,72 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
+export async function getUserByEmail(email: string) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db
+    .select()
+    .from(users)
+    .where(eq(users.email, email.trim().toLowerCase()))
+    .limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+/** Create an email/password citizen. Returns the new user's openId, or null if the
+ *  email is already registered (any login method). */
+export async function createPasswordUser(input: {
+  email: string;
+  name: string;
+  passwordHash: string;
+}): Promise<string | null> {
+  const db = await getDb();
+  if (!db) throw new Error("database not available");
+  const email = input.email.trim().toLowerCase();
+  const existing = await getUserByEmail(email);
+  if (existing) return null; // email taken
+  const openId = "pw:" + email.slice(0, 60);
+  await db.insert(users).values({
+    openId,
+    name: input.name || email.split("@")[0],
+    email,
+    loginMethod: "password",
+    passwordHash: input.passwordHash,
+    lastSignedIn: new Date(),
+  });
+  return openId;
+}
+
+/* ── Admin: citizen management (never selects passwordHash) ── */
+export async function listAllUsers() {
+  const db = await getDb();
+  if (!db) return [];
+  return db
+    .select({
+      id: users.id, name: users.name, email: users.email,
+      loginMethod: users.loginMethod, role: users.role,
+      createdAt: users.createdAt, lastSignedIn: users.lastSignedIn,
+    })
+    .from(users)
+    .orderBy(desc(users.createdAt));
+}
+
+export async function setUserRole(id: number, role: "user" | "admin") {
+  const db = await getDb();
+  if (!db) return;
+  await db.update(users).set({ role }).where(eq(users.id, id));
+}
+
+export async function userStats() {
+  const all = await listAllUsers();
+  const byMethod: Record<string, number> = {};
+  let admins = 0;
+  for (const u of all) {
+    byMethod[u.loginMethod || "unknown"] = (byMethod[u.loginMethod || "unknown"] || 0) + 1;
+    if (u.role === "admin") admins++;
+  }
+  return { total: all.length, admins, byMethod };
+}
+
 /* ── Evidence submissions (quarantine-by-default intake) ── */
 
 export async function createSubmission(row: InsertSubmission) {

@@ -8,7 +8,10 @@ import {
   createSubmission, listSubmissionsByUser, listAllSubmissions, updateSubmissionStatus,
   listVerifiedSubmissions,
   listMeetings, getMeetingBySlug, listMeetingCommitments, seedMeeting,
+  listAllUsers, setUserRole, userStats,
 } from "./db";
+import { search, corpusSize } from "./search";
+import { groundedChat } from "./chat";
 import { storagePut } from "./storage";
 import { TRPCError } from "@trpc/server";
 import { invokeLLM } from "./_core/llm";
@@ -41,6 +44,39 @@ export const appRouter = router({
         success: true,
       } as const;
     }),
+  }),
+
+  // Sitewide search — one corpus over all static + DB content. Public read.
+  // The AI agent + phone line reuse the same server-side search() for retrieval.
+  search: router({
+    query: publicProcedure
+      .input(z.object({ q: z.string().max(200) }))
+      .query(({ input }) => search(input.q, 40)),
+    size: publicProcedure.query(() => corpusSize()),
+  }),
+
+  // On-site chat agent — registered-members-only. Grounded in the sitewide
+  // search corpus (RAG) and answered by our own Azure OpenAI. protectedProcedure
+  // gates it to signed-in members; anonymous visitors get FORBIDDEN.
+  chat: router({
+    send: protectedProcedure
+      .input(z.object({
+        messages: z.array(z.object({
+          role: z.enum(["user", "assistant"]),
+          content: z.string().max(4000),
+        })).min(1).max(20),
+      }))
+      .mutation(({ input }) => groundedChat(input.messages)),
+  }),
+
+  // Admin backend — citizen management (admin-gated). Submission moderation lives
+  // under the `submissions` router (listAll / setStatus), also admin-gated.
+  admin: router({
+    stats: adminProcedure.query(() => userStats()),
+    users: adminProcedure.query(() => listAllUsers()),
+    setRole: adminProcedure
+      .input(z.object({ id: z.number().int(), role: z.enum(["user", "admin"]) }))
+      .mutation(({ input }) => setUserRole(input.id, input.role)),
   }),
 
   /* ── Evidence submissions — authenticated, quarantined by default ── */

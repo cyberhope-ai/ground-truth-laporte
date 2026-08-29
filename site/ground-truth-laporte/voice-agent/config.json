@@ -1,0 +1,37 @@
+{
+  "project": "Ground Truth LaPorte — Phone Information Line",
+  "status": "LIVE",
+  "built": "2026-08-29",
+  "phone": {
+    "number": "+12192583479",
+    "display": "(219) 258-3479",
+    "locality": "La Porte, Indiana (219 area code)",
+    "provider": "twilio",
+    "twilio_account": "CyberHopeAI (shared nonprofit account, AC64cb…)",
+    "twilio_pn_sid": "PN630ba343c7668a1f8d4c3855c455a025",
+    "voice_url": "https://api.elevenlabs.io/twilio/inbound_call"
+  },
+  "elevenlabs": {
+    "agent_id": "agent_3601m179vt1gfn1t94nn5mhaq4f6",
+    "agent_name": "Ground Truth LaPorte — Information Line",
+    "phone_number_id": "phnum_1201m17a02bzek6bym2j3n9z1hzh",
+    "llm": "gpt-4o-mini",
+    "temperature": 0.3,
+    "voice_id": "hpp4J3VqNfWAUOO0d1Us",
+    "voice_name": "Bella — Professional, Bright, Warm (American, informative/educational)",
+    "tts_model": "eleven_turbo_v2",
+    "language": "en",
+    "knowledge_base": {
+      "id": "DeQMhznl8Zeuq2xn32At",
+      "name": "Ground Truth LaPorte — Sealed Public Record",
+      "type": "file",
+      "source": "voice-agent/knowledge/laporte-record.md (generated from client/src/lib/data.ts)",
+      "rag": {
+        "enabled": true,
+        "embedding_model": "multilingual_e5_large_instruct",
+        "indexed": true
+      }
+    }
+  },
+  "notes": "Secrets (ElevenLabs + Twilio keys) live only in ~/.pcos-secrets/, never in this repo. Edit the agent live at ElevenLabs dashboard -> Conversational AI -> this agent, or regenerate the knowledge base with `npx tsx voice-agent/gen-knowledge.ts > voice-agent/knowledge/laporte-record.md` and re-upload."
+}

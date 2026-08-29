@@ -159,6 +159,13 @@
       radial-gradient(700px 420px at 92% 4%, rgba(49, 210, 150, 0.05), transparent 62%);
     background-attachment: fixed;
   }
+  /* Every heading is bold, tight-tracked Space Grotesk — the cyberhopeai.com display
+     signature (a bolder, more stylized sans). Components can still override per-heading. */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),

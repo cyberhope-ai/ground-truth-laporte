@@ -15,12 +15,18 @@ import Meetings from "./pages/Meetings";
 import Corrections from "./pages/Corrections";
 import AdminReview from "./pages/AdminReview";
 import Vault from "./pages/Vault";
+import OAuthReturn from "./pages/OAuthReturn";
+import Admin from "./pages/Admin";
+import Search from "./pages/Search";
+import { ProvenanceProvider } from "./lib/provenance";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/oauth-return"} component={OAuthReturn} />
+      <Route path={"/search"} component={Search} />
       <Route path={"/tracker"} component={Tracker} />
       <Route path={"/learn"} component={Learn} />
       <Route path={"/careers"} component={Careers} />
@@ -29,6 +35,7 @@ function Router() {
       <Route path="/corrections" component={Corrections} />
       <Route path={"/vault"} component={Vault} />
       <Route path={"/admin/review"} component={AdminReview} />
+      <Route path={"/admin"} component={Admin} />
       <Route path={"/how-we-work"} component={HowWeWork} />
       <Route path={"/submit"} component={Submit} />
       <Route path={"/404"} component={NotFound} />
@@ -52,7 +59,9 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <ProvenanceProvider>
+            <Router />
+          </ProvenanceProvider>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

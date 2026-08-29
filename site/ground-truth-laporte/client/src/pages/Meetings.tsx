@@ -5,6 +5,7 @@
   questions. Data is served from the database via tRPC; the transcript for
   the ITIA panel is the sealed, speaker-attributed record.
 */
+import { ProvenanceRow } from "@/lib/provenance";
 import Layout from "@/components/Layout";
 import { Eyebrow, H2, Reveal } from "@/components/Section";
 import { trpc } from "@/lib/trpc";
@@ -580,7 +581,7 @@ export default function Meetings() {
                         {d?.transcript && (
                           <div className="mt-7">
                             <div className="flex items-center justify-between mb-3">
-                              <div className="flex items-center gap-2">
+                              <div className="flex items-center gap-2 flex-wrap">
                                 <FileText size={14} style={{ color: "var(--gt-verify)" }} />
                                 <span
                                   className="text-[10.5px] tracking-[0.14em] uppercase"
@@ -588,6 +589,7 @@ export default function Meetings() {
                                 >
                                   Sealed transcript · speaker-attributed
                                 </span>
+                                <ProvenanceRow size="xs" kinds={["sealed", "speaker", "chain"]} />
                               </div>
                               <button
                                 onClick={() => summarizeMut.mutate({ slug: m.slug })}

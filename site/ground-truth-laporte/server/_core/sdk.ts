@@ -316,7 +316,8 @@ class SDKServer {
       lastSignedIn: signedInAt,
     });
 
-    return user;
+    // Never expose the password hash to the client (ctx.user flows to auth.me etc.).
+    return { ...user, passwordHash: null } as AuthenticatedUser;
   }
 }
 

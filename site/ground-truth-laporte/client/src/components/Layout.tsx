@@ -4,22 +4,28 @@
 */
 import { Link, useLocation } from "wouter";
 import { useEffect, useState } from "react";
-import { Menu, X, LogIn, LogOut } from "lucide-react";
+import { Menu, X, LogIn, LogOut, ChevronDown, Search } from "lucide-react";
 import { useAuth } from "@/_core/hooks/useAuth";
-import { startLogin } from "@/const";
+import AuthModal from "./AuthModal";
+import ChatWidget from "./ChatWidget";
+import { TechViewToggle } from "@/lib/provenance";
 
-const NAV = [
-  { href: "/", label: "The Record" },
+// The logo links home ("The Record"), so it isn't repeated as a nav item.
+// A tight primary set keeps the bar clean (never wraps); the rest live under "More".
+const PRIMARY = [
   { href: "/tracker", label: "Tracker" },
-  { href: "/learn", label: "Learn" },
-  { href: "/careers", label: "Careers & Training" },
-  { href: "/ask", label: "Ask" },
   { href: "/meetings", label: "Meetings" },
   { href: "/corrections", label: "Corrections" },
-  { href: "/vault", label: "Vault" },
+  { href: "/learn", label: "Learn" },
   { href: "/how-we-work", label: "How We Work" },
-  { href: "/submit", label: "Submit Evidence" },
 ];
+const MORE = [
+  { href: "/", label: "The Record" },
+  { href: "/ask", label: "Ask the Record" },
+  { href: "/vault", label: "Evidence Vault" },
+  { href: "/careers", label: "Careers & Training" },
+];
+const NAV = [...PRIMARY, ...MORE.filter((m) => m.href !== "/")];
 
 export function Logo({ size = 34 }: { size?: number }) {
   return (
@@ -37,7 +43,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const { user, isAuthenticated, logout } = useAuth();
+  const [moreOpen, setMoreOpen] = useState(false);
+  const [authOpen, setAuthOpen] = useState(false);
+  const { user, isAuthenticated, logout, refresh } = useAuth();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -57,8 +65,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         className="sticky top-0 z-50 border-b transition-colors duration-300"
         style={{
           borderColor: "var(--gt-line)",
-          background: scrolled ? "rgba(10,13,20,.92)" : "rgba(10,13,20,.75)",
-          backdropFilter: "blur(12px)",
+          background: scrolled ? "rgba(10,13,20,.95)" : "rgba(10,13,20,.82)",
+          backdropFilter: "blur(24px)",
+          WebkitBackdropFilter: "blur(24px)",
         }}
       >
         <div className="max-w-[1120px] mx-auto px-5 md:px-7 flex items-center justify-between gap-4 py-3">
@@ -72,7 +81,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 La Porte · Indiana
               </span>
               <span
-                className="block text-[17px] font-bold tracking-tight mt-1"
+                className="block text-[19px] font-bold tracking-[-0.02em] mt-1"
                 style={{ fontFamily: "var(--font-display)", color: "var(--gt-fg)" }}
               >
                 Ground<span style={{ color: "var(--gt-gold)" }}>Truth</span>
@@ -80,56 +89,110 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </span>
           </Link>
 
-          <div className="hidden lg:flex items-center gap-6">
-            {NAV.map((n) => (
+          <div className="hidden lg:flex items-center gap-7">
+            {PRIMARY.map((n) => (
               <Link
                 key={n.href}
                 href={n.href}
-                className="text-[13.5px] transition-colors duration-200"
+                className="whitespace-nowrap text-[14.5px] tracking-tight transition-colors duration-200 hover:text-[var(--gt-gold)]"
                 style={{
-                  color: location === n.href ? "var(--gt-gold)" : "var(--gt-fg2)",
-                  fontWeight: location === n.href ? 600 : 400,
+                  fontFamily: "var(--font-display)",
+                  color: location === n.href ? "var(--gt-gold)" : "var(--gt-fg)",
+                  fontWeight: location === n.href ? 700 : 500,
                 }}
               >
                 {n.label}
               </Link>
             ))}
+
+            <div
+              className="relative"
+              onMouseEnter={() => setMoreOpen(true)}
+              onMouseLeave={() => setMoreOpen(false)}
+            >
+              <button
+                className="flex items-center gap-1 whitespace-nowrap text-[14.5px] tracking-tight transition-colors hover:text-[var(--gt-gold)]"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontWeight: 500,
+                  color: MORE.some((m) => m.href === location) ? "var(--gt-gold)" : "var(--gt-fg)",
+                }}
+              >
+                More
+                <ChevronDown
+                  size={15}
+                  style={{ opacity: 0.7, transform: moreOpen ? "rotate(180deg)" : "none", transition: "transform .2s" }}
+                />
+              </button>
+              {moreOpen && (
+                <div className="absolute right-0 top-full pt-3 z-50">
+                  <div
+                    className="min-w-[210px] rounded-lg border py-1.5 shadow-2xl"
+                    style={{ borderColor: "var(--gt-line2)", background: "rgba(15,20,29,.98)", backdropFilter: "blur(20px)" }}
+                  >
+                    {MORE.map((m) => (
+                      <Link
+                        key={m.href}
+                        href={m.href}
+                        className="block px-4 py-2.5 text-[14px] tracking-tight transition-colors hover:bg-[var(--gt-gold-dim)]"
+                        style={{
+                          fontFamily: "var(--font-display)",
+                          fontWeight: 500,
+                          color: location === m.href ? "var(--gt-gold)" : "var(--gt-fg2)",
+                        }}
+                      >
+                        {m.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <Link
+              href="/search"
+              title="Search the whole site"
+              className="flex items-center transition-colors hover:text-[var(--gt-gold)]"
+              style={{ color: "var(--gt-fg2)" }}
+            >
+              <Search size={17} />
+            </Link>
+
+            <span className="w-px h-5 self-center" style={{ background: "var(--gt-line2)" }} />
+
             <Link
               href="/submit"
-              className="text-[12px] font-medium tracking-[0.1em] uppercase px-4 py-2 rounded transition-transform duration-150 active:scale-[0.97]"
-              style={{
-                fontFamily: "var(--font-mono)",
-                color: "#0a0d14",
-                background: "var(--gt-gold)",
-              }}
+              className="whitespace-nowrap text-[13.5px] font-semibold tracking-tight px-4 py-2 rounded-md transition-transform duration-150 active:scale-[0.97]"
+              style={{ fontFamily: "var(--font-display)", color: "#0a0d14", background: "var(--gt-gold)" }}
             >
-              Contribute
+              Submit Evidence
             </Link>
+
             {isAuthenticated ? (
               <button
                 onClick={() => logout()}
                 title={`Signed in as ${user?.name || user?.email || "contributor"} — click to sign out`}
-                className="flex items-center gap-1.5 text-[10.5px] tracking-[0.08em] uppercase px-3 py-2 rounded border transition-colors hover:border-[var(--gt-gold-line)]"
-                style={{ fontFamily: "var(--font-mono)", color: "var(--gt-fg2)", borderColor: "var(--gt-line2)" }}
+                className="flex items-center gap-1.5 whitespace-nowrap text-[13.5px] font-medium tracking-tight px-3.5 py-2 rounded-md border transition-colors hover:border-[var(--gt-gold-line)]"
+                style={{ fontFamily: "var(--font-display)", color: "var(--gt-fg2)", borderColor: "var(--gt-line2)" }}
               >
-                <LogOut size={12} /> {user?.name?.split(" ")[0] || "Account"}
+                <LogOut size={14} /> {user?.name?.split(" ")[0] || "Account"}
               </button>
             ) : (
               <button
-                onClick={() => startLogin()}
-                className="flex items-center gap-1.5 text-[10.5px] tracking-[0.08em] uppercase px-3 py-2 rounded border transition-colors hover:border-[var(--gt-gold-line)]"
-                style={{ fontFamily: "var(--font-mono)", color: "var(--gt-fg2)", borderColor: "var(--gt-line2)" }}
+                onClick={() => setAuthOpen(true)}
+                className="flex items-center gap-1.5 whitespace-nowrap text-[13.5px] font-medium tracking-tight px-3.5 py-2 rounded-md border transition-colors hover:border-[var(--gt-gold-line)]"
+                style={{ fontFamily: "var(--font-display)", color: "var(--gt-fg)", borderColor: "var(--gt-line2)" }}
               >
-                <LogIn size={12} /> Sign in
+                <LogIn size={14} /> Sign In
               </button>
             )}
             {isAuthenticated && user?.role === "admin" && (
               <Link
-                href="/admin/review"
-                className="flex items-center gap-1.5 text-[10.5px] tracking-[0.08em] uppercase px-3 py-2 rounded border transition-colors hover:border-[var(--gt-gold-line)]"
-                style={{ fontFamily: "var(--font-mono)", color: "var(--gt-gold)", borderColor: "var(--gt-gold-line)" }}
+                href="/admin"
+                className="whitespace-nowrap text-[13.5px] font-medium tracking-tight px-3 py-2 rounded-md border transition-colors hover:border-[var(--gt-gold-line)]"
+                style={{ fontFamily: "var(--font-display)", color: "var(--gt-gold)", borderColor: "var(--gt-gold-line)" }}
               >
-                Review
+                Admin
               </Link>
             )}
           </div>
@@ -153,8 +216,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link
                 key={n.href}
                 href={n.href}
-                className="text-[15px] py-1"
-                style={{ color: location === n.href ? "var(--gt-gold)" : "var(--gt-fg2)" }}
+                className="text-[16px] py-1 tracking-tight"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontWeight: location === n.href ? 700 : 500,
+                  color: location === n.href ? "var(--gt-gold)" : "var(--gt-fg)",
+                }}
               >
                 {n.label}
               </Link>
@@ -223,12 +290,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
         <div
-          className="border-t py-5 text-center text-[11px] tracking-[0.12em] uppercase"
+          className="border-t py-5 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 text-[11px] tracking-[0.12em] uppercase text-center"
           style={{ borderColor: "var(--gt-line)", color: "var(--gt-mut)", fontFamily: "var(--font-mono)" }}
         >
-          Every figure carries its receipt · No finding publishes without right of reply
+          <span>Every figure carries its receipt · No finding publishes without right of reply</span>
+          <TechViewToggle />
         </div>
       </footer>
+
+      <AuthModal
+        open={authOpen}
+        onClose={() => setAuthOpen(false)}
+        onAuthed={() => { setAuthOpen(false); refresh(); }}
+      />
+
+      {/* Members-only grounded chat assistant (renders null unless signed in) */}
+      <ChatWidget />
     </div>
   );
 }
