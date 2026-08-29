@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, LogIn, LogOut, ChevronDown } from "lucide-react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import AuthModal from "./AuthModal";
+import { TechViewToggle } from "@/lib/provenance";
 
 // The logo links home ("The Record"), so it isn't repeated as a nav item.
 // A tight primary set keeps the bar clean (never wraps); the rest live under "More".
@@ -279,10 +280,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
         <div
-          className="border-t py-5 text-center text-[11px] tracking-[0.12em] uppercase"
+          className="border-t py-5 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 text-[11px] tracking-[0.12em] uppercase text-center"
           style={{ borderColor: "var(--gt-line)", color: "var(--gt-mut)", fontFamily: "var(--font-mono)" }}
         >
-          Every figure carries its receipt · No finding publishes without right of reply
+          <span>Every figure carries its receipt · No finding publishes without right of reply</span>
+          <TechViewToggle />
         </div>
       </footer>
 

@@ -4,6 +4,7 @@
   pipeline appear here. Each carries its SHA-256 seal and release timestamp.
   If the vault is empty, that is the system working as designed.
 */
+import { ProvenanceRow } from "@/lib/provenance";
 import Layout from "@/components/Layout";
 import { Eyebrow, Reveal } from "@/components/Section";
 import { trpc } from "@/lib/trpc";
@@ -140,6 +141,7 @@ export default function Vault() {
                     </div>
                   )}
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-4 pt-3 border-t text-[10.5px]" style={{ borderColor: "var(--gt-line)", fontFamily: "var(--font-mono)", color: "var(--gt-mut)" }}>
+                    <ProvenanceRow size="xs" kinds={["sealed", "independent"]} />
                     {s.sha256 && (
                       <span style={{ color: "var(--gt-gold)" }}>
                         sealed {s.sha256.slice(0, 16)}…

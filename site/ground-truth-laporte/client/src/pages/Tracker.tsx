@@ -3,6 +3,7 @@
   All twelve commitments, filterable by category, with the status legend
   and the public-record gaps published as their own finding.
 */
+import { ProvenanceLegend } from "@/lib/provenance";
 import Layout from "@/components/Layout";
 import { Eyebrow, H2, Reveal, Pill } from "@/components/Section";
 import { Gauge } from "@/components/Thermometer";
@@ -85,6 +86,10 @@ export default function Tracker() {
                 {f.label}
               </button>
             ))}
+          </div>
+
+          <div className="my-6">
+            <ProvenanceLegend />
           </div>
 
           <div className="border-t" style={{ borderColor: "var(--gt-line)" }}>
