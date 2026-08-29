@@ -17,6 +17,7 @@ import AdminReview from "./pages/AdminReview";
 import Vault from "./pages/Vault";
 import OAuthReturn from "./pages/OAuthReturn";
 import Admin from "./pages/Admin";
+import Search from "./pages/Search";
 import { ProvenanceProvider } from "./lib/provenance";
 
 function Router() {
@@ -25,6 +26,7 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/oauth-return"} component={OAuthReturn} />
+      <Route path={"/search"} component={Search} />
       <Route path={"/tracker"} component={Tracker} />
       <Route path={"/learn"} component={Learn} />
       <Route path={"/careers"} component={Careers} />

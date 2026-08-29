@@ -10,6 +10,7 @@ import {
   listMeetings, getMeetingBySlug, listMeetingCommitments, seedMeeting,
   listAllUsers, setUserRole, userStats,
 } from "./db";
+import { search, corpusSize } from "./search";
 import { storagePut } from "./storage";
 import { TRPCError } from "@trpc/server";
 import { invokeLLM } from "./_core/llm";
@@ -42,6 +43,15 @@ export const appRouter = router({
         success: true,
       } as const;
     }),
+  }),
+
+  // Sitewide search — one corpus over all static + DB content. Public read.
+  // The AI agent + phone line reuse the same server-side search() for retrieval.
+  search: router({
+    query: publicProcedure
+      .input(z.object({ q: z.string().max(200) }))
+      .query(({ input }) => search(input.q, 40)),
+    size: publicProcedure.query(() => corpusSize()),
   }),
 
   // Admin backend — citizen management (admin-gated). Submission moderation lives

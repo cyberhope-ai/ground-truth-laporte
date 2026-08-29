@@ -4,7 +4,7 @@
 */
 import { Link, useLocation } from "wouter";
 import { useEffect, useState } from "react";
-import { Menu, X, LogIn, LogOut, ChevronDown } from "lucide-react";
+import { Menu, X, LogIn, LogOut, ChevronDown, Search } from "lucide-react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import AuthModal from "./AuthModal";
 import { TechViewToggle } from "@/lib/provenance";
@@ -147,6 +147,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               )}
             </div>
+
+            <Link
+              href="/search"
+              title="Search the whole site"
+              className="flex items-center transition-colors hover:text-[var(--gt-gold)]"
+              style={{ color: "var(--gt-fg2)" }}
+            >
+              <Search size={17} />
+            </Link>
 
             <span className="w-px h-5 self-center" style={{ background: "var(--gt-line2)" }} />
 
