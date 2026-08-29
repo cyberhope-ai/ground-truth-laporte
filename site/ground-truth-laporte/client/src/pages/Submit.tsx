@@ -1,7 +1,7 @@
 /*
   Submit Evidence — authenticated intake, quarantine-by-default.
   Real file upload to S3 with SHA-256 sealing at intake. Contributor
-  accounts via Manus OAuth. Nothing submitted becomes public without
+  accounts via OAuth. Nothing submitted becomes public without
   authenticity review — the pipeline state is visible to the contributor.
 */
 import Layout from "@/components/Layout";
