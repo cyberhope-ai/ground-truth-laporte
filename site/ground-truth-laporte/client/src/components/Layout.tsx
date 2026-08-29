@@ -57,8 +57,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         className="sticky top-0 z-50 border-b transition-colors duration-300"
         style={{
           borderColor: "var(--gt-line)",
-          background: scrolled ? "rgba(10,13,20,.92)" : "rgba(10,13,20,.75)",
-          backdropFilter: "blur(12px)",
+          background: scrolled ? "rgba(10,13,20,.95)" : "rgba(10,13,20,.82)",
+          backdropFilter: "blur(24px)",
+          WebkitBackdropFilter: "blur(24px)",
         }}
       >
         <div className="max-w-[1120px] mx-auto px-5 md:px-7 flex items-center justify-between gap-4 py-3">
@@ -72,7 +73,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 La Porte · Indiana
               </span>
               <span
-                className="block text-[17px] font-bold tracking-tight mt-1"
+                className="block text-[19px] font-bold tracking-[-0.02em] mt-1"
                 style={{ fontFamily: "var(--font-display)", color: "var(--gt-fg)" }}
               >
                 Ground<span style={{ color: "var(--gt-gold)" }}>Truth</span>
@@ -80,15 +81,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </span>
           </Link>
 
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-5">
             {NAV.map((n) => (
               <Link
                 key={n.href}
                 href={n.href}
-                className="text-[13.5px] transition-colors duration-200"
+                className="text-[14.5px] tracking-tight transition-colors duration-200 hover:opacity-90"
                 style={{
-                  color: location === n.href ? "var(--gt-gold)" : "var(--gt-fg2)",
-                  fontWeight: location === n.href ? 600 : 400,
+                  fontFamily: "var(--font-display)",
+                  color: location === n.href ? "var(--gt-gold)" : "var(--gt-fg)",
+                  fontWeight: location === n.href ? 700 : 500,
                 }}
               >
                 {n.label}
@@ -153,8 +155,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link
                 key={n.href}
                 href={n.href}
-                className="text-[15px] py-1"
-                style={{ color: location === n.href ? "var(--gt-gold)" : "var(--gt-fg2)" }}
+                className="text-[16px] py-1 tracking-tight"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontWeight: location === n.href ? 700 : 500,
+                  color: location === n.href ? "var(--gt-gold)" : "var(--gt-fg)",
+                }}
               >
                 {n.label}
               </Link>
