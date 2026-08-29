@@ -4,7 +4,7 @@
 */
 import { Link, useLocation } from "wouter";
 import { useEffect, useState } from "react";
-import { Menu, X, LogIn, LogOut, ChevronDown, Search } from "lucide-react";
+import { Menu, X, LogIn, LogOut, ChevronDown, Search, Phone } from "lucide-react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import AuthModal from "./AuthModal";
 import ChatWidget from "./ChatWidget";
@@ -247,6 +247,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               Porte, La Porte County, and the State of Indiana. Every source of funding is named on this site.
               Corrections are published in the open, alongside what they replaced.
             </p>
+            <a
+              href="tel:+12192583479"
+              className="inline-flex items-center gap-2.5 mt-5 px-4 py-2.5 rounded-lg border transition-colors hover:border-[var(--gt-gold-line)]"
+              style={{ borderColor: "var(--gt-gold-line)", background: "var(--gt-gold-dim, rgba(209,168,75,.1))" }}
+            >
+              <Phone size={16} style={{ color: "var(--gt-gold)" }} />
+              <span className="leading-tight">
+                <span className="block text-[9.5px] tracking-[0.16em] uppercase" style={{ fontFamily: "var(--font-mono)", color: "var(--gt-gold)" }}>
+                  Call the information line
+                </span>
+                <span className="block text-[16px] font-bold tracking-tight" style={{ fontFamily: "var(--font-display)", color: "var(--gt-fg)" }}>
+                  (219) 258-3479
+                </span>
+              </span>
+            </a>
             <p
               className="text-[10.5px] tracking-[0.14em] uppercase mt-5"
               style={{ fontFamily: "var(--font-mono)", color: "var(--gt-mut)" }}
