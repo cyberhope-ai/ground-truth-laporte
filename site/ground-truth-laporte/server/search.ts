@@ -104,14 +104,12 @@ async function getCorpus(): Promise<Doc[]> {
   return _corpus;
 }
 
-/** Full-text search across the whole site. Returns ranked results with snippets. */
-export async function search(query: string, limit = 40): Promise<SearchResult[]> {
+/** Score every doc against a query; returns ranked {doc, score}, highest first. */
+function scoreDocs(query: string, docs: Doc[]): Array<{ d: Doc; score: number }> {
   const q = (query || "").trim().toLowerCase();
   if (q.length < 2) return [];
   const terms = q.split(/\s+/).filter((t) => t.length > 1);
-  const docs = await getCorpus();
-  const out: SearchResult[] = [];
-
+  const scored: Array<{ d: Doc; score: number }> = [];
   for (const d of docs) {
     const title = d.title.toLowerCase();
     const hay = (d.title + " \n " + d.text).toLowerCase();
@@ -123,8 +121,21 @@ export async function search(query: string, limit = 40): Promise<SearchResult[]>
       const count = hay.split(t).length - 1;
       if (count > 0) score += Math.min(count, 6) * 2;
     }
-    if (score <= 0) continue;
+    if (score > 0) scored.push({ d, score });
+  }
+  scored.sort((a, b) => b.score - a.score);
+  return scored;
+}
 
+/** Full-text search across the whole site. Returns ranked results with snippets. */
+export async function search(query: string, limit = 40): Promise<SearchResult[]> {
+  const q = (query || "").trim().toLowerCase();
+  if (q.length < 2) return [];
+  const terms = q.split(/\s+/).filter((t) => t.length > 1);
+  const docs = await getCorpus();
+  const out: SearchResult[] = [];
+
+  for (const { d, score } of scoreDocs(query, docs)) {
     const full = d.text.replace(/\s+/g, " ").trim();
     let idx = full.toLowerCase().indexOf(terms[0] || q);
     if (idx < 0) idx = full.toLowerCase().indexOf(q);
@@ -137,9 +148,27 @@ export async function search(query: string, limit = 40): Promise<SearchResult[]>
     }
     out.push({ id: d.id, kind: d.kind, title: d.title, section: d.section, url: d.url, snippet, score });
   }
-
-  out.sort((a, b) => b.score - a.score);
   return out.slice(0, limit);
+}
+
+export type RetrievedDoc = { title: string; section: string; url: string; kind: string; text: string };
+
+/**
+ * Retrieval layer for the grounded chat agent: returns the top-matching docs
+ * with their FULL text (not just a snippet) so the LLM can answer from the
+ * actual record. Same corpus + scoring the web search uses.
+ */
+export async function retrieve(query: string, limit = 10): Promise<RetrievedDoc[]> {
+  const docs = await getCorpus();
+  return scoreDocs(query, docs)
+    .slice(0, limit)
+    .map(({ d }) => ({
+      title: d.title,
+      section: d.section,
+      url: d.url,
+      kind: d.kind,
+      text: d.text.replace(/\s+/g, " ").trim(),
+    }));
 }
 
 /** Total number of indexed documents — surfaced on the search page. */

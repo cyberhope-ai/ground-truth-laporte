@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, LogIn, LogOut, ChevronDown, Search } from "lucide-react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import AuthModal from "./AuthModal";
+import ChatWidget from "./ChatWidget";
 import { TechViewToggle } from "@/lib/provenance";
 
 // The logo links home ("The Record"), so it isn't repeated as a nav item.
@@ -302,6 +303,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         onClose={() => setAuthOpen(false)}
         onAuthed={() => { setAuthOpen(false); refresh(); }}
       />
+
+      {/* Members-only grounded chat assistant (renders null unless signed in) */}
+      <ChatWidget />
     </div>
   );
 }

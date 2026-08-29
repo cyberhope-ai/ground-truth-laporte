@@ -11,6 +11,7 @@ import {
   listAllUsers, setUserRole, userStats,
 } from "./db";
 import { search, corpusSize } from "./search";
+import { groundedChat } from "./chat";
 import { storagePut } from "./storage";
 import { TRPCError } from "@trpc/server";
 import { invokeLLM } from "./_core/llm";
@@ -52,6 +53,20 @@ export const appRouter = router({
       .input(z.object({ q: z.string().max(200) }))
       .query(({ input }) => search(input.q, 40)),
     size: publicProcedure.query(() => corpusSize()),
+  }),
+
+  // On-site chat agent — registered-members-only. Grounded in the sitewide
+  // search corpus (RAG) and answered by our own Azure OpenAI. protectedProcedure
+  // gates it to signed-in members; anonymous visitors get FORBIDDEN.
+  chat: router({
+    send: protectedProcedure
+      .input(z.object({
+        messages: z.array(z.object({
+          role: z.enum(["user", "assistant"]),
+          content: z.string().max(4000),
+        })).min(1).max(20),
+      }))
+      .mutation(({ input }) => groundedChat(input.messages)),
   }),
 
   // Admin backend — citizen management (admin-gated). Submission moderation lives
