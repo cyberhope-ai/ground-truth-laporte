@@ -15,12 +15,14 @@ import Meetings from "./pages/Meetings";
 import Corrections from "./pages/Corrections";
 import AdminReview from "./pages/AdminReview";
 import Vault from "./pages/Vault";
+import OAuthReturn from "./pages/OAuthReturn";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/oauth-return"} component={OAuthReturn} />
       <Route path={"/tracker"} component={Tracker} />
       <Route path={"/learn"} component={Learn} />
       <Route path={"/careers"} component={Careers} />
