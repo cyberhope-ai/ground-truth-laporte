@@ -61,6 +61,26 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col" style={{ fontFamily: "var(--font-sans)" }}>
+      {/* Community information line — slim hotline bar, every page */}
+      <a
+        href="tel:+12192583479"
+        className="block w-full border-b transition-colors hover:brightness-110"
+        style={{ background: "var(--gt-bg2)", borderColor: "var(--gt-line)" }}
+      >
+        <div className="max-w-[1120px] mx-auto px-5 md:px-7 py-2 flex items-center justify-center gap-2 flex-wrap text-center">
+          <Phone size={13} style={{ color: "var(--gt-gold)" }} />
+          <span className="text-[10.5px] tracking-[0.14em] uppercase" style={{ fontFamily: "var(--font-mono)", color: "var(--gt-gold)" }}>
+            Community information line
+          </span>
+          <span className="text-[13px] font-bold tracking-tight" style={{ fontFamily: "var(--font-display)", color: "var(--gt-fg)" }}>
+            (219) 258-3479
+          </span>
+          <span className="hidden sm:inline text-[12px]" style={{ color: "var(--gt-mut)" }}>
+            · ask about the record, any time
+          </span>
+        </div>
+      </a>
+
       <nav
         className="sticky top-0 z-50 border-b transition-colors duration-300"
         style={{
