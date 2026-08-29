@@ -6,7 +6,7 @@ import { Link, useLocation } from "wouter";
 import { useEffect, useState } from "react";
 import { Menu, X, LogIn, LogOut, ChevronDown } from "lucide-react";
 import { useAuth } from "@/_core/hooks/useAuth";
-import { startLogin } from "@/const";
+import AuthModal from "./AuthModal";
 
 // The logo links home ("The Record"), so it isn't repeated as a nav item.
 // A tight primary set keeps the bar clean (never wraps); the rest live under "More".
@@ -42,7 +42,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
-  const { user, isAuthenticated, logout } = useAuth();
+  const [authOpen, setAuthOpen] = useState(false);
+  const { user, isAuthenticated, logout, refresh } = useAuth();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -167,7 +168,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </button>
             ) : (
               <button
-                onClick={() => startLogin()}
+                onClick={() => setAuthOpen(true)}
                 className="flex items-center gap-1.5 whitespace-nowrap text-[13.5px] font-medium tracking-tight px-3.5 py-2 rounded-md border transition-colors hover:border-[var(--gt-gold-line)]"
                 style={{ fontFamily: "var(--font-display)", color: "var(--gt-fg)", borderColor: "var(--gt-line2)" }}
               >
@@ -284,6 +285,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           Every figure carries its receipt · No finding publishes without right of reply
         </div>
       </footer>
+
+      <AuthModal
+        open={authOpen}
+        onClose={() => setAuthOpen(false)}
+        onAuthed={() => { setAuthOpen(false); refresh(); }}
+      />
     </div>
   );
 }
