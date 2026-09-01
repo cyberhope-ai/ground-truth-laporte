@@ -212,14 +212,15 @@ const normalizeToolChoice = (
   return toolChoice;
 };
 
+// Azure OpenAI only — no Manus Forge. Uses the v1 chat-completions endpoint
+// (Bearer + model=deployment), same as server/chat.ts.
 const resolveApiUrl = () =>
-  ENV.forgeApiUrl && ENV.forgeApiUrl.trim().length > 0
-    ? `${ENV.forgeApiUrl.replace(/\/$/, "")}/v1/chat/completions`
-    : "https://forge.manus.im/v1/chat/completions";
+  `${(process.env.AZURE_OPENAI_ENDPOINT || "").replace(/\/$/, "")}/openai/v1/chat/completions`;
+const azureKey = () => process.env.AZURE_OPENAI_KEY || process.env.AZURE_OPENAI_API_KEY || "";
 
 const assertApiKey = () => {
-  if (!ENV.forgeApiKey) {
-    throw new Error("OPENAI_API_KEY is not configured");
+  if (!azureKey() || !process.env.AZURE_OPENAI_ENDPOINT) {
+    throw new Error("AZURE_OPENAI_ENDPOINT / AZURE_OPENAI_KEY is not configured");
   }
 };
 
@@ -362,9 +363,7 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
     messages: messages.map(normalizeMessage),
   };
 
-  if (model) {
-    payload.model = model;
-  }
+  payload.model = model || process.env.AZURE_OPENAI_DEPLOYMENT || "gpt-5-mini";
 
   if (tools && tools.length > 0) {
     payload.tools = tools;
@@ -379,9 +378,9 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
   }
 
   const resolvedMaxTokens = max_tokens ?? maxTokens;
-  if (typeof resolvedMaxTokens === "number") {
-    payload.max_tokens = resolvedMaxTokens;
-  }
+  // gpt-5 family uses max_completion_tokens (+ reasoning tokens) rather than max_tokens.
+  payload.max_completion_tokens = typeof resolvedMaxTokens === "number" ? resolvedMaxTokens : 2000;
+  payload.reasoning_effort = "minimal";
 
   if (thinking) {
     payload.thinking = thinking;
@@ -405,7 +404,7 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      authorization: `Bearer ${ENV.forgeApiKey}`,
+      authorization: `Bearer ${azureKey()}`,
     },
     body: JSON.stringify(payload),
   });
@@ -435,12 +434,10 @@ export type ModelsResponse = {
 export async function listLLMModels(): Promise<ModelsResponse> {
   assertApiKey();
 
-  const url = ENV.forgeApiUrl && ENV.forgeApiUrl.trim().length > 0
-    ? `${ENV.forgeApiUrl.replace(/\/$/, "")}/v1/models`
-    : "https://forge.manus.im/v1/models";
+  const url = `${(process.env.AZURE_OPENAI_ENDPOINT || "").replace(/\/$/, "")}/openai/v1/models`;
 
   const response = await fetchWithBackoff(url, {
-    headers: { authorization: `Bearer ${ENV.forgeApiKey}` },
+    headers: { authorization: `Bearer ${azureKey()}` },
   });
 
   if (!response.ok) {

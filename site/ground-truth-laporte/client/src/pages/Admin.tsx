@@ -1,5 +1,6 @@
 import { trpc } from "@/lib/trpc";
 import { Link } from "wouter";
+import { useState, useEffect } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import Layout from "@/components/Layout";
 
@@ -17,6 +18,15 @@ export default function Admin() {
   const setRole = trpc.admin.setRole.useMutation({
     onSuccess: () => { utils.admin.users.invalidate(); utils.admin.stats.invalidate(); },
   });
+  const settings = trpc.admin.getSettings.useQuery(undefined, { retry: false });
+  const [siteForm, setSiteForm] = useState({ siteName: "", address: "", contactEmail: "", notes: "" });
+  useEffect(() => {
+    if (settings.data) setSiteForm({
+      siteName: settings.data.siteName ?? "", address: settings.data.address ?? "",
+      contactEmail: settings.data.contactEmail ?? "", notes: settings.data.notes ?? "",
+    });
+  }, [settings.data]);
+  const saveSettings = trpc.admin.updateSettings.useMutation({ onSuccess: () => utils.admin.getSettings.invalidate() });
 
   const denied = !loading && (!isAuthenticated || user?.role !== "admin" || usersQ.isError);
 
@@ -46,6 +56,30 @@ export default function Admin() {
         </div>
       ) : (
         <>
+          <div style={{ ...card, margin: "24px 0" }}>
+            <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 18, marginBottom: 12 }}>Site information</div>
+            <div style={{ display: "grid", gap: 10, maxWidth: 560 }}>
+              {(["siteName", "address", "contactEmail", "notes"] as const).map((f) => (
+                <label key={f} style={{ display: "grid", gap: 4 }}>
+                  <span style={{ color: "var(--gt-fg2)", fontSize: 12.5 }}>
+                    {{ siteName: "Site name", address: "Address", contactEmail: "Contact email", notes: "Notes" }[f]}
+                  </span>
+                  <input
+                    value={siteForm[f]}
+                    onChange={(e) => setSiteForm({ ...siteForm, [f]: e.target.value })}
+                    style={{ padding: "9px 11px", borderRadius: 8, background: "var(--gt-track)", color: "var(--gt-fg)", border: "1px solid var(--gt-line2)", fontFamily: "var(--font-sans)", fontSize: 14 }}
+                  />
+                </label>
+              ))}
+              <button
+                onClick={() => saveSettings.mutate(siteForm)} disabled={saveSettings.isPending}
+                style={{ justifySelf: "start", fontFamily: "var(--font-display)", fontWeight: 600, fontSize: 13.5, color: "#0a0d14", background: "var(--gt-gold)", padding: "9px 15px", borderRadius: 9, border: "none", cursor: "pointer", marginTop: 4 }}
+              >
+                {saveSettings.isPending ? "Saving…" : "Save site info"}
+              </button>
+            </div>
+          </div>
+
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(150px,1fr))", gap: 14, margin: "24px 0" }}>
             <div style={card}>
               <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 30 }}>{stats.data?.total ?? "—"}</div>

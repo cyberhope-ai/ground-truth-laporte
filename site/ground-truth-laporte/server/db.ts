@@ -5,6 +5,7 @@ import {
   InsertSubmission, submissions,
   InsertMeeting, meetings,
   InsertMeetingCommitment, meetingCommitments,
+  siteSettings,
 } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
@@ -130,6 +131,22 @@ export async function createPasswordUser(input: {
 }
 
 /* ── Admin: citizen management (never selects passwordHash) ── */
+export async function getSiteSettings() {
+  const db = await getDb();
+  if (!db) return null;
+  const rows = await db.select().from(siteSettings).where(eq(siteSettings.id, 1)).limit(1);
+  return rows[0] ?? null;
+}
+
+export async function updateSiteSettings(data: {
+  siteName?: string; address?: string; contactEmail?: string; notes?: string;
+}) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.insert(siteSettings).values({ id: 1, ...data }).onDuplicateKeyUpdate({ set: data });
+  return getSiteSettings();
+}
+
 export async function listAllUsers() {
   const db = await getDb();
   if (!db) return [];

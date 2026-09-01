@@ -40,31 +40,8 @@ async function startServer() {
   // Google Maps script proxy — forwards to the Forge maps proxy with the
   // project's registered origin so the browser's localhost origin doesn't
   // cause a 401 in development.
-  app.get("/api/maps-proxy/*", async (req, res) => {
-    try {
-      const forgeBase = (process.env.BUILT_IN_FORGE_API_URL || "").replace(/\/+$/, "");
-      const upstream = `${forgeBase}/v1/maps/proxy${req.path.replace("/api/maps-proxy", "")}${req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : ""}`;
-      // Always present the project's registered public origin to Forge.
-      // The Forge maps proxy validates the Origin against the project's
-      // registered domain; localhost/127.0.0.1 origins are rejected.
-      const fwdHost = req.headers["x-forwarded-host"];
-      const host = (typeof fwdHost === "string" ? fwdHost : req.headers.host) || "";
-      const origin = host.includes("manus.computer") || host.includes("manus.space")
-        ? `https://${host}`
-        : "https://3000-ib1xmvjy5d091v5q02ont-d8c5284e.us2.manus.computer";
-      const resp = await fetch(upstream, {
-        headers: {
-          Origin: origin,
-          Referer: origin + "/",
-        },
-      });
-      const body = await resp.text();
-      res.status(resp.status).set("Content-Type", resp.headers.get("content-type") || "application/javascript").send(body);
-    } catch (e) {
-      console.error("[MapsProxy]", e);
-      res.status(502).send("// maps proxy error");
-    }
-  });
+  // (Removed the Manus Forge maps proxy — no connection to Manus. If the map
+  // feature is needed, wire it to a first-party Google Maps API key.)
   // RSS feed for corrections
   app.get("/api/rss/corrections", (_req, res) => {
     const base = "https://laporte-truth.icystone-d1e018c9.centralus.azurecontainerapps.io";

@@ -34,6 +34,16 @@ export type InsertUser = typeof users.$inferInsert;
    ──────────────────────────────────────────────────────────────── */
 
 /** Public evidence submissions — quarantined by default. */
+export const siteSettings = mysqlTable("site_settings", {
+  id: int("id").primaryKey(),
+  siteName: varchar("siteName", { length: 255 }),
+  address: text("address"),
+  contactEmail: varchar("contactEmail", { length: 320 }),
+  notes: text("notes"),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+export type SiteSettings = typeof siteSettings.$inferSelect;
+
 export const submissions = mysqlTable("submissions", {
   id: int("id").autoincrement().primaryKey(),
   /** The contributor's account. */

@@ -32,8 +32,22 @@ Env/secrets: `DATABASE_URL`, `JWT_SECRET`, `AZURE_OPENAI_*` (chat uses Azure Ope
 Manus Forge). No `BUILT_IN_FORGE_*` credentials are set, so the dormant Forge scaffold
 code (storage/maps/llm-fallback) makes **no** runtime calls to Manus.
 
-## Known remaining scaffold references (dormant, non-runtime)
-Some `server/_core/*` scaffold files still contain Manus/Forge code paths and comments
-(maps proxy, storage proxy, image-gen, notifications). They are inert without
-`BUILT_IN_FORGE_API_URL`/`_KEY` (not set). Fully deleting them — and giving the maps
-feature its own Google Maps key — is a separate cleanup.
+## Manus/Forge code removed (2026-09-01)
+Per "no connection back to Manus", the Forge scaffold code was removed/replaced:
+- **LLM** (`_core/llm.ts`): now calls **Azure OpenAI** (`AZURE_OPENAI_*`) via the v1
+  chat-completions endpoint — the `forge.manus.im` endpoints are gone.
+- **Notifications** (`_core/notification.ts`): `notifyOwner` is a local no-op (was a
+  Forge HTTP call).
+- **Maps proxy** (`_core/index.ts`): the Forge `/api/maps-proxy` route was deleted. (If
+  the map is needed, wire it to a first-party Google Maps key.)
+- **Deleted unused Forge files**: `map.ts`, `heartbeat.ts`, `imageGeneration.ts`,
+  `voiceTranscription.ts`, `dataApi.ts`.
+- `storageProxy.ts` serves **local** files only (no Manus call); the `/manus-storage`
+  path name is cosmetic.
+- `sdk.ts` retains a few **uncalled** legacy OAuth helper methods (no runtime path
+  reaches them) — safe to delete in a later pass.
+
+## Site-info admin
+`/admin` now includes a **Site Information** panel (name, address, contact email, notes)
+stored in the `site_settings` table (single row, id=1) via `admin.getSettings` /
+`admin.updateSettings` (admin-gated) — matching the CineGraph admin.

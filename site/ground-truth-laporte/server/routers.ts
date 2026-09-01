@@ -9,6 +9,7 @@ import {
   listVerifiedSubmissions,
   listMeetings, getMeetingBySlug, listMeetingCommitments, seedMeeting,
   listAllUsers, setUserRole, userStats,
+  getSiteSettings, updateSiteSettings,
 } from "./db";
 import { search, corpusSize } from "./search";
 import { groundedChat } from "./chat";
@@ -77,6 +78,15 @@ export const appRouter = router({
     setRole: adminProcedure
       .input(z.object({ id: z.number().int(), role: z.enum(["user", "admin"]) }))
       .mutation(({ input }) => setUserRole(input.id, input.role)),
+    getSettings: publicProcedure.query(() => getSiteSettings()),
+    updateSettings: adminProcedure
+      .input(z.object({
+        siteName: z.string().max(255).optional(),
+        address: z.string().max(2000).optional(),
+        contactEmail: z.string().max(320).optional(),
+        notes: z.string().max(4000).optional(),
+      }))
+      .mutation(({ input }) => updateSiteSettings(input)),
   }),
 
   /* ── Evidence submissions — authenticated, quarantined by default ── */
