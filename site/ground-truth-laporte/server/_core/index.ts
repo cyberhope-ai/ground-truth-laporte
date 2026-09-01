@@ -3,7 +3,6 @@ import express from "express";
 import { createServer } from "http";
 import net from "net";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
-import { registerOAuthRoutes } from "./oauth";
 import { registerLocalAuth } from "./localAuth";
 import { registerStorageProxy } from "./storageProxy";
 import { appRouter } from "../routers";
@@ -37,7 +36,6 @@ async function startServer() {
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
   registerStorageProxy(app);
-  registerOAuthRoutes(app);
   registerLocalAuth(app);
   // Google Maps script proxy — forwards to the Forge maps proxy with the
   // project's registered origin so the browser's localhost origin doesn't
@@ -69,7 +67,7 @@ async function startServer() {
   });
   // RSS feed for corrections
   app.get("/api/rss/corrections", (_req, res) => {
-    const base = "https://laportetrth-kqhkb69n.manus.space";
+    const base = "https://laporte-truth.icystone-d1e018c9.centralus.azurecontainerapps.io";
     const items = [
       { id: "mw-2400", date: "2026-08-27", cat: "Electricity", wrong: "2,400 MW — Microsoft's LaPorte site", right: "No confirmed figure exists in any public record", src: "IURC Cause 46362 — full order text", status: "corrected" },
       { id: "mw-538", date: "2026-08-27", cat: "Electricity", wrong: "538 MW — Microsoft LaPorte", right: "No confirmed figure exists in any public record", src: "Aggregator survey — no primary source found", status: "unverifiable" },

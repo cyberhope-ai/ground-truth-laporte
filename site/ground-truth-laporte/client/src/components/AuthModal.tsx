@@ -1,38 +1,13 @@
 import { useState } from "react";
 import { X } from "lucide-react";
-import { startLogin } from "@/const";
 
-const GoogleIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden>
-    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.76h3.56c2.08-1.92 3.28-4.74 3.28-8.09Z" />
-    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.56-2.76c-.98.66-2.24 1.06-3.72 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23Z" />
-    <path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.22V7.05H2.18a11 11 0 0 0 0 9.9l3.66-2.85Z" />
-    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.05L5.84 9.9C6.71 7.31 9.14 5.38 12 5.38Z" />
-  </svg>
-);
-const MicrosoftIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 23 23" aria-hidden>
-    <path fill="#F25022" d="M1 1h10v10H1z" /><path fill="#7FBA00" d="M12 1h10v10H12z" />
-    <path fill="#00A4EF" d="M1 12h10v10H1z" /><path fill="#FFB900" d="M12 12h10v10H12z" />
-  </svg>
-);
-const FacebookIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden>
-    <path fill="#1877F2" d="M24 12a12 12 0 1 0-13.88 11.85v-8.38H7.08V12h3.04V9.36c0-3 1.79-4.67 4.53-4.67 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.95.93-1.95 1.87V12h3.32l-.53 3.47h-2.79v8.38A12 12 0 0 0 24 12Z" />
-  </svg>
-);
-
-const providerBtn: React.CSSProperties = {
-  display: "flex", alignItems: "center", justifyContent: "center", gap: 10,
-  width: "100%", padding: "11px 14px", borderRadius: 10, cursor: "pointer",
-  background: "var(--gt-fg)", color: "#0a0d14", fontWeight: 600, fontSize: 14.5,
-  fontFamily: "var(--font-display)", border: "none",
-};
+// Self-hosted email/password auth only — no external identity provider.
+// (Social/broker sign-in was removed so nothing points to an outside service.)
 
 export default function AuthModal({
   open, onClose, onAuthed,
 }: { open: boolean; onClose: () => void; onAuthed: () => void }) {
-  const [mode, setMode] = useState<"signup" | "signin">("signup");
+  const [mode, setMode] = useState<"signup" | "signin">("signin");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -104,16 +79,6 @@ export default function AuthModal({
             ? "Join the community record — follow the tracker, get updates, and contribute evidence."
             : "Sign in to your Ground Truth LaPorte account."}
         </p>
-
-        <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
-          <button style={providerBtn} onClick={() => startLogin("google")}><GoogleIcon /> Continue with Google</button>
-          <button style={providerBtn} onClick={() => startLogin("ms")}><MicrosoftIcon /> Continue with Microsoft</button>
-          <button style={providerBtn} onClick={() => startLogin("facebook")}><FacebookIcon /> Continue with Facebook</button>
-        </div>
-
-        <div style={{ display: "flex", alignItems: "center", gap: 12, margin: "16px 0", color: "var(--gt-mut)", fontSize: 12 }}>
-          <span style={{ flex: 1, height: 1, background: "var(--gt-line2)" }} /> or <span style={{ flex: 1, height: 1, background: "var(--gt-line2)" }} />
-        </div>
 
         <form onSubmit={submit} style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           {mode === "signup" && (

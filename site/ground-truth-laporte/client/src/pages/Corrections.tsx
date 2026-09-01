@@ -109,11 +109,11 @@ const CORRECTIONS: Correction[] = [
 ];
 
 function shareText(c: Correction): string {
-  return `Ground Truth LaPorte correction: "${c.wrongFigure}" is ${c.status === "corrected" ? "wrong" : c.status === "disputed" ? "disputed" : "unverifiable"}. ${c.rightFigure}. Source: ${c.rightSource}. laportetrth-kqhkb69n.manus.space/corrections#${c.id}`;
+  return `Ground Truth LaPorte correction: "${c.wrongFigure}" is ${c.status === "corrected" ? "wrong" : c.status === "disputed" ? "disputed" : "unverifiable"}. ${c.rightFigure}. Source: ${c.rightSource}. laporte-truth.icystone-d1e018c9.centralus.azurecontainerapps.io/corrections#${c.id}`;
 }
 
 function shareUrl(c: Correction): string {
-  return `https://laportetrth-kqhkb69n.manus.space/corrections#${c.id}`;
+  return `https://laporte-truth.icystone-d1e018c9.centralus.azurecontainerapps.io/corrections#${c.id}`;
 }
 
 function ShareButtons({ c }: { c: Correction }) {

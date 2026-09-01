@@ -45,6 +45,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+  // A 401 (or startLogin) broadcasts this event — open the self-hosted login modal.
+  useEffect(() => {
+    const openAuth = () => setAuthOpen(true);
+    window.addEventListener("gt:open-auth", openAuth);
+    return () => window.removeEventListener("gt:open-auth", openAuth);
+  }, []);
   const { user, isAuthenticated, logout, refresh } = useAuth();
 
   useEffect(() => {
