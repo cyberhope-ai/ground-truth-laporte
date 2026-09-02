@@ -1,0 +1,7 @@
+Based on the video, here is a summary of the key claims and statements regarding the Microsoft data center groundbreaking in LaPorte:
+
+*   **Location & Acreage:** The data center campus is located between Boyd Boulevard and County Road 250. A display poster at the event states that Microsoft acquired approximately **500 acres** of property for the site. 
+*   **Timeline & Expansion:** Phase 1 of construction is starting now and will consist of **six buildings**. Reporter Emma Bratt stated that the third building of Phase 1 is expected to be completed around the **winter of 2029**, though this is subject to permit approvals. A potential second phase could expand the campus to a total of **17 buildings**.
+*   **Water & Electricity:** Microsoft Vice Chair and President Brad Smith stated that the company will cover its share of electricity and water costs. He specifically claimed, "We don't use the local communities' water more than, say, a **single restaurant** does on an annual basis."
+*   **Community Investment:** Reporter Emma Bratt stated that the city is committed to providing **15% of the data center's revenue** to the LaPorte Community School Corporation. Mayor Tom Dermody added that this investment will give LaPorte students the tools to be successful and earn special degrees that will make them highly competitive.
+*   **Jobs:** While Brad Smith mentioned that construction workers would soon be on site, no specific figures regarding the number of jobs created were provided in the report.

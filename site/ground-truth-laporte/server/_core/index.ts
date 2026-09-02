@@ -2,6 +2,7 @@ import "dotenv/config";
 import express from "express";
 import { createServer } from "http";
 import net from "net";
+import { createHmac, timingSafeEqual } from "crypto";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { registerOAuthRoutes } from "./oauth";
 import { registerStorageProxy } from "./storageProxy";
@@ -35,6 +36,86 @@ async function startServer() {
   // Configure body parser with larger size limit for file uploads
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
+  // Site-wide password gate (SITE_PASSWORD env). Unset = open, so local dev
+  // and any deploy without the secret behave exactly as before. Presents a
+  // password page (not HTTP Basic Auth — mobile/in-app browsers suppress the
+  // native prompt) and sets a signed HttpOnly cookie good for 30 days.
+  // Changing the password invalidates all existing cookies.
+  const sitePassword = process.env.SITE_PASSWORD;
+  if (sitePassword) {
+    const expected = Buffer.from(sitePassword);
+    const gateToken = createHmac("sha256", sitePassword).update("laporte-gate-v1").digest("hex");
+    const gatePage = (error: boolean, nextPath: string) => `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Private Preview — Ground Truth LaPorte</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #0c1220; color: #e8ecf4; font-family: Georgia, 'Times New Roman', serif; padding: 24px; }
+  .card { width: 100%; max-width: 420px; background: #131c30; border: 1px solid #24314d;
+    border-radius: 12px; padding: 40px 36px; box-shadow: 0 12px 40px rgba(0,0,0,.45); }
+  .kicker { font-family: system-ui, sans-serif; font-size: 11px; letter-spacing: .18em;
+    text-transform: uppercase; color: #d9a441; margin-bottom: 14px; }
+  h1 { font-size: 26px; line-height: 1.25; margin-bottom: 10px; }
+  p { font-size: 15px; line-height: 1.55; color: #9fabc4; margin-bottom: 26px; }
+  label { display: block; font-family: system-ui, sans-serif; font-size: 12px; letter-spacing: .06em;
+    text-transform: uppercase; color: #9fabc4; margin-bottom: 8px; }
+  input[type=password] { width: 100%; padding: 13px 14px; font-size: 17px; border-radius: 8px;
+    border: 1px solid ${error ? "#c0504d" : "#2c3b5c"}; background: #0c1220; color: #e8ecf4; outline: none; }
+  input[type=password]:focus { border-color: #d9a441; }
+  .err { display: ${error ? "block" : "none"}; font-family: system-ui, sans-serif; font-size: 13px;
+    color: #e07a77; margin-top: 9px; }
+  button { width: 100%; margin-top: 20px; padding: 13px; font-family: system-ui, sans-serif;
+    font-size: 15px; font-weight: 600; letter-spacing: .03em; border: 0; border-radius: 8px;
+    background: #d9a441; color: #17120a; cursor: pointer; }
+  button:hover { background: #e6b657; }
+  .foot { margin-top: 26px; font-family: system-ui, sans-serif; font-size: 12px; color: #5c6a87;
+    text-align: center; }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="kicker">Private preview</div>
+  <h1>Ground Truth LaPorte</h1>
+  <p>This site is not yet public. Enter the preview password to continue.</p>
+  <form method="POST" action="/site-gate">
+    <input type="hidden" name="next" value="${nextPath.replace(/"/g, "&quot;")}" />
+    <label for="pw">Password</label>
+    <input id="pw" type="password" name="password" autocomplete="current-password" autofocus required />
+    <div class="err">That password isn&rsquo;t right. Try again.</div>
+    <button type="submit">Enter site</button>
+  </form>
+  <div class="foot">What was promised. What actually arrived.</div>
+</main>
+</body>
+</html>`;
+    const safeNext = (v: unknown) =>
+      typeof v === "string" && v.startsWith("/") && !v.startsWith("//") ? v : "/";
+    app.use((req, res, next) => {
+      if (req.path === "/health" || req.path === "/api/health") return next();
+      if (req.method === "POST" && req.path === "/site-gate") {
+        const supplied = Buffer.from(String((req.body as any)?.password ?? ""));
+        const dest = safeNext((req.body as any)?.next);
+        if (supplied.length === expected.length && timingSafeEqual(supplied, expected)) {
+          res.setHeader(
+            "Set-Cookie",
+            `site_gate=${gateToken}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=2592000`
+          );
+          return res.redirect(303, dest);
+        }
+        return res.status(401).type("html").send(gatePage(true, dest));
+      }
+      const m = /(?:^|;\s*)site_gate=([a-f0-9]+)/.exec(req.headers.cookie || "");
+      if (m && m[1].length === gateToken.length && timingSafeEqual(Buffer.from(m[1]), Buffer.from(gateToken))) {
+        return next();
+      }
+      res.status(401).type("html").send(gatePage(false, req.originalUrl || "/"));
+    });
+  }
   registerStorageProxy(app);
   registerOAuthRoutes(app);
   // Google Maps script proxy — forwards to the Forge maps proxy with the
