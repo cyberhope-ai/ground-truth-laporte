@@ -9,7 +9,7 @@ import { Eyebrow, Reveal } from "@/components/Section";
 import { COMMITMENTS, OPEN_QUESTIONS, EXPLAINERS } from "@/lib/data";
 import { trpc } from "@/lib/trpc";
 import { useMemo, useState } from "react";
-import { Search, ArrowRight, Sparkles, Loader2 } from "lucide-react";
+import { Search, ArrowRight, Sparkles, Loader2, Phone } from "lucide-react";
 import { Link } from "wouter";
 import { Streamdown } from "streamdown";
 
@@ -129,6 +129,30 @@ export default function Ask() {
           </p>
         </div>
       </header>
+
+      {/* ── phone information line call-out ── */}
+      <div className="max-w-[1120px] mx-auto px-5 md:px-7 -mt-1">
+        <a
+          href="tel:+12192583479"
+          className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-xl border px-5 py-4 mt-8 transition-colors hover:border-[var(--gt-gold-line)]"
+          style={{ borderColor: "var(--gt-gold-line)", background: "var(--gt-gold-dim, rgba(209,168,75,.1))" }}
+        >
+          <span className="flex items-center justify-center rounded-lg shrink-0" style={{ width: 40, height: 40, background: "var(--gt-gold)" }}>
+            <Phone size={19} style={{ color: "#0a0d14" }} />
+          </span>
+          <span className="leading-tight">
+            <span className="block text-[10px] tracking-[0.16em] uppercase" style={{ fontFamily: "var(--font-mono)", color: "var(--gt-gold)" }}>
+              Prefer to talk? Call the information line
+            </span>
+            <span className="block text-[22px] font-bold tracking-tight" style={{ fontFamily: "var(--font-display)", color: "var(--gt-fg)" }}>
+              (219) 258-3479
+            </span>
+          </span>
+          <span className="text-[13px] leading-relaxed sm:ml-auto max-w-[36ch]" style={{ color: "var(--gt-fg2)" }}>
+            Our AI assistant answers questions about the record 24/7 — same evidence, over the phone.
+          </span>
+        </a>
+      </div>
 
       {/* ── free-form LLM query ── */}
       <section className="py-10 md:py-14 border-b" style={{ borderColor: "var(--gt-line)", background: "var(--gt-bg2)" }}>

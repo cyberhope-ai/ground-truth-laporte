@@ -7,6 +7,18 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronDown, FileText, Video, Globe, Landmark } from "lucide-react";
 import type { Commitment, Receipt } from "@/lib/data";
 import { STATUS_META } from "@/lib/data";
+import { ProvenanceRow, type BadgeKind } from "@/lib/provenance";
+
+/** Derive which proof badges genuinely apply to a commitment from its receipts + status. */
+function badgesForCommitment(c: Commitment): BadgeKind[] {
+  const kinds: BadgeKind[] = [];
+  if (c.receipts.some((r) => r.seal)) kinds.push("sealed");
+  if (c.receipts.some((r) => r.kind === "video")) kinds.push("speaker");
+  if (c.status === "verified" && c.receipts.some((r) => r.kind === "filing" || r.kind === "document"))
+    kinds.push("independent");
+  if (c.receipts.length) kinds.push("chain");
+  return kinds;
+}
 
 function ReceiptIcon({ kind }: { kind: Receipt["kind"] }) {
   const s = 13;
@@ -60,12 +72,26 @@ export function ReceiptChip({ r }: { r: Receipt }) {
           <span className="block text-[12.5px] leading-relaxed mt-2" style={{ color: "var(--gt-fg2)" }}>
             {r.detail}
           </span>
-          {r.seal && (
+          {(r.seal || r.kind === "video") && (
             <span
-              className="block text-[10.5px] mt-2.5 pt-2.5 border-t"
-              style={{ fontFamily: "var(--font-mono)", color: "var(--gt-mut)", borderColor: "var(--gt-line)" }}
+              className="block mt-2.5 pt-2.5 border-t"
+              style={{ borderColor: "var(--gt-line)" }}
             >
-              {r.seal}
+              <ProvenanceRow
+                size="xs"
+                kinds={[
+                  ...(r.seal ? (["sealed"] as BadgeKind[]) : []),
+                  ...(r.kind === "video" ? (["speaker"] as BadgeKind[]) : []),
+                ]}
+              />
+              {r.seal && (
+                <span
+                  className="block text-[10.5px] mt-2"
+                  style={{ fontFamily: "var(--font-mono)", color: "var(--gt-mut)" }}
+                >
+                  {r.seal}
+                </span>
+              )}
             </span>
           )}
           {r.url && (
@@ -205,7 +231,10 @@ export function Gauge({ c, defaultOpen = false }: { c: Commitment; defaultOpen?:
                 “{c.quote}”
               </blockquote>
             )}
-            <div className="flex flex-wrap gap-2 mt-4">
+            <div className="mt-4">
+              <ProvenanceRow kinds={badgesForCommitment(c)} />
+            </div>
+            <div className="flex flex-wrap gap-2 mt-3">
               {c.receipts.map((r, i) => (
                 <ReceiptChip key={i} r={r} />
               ))}

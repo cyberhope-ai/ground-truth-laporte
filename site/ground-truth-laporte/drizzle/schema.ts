@@ -16,6 +16,8 @@ export const users = mysqlTable("users", {
   name: text("name"),
   email: varchar("email", { length: 320 }),
   loginMethod: varchar("loginMethod", { length: 64 }),
+  /** scrypt hash for email/password citizens (null for social-login users). */
+  passwordHash: varchar("passwordHash", { length: 255 }),
   role: mysqlEnum("role", ["user", "admin"]).default("user").notNull(),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
@@ -32,6 +34,16 @@ export type InsertUser = typeof users.$inferInsert;
    ──────────────────────────────────────────────────────────────── */
 
 /** Public evidence submissions — quarantined by default. */
+export const siteSettings = mysqlTable("site_settings", {
+  id: int("id").primaryKey(),
+  siteName: varchar("siteName", { length: 255 }),
+  address: text("address"),
+  contactEmail: varchar("contactEmail", { length: 320 }),
+  notes: text("notes"),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+export type SiteSettings = typeof siteSettings.$inferSelect;
+
 export const submissions = mysqlTable("submissions", {
   id: int("id").autoincrement().primaryKey(),
   /** The contributor's account. */

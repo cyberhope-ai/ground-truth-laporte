@@ -5,6 +5,7 @@
   questions. Data is served from the database via tRPC; the transcript for
   the ITIA panel is the sealed, speaker-attributed record.
 */
+import { ProvenanceRow } from "@/lib/provenance";
 import Layout from "@/components/Layout";
 import { Eyebrow, H2, Reveal } from "@/components/Section";
 import { trpc } from "@/lib/trpc";
@@ -114,14 +115,14 @@ function VideoCard({ v, delay }: { v: VideoEvidence; delay: number }) {
 
   const shareClaim = (fc: FactCheck, idx: number) => {
     const text = encodeURIComponent(
-      `Ground Truth LaPorte fact-check: "${fc.claim}" — ${fc.verdict}. ${fc.note} laportetrth-kqhkb69n.manus.space/meetings`
+      `Ground Truth LaPorte fact-check: "${fc.claim}" — ${fc.verdict}. ${fc.note} laporte-truth.icystone-d1e018c9.centralus.azurecontainerapps.io/meetings`
     );
     window.open(`https://twitter.com/intent/tweet?text=${text}`, "_blank");
   };
 
   const copyClaim = (fc: FactCheck, idx: number) => {
     navigator.clipboard.writeText(
-      `"${fc.claim}" — ${fc.verdict}. ${fc.note} (Ground Truth LaPorte: laportetrth-kqhkb69n.manus.space/meetings)`
+      `"${fc.claim}" — ${fc.verdict}. ${fc.note} (Ground Truth LaPorte: laporte-truth.icystone-d1e018c9.centralus.azurecontainerapps.io/meetings)`
     );
     setCopiedIdx(idx);
     toast.success("Claim copied to clipboard");
@@ -221,7 +222,7 @@ function VideoCard({ v, delay }: { v: VideoEvidence; delay: number }) {
                       <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </button>
                     <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://laportetrth-kqhkb69n.manus.space/meetings")}&quote=${encodeURIComponent(`"${fc.claim}" — ${fc.verdict}. ${fc.note}`)}`}
+                      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://laporte-truth.icystone-d1e018c9.centralus.azurecontainerapps.io/meetings")}&quote=${encodeURIComponent(`"${fc.claim}" — ${fc.verdict}. ${fc.note}`)}`}
                       target="_blank"
                       rel="noreferrer"
                       className="w-6 h-6 rounded border grid place-items-center transition-all duration-150 active:scale-[0.93] hover:border-[var(--gt-gold)]"
@@ -580,7 +581,7 @@ export default function Meetings() {
                         {d?.transcript && (
                           <div className="mt-7">
                             <div className="flex items-center justify-between mb-3">
-                              <div className="flex items-center gap-2">
+                              <div className="flex items-center gap-2 flex-wrap">
                                 <FileText size={14} style={{ color: "var(--gt-verify)" }} />
                                 <span
                                   className="text-[10.5px] tracking-[0.14em] uppercase"
@@ -588,6 +589,7 @@ export default function Meetings() {
                                 >
                                   Sealed transcript · speaker-attributed
                                 </span>
+                                <ProvenanceRow size="xs" kinds={["sealed", "speaker", "chain"]} />
                               </div>
                               <button
                                 onClick={() => summarizeMut.mutate({ slug: m.slug })}
